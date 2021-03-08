@@ -1,3 +1,0 @@
-|||
-|:--:|:--:|
-| ![Corby](articles/products/corby.md/product.md/product.en.png =700x300) | <h1 class="productheader">CORBY, CORE BANKING PLATFORM</h1><p class="productdescription">Providing you with AI Tellers and a fully transactional app.</p><h1 class="productheader">CORBY, CARD SCANNER</h1><p class="productdescription">A highly scalable and PCI-certified credit card scanning platform for White Label Clients and Online Banks.</p><h1 class="productheader">CORBY, PAYMENT GATEWAY</h1><p class="productdescription">Another highly scalable,  PCI-certified payment processing and gateway platform for White Label Clients and Online Banks. </p> |

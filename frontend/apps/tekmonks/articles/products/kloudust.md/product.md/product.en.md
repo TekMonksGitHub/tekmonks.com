@@ -1,3 +1,0 @@
-|||
-|:--:|:--:|
-| ![Kloudust](articles/products/kloudust.md/product.md/product.en.png =700x280) | <h1 class="productheader">SECURE</h1><p class="productdescription">Our patented Reflection technology protects and defends, to keep your organization safe.</p><h1 class="productheader">VERSATILE</h1><p class="productdescription">On or off premise and specifically customized to meet your compliance needs.</p><h1 class="productheader">UNLEASHED</h1><p class="productdescription"> You have the freedom to choose your software stack & services without being forced into a single cloud architecture. </p> |

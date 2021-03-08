@@ -1,3 +1,0 @@
-|||
-|:--:|:--:|
-| ![API 400](articles/products/api400.md/product.md/product.en.png =700x300) | <h1 class="productheader">SINGLE, COMMON GATEWAY</h1><p class="productdescription">This allows for REST based API calls to reach AS/400 business assets and data on the AS/400.</p><h1 class="productheader">FAST & EFFICIENT</h1><p class="productdescription">Lower development and integration costs, which allow you to create APIs & Apps in hours leading to significantly improved time to market.</p><h1 class="productheader">NATIVE INTEGRATION</h1><p class="productdescription">There’s no screen scrapping! API400 provides a very high performance native solution that scales and evolves.</p> |

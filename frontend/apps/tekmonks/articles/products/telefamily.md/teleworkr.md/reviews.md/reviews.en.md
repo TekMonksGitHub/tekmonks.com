@@ -1,7 +1,0 @@
-#REVIEWS
-##Don’t take our word. See what our experts say about Reflection. <br/>We have got 100s of positive reviews.
-
-||||
-|:--:|:--:|:--:|
-|![quote](articles/products/api400.md/reviews.md/quote.png =32x32)|![quote](articles/products/api400.md/reviews.md/quote.png =32x32)|![quote](articles/products/api400.md/reviews.md/quote.png =32x32)|
-|During the lockdown, TekMonks assisted us in implementing our customize work-from-Home solution which other companies weren’t able to do.  As such, we are now ready and fully compliant to be able allow our employees to work from anywhere. |We feel more secure while our employees are working remotely.  We can finally see a future where WFH becomes a more prominent model, even after COVID-19. |TekMonks solution provides us peace of mind, whether there is a natural disaster or not, that we can have continuity of operations. |
