@@ -1,0 +1,51 @@
+<script type="application/ld+json">
+{
+  	"@context": "http://schema.org",
+  	"@type": "Article",
+  	"name": "Card Scanner",
+  	"description": "",
+  	"offers": {
+  		"@type": "Offer",
+  		"name": "Card Scanner",
+  		"itemListElement": [{
+  				"@type": "Offer",
+  				"name": "Card Vaulting"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "White Label and Multi-Lingual"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Documentation, 24x7 Technical Support"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Offered as Appliance or via Cloud"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Licensed per IBM i Server"
+  			}
+  		]
+  	},
+  	"image": [{
+  		"@type": "ImageObject",
+  		"url": "/articles/products/corby.md/cardscanner.md/header.png",
+  		"name": "Card Scanner",
+  		"description": "Card Scanner",
+  		"keywords": ["AI chatbot", "chatbots in banking ", "bank bot", "AI chatbot", "bank chatbot", "banking chatbot"],
+  		"copyrightHolder": {
+  			"@type": "Organization",
+  			"name": "TekMonks",
+  			"url": "https://tekmonks.com"
+  		}
+  	}],
+  	"manufacturer": {
+  		"@type": "Organization",
+  		"name": "TekMonks",
+  		"url": "https://tekmonks.com"
+  	},
+  	"keywords": ["AI chatbot", "chatbots in banking ", "bank bot", "AI chatbot", "bank chatbot", "banking chatbot"]
+  }
+</script>

@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "LoginCat Smart Fiewall",
+	"description": "The SmartFirewall from LoginCat™ is not just a typical firewall. It not only blocks entry points for all possible attackers by authenticating users but identifies the Internet Protocol (IP) address to further verify users. Hence, authorized users are the only ones allowed to log-in. Better be safe than sorry, consider LoginCat Smart Firewall as a black hole! Because in a black hole, no one can get in.",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/logincat.md/smartfirewall.md/header.en.png",
+		"name": "LoginCat Smart Fiewall",
+		"description": "The SmartFirewall from LoginCat™ is not just a typical firewall. It not only blocks entry points for all possible attackers by authenticating users but identifies the Internet Protocol (IP) address to further verify users. Hence, authorized users are the only ones allowed to log-in. Better be safe than sorry, consider LoginCat Smart Firewall as a black hole! Because in a black hole, no one can get in.",
+		"keywords": ["Cyber Security solutions", "cybersecurity solutions", "Cyber Security", "Cyber security companies", "Malware protection", "Hacking prevention", "anti malware ", "best malware protection", "prevent hacking", "cyber protection", "it security solutions", "cyber security software ", "network security solutions", "ai cybersecurity", "ai cyber security", "zero trust security", "zero trust network", "zero trust model", "cyber security services ", "cloud security", "phishing prevention ", "security application ", "cyber attack prevention ", "cyber security business ", "anti phishing", "application security", "web application security"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["Cyber Security solutions", "cybersecurity solutions", "Cyber Security", "Cyber security companies", "Malware protection", "Hacking prevention", "anti malware ", "best malware protection", "prevent hacking", "cyber protection", "it security solutions", "cyber security software ", "network security solutions", "ai cybersecurity", "ai cyber security", "zero trust security", "zero trust network", "zero trust model", "cyber security services ", "cloud security", "phishing prevention ", "security application ", "cyber attack prevention ", "cyber security business ", "anti phishing", "application security", "web application security"]
+}
+</script>

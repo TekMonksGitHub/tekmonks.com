@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "IBM Bluemix Services",
+	"description": "Bluemix services allow organizations, enterprises, and developers to create, control, and manage their various applications on the cloud. TekMonks is proud to offer consulting services and maintain expertise in the field of cloud-based PaaS technologies.",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/solutions/enterprise.md/cloudsolutions.md/ibmbluemixservices.md/header.en.png",
+		"name": "IBM Bluemix Services",
+		"description": "Bluemix services allow organizations, enterprises, and developers to create, control, and manage their various applications on the cloud. TekMonks is proud to offer consulting services and maintain expertise in the field of cloud-based PaaS technologies.",
+		"keywords": ["ibm bluemix services", "bluemix dedicated services", "bluemix services", "ibm bluemix mobile service"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["ibm bluemix services", "bluemix dedicated services", "bluemix services", "ibm bluemix mobile services"]
+}
+</script>
