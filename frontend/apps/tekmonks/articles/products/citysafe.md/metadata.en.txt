@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "CitySafe",
+	"description": "A patented technology by TekMonks, CitySafe allows operating “Listenless” servers. “Listenless” it is, means that associated servers are designed not to listen on any external ports nor accept any traffic. Making it completely isolated, hence unhackable. Still, it participates in the reflection network that allows continued delivery of data to external clients. A much-needed protection specific for local government data and safety in a period of cyber security situation where attacks are quick, easy, and well researched.",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/citysafe.md/header.en.png",
+		"name": "CitySafe",
+		"description": "A patented technology by TekMonks, CitySafe allows operating “Listenless” servers. “Listenless” it is, means that associated servers are designed not to listen on any external ports nor accept any traffic. Making it completely isolated, hence unhackable.",
+		"keywords": ["citysafe"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["citysafe"]
+}
+</script>
