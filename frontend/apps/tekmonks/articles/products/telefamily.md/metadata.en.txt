@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+    {
+  	"@context": "http://schema.org",
+  	"@type": "Product",
+  	"name": "TeleFamily",
+  	"description": ".",
+  	"offers": {
+  		"@type": "Offer",
+  		"name": "TeleFamily",
+  		"itemListElement": [{
+  				"@type": "Offer",
+  				"name": "TeleWorkr"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "TeleDoctr"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "TeleScholr"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "TeleLawyr"
+  			}
+  		]
+  	},
+  	"keywords": ["teleworkr", "teledoctr", "telescholr", "telelawyr"],
+        "manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	}
+  }
+</script>

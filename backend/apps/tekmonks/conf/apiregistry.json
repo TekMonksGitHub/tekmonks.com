@@ -1,0 +1,9 @@
+{
+    "/apps/tekmonks/login" : "/apis/login.js?get=true",
+    "/apps/tekmonks/cmsdirlisting" : "/apis/cmsdirlisting.js?get=true",
+    "/apps/tekmonks/cmsfetchdircontents" : "/apis/cmsfetchdircontents.js?get=true",
+    "/apps/tekmonks/cmsfetcharticle" : "/apis/cmsfetcharticle.js?get=true",
+    "/apps/tekmonks/navmenulisting" : "/apis/navmenulisting.js?get=true",
+    "/apps/tekmonks/sendcontactsemail" : "/apis/sendcontactsemail.js",
+    "/apps/tekmonks/sendproductinquiries" : "/apis/sendproductinquiries.js"
+}

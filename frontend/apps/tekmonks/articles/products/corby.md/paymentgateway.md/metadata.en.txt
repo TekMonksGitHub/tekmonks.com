@@ -1,0 +1,59 @@
+<script type="application/ld+json">
+   {
+  	"@context": "http://schema.org",
+  	"@type": "Product",
+  	"name": "Payment Gateway",
+  	"description": "CPG is a highly scalable and PCI-certified payment processing and gateway platform for White Label Clients and Online Banks.",
+  	"offers": {
+  		"@type": "Offer",
+  		"name": "Payment Gateway",
+  		"itemListElement": [{
+  				"@type": "Offer",
+  				"name": "Fully PCI compliant card vaulting"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Advanced fraud detection (including geo-spatial detection and 2FA using mobile apps)"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Monitoring and Reporting"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Customer payment profiles"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Multichannel - Connectivity to SWIFT,  VISA, Mastercard, PayPal, Mobile, Phone"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Big Data Analytics Module (optional)"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "White labeled web and mobile apps (optional)"
+  			}
+  		]
+  	},
+  	"image": [{
+  		"@type": "ImageObject",
+  		"url": "/articles/products/corby.md/paymentgateway.md/header.en.png",
+  		"name": "Payment Gateway",
+  		"description": "CPG is a highly scalable and PCI-certified payment processing and gateway platform for White Label Clients and Online Banks.",
+  		"keywords": ["payment gatewa"],
+  		"copyrightHolder": {
+  			"@type": "Organization",
+  			"name": "TekMonks",
+  			"url": "https://tekmonks.com"
+  		}
+  	}],
+  	"manufacturer": {
+  		"@type": "Organization",
+  		"name": "TekMonks",
+  		"url": "https://tekmonks.com"
+  	},
+  	"keywords": ["payment gateway"]
+  }
+</script>

@@ -1,0 +1,55 @@
+<script type="application/ld+json">
+{
+  	"@context": "http://schema.org",
+  	"@type": "Product",
+  	"name": "IBM",
+  	"description": ".",
+  	"offers": {
+  		"@type": "Offer",
+  		"name": "IBM",
+  		"itemListElement": [{
+  				"@type": "Offer",
+  				"name": "IBM MQ Solutions"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "DB2 Solutions"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "WebSphere Solutions"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "DataPower Managed Services"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Cast Iron Services"
+  			},
+  			{
+  				"@type": "Offer",
+  				"name": "Integrated Bus Services"
+  			}
+  		]
+  	},
+  	"image": [{
+  		"@type": "ImageObject",
+  		"url": "/articles/solutions/enterprise.md/ibm.md/header.en.png",
+  		"name": "IBM",
+  		"description": "IBM",
+  		"keywords": ["mq solutions", "db2 solutions", "websphere solutions", "datapower managed services", "cast iron services", "integrated bus services"],
+  		"copyrightHolder": {
+  			"@type": "Organization",
+  			"name": "TekMonks",
+  			"url": "https://tekmonks.com"
+  		}
+  	}],
+  	"manufacturer": {
+  		"@type": "Organization",
+  		"name": "TekMonks",
+  		"url": "https://tekmonks.com"
+  	},
+  	"keywords": ["mq solutions", "db2 solutions", "websphere solutions", "datapower managed services", "cast iron services", "integrated bus services"]
+  }
+</script>

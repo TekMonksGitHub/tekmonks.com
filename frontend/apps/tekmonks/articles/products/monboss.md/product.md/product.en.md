@@ -1,0 +1,3 @@
+|||
+|:--:|:--:|
+| ![Monboss](articles/products/monboss.md/product.md/product.en.png =700x300) | <h1 class="productheader">AI AS A SERVICE</h1><p class="productdescription">Utilizes AI as a service through AI algorithms based on its analysis on failure in finding efficient solutions for problems encountered.</p><h1 class="productheader">EFFICIENCY</h1><p class="productdescription">Imperative to infrastructure monitoring for detection and quick resolution without human intervention. </p><h1 class="productheader">EASY TO DEPLOY</h1><p class="productdescription">MonBoss comes as an appliance so it removes the dependency on the operating system.</p> |

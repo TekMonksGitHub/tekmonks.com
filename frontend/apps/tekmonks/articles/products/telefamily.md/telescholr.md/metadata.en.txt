@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "TeleScholr",
+	"description": "Digital learning with digital proximity. TeleScholr is a fully customizable and intuitive software solution for digital learning. The only fully integrated Digital School platform in the market, it is made ground up for running learning institutions digitally. It is the ability to curate the platform to meet school’s requirements, provide a secure learning environment, track students, and deliver reliable online managed schools.",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/telefamily.md/telescholr.md/header.en.png",
+		"name": "TeleScholr",
+		"description": "Digital learning with digital proximity. TeleScholr is a fully customizable and intuitive software solution for digital learning. The only fully integrated Digital School platform in the market, it is made ground up for running learning institutions digitally. It is the ability to curate the platform to meet school’s requirements, provide a secure learning environment, track students, and deliver reliable online managed schools.",
+		"keywords": ["telescholr"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["telescholr"]
+}
+</script>
