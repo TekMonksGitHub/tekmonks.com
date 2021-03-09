@@ -3,4 +3,4 @@
 
 ![Corby!] (articles/verticals/tech.md/articleadv.md/corby.png =120x165 "Corby")
 
-[Read More]({{#makeLink}}./landing.html?product_path=./products/corby.md&menu_path=.menus/en{{/makeLink}}){:target="_blank"}
+[Read More]({{#makeLink}}./landing.html?product_path=./products/corby.md&menu_path=.menus/en{{/makeLink}})
