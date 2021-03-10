@@ -3,5 +3,5 @@
 
 ||||
 |:--:|:--:|:--:|
-|![Connect](articles/products/aianalytics.md/how.md/contact.png)|![Configure](articles/software.md/cybersecurity/reflection/how.md/configure.png)|![Done](articles/software.md/cybersecurity/reflection/how.md/done.png)|
+|![Connect](articles/products/logincat.md/logincat360.md/how.md/contact.png)|![Configure](articles/products/logincat.md/logincat360.md/how.md/configure.png)|![Done](articles/products/logincat.md/logincat360.md/how.md/done.png)|
 |<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONNECT</p><br/><p style="color: black; height: 6em;">Contact us to schedule your demo.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONFIGURE</p><br/><p style="color: black; height: 6em;">We will configure MonBoss to your organization's needs.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">YAY! DONE</p><br/><p style="color: black; height: 6em;">Sit back and let MonBoss go to work.</p>|
