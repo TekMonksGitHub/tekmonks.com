@@ -29,7 +29,7 @@ exports.doService = async jsonReq => {
       // send mail with defined transport object
       let info = await transporter.sendMail({
         from: jsonReq.email + "<do not reply>", // sender address
-        to: "justine.macarat@gmail.com", // list of receivers
+        to: "sales@tekmonks.com", // list of receivers
         subject: "Contact Request", // Subject line
         text: contacts_html + product_html,
         html: contacts_html + product_html
