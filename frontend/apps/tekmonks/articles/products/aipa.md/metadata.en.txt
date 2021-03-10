@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "AIPA",
+	"description": "AI Powered Business Search",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/aipa.md/header.en.png",
+		"name": "AIPA",
+		"description": "AI Powered Business Search",
+		"keywords": ["aipa"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["aipa"]
+}
+</script>
