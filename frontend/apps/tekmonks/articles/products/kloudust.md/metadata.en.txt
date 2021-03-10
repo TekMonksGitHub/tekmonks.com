@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "Kloudust",
+	"description": "Tomorrow's hybrid cloud today",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/kloudust.md/header.en.png",
+		"name": "Kloudust",
+		"description": "Tomorrow's hybrid cloud today",
+		"keywords": ["kloudust"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["kloudust"]
+}
+</script>

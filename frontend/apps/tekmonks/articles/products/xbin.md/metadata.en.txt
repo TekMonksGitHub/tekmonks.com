@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "XBin",
+	"description": "Destination Automation",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/xbin.md/header.en.png",
+		"name": "XBin",
+		"description": "Destination Automation",
+		"keywords": ["xbin"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["xbin"]
+}
+</script>

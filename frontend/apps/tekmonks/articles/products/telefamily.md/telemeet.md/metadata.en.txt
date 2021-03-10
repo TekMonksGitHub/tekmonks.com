@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "Telemeet",
+	"description": "Secured communication by Tekmonks",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/telefamily.md/telemeet.md/header.en.png",
+		"name": "TeleDoctr",
+		"description": "Secured communication by Tekmonks",
+		"keywords": ["telemeet"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["telemeet"]
+}
+</script>

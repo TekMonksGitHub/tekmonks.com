@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "DB Magic",
+	"description": "A REST Layer for MEMSQL",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/dbmagic.md/header.en.png",
+		"name": "Kloudust",
+		"description": "A REST Layer for MEMSQL",
+		"keywords": ["dbmagic"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["dbmagic"]
+}
+</script>

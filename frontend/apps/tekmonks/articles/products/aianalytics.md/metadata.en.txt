@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "AI Analytics",
+	"description": "AI Powered Business Search",
+	"image": [{
+		"@type": "ImageObject",
+		"url": "/articles/products/aianalytics.md/header.en.png",
+		"name": "AI Analytics",
+		"description": "AI Powered Business Search",
+		"keywords": ["aianalytics"],
+		"copyrightHolder": {
+			"@type": "Organization",
+			"name": "TekMonks",
+			"url": "https://tekmonks.com"
+		}
+	}],
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "TekMonks",
+		"url": "https://tekmonks.com"
+	},
+	"keywords": ["aianalytics"]
+}
+</script>

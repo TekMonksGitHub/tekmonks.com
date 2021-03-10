@@ -21,11 +21,11 @@
   			},
   			{
   				"@type": "Offer",
-  				"name": "TeleLawyr"
+  				"name": "Telemeet"
   			}
   		]
   	},
-  	"keywords": ["teleworkr", "teledoctr", "telescholr", "telelawyr"],
+  	"keywords": ["teleworkr", "teledoctr", "telescholr", "telemeet"],
         "manufacturer": {
 		"@type": "Organization",
 		"name": "TekMonks",
