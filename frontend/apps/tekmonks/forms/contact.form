@@ -55,6 +55,7 @@ CSS
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
     width: calc(22% - 40px);
+    min-width: 11em;
     top: 260px;
     border-radius: 15px;
     font-family: Raleway;
