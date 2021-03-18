@@ -51,7 +51,6 @@ CSS
 =======
 .grid-container-extension {
     height: 100%;
-    min-width: 60em;
 }
 
 .grid-item-extension {
