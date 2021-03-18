@@ -17,6 +17,7 @@ p.submenu.selected {
 .mitem {
     top: 50px;
     left: 10%;
+    min-width: 57em;
 }
 .left {
     width: 20%;
