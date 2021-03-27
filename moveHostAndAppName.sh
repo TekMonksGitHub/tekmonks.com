@@ -3,7 +3,6 @@
 NEW_HOST=$1
 NEW_APP=$2
 
-grep localhost -l -I -r . | xargs sed -i 's/localhost/$NEW_HOST/g'
+grep $NEW_HOST -l -I -r . | xargs sed -i 's/$NEW_HOST/$NEW_HOST/g'
 
-grep 'apps/webscrolls' -l -I -r . | xargs sed -i 's=apps/webscrolls=$NEW_APP=g'
-
+grep 'apps/tekmonks' -l -I -r . | xargs sed -i 's=apps/tekmonks=apps/tekmonks=g'
