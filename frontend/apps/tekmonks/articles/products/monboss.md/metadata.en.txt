@@ -1,14 +1,18 @@
 <script type="application/ld+json">
 {
  	"@context": "http://schema.org",
- 	"@type": "Product",
+ 	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
  	"name": "MonBoss",
- 	"description": "AI System to monitor and fix infrastructure. MonBoss monitors Enterprise Application and middleware outages in databases, applications, or HTTP servers, always on a lookout for anything that needs to be fixed. It can even go to a low-level correction of problems on Virtual Machine (VM) outages as well as network issues. Saving time proactively and minimized downtime.",
+ 	"description": "AI System to monitor and fix infrastructure.",
  	"image": [{
  		"@type": "ImageObject",
- 		"url": "/articles/products/monboss.md/header.en.png",
+ 		"url": "https://tekmonks.com/apps/tekmonks/articles/products/monboss.md/header.md/header.en.png",
  		"name": "MonBoss",
- 		"description": "AI System to monitor and fix infrastructure. MonBoss monitors Enterprise Application and middleware outages in databases, applications, or HTTP servers, always on a lookout for anything that needs to be fixed. It can even go to a low-level correction of problems on Virtual Machine (VM) outages as well as network issues. Saving time proactively and minimized downtime.",
+ 		"description": "AI System to monitor and fix infrastructure.",
  		"keywords": ["Infrastructure monitoring", "it infrastructure monitoring", "AiOps", "it monitoring software"],
  		"copyrightHolder": {
  			"@type": "Organization",
@@ -16,7 +20,7 @@
  			"url": "https://tekmonks.com"
  		}
  	}],
- 	"manufacturer": {
+ 	"publisher": {
  		"@type": "Organization",
  		"name": "TekMonks",
  		"url": "https://tekmonks.com"

@@ -1,15 +1,18 @@
 <script type="application/ld+json">
   {
 	"@context": "http://schema.org",
-	"@type": "Product",
+	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
 	"name": "Reflection Network",
-	"description": "Reflection Network + TekMonks connector tool server = bypass strict restrictions of the toughest firewall. This will ensure availability of the website or files offshore. Allowing connections to the higher ports that can bypass scanners for continued utilization of the Reflection Network. 
-",
+	"description": "The Future of Cybersecurity is Here!",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "/articles/products/reflectionnetwork.md/header.en.png",
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/reflectionnetwork.md/header.md/header.en.png",
 		"name": "Reflection Network",
-		"description": "Reflection Network + TekMonks connector tool server = bypass strict restrictions of the toughest firewall. This will ensure availability of the website or files offshore. Allowing connections to the higher ports that can bypass scanners for continued utilization of the Reflection Network",
+		"description": "The Future of Cybersecurity is Here!",
 		"keywords": ["reflection network"],
 		"copyrightHolder": {
 			"@type": "Organization",
@@ -17,7 +20,7 @@
 			"url": "https://tekmonks.com"
 		}
 	}],
-	"manufacturer": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"

@@ -1,33 +1,16 @@
 <script type="application/ld+json">
    {
   	"@context": "http://schema.org",
-  	"@type": "Product",
+  	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
   	"name": "Artificial Intelligence",
   	"description": "Unlock your business values with TekMonks AI services",
-  	"offers": {
-  		"@type": "Offer",
-  		"name": "Artificial Intelligence",
-  		"itemListElement": [{
-  				"@type": "Offer",
-  				"name": "AI Chatbots"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "Virtual Agent"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "AI in Cybersecurity"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "Decision Management"
-  			}
-  		]
-  	},
-  	"image": [{
+  	  	"image": [{
   		"@type": "ImageObject",
-  		"url": "/articles/solutions/ai.md/header.en.png",
+  		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/ai.md/header.en.png",
   		"name": "Artificial Intelligence",
   		"description": "Unlock your business values with TekMonks AI services",
   		"keywords": ["ai services", "ai as a service", "Artificial Intelligence services"],
@@ -37,7 +20,7 @@
   			"url": "https://tekmonks.com"
   		}
   	}],
-  	"manufacturer": {
+  	"publisher": {
   		"@type": "Organization",
   		"name": "TekMonks",
   		"url": "https://tekmonks.com"

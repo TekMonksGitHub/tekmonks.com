@@ -1,14 +1,18 @@
 <script type="application/ld+json">
   {
   	"@context": "http://schema.org",
-  	"@type": "Product",
+  	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
   	"name": "LoginCat",
-  	"description": "To prevent hacking, LoginCat can implement Multi-Factor Authentication (MFA) for that protection of businesses of access to online platforms, where succeeding authentications can be in the form of a One-Time Passcode (OTP) or Biometric. Designed to prevent unauthorized users from gaining access, the security protocol is a conscious effort to retain customers relying only with the traditional username and password system login. Users are at risk of compromised passwords than they realize, particularly in using the same password on more than one website.",
+  	"description": "Zero Trust Cybersecurity",
   	"image": [{
   		"@type": "ImageObject",
-  		"url": "/articles/products/logincat.md/logincat360.md/header.en.png",
+  		"url": "https://tekmonks.com/apps/tekmonks/articles/products/logincat.md/logincat360.md/header.md/header.en.png",
   		"name": "LoginCat",
-  		"description": "To prevent hacking, LoginCat can implement Multi-Factor Authentication (MFA) for that protection of businesses of access to online platforms, where succeeding authentications can be in the form of a One-Time Passcode (OTP) or Biometric. Designed to prevent unauthorized users from gaining access, the security protocol is a conscious effort to retain customers relying only with the traditional username and password system login. Users are at risk of compromised passwords than they realize, particularly in using the same password on more than one website.",
+  		"description": "Zero Trust Cybersecurity",
   		"keywords": ["Cyber Security solutions", "cybersecurity solutions", "Cyber Security", "Cyber security companies", "Malware protection", "Hacking prevention", "anti malware ", "best malware protection", "prevent hacking", "cyber protection", "it security solutions", "cyber security software ", "network security solutions", "ai cybersecurity", "ai cyber security", "zero trust security", "zero trust network", "zero trust model", "cyber security services ", "cloud security", "phishing prevention ", "security application ", "cyber attack prevention ", "cyber security business ", "anti phishing", "application security", "web application security"],
   		"copyrightHolder": {
   			"@type": "Organization",
@@ -16,7 +20,7 @@
   			"url": "https://tekmonks.com"
   		}
   	}],
-  	"manufacturer": {
+  	"publisher": {
   		"@type": "Organization",
   		"name": "TekMonks",
   		"url": "https://tekmonks.com"
