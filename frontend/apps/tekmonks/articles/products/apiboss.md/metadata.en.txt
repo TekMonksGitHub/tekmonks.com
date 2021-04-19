@@ -1,19 +1,19 @@
 <script type="application/ld+json">
-  {
+ {
 	"@context": "http://schema.org",
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
     		"@id": "https://tekmonks.com"
   	},
-	"name": "CitySafe",
-	"description": "To serve and protect.",
+	"name": "API Boss",
+	"description": "AI Powered Business Search",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/citysafe.md/header.md/header.en.png",
-		"name": "CitySafe",
-		"description": "To serve and protect.",
-		"keywords": ["citysafe"],
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/apiboss.md/header.md/header.en.png",
+		"name": "API Boss",
+		"description": "API Boss",
+		"keywords": ["API Boss"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "TekMonks",
@@ -25,6 +25,6 @@
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"
 	},
-	"keywords": ["citysafe"]
+	"keywords": ["API Boss"]
 }
 </script>

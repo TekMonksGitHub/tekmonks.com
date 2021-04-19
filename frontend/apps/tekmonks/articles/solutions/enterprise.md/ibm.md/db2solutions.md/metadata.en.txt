@@ -1,33 +1,16 @@
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
-	"@type": "Product",
+	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
 	"name": "IBM DB2 Solutions",
 	"description": "IBM DB2 database software is designed to help enterprises have the best possible experiences with their chosen platforms. The solutions associated with this particular IBM database include DB2 implementation fixes, administration and maintenance of DB2 environments, troubleshooting services, diagnosis of various technical issues, and more. TekMonks’ IBM DB2 solutions is that we provide ongoing and customized support to meet each need and accommodate any existing issues.",
-	"offers": {
-		"@type": "Offer",
-		"name": "IBM DB2 Solutions",
-		"itemListElement": [{
-				"@type": "Offer",
-				"name": "Lifecycle DB2 implementation solutions"
-			},
-			{
-				"@type": "Offer",
-				"name": "DB2 managed services"
-			},
-			{
-				"@type": "Offer",
-				"name": "DB2 Application/enterprise data modeling"
-			},
-			{
-				"@type": "Offer",
-				"name": "DB2 clustering/HA services"
-			}
-		]
-	},
 	"image": [{
 		"@type": "ImageObject",
-		"url": "/articles/solutions/enterprise.md/ibm.md/db2solutions.md/header.en.png",
+		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/enterprise.md/ibm.md/db2solutions.md/header.en.png",
 		"name": "IBM DB2 Solutions",
 	"description": "IBM DB2 database software is designed to help enterprises have the best possible experiences with their chosen platforms. The solutions associated with this particular IBM database include DB2 implementation fixes, administration and maintenance of DB2 environments, troubleshooting services, diagnosis of various technical issues, and more. TekMonks’ IBM DB2 solutions is that we provide ongoing and customized support to meet each need and accommodate any existing issues.",
 		"keywords": ["dba services", "dbservices", "ibm database", "ibm db2"],
@@ -37,7 +20,7 @@
 			"url": "https://tekmonks.com"
 		}
 	}],
-	"manufacturer": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"

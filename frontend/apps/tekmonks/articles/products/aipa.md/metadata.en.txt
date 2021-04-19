@@ -1,12 +1,16 @@
 <script type="application/ld+json">
   {
 	"@context": "http://schema.org",
-	"@type": "Product",
+	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
 	"name": "AIPA",
 	"description": "AI Powered Business Search",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "/articles/products/aipa.md/header.en.png",
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/aipa.md/header.md/header.en.png",
 		"name": "AIPA",
 		"description": "AI Powered Business Search",
 		"keywords": ["aipa"],
@@ -16,7 +20,7 @@
 			"url": "https://tekmonks.com"
 		}
 	}],
-	"manufacturer": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"

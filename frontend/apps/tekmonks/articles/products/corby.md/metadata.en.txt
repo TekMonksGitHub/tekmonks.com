@@ -1,31 +1,18 @@
 <script type="application/ld+json">
       {
     	"@context": "http://schema.org",
-    	"@type": "Product",
+    	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
     	"name": "Corby",
-    	"description": "Corby is the world's first fully transactional AI banking bot. Enabling banks to engage and interact with their customers anytime, anywhere!",
-    	"offers": {
-    		"@type": "Offer",
-    		"name": "TekMonks Products",
-    		"itemListElement": [{
-    				"@type": "Offer",
-    				"name": "Chatbot"
-    			},
-    			{
-    				"@type": "Offer",
-    				"name": "Payment Gateway"
-    			},
-    			{
-    				"@type": "Offer",
-    				"name": "Card Scanner"
-    			}
-    		]
-    	},
+    	"description": "Meet the Corby Family",
     	"image": [{
     		"@type": "ImageObject",
-    		"url": "/articles/products/corby.md/header.en.png",
+    		"url": "https://tekmonks.com/apps/tekmonks/articles/products/corby.md/header.md/header.en.png",
     		"name": "Corby",
-    		"description": "Corby is the world's first fully transactional AI banking bot. Enabling banks to engage and interact with their customers anytime, anywhere!",
+    		"description": "Meet the Corby Family",
     		"keywords": ["chatbot", "payment gateway", "card scanner"],
     		"copyrightHolder": {
     			"@type": "Organization",
@@ -33,7 +20,7 @@
     			"url": "https://tekmonks.com"
     		}
     	}],
-    	"manufacturer": {
+    	"publisher": {
     		"@type": "Organization",
     		"name": "TekMonks",
     		"url": "https://tekmonks.com"

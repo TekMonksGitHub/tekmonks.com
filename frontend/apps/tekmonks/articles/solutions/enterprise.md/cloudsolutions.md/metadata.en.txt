@@ -1,33 +1,16 @@
 <script type="application/ld+json">
        {
   	"@context": "http://schema.org",
-  	"@type": "Product",
-  	"name": "Cloud Solutions",
-  	"description": ".",
-  	"offers": {
-  		"@type": "Offer",
-  		"name": "Cloud Solutions",
-  		"itemListElement": [{
-  				"@type": "Offer",
-  				"name": "AWS Managed Services"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "Microsoft Azure Services"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "IBM Bluemix Services"
-  			},
-  			{
-  				"@type": "Offer",
-  				"name": "Digital Ocean Services"
-  			}
-  		]
+  	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
   	},
-"image": [{
+  	"name": "Cloud Solutions",
+  	"description": "Cloud Solutions",
+  	"image": [{
 		"@type": "ImageObject",
-		"url": "/articles/products/enterprise.md/cloudsolutions.md/header.en.png",
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/enterprise.md/cloudsolutions.md/header.en.png",
 		"name": "Cloud Solutions",
 		"description": "Cloud Solutions",
 		"keywords": ["aws managed services", "microsoft azure services", "ibm bluemix services", "digital ocean services"],
@@ -37,7 +20,7 @@
 			"url": "https://tekmonks.com"
 		}
 	}],
-	"manufacturer": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"

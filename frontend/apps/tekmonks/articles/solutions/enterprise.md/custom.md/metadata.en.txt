@@ -1,29 +1,12 @@
 <script type="application/ld+json">
    {
     	"@context": "http://schema.org",
-    	"@type": "Product",
+    	"@type": "Article",
     	"name": "Customs",
     	"description": ".",
-    	"offers": {
-    		"@type": "Offer",
-    		"name": "Customs",
-    		"itemListElement": [{
-    				"@type": "Offer",
-    				"name": "Enterprise Mobility"
-    			},
-    			{
-    				"@type": "Offer",
-    				"name": "NodeJS Development"
-    			},
-    			{
-    				"@type": "Offer",
-    				"name": "PHP Development"
-    			}
-    		]
-    	},
     	"image": [{
     		"@type": "ImageObject",
-    		"url": "/articles/solutions/enterprise.md/custom.md/header.en.png",
+    		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/enterprise.md/custom.md/header.en.png",
     		"name": "Customs",
     		"description": "Customs",
     		"keywords": ["enterprise mobility", "nodejs development", "php development"],
@@ -33,7 +16,7 @@
     			"url": "https://tekmonks.com"
     		}
     	}],
-    	"manufacturer": {
+    	"publisher": {
     		"@type": "Organization",
     		"name": "TekMonks",
     		"url": "https://tekmonks.com"

@@ -1,7 +1,11 @@
 <script type="application/ld+json">
 {
 	"@context": "http://schema.org",
-	"@type": "Product",
+	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
 	"name": "WebSphere Commerce Services",
 	"description": "WebSphere commerce services are absolutely paramount for enterprises which require assistance as it pertains to sales, promotion, and online marketing. Some of the best WebSphere commerce solutions include provision of call centers, precision marketing tools for different business platforms/environments, and content management assistance.",
 	"offers": {
@@ -31,7 +35,7 @@
 	},
 	"image": [{
 		"@type": "ImageObject",
-		"url": "/articles/solutions/enterprise.md/ibm.md/webspheresolutions.md/commerceservices.md/header.en.png",
+		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/enterprise.md/ibm.md/webspheresolutions.md/commerceservices.md/header.en.png",
 		"name": "WebSphere Commerce Services",
 		"description": "WebSphere commerce services are absolutely paramount for enterprises which require assistance as it pertains to sales, promotion, and online marketing. Some of the best WebSphere commerce solutions include provision of call centers, precision marketing tools for different business platforms/environments, and content management assistance.",
 		"keywords": ["WebSphere Commerce Services", "IBM commerce solution", "WebSphere Commerce Solution"],
@@ -41,7 +45,7 @@
 			"url": "https://tekmonks.com"
 		}
 	}],
-	"manufacturer": {
+	"publisher": {
 		"@type": "Organization",
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"

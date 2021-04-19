@@ -1,14 +1,18 @@
 <script type="application/ld+json">
 {
   	"@context": "http://schema.org",
-  	"@type": "Product",
+  	"@type": "Article",
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://tekmonks.com"
+  	},
   	"name": "CyberWarrior",
-  	"description": "AI for CyberSecurity - The only way to combat Artificial Intelligence is AI itself. Because smart attacks require smart security. Thus, CyberWarrior was conceived – an AI expert system developed by TekMonks for cyber defense.",
+  	"description": "AI for CyberSecurity",
   	"image": [{
   		"@type": "ImageObject",
-  		"url": "/articles/products/cybersecurity/cyberwarrior.md/header.en.png",
+  		"url": "https://tekmonks.com/apps/tekmonks/articles/products/cybersecurity/cyberwarrior.md/header.md/header.en.png",
   		"name": "CyberWarrior",
-  		"description": "AI for CyberSecurity - The only way to combat Artificial Intelligence is AI itself. Because smart attacks require smart security. Thus, CyberWarrior was conceived – an AI expert system developed by TekMonks for cyber defense.",
+  		"description": "AI for CyberSecurity",
   		"keywords": ["ai cybersecurity", "cyber defense solutions", "cyber defense", "AI for cybersecurity", "Cybersecurity with AI", "AI technology"],
   		"copyrightHolder": {
   			"@type": "Organization",
@@ -16,7 +20,7 @@
   			"url": "https://tekmonks.com"
   		}
   	}],
-  	"manufacturer": {
+  	"publisher": {
   		"@type": "Organization",
   		"name": "TekMonks",
   		"url": "https://tekmonks.com"
