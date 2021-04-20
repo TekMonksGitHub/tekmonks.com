@@ -11,7 +11,7 @@ SCHEMA
     
     "sidebar": {"html":"page-generator", "file":"./pages/article/article.sidebar", "id":"sidebar"},
     
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:#efefef;color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
     
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
