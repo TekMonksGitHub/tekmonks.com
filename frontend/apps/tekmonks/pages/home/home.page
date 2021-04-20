@@ -11,9 +11,9 @@ SCHEMA
 
     "aboutus": {"html":"content-post", "article":".home/aboutus.md", "id":"aboutus", "styleContainer":"background:#efefef;height:400px;", "styleArticle":"url(./pages/home/aboutus.styleArticle.css)"},
 
-    "verticals": {"html":"content-post", "article":".home/verticals.md", "id":"verticals", "styleContainer":"background:rgba(255, 255, 255, 1);height:620px;padding-top:65px", "styleArticle":"url(./pages/home/verticals.styleArticle.css)"},
+    "verticals": {"html":"content-post", "article":".home/verticals.md", "id":"verticals", "styleContainer":"background:rgba(255, 255, 255, 1);height:650px;padding-top:65px", "styleArticle":"url(./pages/home/verticals.styleArticle.css)"},
 
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:#efefef;color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
     
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
