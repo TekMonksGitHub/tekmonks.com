@@ -9,11 +9,13 @@ SCHEMA
 
     "featuredproducts": {"html":"content-post", "article":".home/featuredproducts.md", "id":"featuredproducts", "styleArticle":"url(./pages/home/featuredproducts.styleBody.css)", "styleContainer":"background:white;width:100%"},
 
-    "aboutus": {"html":"content-post", "article":".home/aboutus.md", "id":"aboutus", "styleContainer":"background:#efefef;height:400px;", "styleArticle":"url(./pages/home/aboutus.styleArticle.css)"},
+    "aboutus": {"html":"content-post", "article":".home/aboutus.md", "id":"aboutus", "styleContainer":"background:#efefef;", "styleArticle":"url(./pages/home/aboutus.styleArticle.css)"},
 
-    "verticals": {"html":"content-post", "article":".home/verticals.md", "id":"verticals", "styleContainer":"background:rgba(255, 255, 255, 1);height:650px;padding-top:65px", "styleArticle":"url(./pages/home/verticals.styleArticle.css)"},
+    "verticals": {"html":"content-post", "article":".home/verticals.md", "id":"verticals", "styleContainer":"background:rgba(255, 255, 255, 1);padding: 65px 0px;", "styleArticle":"url(./pages/home/verticals.styleArticle.css)"},
 
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+
+    "mobilefooter": {"html":"content-post", "article":".home/mobilefooter.md", "id":"mobilefooter", "styleContainer":"background:rgba(255, 255, 255);color:white;", "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"},
     
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
@@ -37,10 +39,12 @@ LAYOUT
 ----------------------
 | footer             |
 ----------------------
+| mobilefooter       |
+----------------------
 | copyrights         |
 ----------------------
 =================
-Row Heights = 0px, 50px, 450px, auto, 360px, 650px, 270px, 60px
+Row Heights = 0px, 50px, auto, auto, auto, auto, auto, auto, 60px
 Col Widths = 100%
 =================
 
@@ -65,4 +69,17 @@ CSS
 body {
     margin: 0%;
 }
+
+@media (min-width: 768px){
+  #mobilefooter {
+     display: none; 
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #footer {
+     display: none; 
+  }
+}
+
 =======
