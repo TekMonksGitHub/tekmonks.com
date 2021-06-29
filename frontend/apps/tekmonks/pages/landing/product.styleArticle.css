@@ -1,10 +1,22 @@
-td h1:nth-of-type(odd) {
+h1 {
+    font-size: 3em;
+    color: #0f4b9c;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-style: normal;
+    background: #efefef;
+    margin: 0 -300% 50px;
+    padding: 50px 30px;
+}
+
+td h2:nth-of-type(odd) {
     color: #a81010 !important;
 }
-td h1:nth-of-type(even) {
+td h2:nth-of-type(even) {
     color: #07439c !important;
 }
-h1.productheader {
+h2.productheader {
     font-size: 17px;
     font-weight: 700;
     text-align: left;
@@ -23,19 +35,15 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-    img {
-        height: 15vh;
-    }
-   
-}
 
-@media (min-width: 320px) and (max-width: 767px) {
-  
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
-    
+
+    td {
+        display: block;
+    }
+
     table {
         padding: 0 20px;
     }
@@ -44,8 +52,40 @@ img {
         display: block;
     }
 
+    .productdescription {
+        display: none;
+    }
+
+    .productheader {
+        text-align: center !important;
+
+    }
+
+   
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    h1 {
+        font-size: 30px;
+        margin: 0 0 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    table {
+        padding: 0;
+    }
+
+    td {
+        display: block;
+    }
+
     img {
-        height: 150px;
+        height: auto;
+        width: 100% !important;
     }
 
     .productdescription {
