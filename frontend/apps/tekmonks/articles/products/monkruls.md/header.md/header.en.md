@@ -1,3 +1,3 @@
-|   |   | 
-|:------|----------:|
-| BUSINESS RULES ENGINE | ![AI Analytics](articles/products/monkruls.md/header.md/header.en.png =450x460) |
+|   |
+|:------|
+| ![Monkruls](articles/products/monkruls.md/header.md/header.en.png =450x460) <p>BUSINESS RULES ENGINE</p> |

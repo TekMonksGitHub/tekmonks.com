@@ -1,7 +1,6 @@
 #HOW IT WORKS
 ##Everybody claims an easy and secure solution, ours is.<br/>Solutions should be simple and easy.<br/>
 
-||||
-|:--:|:--:|:--:|
-|![Connect](articles/products/logincat.md/logincat360.md/how.md/contact.png)|![Configure](articles/products/logincat.md/logincat360.md/how.md/configure.png)|![Done](articles/products/logincat.md/logincat360.md/how.md/done.png)|
-|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONNECT</p><br/><p style="color: black; height: 6em;">Contact us to schedule your demo.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONFIGURE</p><br/><p style="color: black; height: 6em;">We will configure MonBoss to your organization's needs.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">YAY! DONE</p><br/><p style="color: black; height: 6em;">Sit back and let MonBoss go to work.</p>|
+|   |   |   |
+|:------:|:----------:|:----------:|
+| ![Contact] (articles/products/logincat.md/logincat360.md/how.md/contact.png)<p class="how-title">CONNECT</p><br/><p class="how-description">Contact us to schedule your demo.</p> | ![Configure] (articles/products/logincat.md/logincat360.md/how.md/configure.png)<p class="how-title">CONFIGURE</p><br/><p class="how-description">We will configure MonBoss to your organization's needs.</p> | ![Done] (articles/products/logincat.md/logincat360.md/how.md/done.png)<p class="how-title">YAY! DONE</p><br/><p class="how-description">Well that was simple!  Now focus on what you do best with happy clients!</p > |
