@@ -1,1 +1,3 @@
-export const i18n={Title:"टैक्मोंकस"};
+export const i18n = {
+    "Title" : "टैक्मोंकस"
+    }

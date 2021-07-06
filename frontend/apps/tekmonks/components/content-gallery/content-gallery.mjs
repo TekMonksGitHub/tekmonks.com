@@ -1,1 +1,88 @@
-import{i18n}from"/framework/js/i18n.mjs";import{util}from"/framework/js/util.mjs";import{router}from"/framework/js/router.mjs";import{session}from"/framework/js/session.mjs";import{monkshu_component}from"/framework/js/monkshu_component.mjs";async function elementConnected(t){let e;t.getAttribute("styleBody")&&(e=`<style>${t.getAttribute("styleBody")}</style>`);let n=`<style>.cell{width: ${100/t.getAttribute("tiles_per_row")}%;}</style>`,o=await createPageData(t);o.styleBody=e,o.styleCellWidth=n,t.id?(content_gallery.datas||(content_gallery.datas={}),content_gallery.datas[t.id]=o):content_gallery.data=o}async function createPageData(t){const e=t.getAttribute("path"),n=await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${e}`)).json();if(!n.result)return{};let o={};const{content_post:s}=await import(`${APP_CONSTANTS.APP_PATH}/components/content-post/content-post.mjs`);for(const t of n.files)/main\..+/.test(t)&&(o.main={content:await s.getArticle(`${e}/${t}`),link:router.encodeURL(`./article.html?article_path=${e}/${t}`)});const r=n.files.filter((t=>-1==t.indexOf(".")));if(o.subcontent=[],0==r.length){const n=-1!=e.indexOf("/")?e.substring(e.lastIndexOf("/")+1):e;o.subcontent.push({heading:{content:await getMassagedEntryName(n),link:router.encodeURL(session.get($$.MONKSHU_CONSTANTS.PAGE_URL))},rows:await getSubBlogs(e,t.getAttribute("tiles_per_row"))})}else for(const n of r)o.subcontent.push({heading:{content:await getMassagedEntryName(n),link:router.encodeURL(util.replaceURLParamValue(session.get($$.MONKSHU_CONSTANTS.PAGE_URL),t.getAttribute("path_name"),`${e}/${n}`))},rows:[(await getSubBlogs(`${t.getAttribute("path")}/${n}`,t.getAttribute("tiles_per_row")))[0]]});return o}async function getSubBlogs(t,e){const n=await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${t}`)).json();if(!n.result)return[];const o=n.files.filter((t=>-1!=t.indexOf(".")));let s=0,r=[],a=[];const{content_post:i}=await import(`${APP_CONSTANTS.APP_PATH}/components/content-post/content-post.mjs`);for(const n of o){const o=`${t}/${n}`;r.push({content:await i.getArticle(o),id:"notblank",link:router.encodeURL(`./article.html?article_path=${o}`)}),s++,s==e&&(a.push(r),r=[])}if(r.length){const t=e-r.length;for(let e=0;e<t;e++)r.push({id:"blank"});a.push(r)}return a}async function getMassagedEntryName(t){const e=await i18n.getI18NObject(session.get($$.MONKSHU_CONSTANTS.LANG_ID));return e[t]?t=e[t]:(t.length&&(t=t.substring(0,1).toUpperCase()+t.substring(1)),-1!=t.indexOf(".")&&(t=t.substring(0,t.indexOf(".")))),t}function register(){monkshu_component.register("content-gallery",`${APP_CONSTANTS.APP_PATH}/components/content-gallery/content-gallery.html`,content_gallery)}const trueWebComponentMode=!0;export const content_gallery={trueWebComponentMode:true,register:register,elementConnected:elementConnected};
+/* 
+ * (C) 2019 TekMonks. All rights reserved.
+ * License: MIT - see enclosed license.txt file.
+ */
+import {i18n} from "/framework/js/i18n.mjs";
+import {util} from "/framework/js/util.mjs";
+import {router} from "/framework/js/router.mjs";
+import {session} from "/framework/js/session.mjs";
+import {monkshu_component} from "/framework/js/monkshu_component.mjs";
+
+async function elementConnected(element) {
+	let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
+	let width = 100/element.getAttribute("tiles_per_row"); let styleCellWidth = `<style>.cell{width: ${width}%;}</style>`;
+
+	let data = await createPageData(element); data.styleBody = styleBody; data.styleCellWidth = styleCellWidth;
+
+	if (element.id) {
+		if (!content_gallery.datas) content_gallery.datas = {}; content_gallery.datas[element.id] = data;
+	} else content_gallery.data = data;
+}
+
+async function createPageData(element) {
+	const curPath = element.getAttribute("path");
+	const subBlogPaths = await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${curPath}`)).json();
+	if (!subBlogPaths.result) return {}; 
+	
+	let pageData = {};
+	const {content_post} = await import(`${APP_CONSTANTS.APP_PATH}/components/content-post/content-post.mjs`);
+	for (const file of subBlogPaths.files) if (/main\..+/.test(file)) 
+		pageData.main = { content: await content_post.getArticle(`${curPath}/${file}`), link: router.encodeURL(
+			`./article.html?article_path=${curPath}/${file}`) };
+
+	const subBlogRoots = subBlogPaths.files.filter(file => file.indexOf(".") == -1);
+
+	pageData.subcontent = []; 
+	if (subBlogRoots.length == 0) {	// no more subblogs, use current depth's articles as tiles
+		const entryName = curPath.indexOf("/") != -1 ? curPath.substring(curPath.lastIndexOf("/")+1) : curPath;
+		pageData.subcontent.push({
+			heading: {content: await getMassagedEntryName(entryName), link: router.encodeURL(session.get($$.MONKSHU_CONSTANTS.PAGE_URL))},
+			rows: await getSubBlogs(curPath, element.getAttribute("tiles_per_row"))
+		});
+
+	} else for (const subBlogRoot of subBlogRoots) pageData.subcontent.push({ // get tiles for subblogs
+		heading: {content: await getMassagedEntryName(subBlogRoot), link: router.encodeURL(util.replaceURLParamValue(
+			session.get($$.MONKSHU_CONSTANTS.PAGE_URL), element.getAttribute("path_name"), `${curPath}/${subBlogRoot}`))},
+		rows: [(await getSubBlogs(`${element.getAttribute("path")}/${subBlogRoot}`, element.getAttribute("tiles_per_row")))[0]]
+	});
+
+	return pageData;
+}
+
+async function getSubBlogs(path, number) {
+	const subBlogPaths = await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${path}`)).json();
+	if (!subBlogPaths.result) return []; 
+	const subBlogs = subBlogPaths.files.filter(file => file.indexOf(".") != -1);
+
+	let numProcessed = 0; let tiles = []; let rows = [];
+	const {content_post} = await import(`${APP_CONSTANTS.APP_PATH}/components/content-post/content-post.mjs`);
+	for (const blog of subBlogs) {
+		const blogPath = `${path}/${blog}`; 
+		tiles.push({content: await content_post.getArticle(blogPath), id: "notblank", 
+			link: router.encodeURL(`./article.html?article_path=${blogPath}`)}); 
+		numProcessed++; if (numProcessed == number) {rows.push(tiles); tiles = [];}
+	}
+	// push the last row, if not pushed. push empty tiles for blank spaces, as it helps CSS line up.
+	if (tiles.length) {const emptyPushes = number - tiles.length; for (let i = 0; i < emptyPushes; i++) tiles.push({id:"blank"}); rows.push(tiles);}
+	return rows;
+}
+
+async function getMassagedEntryName(entry) {
+	const i18nObj = await i18n.getI18NObject(session.get($$.MONKSHU_CONSTANTS.LANG_ID));
+
+	if (i18nObj[entry]) entry = i18nObj[entry]; else {
+		if (entry.length) entry = entry.substring(0, 1).toUpperCase() + entry.substring(1);
+		if (entry.indexOf('.') != -1) entry = entry.substring(0, entry.indexOf('.'));
+	}
+
+	return entry;
+}
+
+function register() {
+	// convert this all into a WebComponent so we can use it
+	monkshu_component.register("content-gallery", `${APP_CONSTANTS.APP_PATH}/components/content-gallery/content-gallery.html`, content_gallery);
+}
+
+const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
+
+export const content_gallery = {trueWebComponentMode, register, elementConnected}
