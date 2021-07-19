@@ -1,1 +1,73 @@
-import{apimanager as apiman}from"/framework/js/apimanager.mjs";import{router}from"/framework/js/router.mjs";import{monkshu_component}from"/framework/js/monkshu_component.mjs";import{session}from"/framework/js/session.mjs";async function submit(e){if(""==e.name||""==e.company||""==e.designation||""==e.serviceoffered||""==e.email||""==e.tel||""==e.country||""==e.message)alert("Please fill all required fields");else{const r={name:e.name,company:e.company,email:e.email,tel:e.tel,message:e.message,designation:e.designation,serviceoffered:e.serviceoffered,website:e.website,country:e.country};for(var o in r)void 0===r[o]&&(r[o]="N/A");await apiman.rest(APP_CONSTANTS.API_SEND_CONTACTS_EMAIL,"POST",r,!0,!1);alert("Message Request succesfully sent!"),router.reload()}}async function submit_product(e){let o=document.querySelector("page-generator"),r=o.shadowRoot.querySelector("#contactform"),s=o.shadowRoot.querySelector("#productcheckbox"),t={};for(let e of r.webscrolls_env.formGeneratorIDs){let o=r.shadowRoot.querySelector(`#${e}`);o.name&&(t[e]=o.value)}for(let e of s.webscrolls_env.formGeneratorIDs){let o=s.shadowRoot.querySelector(`#${e}`);1==o.checked&&(t[e]=o.value)}if(""==t.name||""==t.email||""==t.tel||""==t.website||""==t.message)alert("Please fill in required details");else{for(var a in t)void 0===t[a]&&(t[a]="N/A");await apiman.rest(APP_CONSTANTS.API_SEND_PRODUCT_INQUIRIES,"POST",t,!0,!1)?alert("Message Request succesfully sent!"):alert("Server error. Please try again."),router.reload()}}export const contactform={submit:submit,submit_product:submit_product};
+/**
+ * Handles forms
+ */
+ import { apimanager as apiman } from "/framework/js/apimanager.mjs";
+ import {router} from "/framework/js/router.mjs";
+ import {monkshu_component} from "/framework/js/monkshu_component.mjs";
+ import {session} from "/framework/js/session.mjs";
+ 
+ 
+ async function submit(form) {
+     if (form.name == "" || form.company == "" || form.designation == "" || form.serviceoffered == "" || form.email == "" || form.tel == "" || form.country == "" || form.message == "" ) alert ("Please fill all required fields"); 
+     else {
+     const contactData = {
+             name: form.name,
+             company: form.company,
+             email: form.email,
+             tel: form.tel,
+             message: form.message,
+         designation: form.designation,
+         serviceoffered : form.serviceoffered,
+         website : form.website,
+         country : form.country
+         }
+ 
+     for (var key in contactData) {
+         if (contactData[key] === undefined) contactData[key] = "N/A";
+         }
+ 
+         const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_CONTACTS_EMAIL, "POST", contactData, true, false);
+         alert ("Message Request succesfully sent!"); 
+         router.reload();
+     }    
+ 
+ }
+ 
+ async function submit_product(form) {
+     let mainpage = document.querySelector('page-generator');
+     let contactform = mainpage.shadowRoot.querySelector('#contactform');
+     let productcheckbox = mainpage.shadowRoot.querySelector('#productcheckbox');
+ 
+     let formData = {}; 
+ 
+     for (let id of contactform.webscrolls_env.formGeneratorIDs) {
+         let contactFormElement = contactform.shadowRoot.querySelector(`#${id}`);
+         if (contactFormElement.name) formData[id] = contactFormElement.value;
+     }
+ 
+     for (let id of productcheckbox.webscrolls_env.formGeneratorIDs) {
+         let formElement = productcheckbox.shadowRoot.querySelector(`#${id}`);
+         if(formElement.checked == true) formData[id] = formElement.value;
+     }
+     
+     if (formData.name == "" || formData.email == "" || formData.tel == "" || formData.website == "" || formData.message == "" ) alert('Please fill in required details');
+     else {
+ 
+         for (var key in formData) {
+             if (formData[key] === undefined) {
+                 formData[key] = "N/A";
+             }
+         }
+ 
+         console.log(formData);
+ 
+         const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_PRODUCT_INQUIRIES, "POST", formData, true, false);
+         if(apiResponse) alert ("Message Request succesfully sent!"); 
+         else alert ("Server error. Please try again."); 
+         router.reload();
+    }    
+ 
+ }
+ 
+ export const contactform = {submit, submit_product}
+ 

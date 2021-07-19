@@ -1,4 +1,6 @@
-||||
-|:--:|:--:|:--:|
-|![Connect](articles/products/cronlord.md/how.md/contact.png)|![Configure](articles/products/cronlord.md/how.md/configure.png)|![Done](articles/products/cronlord.md/how.md/done.png)|
-|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONTACT US</p><br/><p style="color: black; height: 6em;">Connect with us for your customized pricing.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">CONFIGURE & INSTALL </p><br/><p style="color: black; height: 6em;">We will configure and customize for your organization.</p>|<p style="font-size: 1.6em; font-weight: 800; color: #07439c">YAY! DONE</p><br/><p style="color: black; height: 6em;">Well that was simple!  Now focus on what you do best with happy clients!</p>|
+#HOW IT WORKS
+##Everybody claims an easy and secure remote work solution, ours is.<br/>
+
+|   |   |   |
+|:------:|:----------:|:----------:|
+| ![Phone] (articles/products/cronlord.md/how.md/contact.png)<p class="how-title">CONTACT US</p><br/><p class="how-description">Connect with us for your customized pricing.</p> | ![Configure] (articles/products/cronlord.md/how.md/configure.png)<p class="how-title">CONFIGURE & INSTALL</p><br/><p class="how-description">We will configure and customize for your organization.</p> | ![Done] (articles/products/cronlord.md/how.md/done.png)<p class="how-title">YAY! DONE</p><br/><p class="how-description">Well that was simple!  Now focus on what you do best with happy clients!</p > |

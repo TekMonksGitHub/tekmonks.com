@@ -1,1 +1,3 @@
-export const i18n={Title:"TekMonks 株式会社"};
+export const i18n = {
+    "Title" : "TekMonks 株式会社"
+    }
