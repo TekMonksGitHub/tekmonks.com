@@ -5,12 +5,20 @@ h1 {
     font-size: 2.5em;
 }
 
+a[title=api400]{
+    background-color: #1B5775;
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 10px;
+    width: auto;
+}
+
 a {
-    text-decoration: none !important;
-    background-color: #07439c !important;
+    text-decoration: none ;
+    background-color: #07439c ;
     color: white !important;
-    padding: 1em 2.5em !important;
-    text-decoration: none !important;
+    padding: 1em 2.5em;
+    text-decoration: none;
     border-radius: 5px;
     font-weight: 500; 
     font-size:16px; 
@@ -19,7 +27,32 @@ a {
     width: 182px;
 }
 
+.text-orange {
+    color: #F3712C;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
 a:hover{background-color: #0954c3 !important;} 
+
+img[title=api400-black] {
+    position: absolute;
+    bottom: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 50%;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
 

@@ -74,6 +74,16 @@ async function elementConnected(element) {
 }
 
 async function generatePageHTML(elementParent, schema, cssParsed, cssInternal, cssHref, layoutObj) {
+
+	let productName = ''
+	try{
+		productName = new RegExp("/products(.*?).md").exec(session.get($$.MONKSHU_CONSTANTS.PAGE_URL))
+		productName = productName[1].substring(1);
+	}catch(e){
+		productName = "";
+	}
+	LOG.info("productName: " + productName);
+
 	if (!elementParent.webscrolls_env) elementParent.webscrolls_env = {};
 	if (layoutObj.rowHeights.length < layoutObj.rows.length) layoutObj.rowHeights.push(Array(layoutObj.rows.length-layoutObj.rowHeights.length).fill("auto"));
 	if (layoutObj.colWidths.length < layoutObj.columns.length) layoutObj.colWidths.push(Array(layoutObj.columns.length-layoutObj.colWidths.length).fill("auto"));
@@ -97,9 +107,10 @@ async function generatePageHTML(elementParent, schema, cssParsed, cssInternal, c
 		}
 		`
 
-		let htmlElement = JSON.parse(schema)[element.element]; 
+		let htmlElement = JSON.parse(schema)[element.element];
+		LOG.info(htmlElement) 
 		htmlElement.id = element.name || element.element; 
-		html += `<div class="item${i}${cssParsed.itemClasses?" "+cssParsed.itemClasses:''}${cssParsed.perItemClass?` ${cssParsed.perItemClass}-${htmlElement.id}`:''}"><${htmlElement.html || "div"}`; 
+		html += `<div class="item${i}${cssParsed.itemClasses?" "+cssParsed.itemClasses:''}${cssParsed.perItemClass?` ${cssParsed.perItemClass}-${htmlElement.id} ${productName}-section${i}`:''}"><${htmlElement.html || "div"}`; 
 		delete htmlElement.html; let innerHTML = htmlElement.__org_monkshu_innerHTML||''; delete htmlElement.__org_monkshu_innerHTML;
 		for (const attr of Object.keys(htmlElement)) html += ` ${attr}="${await evalAttrValue(htmlElement[attr])}"`; html += `>${innerHTML}</${htmlElement.html}></div>
 		`
