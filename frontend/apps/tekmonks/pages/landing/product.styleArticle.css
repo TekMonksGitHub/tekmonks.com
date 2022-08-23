@@ -166,3 +166,13 @@ a{
     }
     
   }
+
+.api400-section3{
+    background: url(./articles/products/api400.md/product.md/api400-white-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
