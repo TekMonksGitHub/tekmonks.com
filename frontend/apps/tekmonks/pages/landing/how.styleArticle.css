@@ -9,6 +9,65 @@
     height: 6em;
 }
 
+.text-bold {
+    font-weight: 700;
+}
+
+.text-title {
+    color: white;
+    font-size: 24px !important;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.text-orange {
+    color: #F3712C;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+h1 {
+    line-height: 1.2em;
+}
+
+img[title=api400] {
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+    color: white !important;
+    font-size: 18px;
+    border: white solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.api400-text{
+    font-size: 18px !important;
+    margin-bottom: 20px;
+}
+
+.api400-h1{
+    font-weight: 700 !important;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   
     img {
@@ -129,3 +188,14 @@
         height: auto;
     }
 }
+
+
+.api400-section4{
+    background: url(./articles/products/api400.md/how.md/api400-blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    min-height: 480px;
+    height: 100%;
+    background-color: #205570;
+ }

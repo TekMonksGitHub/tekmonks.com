@@ -1,7 +1,9 @@
-#HOW IT WORKS
-##Everybody claims an easy and secure remote work solution, ours is.<br/>As a complete virtual office should be, all-in-one and done.
-<br/>
+<!-- |   |   |
+|:------|:----------|
+| <p class="text-bold text-title">No More Screen Scraping!</p> <p class="text-white mt-5 api400-text">API/400 can access all the programs and information, not just those visible through 5250 screens, with our native integration. <p> <br> [Schedule a demo](http://localhost:8080/apps/tekmonks/index.html?.=aHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FwaTQwMC5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu) | <h1 class="text-black p-0 api400-h1">Let API/400 <br> Unlock Your </h1> <h1 class="text-orange p-0 api400-h1">IBM i</h1>  ![API400](articles/products/api400.md/how.md/api400-logo2.png =420x* "api400") | -->
 
-|   |   |   |
-|:------:|:----------:|:----------:|
-| ![Connect] (articles/products/api400.md/how.md/connect.png)<p class="how-title">EASY DEPLOYMENT</p><br/><p class="how-description">Most organizations are online within 48 hours.</p> | ![Configure] (articles/products/api400.md/how.md/configure.png)<p class="how-title">SECURITY</p><br/><p class="how-description">Reflection technology coupled with zero trust cybersecurity.</p> | ![Savings] (articles/products/api400.md/how.md/savings.png)<p class="how-title">REASONABLE PRICE</p><br/><p class="how-description">All in one solution with customized pricing making it more affordable than all the other products combined!</p > |
+<div class="api400-section4" markdown="1">
+|   |   |
+|:------|:----------|
+| <p class="text-bold text-title">No More Screen Scraping!</p> <p class="text-white mt-5 api400-text">API/400 can access all the programs and information, not just those visible through 5250 screens, with our native integration. <p> <br> [Schedule a demo](http://localhost:8080/apps/tekmonks/index.html?.=aHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FwaTQwMC5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu) | <h1 class="text-black p-0 api400-h1">Let API/400 <br> Unlock Your </h1> <h1 class="text-orange p-0 api400-h1">IBM i</h1>  ![API400](articles/products/api400.md/how.md/api400-logo2.png =420x* "api400") |
+</div>
