@@ -4,13 +4,15 @@
  */
 // const FRONTEND = "https://tekmonks.com";
 // const BACKEND = "https://tekmonks.com:8443";
-const FRONTEND = "http://localhost:8080";
-const BACKEND = "http://localhost:9090";
-const APP_PATH = `${FRONTEND}/apps/tekmonks`;
-const API_PATH = `${BACKEND}/apps/tekmonks`;
+const FRONTEND = "http://{{{hostname}}}:8080";
+const BACKEND = "http://{{{hostname}}}:9090";
+const APP_NAME = "tekmonks";
+const APP_PATH = `${FRONTEND}/apps/${APP_NAME}`;
+const API_PATH = `${BACKEND}/apps/${APP_NAME}`;
+const COMPONENTS_PATH = `${FRONTEND}/apps/${APP_NAME}/components`;
 
 export const APP_CONSTANTS = {
-    FRONTEND, BACKEND, APP_PATH,
+    FRONTEND, BACKEND, APP_PATH, API_PATH, APP_NAME, COMPONENTS_PATH,
     MAIN_HTML: APP_PATH+"/home.html",
     ARTICLE_HTML: APP_PATH+"/article.html",
     LANDING_HTML: APP_PATH+"/landing.html",
