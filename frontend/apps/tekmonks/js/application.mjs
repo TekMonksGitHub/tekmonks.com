@@ -6,9 +6,14 @@
 import {router} from "/framework/js/router.mjs";
 import {session} from "/framework/js/session.mjs";
 import {securityguard} from "/framework/js/securityguard.mjs";
+import {APP_CONSTANTS as AUTO_APP_CONSTANTS} from "./constants.mjs";
 
-const init = async _ => {
+const init = async hostname => {
 	window.APP_CONSTANTS = (await import ("./constants.mjs")).APP_CONSTANTS;
+
+	const mustache = await router.getMustache();
+	window.APP_CONSTANTS = JSON.parse(mustache.render(JSON.stringify(AUTO_APP_CONSTANTS), {hostname}));
+
 	window.LOG = (await import ("/framework/js/log.mjs")).LOG;
 	if (!session.get($$.MONKSHU_CONSTANTS.LANG_ID)) session.set($$.MONKSHU_CONSTANTS.LANG_ID, "en");
 	securityguard.setPermissionsMap(APP_CONSTANTS.PERMISSIONS_MAP);
