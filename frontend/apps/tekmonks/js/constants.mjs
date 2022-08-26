@@ -2,10 +2,7 @@
  * (C) 2015 TekMonks. All rights reserved.
  * License: MIT - see enclosed license.txt file.
  */
-// const FRONTEND = "https://tekmonks.com";
-// const BACKEND = "https://tekmonks.com:8443";
-// const FRONTEND = "http://localhost:8080";
-// const BACKEND = "http://localhost:9090";
+
 const FRONTEND = "http://{{{hostname}}}:8080";
 const BACKEND = "http://{{{hostname}}}:9090";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
