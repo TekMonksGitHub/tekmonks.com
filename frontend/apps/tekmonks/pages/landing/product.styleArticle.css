@@ -10,8 +10,23 @@ h1 {
     padding: 50px 30px;
 }
 
+.text-black{
+    color: black !important;
+    font-weight: 700;
+}
+
+td {
+    text-align: left !important;
+    width: 50%;
+}
+
+td:nth-child(1) {
+   display: flex;
+   justify-content: center;
+}
+
 td h2:nth-of-type(odd) {
-    color: #a81010 !important;
+    color: #a81010;
 }
 td h2:nth-of-type(even) {
     color: #07439c !important;
@@ -30,8 +45,61 @@ p.productdescription {
     text-align: left;
     width: 350px;
 }
+
+.text-container{
+    display: inline-block;
+}
+
+
+p.api400-h1{
+    font-size: 84px;
+    color: black;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h2{
+    font-size: 48px;
+    color: #F3712C;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h3{
+    font-size: 48px;
+    color: #231F20;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-text {
+    font-size: 18px !important;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Chakra Petch;
+}
+
 img {
     width: auto !important;
+}
+
+a{
+    color: #F3712C !important;
+    font-size: 18px;
+    border: #F3712C solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 200px;
+}
+
+@media (min-width: 1025px){
+    td {
+        height: 300px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -98,3 +166,13 @@ img {
     }
     
   }
+
+.api400-section3{
+    background: url(./articles/products/api400.md/product.md/api400-white-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}

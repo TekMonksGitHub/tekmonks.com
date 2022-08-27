@@ -2,8 +2,9 @@
  * (C) 2015 TekMonks. All rights reserved.
  * License: MIT - see enclosed license.txt file.
  */
-const FRONTEND = "https://tekmonks.com";
-const BACKEND = "https://tekmonks.com:8443";
+
+const FRONTEND = "http://{{{hostname}}}:8080";
+const BACKEND = "http://{{{hostname}}}:9090";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
 const API_PATH = `${BACKEND}/apps/tekmonks`;
 
@@ -21,6 +22,7 @@ export const APP_CONSTANTS = {
     PRODUCTINQUIRIES_HTML:APP_PATH+"/productinquiries.html",
     ERROR_HTML: FRONTEND+"/framework/error.html",
     CMS_ROOT_URL: `${APP_PATH}/articles`,
+    HOSTNAME: APP_PATH+"/conf/hostname.json",
 
     // CMS APIs
     API_CMS_DIR_CONTENTS: API_PATH+"/cmsdirlisting",
