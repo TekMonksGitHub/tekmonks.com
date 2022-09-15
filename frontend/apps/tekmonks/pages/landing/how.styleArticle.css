@@ -50,13 +50,27 @@ img[title=api400] {
     bottom: 0;
 }
 
-a{
+/* a{
     color: white !important;
     font-size: 18px;
     border: white solid 1px;
     border-radius: 15px;
     padding: 10px;
     
+} */
+
+.api400-schedule-button{
+    display: inline-block;
+    color: white !important;
+    font-size: 24px;
+    border: white solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.arrow-container{
+   display: inline-flex;
+   margin-left: 5px;
 }
 
 .api400-text{
@@ -66,6 +80,24 @@ a{
 
 .api400-h1{
     font-weight: 700 !important;
+}
+
+table{
+    min-height: 100%;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-content{
+    margin-left: 5px;
+}
+
+.api400-chevron-icon{
+    color: white;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

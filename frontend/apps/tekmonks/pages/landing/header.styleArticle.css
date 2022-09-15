@@ -19,13 +19,27 @@
 } */
 
 
-a{
+/* a{
     color: white !important;
     font-size: 24px;
     border: white solid 1px;
     border-radius: 15px;
     padding: 10px;
 
+} */
+
+.api400-schedule-button{
+    display: inline-block;
+    color: black !important;
+    font-size: 24px;
+    border: black solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.arrow-container{
+   display: inline-flex;
+   margin-left: 5px;
 }
 
 table{
@@ -34,6 +48,7 @@ table{
 
 td{
     width: 50%;
+    display: inline;
 }
 
 
