@@ -60,7 +60,7 @@ SCHEMA
       "style":"width:100%;height:100%",
       "styleArticle":"url(./pages/landing/third.styleArticle.css)",
       "styleContainer":"",
-      "styleBody":"body {text-align:left;padding: 10px; font-family: Chakra Petch; height: 100%;}"
+      "styleBody":"body {text-align:left; font-family: Chakra Petch; height: 100%;}"
    },
    "reviews":{
       "html":"content-post",

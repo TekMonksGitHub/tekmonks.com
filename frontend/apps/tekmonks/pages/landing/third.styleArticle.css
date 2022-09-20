@@ -8,3 +8,18 @@ h2{
     font-weight: 700;
     font-size: 50px;
 }
+
+
+
+.api400-section3{
+    background: url(./articles/products/api400.md/third.md/api400-blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 410px;
+    padding: 20px;
+ }
+
+
+ body{
+    height: 100%;
+ }
