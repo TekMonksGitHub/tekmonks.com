@@ -17,9 +17,16 @@ h2{
     background-size: 100% 100%;
     min-height: 410px;
     padding: 20px;
+    position: relative;
  }
 
 
  body{
     height: 100%;
+ }
+
+ img{
+    position: absolute;
+    left: 200px;
+    bottom: 0;
  }

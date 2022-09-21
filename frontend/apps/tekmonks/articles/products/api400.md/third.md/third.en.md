@@ -2,4 +2,6 @@
 ## Let API/400 
 ## Unlock Your
 # IBM i
+
+![API400](articles/products/api400.md/third.md/api400-logo2.png =*x250 "api-400")
 </div>
