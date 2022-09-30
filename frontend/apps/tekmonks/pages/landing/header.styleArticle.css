@@ -11,23 +11,6 @@
     font-weight: 700;
 }
 
-/* .api400-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-} */
-
-
-/* a{
-    color: white !important;
-    font-size: 24px;
-    border: white solid 1px;
-    border-radius: 15px;
-    padding: 10px;
-
-} */
-
 .api400-schedule-button{
     display: inline-block;
     color: black !important;
@@ -50,9 +33,6 @@ td{
     width: 50%;
     display: inline;
 }
-
-
-
 
 
 @media (min-width: 381px) and (max-width: 967px) {
