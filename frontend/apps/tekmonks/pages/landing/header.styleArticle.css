@@ -11,21 +11,18 @@
     font-weight: 700;
 }
 
-/* .api400-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-} */
-
-
-a{
-    color: white !important;
+.api400-schedule-button{
+    display: inline-block;
+    color: black !important;
     font-size: 24px;
-    border: white solid 1px;
+    border: black solid 1px;
     border-radius: 15px;
     padding: 10px;
+}
 
+.arrow-container{
+   display: inline-flex;
+   margin-left: 5px;
 }
 
 table{
@@ -34,10 +31,8 @@ table{
 
 td{
     width: 50%;
+    display: inline;
 }
-
-
-
 
 
 @media (min-width: 381px) and (max-width: 967px) {
