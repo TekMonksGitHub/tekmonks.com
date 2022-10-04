@@ -28,11 +28,6 @@ h3{
     text-align: left;
 }
 
-p{
-    color: white !important;
-    font-size: 18px !important;
-    margin: 0px
-}
 
 a{
     color: inherit;
@@ -101,6 +96,19 @@ img[title=api400] {
 .api400-h1{
     font-weight: 700 !important;
 }
+
+.api400-carousel-text{
+    color: white !important;
+    font-size: 18px !important;
+    margin: 0px
+}
+
+.api400-schedule-button > p{
+    color: white !important;
+    font-size: 18px !important;
+    margin: 0px
+}
+
 
 table{
     min-height: 100%;
