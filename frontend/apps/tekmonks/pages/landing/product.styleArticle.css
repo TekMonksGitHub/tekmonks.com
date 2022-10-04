@@ -87,15 +87,6 @@ img {
     width: auto !important;
 }
 
-/* a{
-    color: #F3712C !important;
-    font-size: 18px;
-    border: #F3712C solid 1px;
-    border-radius: 15px;
-    padding: 10px;
-    min-width: 200px;
-} */
-
 .api400-schedule-button{
     display: inline-block;
     color: #F3712C !important;

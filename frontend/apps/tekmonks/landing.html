@@ -9,7 +9,7 @@
         <link href="./pages/common/common.css" rel="stylesheet" />
         <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
-        <script type="module">
+        <script type="module" async>
             import { navigation_menu } from "./components/navigation-menu/navigation-menu.mjs";
             navigation_menu.register();
             import { image_slider } from "./components/image-slider/image-slider.mjs";
@@ -20,14 +20,21 @@
             content_post.register();
             import { page_meta } from "./components/page-meta/page-meta.mjs";
             page_meta.register();
-            //import { page_generator } from "./components/page-generator/page-generator.mjs";
-            //page_generator.register();
             import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
+
+            import {session} from "/framework/js/session.mjs";
+            let productName = new RegExp("/products(.*?).md").exec(session.get($$.MONKSHU_CONSTANTS.PAGE_URL))
+            if(productName[1].includes('api400')){
+                document.getElementById('oldLayout').style.display = 'none'
+            }else{
+                document.getElementById('newLayout').style.display = 'none'
+            }
             
         </script>
         <title>{{i18n.Title}}</title>
     </head>
     <body style="margin: 0%;">
-        <page-generator file="./pages/landing/landing.page"></page-generator>
+        <page-generator id="newLayout" file="./pages/landing/landing.page"></page-generator>
+        <page-generator id="oldLayout" file="./pages/landing/landing1.page"></page-generator>
     </body>
 </html>
