@@ -20,10 +20,10 @@ td {
     width: 50%;
 }
 
-td:nth-child(1) {
+/* td:nth-child(1) {
    display: flex;
    justify-content: center;
-}
+} */
 
 td h2:nth-of-type(odd) {
     color: #a81010;
@@ -46,8 +46,11 @@ p.productdescription {
     width: 350px;
 }
 
-.text-container{
-    display: inline-block;
+.api400-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 40px;
 }
 
 
