@@ -6,5 +6,5 @@ API/400 can access all the programs and information, not just those visible thro
 
 
 <div markdown="1">
-<div class="api400-schedule-button"  markdown="1">[Schedule a demo]({{#makeLink}}./landing.html?product_path=./products/api400.md&menu_path=/{{/makeLink}}) </div>
+<div class="api400-schedule-button"  markdown="1">[Schedule a demo]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}}) </div>
 </div>
