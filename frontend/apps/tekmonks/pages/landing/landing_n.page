@@ -84,7 +84,7 @@ SCHEMA
       "html":"content-post",
       "article":".home/footer.md",
       "id":"footer",
-      "styleContainer":"background:white;height:270px;color:white;",
+      "styleContainer":"background:white;height:350px;color:white;",
       "styleArticle":"url(./pages/common/footer.styleArticle.css)"
    },
    "mobilefooter":{
