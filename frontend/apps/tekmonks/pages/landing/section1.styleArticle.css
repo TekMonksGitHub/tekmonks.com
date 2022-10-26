@@ -46,57 +46,8 @@ p.productdescription {
     width: 350px;
 }
 
-.api400-text-container{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-left: 40px;
-}
-
-
-p.api400-h1{
-    font-size: 84px;
-    color: black;
-    line-height: 0.90em;
-    font-weight: 700;
-}
-
-p.api400-h2{
-    font-size: 48px;
-    color: #F3712C;
-    line-height: 0.90em;
-    font-weight: 700;
-}
-
-p.api400-h3{
-    font-size: 48px;
-    color: #231F20;
-    line-height: 0.90em;
-    font-weight: 700;
-}
-
-p.api400-text {
-    font-size: 18px !important;
-    color: black;
-    line-height: 1.6;
-    text-align: left;
-    width: 350px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Chakra Petch;
-}
-
 img {
     width: auto !important;
-}
-
-.api400-schedule-button{
-    display: inline-block;
-    color: #F3712C !important;
-    font-size: 24px;
-    border: #F3712C solid 1px;
-    border-radius: 15px;
-    padding: 10px;
 }
 
 .arrow-container{
@@ -183,4 +134,105 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 500px;
+}
+
+.api400-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 40px;
+}
+
+
+p.api400-h1{
+    font-size: 84px;
+    color: black;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h2{
+    font-size: 48px;
+    color: #F3712C;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h3{
+    font-size: 48px;
+    color: #231F20;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-text {
+    font-size: 18px !important;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Chakra Petch;
+}
+
+.apiboss-section3{
+    background: url(./articles/products/apiboss.md/section1.md/apiboss-white-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+
+
+.apiboss-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 40px;
+}
+
+
+p.apiboss-h1{
+    font-size: 84px;
+    color: black;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-h2{
+    font-size: 72px;
+    color: #ED1C24;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-h3{
+    font-size: 48px;
+    color: #231F20;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-text {
+    font-size: 18px !important;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Chakra Petch;
+}
+
+.apiboss-schedule-button{
+    display: inline-block;
+    color: #ED1C24 !important;
+    font-size: 24px;
+    border: #ED1C24 solid 1px;
+    border-radius: 15px;
+    padding: 10px;
 }

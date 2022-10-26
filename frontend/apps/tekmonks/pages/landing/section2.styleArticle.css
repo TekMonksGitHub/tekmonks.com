@@ -9,6 +9,16 @@ h2{
     font-size: 50px;
 }
 
+body{
+    height: 100%;
+ }
+
+ img{
+    position: absolute;
+    left: 300px;
+    bottom: 0;
+ }
+
 
 
 .api400-section3{
@@ -20,13 +30,21 @@ h2{
     position: relative;
  }
 
-
- body{
-    height: 100%;
+ 
+ .apiboss-section3{
+    background: url(./articles/products/apiboss.md/section2.md/apiboss-red-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 410px;
+    padding: 20px;
+    position: relative;
+ }
+ 
+ 
+ .apiboss-h1{
+    color: white;
+    font-size: 76px;
+    font-weight: 700;
  }
 
- img{
-    position: absolute;
-    left: 200px;
-    bottom: 0;
- }
+

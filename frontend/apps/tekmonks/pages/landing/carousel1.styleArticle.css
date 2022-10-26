@@ -26,35 +26,6 @@ a{
     padding: 0;
 }
 
-.api400-schedule-button{
-    display: inline-block;
-    color: #F3712C !important;
-    font-size: 24px;
-    border: #F3712C solid 1px;
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 15px;
-   
-}
-
-.api400-text{
-    font-size: 18px !important;
-    margin-bottom: 20px;
-}
-
-
-.api400-carousel-text{
-    color: #000000 !important;
-    font-size: 18px !important;
-    margin: 0px
-}
-
-.api400-schedule-button > p{
-    color: #F3712C !important;
-    font-size: 18px !important;
-    margin: 0px
-}
-
 html, body{
     height: 100%;
 }
@@ -73,4 +44,67 @@ html, body{
 
 .relative > img{
     height: 100%;
+}
+
+/** API 400 **/
+
+.api400-text{
+    font-size: 18px !important;
+    margin-bottom: 20px;
+}
+
+
+.api400-carousel-text{
+    color: #000000 !important;
+    font-size: 18px !important;
+    margin: 0px
+}
+
+.api400-schedule-button{
+    display: inline-block;
+    color: #F3712C !important;
+    font-size: 24px;
+    border: #F3712C solid 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 15px;
+   
+}
+
+.api400-schedule-button > p{
+    color: #F3712C !important;
+    font-size: 18px !important;
+    margin: 0px
+}
+
+/** API BOSS **/
+
+.apiboss-text{
+    font-size: 18px !important;
+    margin-bottom: 20px;
+}
+
+
+.apiboss-carousel-text{
+    color: #000000 !important;
+    font-size: 18px !important;
+    margin: 0px
+}
+
+
+.apiboss-schedule-button{
+    display: inline-block;
+    color: #ED1C24 !important;
+    font-size: 24px;
+    border: #ED1C24 solid 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 15px;
+   
+}
+
+.apiboss-schedule-button > p{
+    color: #ED1C24 !important;
+    font-size: 18px !important;
+    margin: 0px
 }
