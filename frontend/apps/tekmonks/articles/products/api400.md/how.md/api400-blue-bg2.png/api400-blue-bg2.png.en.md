@@ -1,7 +1,7 @@
-### REST Based API Gateway
+### Built to Perform
 
 <div class="api400-carousel-text">
-Create and execute standard based REST APIs to access applications and data without changes to your IBM i system and applications.
+API/400 Gateway is built for performance including caching and database pooling with minimal impact to your IBM i server and core operations.
 </div>
 
 <div markdown="1">

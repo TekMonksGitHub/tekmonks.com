@@ -1,7 +1,7 @@
-### REST Based API Gateway
+### Efficiency is Key
 
 <div class="api400-carousel-text">
-Create and execute standard based REST APIs to access applications and data without changes to your IBM i system and applications.
+Why spend months coding your APIs from scratch when API/400’s tooling and JavaScript support can produce the same in just hours! Find out how to save time and money while increasing efficiency and security. 
 </div>
 
 <div markdown="1">

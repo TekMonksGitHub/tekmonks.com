@@ -1,7 +1,7 @@
-### REST Based API Gateway
+### More Power. More Security
 
 <div class="api400-carousel-text">
-Create and execute standard based REST APIs to access applications and data without changes to your IBM i system and applications.
+Be assured of the highest level of security with support for API Keys, TLS (Transport Level Security), HTTPS, and authentication.
 </div>
 
 <div markdown="1">
