@@ -1,4 +1,4 @@
-<div markdown="1" class="apiboss-section3">
+<div markdown="1" class="apiboss-section2">
 ## API Manager 
 ## for the Digital 
 ## Economy

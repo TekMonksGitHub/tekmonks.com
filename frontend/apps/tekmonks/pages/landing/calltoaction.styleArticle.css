@@ -50,6 +50,12 @@ img[title=api400-black] {
     bottom: 0;
 }
 
+img[title=apiboss-black] {
+    position: absolute;
+    bottom: 0;
+}
+
+
 table{
     width: 100%;
 }

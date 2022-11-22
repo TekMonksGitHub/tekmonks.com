@@ -126,7 +126,7 @@ img {
     
   }
 
-.api400-section3{
+.api400-section1{
     background: url(./articles/products/api400.md/section1.md/api400-white-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -139,6 +139,7 @@ img {
 .api400-text-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     margin-left: 40px;
 }
@@ -153,7 +154,7 @@ p.api400-h1{
 
 p.api400-h2{
     font-size: 48px;
-    color: #F3712C;
+    color: #63B751;
     line-height: 0.90em;
     font-weight: 700;
 }
@@ -176,7 +177,7 @@ p.api400-text {
     font-family: Chakra Petch;
 }
 
-.apiboss-section3{
+.apiboss-section1{
     background: url(./articles/products/apiboss.md/section1.md/apiboss-white-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -185,8 +186,6 @@ p.api400-text {
     align-items: center;
     min-height: 500px;
 }
-
-
 
 .apiboss-text-container{
     display: flex;
