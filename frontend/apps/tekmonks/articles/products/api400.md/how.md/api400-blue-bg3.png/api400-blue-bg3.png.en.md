@@ -1,0 +1,9 @@
+### More Power. More Security
+
+<div class="api400-carousel-text">
+Be assured of the highest level of security with support for API Keys, TLS (Transport Level Security), HTTPS, and authentication.
+</div>
+
+<div markdown="1">
+<div class="api400-schedule-button"  markdown="1">[Schedule a demo]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}}) </div>
+</div>
