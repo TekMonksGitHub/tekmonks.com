@@ -1,0 +1,50 @@
+h1{
+    color: #F3712C;
+    font-size: 76px;
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+body{
+    height: 100%;
+ }
+
+ img{
+    position: absolute;
+    left: 300px;
+    bottom: 0;
+ }
+
+
+
+.api400-section2{
+    background: url(./articles/products/api400.md/section2.md/api400-blue-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 410px;
+    padding: 20px;
+    position: relative;
+ }
+
+ 
+ .apiboss-section2{
+    background: url(./articles/products/apiboss.md/section2.md/apiboss-red-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 410px;
+    padding: 20px;
+    position: relative;
+ }
+ 
+ 
+ .apiboss-h1{
+    color: white;
+    font-size: 76px;
+    font-weight: 700;
+ }
+
+

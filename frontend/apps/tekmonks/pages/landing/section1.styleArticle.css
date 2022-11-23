@@ -1,0 +1,237 @@
+h1 {
+    font-size: 3em;
+    color: #0f4b9c;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    font-style: normal;
+    background: #efefef;
+    margin: 0 -300% 50px;
+    padding: 50px 30px;
+}
+
+.text-black{
+    color: black !important;
+    font-weight: 700;
+}
+
+td {
+    text-align: left !important;
+    width: 50%;
+}
+
+/* td:nth-child(1) {
+   display: flex;
+   justify-content: center;
+} */
+
+td h2:nth-of-type(odd) {
+    color: #a81010;
+}
+td h2:nth-of-type(even) {
+    color: #07439c !important;
+}
+h2.productheader {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 20px !important;
+    padding-bottom: 5px !important;
+}
+p.productdescription {
+    font-size: 15px !important;
+    color: grey;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+}
+
+img {
+    width: auto !important;
+}
+
+.arrow-container{
+   display: inline-flex;
+   margin-left: 5px;
+}
+
+@media (min-width: 1025px){
+    td {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    td {
+        display: block;
+    }
+
+    table {
+        padding: 0 20px;
+    }
+
+    td {
+        display: block;
+    }
+
+    .productdescription {
+        display: none;
+    }
+
+    .productheader {
+        text-align: center !important;
+
+    }
+
+   
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    h1 {
+        font-size: 30px;
+        margin: 0 0 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    table {
+        padding: 0;
+    }
+
+    td {
+        display: block;
+    }
+
+    img {
+        height: auto;
+        width: 100% !important;
+    }
+
+    .productdescription {
+        display: none;
+    }
+
+    .productheader {
+        text-align: center !important;
+
+    }
+    
+  }
+
+.api400-section1{
+    background: url(./articles/products/api400.md/section1.md/api400-white-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.api400-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 40px;
+}
+
+
+p.api400-h1{
+    font-size: 84px;
+    color: black;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h2{
+    font-size: 48px;
+    color: #63B751;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-h3{
+    font-size: 48px;
+    color: #231F20;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.api400-text {
+    font-size: 18px !important;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Chakra Petch;
+}
+
+.apiboss-section1{
+    background: url(./articles/products/apiboss.md/section1.md/apiboss-white-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.apiboss-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 40px;
+}
+
+
+p.apiboss-h1{
+    font-size: 84px;
+    color: black;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-h2{
+    font-size: 72px;
+    color: #ED1C24;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-h3{
+    font-size: 48px;
+    color: #231F20;
+    line-height: 0.90em;
+    font-weight: 700;
+}
+
+p.apiboss-text {
+    font-size: 18px !important;
+    color: black;
+    line-height: 1.6;
+    text-align: left;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Chakra Petch;
+}
+
+.apiboss-schedule-button{
+    display: inline-block;
+    color: #ED1C24 !important;
+    font-size: 24px;
+    border: #ED1C24 solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}

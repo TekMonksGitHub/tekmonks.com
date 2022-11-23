@@ -35,6 +35,10 @@ a {
     color: black;
 }
 
+.text-red{
+    color: #ED1C24;
+}
+
 .text-white {
     color: white;
 }
@@ -45,6 +49,12 @@ img[title=api400-black] {
     position: absolute;
     bottom: 0;
 }
+
+img[title=apiboss-black] {
+    position: absolute;
+    bottom: 0;
+}
+
 
 table{
     width: 100%;
@@ -72,6 +82,15 @@ td{
 
 .api400-section5{
     background: url(./articles/products/api400.md/calltoaction.md/api400-black-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    min-height:300px;
+ }
+ 
+ .apiboss-section5{
+    background: url(./articles/products/apiboss.md/calltoaction.md/apiboss-black-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;

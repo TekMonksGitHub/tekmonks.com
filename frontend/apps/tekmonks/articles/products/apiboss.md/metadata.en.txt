@@ -6,14 +6,14 @@
     		"@type": "WebPage",
     		"@id": "https://tekmonks.com"
   	},
-	"name": "API Boss",
-	"description": "AI Powered Business Search",
+	"name": "API400",
+	"description": "The Fountain of Youth for Legacy Systems.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/apiboss.md/header.md/header.en.png",
-		"name": "API Boss",
-		"description": "API Boss",
-		"keywords": ["API Boss"],
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
+		"name": "API400",
+		"description": "API400",
+		"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "TekMonks",
@@ -25,6 +25,6 @@
 		"name": "TekMonks",
 		"url": "https://tekmonks.com"
 	},
-	"keywords": ["API Boss"]
+	"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"]
 }
 </script>

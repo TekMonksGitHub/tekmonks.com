@@ -28,7 +28,7 @@
           
             let urlParam = window.location.search.replace(new RegExp('/\?.='), "")
             let productName = new RegExp('products(.*?).md').exec(atob(urlParam.substring(1)))
-            let newLayout = ['api400']
+            let newLayout = ['api400', 'apiboss']
             document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) ?  '<page-generator file="./pages/landing/landing_n.page"></page-generator>' : '<page-generator file="./pages/landing/landing.page"></page-generator>'
            
             
