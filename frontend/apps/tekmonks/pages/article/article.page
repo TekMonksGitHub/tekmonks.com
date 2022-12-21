@@ -13,6 +13,14 @@ SCHEMA
     
     "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
     
+    "mobilefooter":{
+      "html":"content-post",
+      "article":".home/mobilefooter.md",
+      "id":"mobilefooter",
+      "styleContainer":"background:rgba(255, 255, 255);color:white;",
+      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
+   },
+   
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
 ======
@@ -30,6 +38,8 @@ LAYOUT
 | content    |  sidebar     |
 -----------------------------
 | footer                    |
+-----------------------------
+| mobilefooter              |
 -----------------------------
 | copyrights                |
 -----------------------------
@@ -61,4 +71,25 @@ body {
 }
 
 .class-sidebar { padding-right: 40px; }
+
+@media (max-width: 767px){
+   .grid-container{
+      display: unset;
+   }
+   
+   div.class-footer {
+        display: none;
+    }
+    
+    .class-sidebar { padding: 10px; }
+}
+
+
+@media (min-width: 768px){
+  
+  div.class-mobilefooter {
+      display: none;
+  }
+  
+}
 =======

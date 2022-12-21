@@ -22,3 +22,11 @@ body {
 img {
     width: auto;
 }
+
+@media (max-width: 767px){
+    
+    body {
+        padding: 0;
+    }
+    
+}

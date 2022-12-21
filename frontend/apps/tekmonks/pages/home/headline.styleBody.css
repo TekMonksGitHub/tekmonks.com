@@ -50,11 +50,19 @@ p.headline-text {
     p.headline-text {
         font-size: 2rem;
     }
+    
+    .caption{
+        top: -320px !important;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
   
     p.headline-text {
         font-size: 1.3rem;
+    }
+    
+    .caption{
+        top: -320px !important;
     }
 }
