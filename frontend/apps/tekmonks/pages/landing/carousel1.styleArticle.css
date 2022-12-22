@@ -108,3 +108,10 @@ html, body{
     font-size: 18px !important;
     margin: 0px
 }
+
+@media (max-width: 767px){
+    article{
+        left: 10% !important;
+        top: -390px !important;
+    }
+}

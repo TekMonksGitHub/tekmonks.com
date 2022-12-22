@@ -44,15 +44,16 @@ p.headline-text {
     font-style: normal !important;
 }
 
+@media (max-width: 767px){
+    .caption{
+        top: -360px !important
+    }
+}
 
 @media (min-width: 600px) and (max-width: 767px) {
   
     p.headline-text {
         font-size: 2rem;
-    }
-    
-    .caption{
-        top: -320px !important;
     }
 }
 
@@ -60,9 +61,5 @@ p.headline-text {
   
     p.headline-text {
         font-size: 1.3rem;
-    }
-    
-    .caption{
-        top: -320px !important;
     }
 }

@@ -76,3 +76,53 @@ p.blogdescription {
 h1{
   color: #444;
 }
+
+td:has(> a) {
+    vertical-align: top;
+}
+
+/*****/
+
+@media (max-width: 767px) {
+    
+    /** Products ***/
+    
+    thead{
+        display: none;
+    }
+    
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a > h4{
+        margin-top: 10px;
+        margin-bottom: 10px;    
+    }
+    
+    a + p {
+        display: none;
+    }
+    
+    h4 + br {
+        display: none;
+    }
+    
+    /** Solution **/
+    .nav-secondary-content > p{
+        padding: 10px;
+        margin: 0;
+    }
+    
+    /** TM Social **/
+    #checkoutourlatestblogs{
+        display: none;
+    }
+    
+    
+    /** Contact **/
+    #contactus{
+        display: none;
+    }
+}

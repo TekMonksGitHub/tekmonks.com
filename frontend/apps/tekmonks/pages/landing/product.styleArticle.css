@@ -90,15 +90,6 @@ img {
     width: auto !important;
 }
 
-.api400-schedule-button{
-    display: inline-block;
-    color: #F3712C !important;
-    font-size: 24px;
-    border: #F3712C solid 1px;
-    border-radius: 15px;
-    padding: 10px;
-}
-
 .arrow-container{
    display: inline-flex;
    margin-left: 5px;
@@ -140,7 +131,11 @@ img {
    
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
+    
+    body {
+        padding-top: 0 !important;
+    }
     
     h1 {
         font-size: 30px;
@@ -157,6 +152,7 @@ img {
 
     td {
         display: block;
+        width: 100%;
     }
 
     img {
