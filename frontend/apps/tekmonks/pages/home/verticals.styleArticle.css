@@ -64,14 +64,15 @@ body {
 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   
     h1 {
         font-size: 1.7em;
     }
 
     td {
-        display: block;
+        display: flex;
+        gap: 20px;
     }
 
     td a {

@@ -82,6 +82,15 @@ td:has(> a) {
 }
 
 /*****/
+@media (max-width: 1024px) {
+    #checkoutourlatestblogs{
+        display: none;
+    }
+    
+    .mitem {
+        min-width: unset;
+    }
+}
 
 @media (max-width: 767px) {
     

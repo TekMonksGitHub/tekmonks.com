@@ -30,7 +30,7 @@ td img {
     right: 0;
     margin: auto;
     margin-top: 0;
-    margin-right: 15px !important;
+    margin-right: 15px;
 }
 td p {
     margin-left: 110px;
@@ -51,6 +51,11 @@ tbody {
   
     table:nth-of-type(2) td{
         padding: 0 0 60px;
+    }
+    
+    td img{
+        margin-left: 20px;
+        margin-right: 0 !important;
     }
  }
 
