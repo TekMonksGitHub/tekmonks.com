@@ -172,7 +172,7 @@ p.apiboss-text {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 961px) and (max-width: 1024px) {
 
     h1 {
         font-size: 40px;
@@ -202,7 +202,7 @@ p.apiboss-text {
    
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     
     h1 {
         font-size: 30px;

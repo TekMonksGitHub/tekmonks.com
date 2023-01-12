@@ -39,7 +39,7 @@ img {
     float: right
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     body{
         font-size: unset;
     }

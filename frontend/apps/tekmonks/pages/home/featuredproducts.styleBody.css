@@ -47,7 +47,7 @@ tbody {
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 961px) and (max-width: 1024px) {
   
     table:nth-of-type(2) td{
         padding: 0 0 60px;
@@ -59,7 +59,7 @@ tbody {
     }
  }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 960px) {
   
    td {
        display: block;

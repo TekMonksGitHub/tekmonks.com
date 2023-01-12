@@ -86,7 +86,7 @@ td a {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 960px) {
     
     h2{
         margin: 0;

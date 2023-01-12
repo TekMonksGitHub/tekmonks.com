@@ -80,7 +80,7 @@ div.bloglist {
 
 }
 
-@media (max-width: 767px){
+@media (max-width: 960px){
     td > a {
         display: flex;
         flex-direction: column;

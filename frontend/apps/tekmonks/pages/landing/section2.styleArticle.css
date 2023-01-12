@@ -46,7 +46,7 @@ body{
  }
 
  
- @media (max-width: 767px){
+ @media (max-width: 960px){
    
     img{
         height: 200px;

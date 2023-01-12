@@ -37,7 +37,7 @@ a{
  }
  
 
-@media (max-width: 767px){
+@media (max-width: 960px){
     article{
         left: 10% !important;
         top: -390px !important;

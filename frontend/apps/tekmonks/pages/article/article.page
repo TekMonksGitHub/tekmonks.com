@@ -72,7 +72,7 @@ body {
 
 .class-sidebar { padding-right: 40px; }
 
-@media (max-width: 767px){
+@media (max-width: 960px){
    .grid-container{
       display: unset;
    }
@@ -85,7 +85,7 @@ body {
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 961px){
   
   div.class-mobilefooter {
       display: none;
