@@ -72,24 +72,23 @@ body {
 
 .class-sidebar { padding-right: 40px; }
 
-@media (max-width: 960px){
+div.class-mobilefooter {
+    display: none;
+}
+
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
       display: unset;
    }
    
-   div.class-footer {
+    div.class-footer {
         display: none;
     }
     
+    div.class-mobilefooter {
+      display: block;
+    }
+    
     .class-sidebar { padding: 10px; }
-}
-
-
-@media (min-width: 961px){
-  
-  div.class-mobilefooter {
-      display: none;
-  }
-  
-}
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_END}}}
 =======

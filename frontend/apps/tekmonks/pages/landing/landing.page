@@ -67,18 +67,19 @@ body {
     margin: 0%;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-  
+div.class-mobilefooter {
+      display: none;
+}
+
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_START}}}
     div.class-footer {
         display: none;
     }
-}
+    
+    div.class-mobilefooter {
+      display: block;
+    }
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_END}}}
 
-@media (min-width: 1025px){
-  
-  div.class-mobilefooter {
-      display: none;
-  }
-  
-}
+
 =======

@@ -37,7 +37,7 @@ LAYOUT
 | copyrights                |
 -----------------------------
 =================
-Row Heights = 0px, 50px, 350px, auto, 270px, 60px
+Row Heights = 0px, 50px, 350px, auto, 280px, 60px
 Col Widths = 100%
 =================
 
@@ -63,24 +63,23 @@ body {
     margin: 0%;
 }
 
-@media (max-width: 960px){
+div.class-mobilefooter {
+    display: none;
+}
+  
+
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
       display: unset;
    }
    
-   div.class-footer {
+    div.class-footer {
         display: none;
     }
-
-}
-
-
-@media (min-width: 961px){
-  
-  div.class-mobilefooter {
-      display: none;
-  }
-  
-}
+    
+    div.class-mobilefooter {
+      display: block;
+    }
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_END}}}
 
 =======

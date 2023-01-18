@@ -36,15 +36,13 @@ const interceptPageLoadData = _ => router.addOnLoadPageData("*", async (data, _u
 
 async function _readConfig() {
 	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/style.json`)).json();
-	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = conf[key]; //this adds the style.json to constants.mjs 
+	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = conf[key];
 }
 
 async function _addPageLoadInterceptors() {
 	const interceptors = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/pageLoadInterceptors.json`)).json();
 	for (const interceptor of interceptors) {
 		const modulePath = interceptor.module, functionName = interceptor.function;
-		console.log(modulePath)
-		console.log(functionName)
 		let module = await import(`${APP_CONSTANTS.APP_PATH}/${modulePath}`); module = module[Object.keys(module)[0]];
 		(module[functionName])();
 	}
