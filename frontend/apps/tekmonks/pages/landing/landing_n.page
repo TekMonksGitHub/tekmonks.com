@@ -164,7 +164,7 @@ div.class-mobilefooter {
    display: none;
 }
 
-{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_START}}}
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
   
     div.class-footer {
       display: none;
@@ -177,7 +177,7 @@ div.class-mobilefooter {
    div.class-mobilefooter {
       display: block;
    }
-{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_END}}}
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 
 html{
       width: 100%

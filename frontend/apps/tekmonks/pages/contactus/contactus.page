@@ -76,7 +76,7 @@ div.class-mobilefooter {
       display: none;
 }
 
-{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_QUERY_START}}}
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
     .grid-container{
       display: unset;
     }
