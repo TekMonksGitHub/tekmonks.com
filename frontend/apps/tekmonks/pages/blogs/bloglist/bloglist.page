@@ -1,8 +1,15 @@
 SCHEMA
 ======
 {
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
-    "bloglist": {"html":"content-post", "article":"{{url.blogs_path}}", "id":"bloglist", "style":"display:inline-block;background:white;width:100%;text-align: -webkit-center;", "styleBody":"url(./pages/blogs/bloglist/blogList.styleBody.css)"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;","styleMobile": "{{{APP_CONSTANTS.NAVBAR_MEDIA_QUERY_START}}}  thead{display: none;}tr {display: flex;flex-direction: column;}a > h4{margin-top: 10px;margin-bottom: 10px;}td p {height: 10px;line-height: 0.9;font-size: 13px;margin-bottom:25px;margin-top:-5px}h4 + br {display: none;}.nav-secondary-content > p{padding: 10px;margin: 0;}p.blogdescription {margin-bottom:10px;}#checkoutourlatestblogs{display: none;}#contactus{display: none;}.navbar {display: none;}}"},
+    "bloglist": {
+        "html": "content-post",
+        "article": "{{url.blogs_path}}",
+        "id": "bloglist",
+        "style": "display:inline-block;background:white;width:100%;text-align: -webkit-center;",
+        "styleBody": "url(./pages/blogs/bloglist/blogList.styleBody.css)",
+        "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}} td > a {display: flex;flex-direction: column;}td > a > img{order:1;align-self: center;}td > a > p{order:2;margin-top: 5px;}td > a > div{order:3;}}"
+    },
     "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:280px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
     "mobilefooter":{
       "html":"content-post",

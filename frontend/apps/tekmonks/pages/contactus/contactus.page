@@ -1,22 +1,80 @@
 SCHEMA
 ======
 {
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
-    "headerimg": {"html":"img", "src":"./articles/{{url.article_path}}/header.{{lang}}.png", "style":"height:500px;width:100%; object-fit:cover"},
-    "messageus": {"html":"content-post", "article":"{{url.article_path}}/messageus.md", "id":"messageus", "style":"display:inline-block;background:#efefef;width:100%;padding:0;", "styleContainer":"display:inline-block;", "styleBody":"body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"},
-    "contactform": {"html":"form-generator", "file":"./forms/contactpage.form", "id":"contactform"},
-    "partnership": {"html":"content-post", "article":"{{url.article_path}}/partnership.md", "id":"partnership", "style":"display:inline-block;background:#efefef;width:100%;padding:0;", "styleContainer":"display:inline-block;", "styleBody":"body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"},
-    "email": {"html":"content-post", "article":"{{url.article_path}}/email.md", "id":"email", "style":"padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;", "styleArticle":"url(./pages/contactus/contactus.styleArticle.css)"},
-    "locations": {"html":"content-post", "article":"{{url.article_path}}/locations.md", "id":"locations", "style":"padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;", "styleArticle":"url(./pages/contactus/contactus.styleArticle.css)", "styleBody":"td:not(:last-child) {border-right : solid 1px #efefef;}"},
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:300px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
-     "mobilefooter":{
-      "html":"content-post",
-      "article":".home/mobilefooter.md",
-      "id":"mobilefooter",
-      "styleContainer":"background:rgba(255, 255, 255);color:white;",
-      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
-    },
-    "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
+  "navbar": {
+    "html": "navigation-menu",
+    "level": ".menus/{{lang}}",
+    "logo": "./articles/.home/logo.png/logo.png",
+    "massage_menu": "true",
+    "styleBody": "url(./pages/home/navbar.styleBody.css)",
+    "logo_style": "width:70px;",
+    "menu_arrow": "&nbsp;?",
+    "styleMobile": "{{{APP_CONSTANTS.NAVBAR_MEDIA_QUERY_START}}}  thead{display: none;}tr {display: flex;flex-direction: column;}a > h4{margin-top: 10px;margin-bottom: 10px;}td p {height: 10px;line-height: 0.9;font-size: 13px;margin-bottom:25px;margin-top:-5px}h4 + br {display: none;}.nav-secondary-content > p{padding: 10px;margin: 0;}p.blogdescription {margin-bottom:10px;}#checkoutourlatestblogs{display: none;}#contactus{display: none;}.navbar {display: none;}}"
+  },
+  "headerimg": {
+    "html": "img",
+    "src": "./articles/{{url.article_path}}/header.{{lang}}.png",
+    "style": "height:500px;width:100%; object-fit:cover"
+  },
+  "messageus": {
+    "html": "content-post",
+    "article": "{{url.article_path}}/messageus.md",
+    "id": "messageus",
+    "style": "display:inline-block;background:#efefef;width:100%;padding:0;",
+    "styleContainer": "display:inline-block;",
+    "styleBody": "body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"
+  },
+  "contactform": {
+    "html": "form-generator",
+    "file": "./forms/contactpage.form",
+    "id": "contactform"
+  },
+  "partnership": {
+    "html": "content-post",
+    "article": "{{url.article_path}}/partnership.md",
+    "id": "partnership",
+    "style": "display:inline-block;background:#efefef;width:100%;padding:0;",
+    "styleContainer": "display:inline-block;",
+    "styleBody": "body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"
+  },
+  "email": {
+    "html": "content-post",
+    "article": "{{url.article_path}}/email.md",
+    "id": "email",
+    "style": "padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;",
+    "styleArticle": "url(./pages/contactus/contactus.styleArticle.css)",
+    "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}  h1{font-size: 1.5em !important;}tr{display: flex;flex-direction: column;align-items: center;}td{border-right: unset !important;}}"
+  },
+  "locations": {
+    "html": "content-post",
+    "article": "{{url.article_path}}/locations.md",
+    "id": "locations",
+    "style": "padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;",
+    "styleArticle": "url(./pages/contactus/contactus.styleArticle.css)",
+    "styleBody": "td:not(:last-child) {border-right : solid 1px #efefef;}",
+    "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}  h1{font-size: 1.5em !important;}tr{display: flex;flex-direction: column;align-items: center;}td{border-right: unset !important;}}"
+  },
+  "footer": {
+    "html": "content-post",
+    "article": ".home/footer.md",
+    "id": "footer",
+    "styleContainer": "background:rgba(255, 255, 255);color:white;height:300px",
+    "styleArticle": "url(./pages/common/footer.styleArticle.css)"
+  },
+  "mobilefooter": {
+    "html": "content-post",
+    "article": ".home/mobilefooter.md",
+    "id": "mobilefooter",
+    "styleContainer": "background:rgba(255, 255, 255);color:white;",
+    "styleArticle": "url(./pages/common/mobilefooter.styleArticle.css)"
+  },
+  "copyrights": {
+    "html": "content-post",
+    "article": ".home/copyright.md",
+    "id": "copyright",
+    "styleContainer": "background:white;height:60px;color:#787878;",
+    "styleArticle": "url(./pages/common/copyrights.styleArticle.css)"
+  }
 }
 ======
 

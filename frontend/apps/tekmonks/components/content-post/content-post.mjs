@@ -13,10 +13,11 @@ async function elementConnected(element) {
 	let style; if (element.getAttribute("styleContainer")) style = `style="${element.getAttribute("styleContainer")}"`;
 	let styleArticle; if (element.getAttribute("styleArticle")) styleArticle = `<style>${element.getAttribute("styleArticle")}</style>`;
 	let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
+	let styleMobile; if (element.getAttribute("styleMobile")) styleMobile = `<style>${element.getAttribute("styleMobile")}</style>`
 
 	if (element.id) {
-		if (!content_post.datas) content_post.datas = {}; content_post.datas[element.id] = {article, styleBody, style, styleArticle};
-	} else content_post.data = {article, styleBody, style, styleArticle};
+		if (!content_post.datas) content_post.datas = {}; content_post.datas[element.id] = {article, styleBody, style, styleArticle, styleMobile};
+	} else content_post.data = {article, styleBody, style, styleArticle, styleMobile};
 }
 
 async function getArticle(path) {

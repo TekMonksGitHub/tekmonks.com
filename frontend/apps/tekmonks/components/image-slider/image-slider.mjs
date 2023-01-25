@@ -8,6 +8,7 @@ import {monkshu_component} from "/framework/js/monkshu_component.mjs";
 
 async function elementConnected(element) {
 	let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
+	let styleMobile; if (element.getAttribute("styleMobile")) styleMobile = `<style>${element.getAttribute("styleMobile")}</style>`;
 
 	if (element.id) {
 		if (!image_slider.datas) image_slider.datas = {}; image_slider.datas[element.id] = {styleBody};

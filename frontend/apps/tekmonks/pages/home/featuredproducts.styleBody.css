@@ -30,7 +30,8 @@ td img {
     right: 0;
     margin: auto;
     margin-top: 0;
-    margin-right: 15px;
+    margin-right: 0;
+    margin-left: 20px;
 }
 td p {
     margin-left: 110px;
@@ -39,39 +40,12 @@ td p {
     line-height: 18px;
     padding-top: 15px;
 }
+table:nth-of-type(2) td{
+    padding: 0 0 60px;
+}
 body {
     margin: 0;
 }
 tbody {
     text-align: -webkit-center;
-}
-
-
-@media (min-width: 961px) and (max-width: 1024px) {
-  
-    table:nth-of-type(2) td{
-        padding: 0 0 60px;
-    }
-    
-    td img{
-        margin-left: 20px;
-        margin-right: 0 !important;
-    }
- }
-
-@media (min-width: 320px) and (max-width: 960px) {
-  
-   td {
-       display: block;
-       width: 100%;
-       padding: 40px 0 40px;
-   }
-
-   table {
-       padding: 0 45px 0 40px;
-   }
-
-   table:nth-of-type(2){
-       padding-bottom: 40px;
-   }
 }

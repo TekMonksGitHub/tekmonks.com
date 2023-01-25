@@ -35,15 +35,6 @@ a{
     display: inline-flex;
     margin-left: 5px;
  }
- 
-
-@media (max-width: 960px){
-    article{
-        left: 10% !important;
-        top: -390px !important;
-    }
-}
-
 
 .api400-schedule-button{
     display: inline-block;
@@ -55,11 +46,6 @@ a{
     padding: 15px;
    
 }
-
-/* .arrow-container{
-   display: inline-flex;
-   margin-left: 5px;
-} */
 
 .api400-text{
     font-size: 18px !important;

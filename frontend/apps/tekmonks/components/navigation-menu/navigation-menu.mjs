@@ -25,6 +25,7 @@ async function elementConnected(element) {
 		? data.level1 : await massageMenu(element, data.level1, 1);
 
 	if (element.getAttribute("styleBody")) data.styleBody = `<style>${element.getAttribute("styleBody")}</style>`
+	if (element.getAttribute("styleMobile")) data.styleMobile = `<style>${element.getAttribute("styleMobile")}</style>`
 	if (element.getAttribute("logo_style")) data.logostyle = `style="${element.getAttribute("logo_style")}"`;
 
 	if (element.id) {

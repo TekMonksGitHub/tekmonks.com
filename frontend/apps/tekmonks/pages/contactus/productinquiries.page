@@ -1,7 +1,7 @@
 SCHEMA
 ======
 {
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?","styleMobile": "{{{APP_CONSTANTS.NAVBAR_MEDIA_QUERY_START}}}  thead{display: none;}tr {display: flex;flex-direction: column;}a > h4{margin-top: 10px;margin-bottom: 10px;}td p {height: 10px;line-height: 0.9;font-size: 13px;margin-bottom:25px;margin-top:-5px}h4 + br {display: none;}.nav-secondary-content > p{padding: 10px;margin: 0;}p.blogdescription {margin-bottom:10px;}#checkoutourlatestblogs{display: none;}#contactus{display: none;}.navbar {display: none;}}"},
     "headerimg": {"html":"img", "src":"./articles/{{url.article_path}}/header.{{lang}}.png", "style":"height:500px;width:100%; object-fit:cover"},
     "messageus": {"html":"content-post", "article":"{{url.article_path}}/messageus.md", "id":"messageus", "style":"display:inline-block;background:#efefef;width:100%;padding:0;", "styleContainer":"display:inline-block;", "styleBody":"body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"},
     "contactform": {"html":"form-generator", "file":"./forms/productinquiries.form", "id":"contactform"},

@@ -79,24 +79,3 @@ div.bloglist {
     text-align: left;
 
 }
-
-@media (max-width: 960px){
-    td > a {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    td > a > img{
-        order:1;
-        align-self: center;
-    }
-    
-    td > a > p{
-        order:2;
-        margin-top: 5px;
-    }
-    
-    td > a > div{
-        order:3;
-    }
-}

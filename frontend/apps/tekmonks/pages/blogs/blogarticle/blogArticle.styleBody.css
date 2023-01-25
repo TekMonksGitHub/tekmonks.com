@@ -98,13 +98,3 @@ ul li:last-child {
 img {
     max-width: 100%;
 }
-
-
-@media (max-width: 960px){
-    
-    h1 {
-        font-size: 5vw;
-        margin: 0;    
-    }
-    
-}

@@ -1,23 +1,76 @@
 SCHEMA
 ======
 {
-    "metadata": {"html":"page-meta", "files":"./pages/home/metadata.{{lang}}.txt"},
-
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
-
-    "headline": {"html":"image-slider", "path":".home/headlineimages", "pause":12000, "transition":800, "styleBody":"url(./pages/home/headline.styleBody.css)", "dot_style":"background: rgba(255, 255, 255, 0.6); width, height: 10px", "selected_dot_style":"background: rgba(255, 255, 255, 0.95)", "chevron_style":"font-size: 40px;background: rgba(255, 255, 255, 0.6);color: rgba(0, 0, 0, 0.45);border-radius: 25px;", "caption_style":"max-width:50%; top: -230px;left: 55px;", "style":"height:450px;object-fit:cover;"},
-
-    "featuredproducts": {"html":"content-post", "article":".home/featuredproducts.md", "id":"featuredproducts", "styleArticle":"url(./pages/home/featuredproducts.styleBody.css)", "styleContainer":"background:white;width:100%"},
-
-    "aboutus": {"html":"content-post", "article":".home/aboutus.md", "id":"aboutus", "styleContainer":"background:#efefef;", "styleArticle":"url(./pages/home/aboutus.styleArticle.css)"},
-
-    "verticals": {"html":"content-post", "article":".home/verticals.md", "id":"verticals", "styleContainer":"background:rgba(255, 255, 255, 1);padding: 65px 0px;", "styleArticle":"url(./pages/home/verticals.styleArticle.css)"},
-
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
-
-    "mobilefooter": {"html":"content-post", "article":".home/mobilefooter.md", "id":"mobilefooter", "styleContainer":"background:rgba(255, 255, 255);color:white;", "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"},
-    
-    "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
+  "metadata": {
+    "html": "page-meta",
+    "files": "./pages/home/metadata.{{lang}}.txt"
+  },
+  "navbar": {
+    "html": "navigation-menu",
+    "level": ".menus/{{lang}}",
+    "logo": "./articles/.home/logo.png/logo.png",
+    "massage_menu": "true",
+    "styleBody": "url(./pages/home/navbar.styleBody.css)",
+    "logo_style": "width:70px;",
+    "styleMobile": "{{{APP_CONSTANTS.NAVBAR_MEDIA_QUERY_START}}}  thead{display: none;}tr {display: flex;flex-direction: column;}a > h4{margin-top: 10px;margin-bottom: 10px;}td p {height: 10px;line-height: 0.9;font-size: 13px;margin-bottom:25px;margin-top:-5px}h4 + br {display: none;}.nav-secondary-content > p{padding: 10px;margin: 0;}p.blogdescription {margin-bottom:10px;}#checkoutourlatestblogs{display: none;}#contactus{display: none;}.navbar {display: none;}}"
+  },
+  "headline": {
+    "html": "image-slider",
+    "path": ".home/headlineimages",
+    "pause": 12000,
+    "transition": 800,
+    "styleBody": "url(./pages/home/headline.styleBody.css)",
+    "dot_style": "background: rgba(255, 255, 255, 0.6); width, height: 10px",
+    "selected_dot_style": "background: rgba(255, 255, 255, 0.95)",
+    "chevron_style": "font-size: 40px;background: rgba(255, 255, 255, 0.6);color: rgba(0, 0, 0, 0.45);border-radius: 25px;",
+    "caption_style": "max-width:50%; top: -230px;left: 55px;",
+    "style": "height:450px;object-fit:cover;"
+  },
+  "featuredproducts": {
+    "html": "content-post",
+    "article": ".home/featuredproducts.md",
+    "id": "featuredproducts",
+    "styleArticle": "url(./pages/home/featuredproducts.styleBody.css)",
+    "styleContainer": "background:white;width:100%",
+    "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}} td {display: block;width: 100%;padding: 40px 0 40px;}table {padding: 0 45px 0 40px;}table:nth-of-type(2){padding-bottom: 40px;}}"
+  },
+  "aboutus": {
+    "html": "content-post",
+    "article": ".home/aboutus.md",
+    "id": "aboutus",
+    "styleContainer": "background:#efefef;",
+    "styleArticle": "url(./pages/home/aboutus.styleArticle.css)",
+    "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}} article {padding: 75px 40px;}h1 {font-size: 1.7em;}p {font-size: 14px;}}"
+  },
+  "verticals": {
+    "html": "content-post",
+    "article": ".home/verticals.md",
+    "id": "verticals",
+    "styleContainer": "background:rgba(255, 255, 255, 1);padding: 65px 0px;",
+    "styleArticle": "url(./pages/home/verticals.styleArticle.css)",
+    "styleMobile": "{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}} h1 {font-size: 1.7em;}td {display: flex;gap: 20px;}td a {font-size: 15px;width: 160px;height: 160px;margin-bottom: 30px;}td a img {width: 55px;margin-top: 10%;}td > br {display: none;}}"
+  },
+  "footer": {
+    "html": "content-post",
+    "article": ".home/footer.md",
+    "id": "footer",
+    "styleContainer": "background:rgba(255, 255, 255);color:white;",
+    "styleArticle": "url(./pages/common/footer.styleArticle.css)"
+  },
+  "mobilefooter": {
+    "html": "content-post",
+    "article": ".home/mobilefooter.md",
+    "id": "mobilefooter",
+    "styleContainer": "background:rgba(255, 255, 255);color:white;",
+    "styleArticle": "url(./pages/common/mobilefooter.styleArticle.css)"
+  },
+  "copyrights": {
+    "html": "content-post",
+    "article": ".home/copyright.md",
+    "id": "copyright",
+    "styleContainer": "background:white;height:60px;color:#787878;",
+    "styleArticle": "url(./pages/common/copyrights.styleArticle.css)"
+  }
 }
 ======
 
