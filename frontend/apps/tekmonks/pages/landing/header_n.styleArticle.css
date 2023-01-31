@@ -39,31 +39,6 @@ img {
     float: right
 }
 
-@media (max-width: 960px) {
-    body{
-        font-size: unset;
-    }
-    
-    td {
-        text-align: center !important;
-    }
-    
-    td p {
-        font-size: 35px;
-        text-align:center;
-    }
-    
-    .button{
-        margin-top: 20px;
-    }
-    
-    img{
-        width: 100%;
-        height: auto;
-    }
-    
-}
-
 /** API 400 **/
 .api400-section2{
     background: url(./articles/products/api400.md/header.md/api400-orange-bg.png);

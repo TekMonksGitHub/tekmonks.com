@@ -175,18 +175,6 @@ body {
     object-fit: cover;
 }
 
-@media (min-width: 961px){
-    .mobilenavbar {
-        display: none; 
-    }
-}
-
-@media (min-width: 320px) and (max-width: 960px) {
-    .navbar {
-        display: none; 
-    }
-}
-
 .menu-icon{
     margin-bottom: 10px;
     margin-right: 20px;
@@ -291,8 +279,63 @@ body {
   background-color: #E0E0E0;
 }
 
+
+.navbar {
+  display: block; 
+}
+
+.mobilenavbar {
+  display: none; 
+}
+
 </style>
 {{{styleBody}}}
+{{{APP_CONSTANTS.NAVBAR_MOBILE_MEDIA_QUERY_START}}}
+.navbar {
+  display: none; 
+}
+
+.mobilenavbar {
+  display: block; 
+}
+
+thead{
+  display: none;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+}
+
+a > h4{
+  margin-top: 10px;
+  margin-bottom: 10px;    
+}
+
+td p {
+  height: 30px;
+  line-height: 0.9;
+  font-size: 13px;
+}
+
+h4 + br {
+  display: none;
+}
+
+.nav-secondary-content > p{
+  padding: 10px;
+  margin: 0;
+}
+
+#checkoutourlatestblogs{
+  display: none;
+}
+
+#contactus{
+  display: none;
+}
+{{{APP_CONSTANTS.NAVBAR_MOBILE_MEDIA_QUERY_END}}}
 
 <body>
     

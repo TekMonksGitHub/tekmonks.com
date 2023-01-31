@@ -2,5 +2,7 @@
     "MOBILE_MEDIA_QUERY_START": "<style>@media only screen and (max-width: 960px) {",
     "MOBILE_MEDIA_QUERY_END": "} </style>",
     "PAGE_CSS_MOBILE_MEDIA_QUERY_START": "@media only screen and (max-width: 960px) {",
-    "PAGE_CSS_MOBILE_MEDIA_QUERY_END": "}"
+    "PAGE_CSS_MOBILE_MEDIA_QUERY_END": "}",
+    "NAVBAR_MOBILE_MEDIA_QUERY_START": "<style>@media only screen and (max-width: 1024px) {",
+    "NAVBAR_MOBILE_MEDIA_QUERY_END": "} </style>"
 }

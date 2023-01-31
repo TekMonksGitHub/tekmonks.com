@@ -9,7 +9,7 @@ p {
 }
 article {
     background: #efefef;
-    padding: 75px 150px;
+    padding: 75px 5%;
     color: #000;
 }
 h1 {
@@ -23,19 +23,3 @@ h1 {
 body {
     margin: 0;
 }
-
-@media (min-width: 320px) and (max-width: 960px) {
-  
-    article {
-        padding: 75px 40px;
-    }
-
-    h1 {
-        font-size: 1.7em;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-}
-

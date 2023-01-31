@@ -33,37 +33,3 @@ img {
     width: auto; 
     float: right
 }
-
-@media (min-width: 381px) and (max-width: 967px) {
-  
-    td {
-        text-align: center !important;
-    }
-    
-}
-
-
-@media (min-width: 320px) and (max-width: 380px) {
-
-    body {
-        padding: 0;
-    }
-
-    td {
-        text-align: center !important;
-    }
-}
-
-@media (max-width: 960px) {
-    img{
-       width: 100%;
-       float: unset;
-       height: auto; 
-    }
-    
-    td p {
-        font-size: 2rem;
-        padding: 20px 0 0 !important;
-    }
-}
-

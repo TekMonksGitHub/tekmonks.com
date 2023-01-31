@@ -50,21 +50,3 @@ table td {
 td a:hover h3 {
     color: #a81010;
 }
-
-@media (max-width: 960px){
-    
-    h1{
-        font-size: 1.5em !important;
-    }
-
-    tr{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    td{
-        border-right: unset !important;
-    }
-    
-}

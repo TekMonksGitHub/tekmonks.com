@@ -1,3 +1,4 @@
+<div class="bloglists" markdown="1">
 #UNFOLDING EVENTS
 
 |   |
@@ -35,4 +36,4 @@
 |   |
 |:------------:|
 |[<p class="date">19 March 2020</p><div class="bloglist"><h3>Attackers Agree to Not Target Healthcare Anymore</h3><p>Talk about COVID-19 and Cyber-Attacks: Phishing Emails, Covid-19 Maps, and Healthcare attacks. In spite of that, attackers promised no healthcare attacks.</p></div> ![Blog Image] (articles/blogs.md/cybersecurity.md/2020-03-19.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/cybersecurity.md/2020-03-19.md&menu_path=/{{/makeLink}})|
-
+</div>

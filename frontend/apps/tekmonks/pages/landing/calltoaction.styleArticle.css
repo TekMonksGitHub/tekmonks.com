@@ -64,22 +64,6 @@ td{
     width: 50%;
 }
 
-@media (min-width: 961px) and (max-width: 1024px){
-
-    h1 {
-        font-size: 40px;
-        padding: 0 10px
-    }
-}
-
-@media (min-width: 320px) and (max-width: 960px) {  
-    
-    h1 {
-        font-size: 30px;
-        padding: 0 10px
-    }
-}
-
 .api400-section5{
     background: url(./articles/products/api400.md/calltoaction.md/api400-black-bg.png);
     background-repeat: no-repeat;

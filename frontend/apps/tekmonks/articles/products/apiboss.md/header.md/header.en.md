@@ -1,4 +1,4 @@
-<div class="apiboss-section2" markdown="1">
+<div class="apiboss-section2 productnew-header" markdown="1">
 <div class="apiboss-section2-content" markdown="1">
 |   |
 |:---|
