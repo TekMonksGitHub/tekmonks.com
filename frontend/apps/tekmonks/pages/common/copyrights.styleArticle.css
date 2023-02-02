@@ -9,12 +9,3 @@ a:hover {
     text-decoration: none;
     color: #004ab3;
 }
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-    
-    p {
-        font-size: 13px;
-    }
-}
-

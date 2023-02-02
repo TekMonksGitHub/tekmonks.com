@@ -70,16 +70,18 @@ body {
     margin: 0%;
 }
 
-@media (min-width: 768px){
-  #mobilefooter {
-     display: none; 
-  }
+#mobilefooter {
+   display: none; 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
   #footer {
      display: none; 
   }
-}
+  
+  #mobilefooter {
+    display: block;
+  }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 
 =======

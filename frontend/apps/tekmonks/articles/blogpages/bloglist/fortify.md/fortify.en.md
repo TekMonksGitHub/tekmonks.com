@@ -1,3 +1,4 @@
+<div class="bloglists" markdown="1">
 #FORTIFY
 
 |   |
@@ -15,5 +16,5 @@
 |   |
 |:------------:|
 |[<p class="date">27 February 2020</p><div class="bloglist"><h3>Combat Cybersecurity Vulnerabilities Created by Coronavirus</h3><p>How does the coronavirus affect cybersecurity? Plus tips on how to combat Coronavirus phishing email threats as well as Coronavirus prevention method of telecommuters threat.</p></div> ![Blog Image] (articles/blogs.md/2020-02-27.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-02-27.md&menu_path=/{{/makeLink}})|
-
+</div>
 

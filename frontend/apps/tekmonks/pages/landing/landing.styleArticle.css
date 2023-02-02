@@ -20,41 +20,4 @@ p.productdescription {
 }
 img {
     width: auto !important;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-    img {
-        height: 15vh;
-    }
-   
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  
-    h1 {
-        font-size: 30px;
-    }
-    
-    table {
-        padding: 0 20px;
-    }
-
-    td {
-        display: block;
-    }
-
-    img {
-        height: 150px;
-    }
-
-    .productdescription {
-        display: none;
-    }
-
-    .productheader {
-        text-align: center !important;
-
-    }
-    
-  }
+} 

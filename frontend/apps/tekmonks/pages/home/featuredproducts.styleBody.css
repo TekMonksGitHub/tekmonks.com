@@ -30,7 +30,7 @@ td img {
     right: 0;
     margin: auto;
     margin-top: 0;
-    margin-right: 15px !important;
+    margin-right: 15px;
 }
 td p {
     margin-left: 110px;
@@ -44,29 +44,4 @@ body {
 }
 tbody {
     text-align: -webkit-center;
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  
-    table:nth-of-type(2) td{
-        padding: 0 0 60px;
-    }
- }
-
-@media (min-width: 320px) and (max-width: 768px) {
-  
-   td {
-       display: block;
-       width: 100%;
-       padding: 40px 0 40px;
-   }
-
-   table {
-       padding: 0 45px 0 40px;
-   }
-
-   table:nth-of-type(2){
-       padding-bottom: 40px;
-   }
 }

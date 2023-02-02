@@ -31,6 +31,10 @@ a{
     padding: 0;
 }
 
+.arrow-container{
+    display: inline-flex;
+    margin-left: 5px;
+ }
 
 .api400-schedule-button{
     display: inline-block;
@@ -41,11 +45,6 @@ a{
     margin-top: 20px;
     padding: 15px;
    
-}
-
-.arrow-container{
-   display: inline-flex;
-   margin-left: 5px;
 }
 
 .api400-text{

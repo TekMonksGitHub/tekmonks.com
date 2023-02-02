@@ -76,3 +76,7 @@ p.blogdescription {
 h1{
   color: #444;
 }
+
+td:has(> a) {
+    vertical-align: top;
+}

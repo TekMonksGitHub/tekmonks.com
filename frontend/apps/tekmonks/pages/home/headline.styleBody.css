@@ -43,18 +43,3 @@ p.headline-text {
     font-weight:500 !important; 
     font-style: normal !important;
 }
-
-
-@media (min-width: 600px) and (max-width: 767px) {
-  
-    p.headline-text {
-        font-size: 2rem;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 599px) {
-  
-    p.headline-text {
-        font-size: 1.3rem;
-    }
-}

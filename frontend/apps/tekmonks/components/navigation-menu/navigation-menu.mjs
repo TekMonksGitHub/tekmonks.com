@@ -66,6 +66,44 @@ function enableMenu(searchElement) {
 		element.classList.remove('hidden');
 	});
 }
+ 
+ function showMenuMobile(searchElement){
+	const menupopup = searchElement.parentElement.querySelectorAll('.nav-mobile-container');
+	const elementOuterLayer = searchElement.parentElement.parentElement.querySelectorAll('.outerlayer');
+	menupopup.forEach(element => {
+		const elementMenu = element.querySelectorAll('.nav-primary')
+		element.classList.contains('menu-visible') ? element.classList.remove('menu-visible') : element.classList.add('menu-visible');
+		elementMenu.forEach(element => {
+			if(element.innerText == 'Products'){
+				element.classList.add('menu-active')
+				element.nextSibling.nextSibling.classList.add('visible')
+			}else{
+				element.nextSibling.nextSibling.classList.add('hidden')
+				element.nextSibling.nextSibling.classList.remove('visible')
+			}
+		});
+	});
+	var elementOuter = '';
+	elementOuterLayer.forEach(element => {
+		 element.classList.add('outerlayer-visible');
+		 elementOuter = element;
+	 });
+}
+
+function showSubMenuMobile(searchElement){
+	searchElement.nextSibling.classList.toggle('menu-visible')
+}
+
+function selectMenuMobile(searchElement, id){
+	const elementMenu = searchElement.parentElement.querySelectorAll('.nav-primary')
+	elementMenu.forEach(element => {
+		element.classList.remove('menu-active');
+		element.nextSibling.nextSibling.classList.add('hidden')
+		element.nextSibling.nextSibling.classList.remove('visible')
+	});
+	searchElement.classList.add('menu-active')
+	searchElement.nextSibling.nextSibling.classList.add('visible')
+}
 
 function toggleMenu(searchElement) {
 	const elementOuterLayer = searchElement.parentElement.querySelectorAll('.outerlayer-visible');
@@ -79,6 +117,21 @@ function toggleMenu(searchElement) {
 			 elementCloseMenu.forEach(elementClose => {
 				elementClose.classList.add('hidden');
 			});
+	});
+ }
+ 
+ function toggleMenuMobile(searchElement) {
+	const elementOuterLayer = searchElement.parentElement.querySelectorAll('.outerlayer-visible');
+	const elementMenuContainer = searchElement.parentElement.childNodes[0].querySelectorAll('.nav-mobile-container')
+	elementOuterLayer.forEach(element => {
+			element.classList.remove('outerlayer-visible');
+	});
+	elementMenuContainer.forEach(element => {
+		element.classList.remove('menu-visible');
+		const elementMenu = element.firstChild.querySelectorAll('.nav-primary')
+		elementMenu.forEach(childElement => {
+			childElement.classList.remove('menu-active')
+		})
 	});
  }
 
@@ -126,4 +179,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const navigation_menu = {trueWebComponentMode, register, elementConnected, enableRightColumnContent, enableMenu, toggleMenu, closeMenu}
+export const navigation_menu = {trueWebComponentMode, register, elementConnected, enableRightColumnContent, enableMenu, toggleMenu, closeMenu, toggleMenuMobile, showMenuMobile, showSubMenuMobile, selectMenuMobile}

@@ -2,9 +2,16 @@ SCHEMA
 ======
 {
     "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
-    "blogheader": {"html":"content-post", "article":"{{url.blogs_path}}/blogheader.md", "id":"blogheader", "style":"text-align:center;", "styleContainer":"padding: 60px 0", "styleBody":"url(./pages/blogs/mainblog/mainBlog.styleBody.css)"},
+    "blogheader": {"html":"content-post", "article":"{{url.blogs_path}}/blogheader.md", "id":"blogheader", "style":"text-align:center;", "styleContainer":"padding: 60px 0;", "styleBody":"url(./pages/blogs/mainblog/mainBlog.styleBody.css)"},
     "blogcontent": {"html":"content-post", "article":"{{url.blogs_path}}/blogcontent.md", "id":"blogcontent", "style":"display:inline-block; text-align:center;", "styleBody":"url(./pages/blogs/mainblog/mainBlog.styleBody.css)"},
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:320px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "mobilefooter":{
+      "html":"content-post",
+      "article":".home/mobilefooter.md",
+      "id":"mobilefooter",
+      "styleContainer":"background:rgba(255, 255, 255);color:white;",
+      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
+    },
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
 ======
@@ -20,6 +27,8 @@ LAYOUT
 | blogcontent               |
 -----------------------------
 | footer                    |
+-----------------------------
+| mobilefooter              |
 -----------------------------
 | copyrights                |
 -----------------------------
@@ -52,8 +61,38 @@ body {
 
 
 .class-blogcontent {
-    padding: 0 15% 50px;
     text-align: center;
-    background: #cccccc;
+    background: #fafafa;
 }
+
+.class-blogcontent {
+    padding-bottom: 50px;
+}
+  
+div.class-mobilefooter {
+    display: none;
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+   .grid-container{
+      display: unset;
+   }
+   
+   div.class-footer {
+        display: none;
+    }
+    
+    .class-blogcontent{
+        padding: 10px 0;
+    }
+        
+   div.class-blogheader{
+        padding: 0 10px;
+    }
+    
+    div.class-mobilefooter {
+      display: block;
+   }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
+
 =======

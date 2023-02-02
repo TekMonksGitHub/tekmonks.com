@@ -7,12 +7,20 @@ SCHEMA
     
     "headerimg": {"html":"img", "src":"./articles/{{url.article_path}}/header.{{lang}}.png", "style":"width:100%; object-fit:cover"},
     
-    "content": {"html":"content-post", "article":"{{url.article_path}}", "id":"content", "style":"display:inline-block;padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;", "styleBody":"url(./pages/article/article.styleBody.css)", "styleContainer":"display:inline-block;"},
+    "content": {"html":"content-post", "article":"{{url.article_path}}", "id":"content", "style":"display:inline-block;padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;", "styleBody":"url(./pages/article/article.styleBody.css)", "styleContainer":"display:inline-block;"},
     
     "sidebar": {"html":"page-generator", "file":"./pages/article/article.sidebar", "id":"sidebar"},
     
     "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
     
+    "mobilefooter":{
+      "html":"content-post",
+      "article":".home/mobilefooter.md",
+      "id":"mobilefooter",
+      "styleContainer":"background:rgba(255, 255, 255);color:white;",
+      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
+   },
+   
     "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
 }
 ======
@@ -30,6 +38,8 @@ LAYOUT
 | content    |  sidebar     |
 -----------------------------
 | footer                    |
+-----------------------------
+| mobilefooter              |
 -----------------------------
 | copyrights                |
 -----------------------------
@@ -61,4 +71,24 @@ body {
 }
 
 .class-sidebar { padding-right: 40px; }
+
+div.class-mobilefooter {
+    display: none;
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+   .grid-container{
+      display: unset;
+   }
+   
+    div.class-footer {
+        display: none;
+    }
+    
+    div.class-mobilefooter {
+      display: block;
+    }
+    
+    .class-sidebar { padding: 10px; }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 =======

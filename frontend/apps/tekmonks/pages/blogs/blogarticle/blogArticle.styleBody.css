@@ -13,8 +13,7 @@ article{
 h1 { 
     color: #0f4b9c; 
     text-align: center; 
-    font-size: 36px;
-    margin: -2% -300% 20px;
+    font-size: min(5vw, 36px);
     padding: 30px 0;
     font-weight: 600;
     font-style: normal;

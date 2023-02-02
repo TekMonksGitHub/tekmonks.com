@@ -1,0 +1,91 @@
+body{
+    font-size: 4em;
+}
+
+
+.blue-text{
+    color: #1B5775;
+}
+
+.red-text{
+    color: #ED1C24;
+}
+
+.white-text{
+    color: #fff;
+}
+
+.header{
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+.arrow-container{
+   display: inline-flex;
+   margin-left: 5px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 50%;
+    display: inline;
+}
+
+img {
+    width: auto; 
+    float: right
+}
+
+/** API 400 **/
+.api400-section2{
+    background: url(./articles/products/api400.md/header.md/api400-orange-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .api400-section2-content{
+    min-width: 80vw;
+ }
+ 
+ 
+ .apiboss-schedule-button{
+    display: inline-block;
+    color: #ED1C24 !important;
+    font-size: 24px;
+    border: #ED1C24 solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/** API BOSS **/
+ 
+.apiboss-section2{
+    background: url(./articles/products/apiboss.md/header.md/apiboss-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apiboss-section2-content{
+    min-width: 80vw;
+}
+ 
+.api400-schedule-button{
+    display: inline-block;
+    color: black !important;
+    font-size: 24px;
+    border: black solid 1px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
