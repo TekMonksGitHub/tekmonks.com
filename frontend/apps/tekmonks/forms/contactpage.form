@@ -109,4 +109,23 @@ body {
     margin: 0;
     padding-top: 50px;
 }
+
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .grid-container > div{
+      padding: 0;
+      text-align: center;
+    }
+    
+    .submitbutton {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_END}}}
 =======

@@ -106,4 +106,11 @@ input {
 
 
 body {margin: 0}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+    .grid-container{
+      position: unset;
+      width: 100%;
+    }
+{{{APP_CONSTANTS.PAGE_FILE_MOBILE_MEDIA_END}}}
 =======
