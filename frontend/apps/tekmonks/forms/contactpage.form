@@ -2,15 +2,15 @@ SCHEMA
 ======
 {
     "name": {"id":"name","html":"input","type":"text","placeholder":"Full Name*","required":true,"class":"input"},
-    "company": {"id":"company","type":"text","placeholder":"Company Name*","required":true,"class":"input"},
-    "designation": {"id":"designation","type":"text","placeholder":"Designation*","required":true,"class":"input"},
-    "serviceoffered": {"id":"serviceoffered","type":"text","placeholder":"Service Offered*","required":true,"class":"input"},
-    "email": {"id":"email","type":"email","placeholder":"Email*","required":true,"class":"input"},
-    "phone": {"id":"tel","type":"number","placeholder":"Phone*","required":true,"class":"input"},
-    "website": {"id":"website","type":"text","placeholder":"Company Website*","required":true,"class":"input"},
-    "country": {"id":"country","type":"text","placeholder":"Country*","required":true,"class":"input"},
+    "company": {"id":"company","html":"input","type":"text","placeholder":"Company Name*","required":true,"class":"input"},
+    "designation": {"id":"designation","html":"input","type":"text","placeholder":"Designation*","required":true,"class":"input"},
+    "serviceoffered": {"id":"serviceoffered","html":"input","type":"text","placeholder":"Service Offered*","required":true,"class":"input"},
+    "email": {"id":"email","html":"input","type":"email","placeholder":"Email*","required":true,"class":"input"},
+    "phone": {"id":"tel","html":"input","type":"number","placeholder":"Phone*","required":true,"class":"input"},
+    "website": {"id":"website","html":"input","type":"text","placeholder":"Company Website*","required":true,"class":"input"},
+    "country": {"id":"country","html":"input","type":"text","placeholder":"Country*","required":true,"class":"input"},
     "message": {"id":"message","html":"textarea","rows":"3","placeholder":"Message*","required":true,"class":"input"},
-    "submit": {"type":"submit","onClick":"window.monkshu_env.components['form-generator'].submit('contactform','window.webscrolls_env.contactform.submit()')","class":"submitbutton"}
+    "submit": {"type":"submit","html":"input","onClick":"window.monkshu_env.components['contact-us'].submit('contactform','window.webscrolls_env.contactform.submit()')","class":"submitbutton"}
 }
 ======
 
@@ -30,9 +30,10 @@ LAYOUT
 -----------------------------------
 |submit                           |
 -----------------------------------
+
 =================
 Row Heights = 50px, 50px, 50px, 50px, 80px, 100px
-Col Widths = 50% 50%
+Col Widths = 50%
 =================
 
 
@@ -49,6 +50,10 @@ CSS
 .grid-container-extension {
     height: 100%;
     text-align: center;
+    grid-row-gap: 0px;
+    grid-column-gap: 5px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .grid-item-extension {

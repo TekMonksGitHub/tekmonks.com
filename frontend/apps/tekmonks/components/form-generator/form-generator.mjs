@@ -84,7 +84,7 @@ async function elementConnected(element) {
 
 	let layoutObj = {rows: layoutLines.length, columns: columnLocations.length-1, rowHeights, colWidths, elementsAndPlacements};
 	
-	element._componentHTML = await router.expandPageData(await generateFormHTML(element, schema, cssClassesParsed, css, element.getAttribute("css"), layoutObj), router.getCurrentURL(), window.APP_CONSTANTS)
+	element.componentHTML = await generateFormHTML(element, schema, cssClassesParsed, css, element.getAttribute("css"), layoutObj);
 }
 
 async function generateFormHTML(elementParent, schema, cssParsed, cssInternal, cssHref, layoutObj) {

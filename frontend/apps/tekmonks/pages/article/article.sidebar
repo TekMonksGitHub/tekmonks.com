@@ -1,7 +1,7 @@
 SCHEMA
 ======
 {
-    "contactform": {"html":"form-generator", "file":"./forms/contact.form", "id":"contactform"},
+    "contactform": {"html":"page-generator", "file":"./forms/contact.form", "id":"contactform"},
     "articleadv": {"html":"content-post", "article":"{{url.article_path}}/articleadv.md", "id":"articleadv", "style":"width:100%;", "styleBody":"url(./pages/article/articleadv.styleBody.css)", "styleContainer":"display:inline-block;background-image: linear-gradient(to bottom, #93d3fb, white);height:100%;border-radius: 15px;"}
 }
 ======
@@ -31,4 +31,14 @@ PER ITEM CLASS = class
 CSS
 =======
 body {margin: 0%;}
+
+.item1{
+    padding-top: 400px;
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+    .item1{
+        padding-top:50px
+    }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 =======
