@@ -24,7 +24,6 @@ async function getArticle(path) {
 	
 	try{
 		let article = await(await fetch(`${APP_CONSTANTS.CMS_ROOT_URL}/${articlePath}`)).text();
-		console.log(article)
 		return renderArticle(articlePath, article);
 	} catch (e) {LOG.error(`Error reading article ${path}: ${e}`); return "";}
 }
