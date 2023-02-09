@@ -24,6 +24,7 @@ async function getArticle(path) {
 	
 	try{
 		let article = await(await fetch(`${APP_CONSTANTS.CMS_ROOT_URL}/${articlePath}`)).text();
+		console.log(article)
 		return renderArticle(articlePath, article);
 	} catch (e) {LOG.error(`Error reading article ${path}: ${e}`); return "";}
 }
@@ -38,7 +39,8 @@ async function renderArticle(path, text) {
 
 	await $$.require("/framework/3p/mustache.min.js"); 
 	Mustache.parse(article); let contentFunctions = getContentFunctions();
-	article = Mustache.render(article, contentFunctions);
+	let articleData = {...window.APP_CONSTANTS, ...contentFunctions}
+	article = Mustache.render(article, articleData);
 
 	return article;
 }
