@@ -40,7 +40,7 @@ async function elementConnected(element) {
 	
 	let cssArray = formFile.match(/CSS\s*\r?\n=+\r?\n(.+?)\r?\n=+[\r?\n]*/sm);
 	let css = (cssArray && cssArray.length > 1) ? cssArray[1] : "";
-
+		
 	let layoutPlacementArray = formFile.match(/LAYOUT\s*\r?\n=+\r?\n(.+?)\r?\n=+[\r?\n]*/sm);
 	let layoutPlacement = (layoutPlacementArray && layoutPlacementArray.length > 1) ? layoutPlacementArray[1] : "";
 	layoutPlacement = layoutPlacement.replace(/^[\|-\s]+$/mg, "").replace(/(?:[\t\s]*(?:\r?\n|\r)){2}/gm,"\n").trim();
@@ -83,7 +83,7 @@ async function elementConnected(element) {
 	let colWidths = []; if (colWidthsArray && colWidthsArray.length > 1) colWidths = colWidthsArray[1].split(","); colWidths.forEach((item,i) => colWidths[i] = item.trim());
 
 	let layoutObj = {rows: layoutLines.length, columns: columnLocations.length-1, rowHeights, colWidths, elementsAndPlacements};
-
+	
 	element.componentHTML = await generateFormHTML(element, schema, cssClassesParsed, css, element.getAttribute("css"), layoutObj);
 }
 

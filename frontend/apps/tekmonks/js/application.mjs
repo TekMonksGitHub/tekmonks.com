@@ -21,7 +21,7 @@ const init = async hostname => {
 }	
 
 const main = async _ => {
-	await _addPageLoadInterceptors(); await _readStyle() 
+	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData();
 	try {
 		await router.loadPage(window.location.href == APP_CONSTANTS.INDEX_HTML || 
 			router.decodeURL(window.location.href) == APP_CONSTANTS.INDEX_HTML ? 
@@ -38,6 +38,14 @@ async function _readStyle() {
 	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/style.json`)).json();
 	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = conf[key];
 }
+
+async function _readPageData() {
+	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/pageData.json`)).json();
+	for (const key of Object.keys(conf)) {
+		APP_CONSTANTS[key] = key == "CURRENT_YEAR" ? new Date().getFullYear() : conf[key];
+	}
+}
+
 
 async function _addPageLoadInterceptors() {
 	const interceptors = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/pageLoadInterceptors.json`)).json();

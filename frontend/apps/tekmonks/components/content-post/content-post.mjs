@@ -38,7 +38,8 @@ async function renderArticle(path, text) {
 
 	await $$.require("/framework/3p/mustache.min.js"); 
 	Mustache.parse(article); let contentFunctions = getContentFunctions();
-	article = Mustache.render(article, contentFunctions);
+	let articleData = {...window.APP_CONSTANTS, ...contentFunctions}
+	article = Mustache.render(article, articleData);
 
 	return article;
 }
