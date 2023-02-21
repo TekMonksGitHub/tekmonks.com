@@ -10,7 +10,20 @@ License: GPL2 - see enclosed license.txt file.
 	<meta charset="UTF-8">
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="expires" content="-1">
-
+	<style>
+		#loading-container {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.loading-spinner {
+			width: auto;
+			height: 6em;
+		}
+	</style>
 	<link href="./pages/common/common.css" rel="stylesheet">
 	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
 	<script type="module">
@@ -21,12 +34,21 @@ License: GPL2 - see enclosed license.txt file.
 	import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
 	import {page_meta} from "./components/page-meta/page-meta.mjs"; page_meta.register();
 	</script>
-	
+	<script>
+		let spinnerInterval = setInterval(() => {
+			let shadowContainer = document.getElementsByTagName('page-generator')
+			if (shadowContainer[0].shadowRoot) {
+				document.getElementById('loading-container').style.display = 'none'
+			}
+		}, 200)
+	</script>	
 	<title>{{i18n.Title}}</title>
 </head>
 
 <body style="margin: 0%">
-<page-generator file="./pages/blogs/bloglist/bloglist.page"></page-generator>
-
+	<div class="loading" id="loading-container">
+		<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
+	</div>
+	<page-generator file="./pages/blogs/bloglist/bloglist.page"></page-generator>
 </body>
 </html>
