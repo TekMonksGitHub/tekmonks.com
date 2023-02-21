@@ -9,6 +9,20 @@
         <link href="./pages/common/common.css" rel="stylesheet" />
         <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+        <style>
+            #loading-container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .loading-spinner {
+                width: auto;
+                height: 6em;
+            }
+        </style>
         <script type="module" async>
             import { navigation_menu } from "./components/navigation-menu/navigation-menu.mjs";
             navigation_menu.register();
@@ -23,19 +37,25 @@
             import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
            
             import {session} from "/framework/js/session.mjs";
-            
-         
-          
+
             let urlParam = window.location.search.replace(new RegExp('/\?.='), "")
             let productName = new RegExp('products(.*?).md').exec(atob(urlParam.substring(1)))
             let newLayout = ['api400', 'apiboss']
             document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) ?  '<page-generator file="./pages/landing/landing_n.page"></page-generator>' : '<page-generator file="./pages/landing/landing.page"></page-generator>'
-           
             
+            let spinnerInterval = setInterval(() => {
+                let shadowContainer = document.getElementsByTagName('page-generator')
+                if (shadowContainer[0].shadowRoot) {
+                    document.getElementById('loading-container').style.display = 'none'
+                }
+            }, 200)          
         </script>
+
         <title>{{i18n.Title}}</title>
     </head>
     <body style="margin: 0%;">
-       
+        <div class="loading" id="loading-container">
+            <img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
+        </div>
     </body>
 </html>
