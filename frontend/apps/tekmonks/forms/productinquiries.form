@@ -2,9 +2,9 @@ SCHEMA
 ======
 {
     "name": {"id":"name","html":"input","type":"text","placeholder":"Full Name*","required":true,"class":"input"},
-    "email": {"id":"email","type":"email","placeholder":"Email*","required":true,"class":"input"},
-    "phone": {"id":"tel","type":"number","placeholder":"Phone*","required":true,"class":"input"},
-    "website": {"id":"website","type":"text","placeholder":"Company Website*","class":"input"},
+    "email": {"id":"email","html":"input","type":"email","placeholder":"Email*","required":true,"class":"input"},
+    "phone": {"id":"tel","html":"input","type":"number","placeholder":"Phone*","required":true,"class":"input"},
+    "website": {"id":"website","html":"input","type":"text","placeholder":"Company Website*","class":"input"},
     "message": {"id":"message","html":"textarea","rows":"3","placeholder":"Message*","required":true,"class":"input"}
 }
 ======

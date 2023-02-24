@@ -28,6 +28,7 @@ export const APP_CONSTANTS = {
     API_CMS_DIR_CONTENTS: API_PATH+"/cmsdirlisting",
     API_NAV_MENU_LISTING: API_PATH+"/navmenulisting",
     API_SEND_CONTACTS_EMAIL: API_PATH+"/sendcontactsemail",
+    API_SEND_PRODUCT_INQUIRIES: API_PATH+"/sendproductinquiries",
 
     SESSION_NOTE_ID: "com_monkshu_app_mnkp",
 

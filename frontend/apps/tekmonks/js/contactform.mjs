@@ -38,16 +38,18 @@
      let contactform = mainpage.shadowRoot.querySelector('#contactform');
      let productcheckbox = mainpage.shadowRoot.querySelector('#productcheckbox');
  
-     let formData = {}; 
- 
-     for (let id of contactform.webscrolls_env.formGeneratorIDs) {
-         let contactFormElement = contactform.shadowRoot.querySelector(`#${id}`);
-         if (contactFormElement.name) formData[id] = contactFormElement.value;
+     let formData = {};
+     let formElement = contactform.shadowRoot.childNodes[0]
+     let formElementIds = [...formElement.getElementsByTagName('input'), ...formElement.getElementsByTagName('textarea')]
+     for (let element of formElementIds) {
+         let contactFormElement = contactform.shadowRoot.querySelector(`#${element.id}`);
+         if (contactFormElement.id) formData[element.id] = contactFormElement.value;
      }
- 
-     for (let id of productcheckbox.webscrolls_env.formGeneratorIDs) {
-         let formElement = productcheckbox.shadowRoot.querySelector(`#${id}`);
-         if(formElement.checked == true) formData[id] = formElement.value;
+     
+     let formCheckBox = productcheckbox.shadowRoot.childNodes[0]
+     for (let element of formCheckBox.getElementsByTagName('input')) {
+         let formElement = productcheckbox.shadowRoot.querySelector(`#${element.id}`);
+         if(formElement.checked == true) formData[element.id] = formElement.value;
      }
      
      if (formData.name == "" || formData.email == "" || formData.tel == "" || formData.website == "" || formData.message == "" ) alert('Please fill in required details');
@@ -58,9 +60,7 @@
                  formData[key] = "N/A";
              }
          }
- 
-         console.log(formData);
- 
+         
          const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_PRODUCT_INQUIRIES, "POST", formData, true, false);
          if(apiResponse) alert ("Message Request succesfully sent!"); 
          else alert ("Server error. Please try again."); 
