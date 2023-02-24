@@ -39,6 +39,7 @@ License: GPL2 - see enclosed license.txt file.
 			let shadowContainer = document.getElementsByTagName('page-generator')
 			if (shadowContainer[0].shadowRoot) {
 				document.getElementById('loading-container').style.display = 'none'
+				clearInterval(spinnerInterval)
 			}
 		}, 200)
 	</script>
