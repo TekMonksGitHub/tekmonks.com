@@ -19,7 +19,7 @@ exports.doService = async jsonReq => {
       }
 
       const conf = {
-        to: "jezrel.sondia@tekmonks.com",
+        to: "lead@tekmonks.com",
         title: "Contact Request",
         emailText: contacts_html + product_html,
         emailHTML: contacts_html + product_html
