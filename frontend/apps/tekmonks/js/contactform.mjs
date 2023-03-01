@@ -61,6 +61,7 @@
              }
          }
          
+         formData = {...formData, referrer: form.referrer}
          const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_PRODUCT_INQUIRIES, "POST", formData, true, false);
          if(apiResponse) alert ("Message Request succesfully sent!"); 
          else alert ("Server error. Please try again."); 
