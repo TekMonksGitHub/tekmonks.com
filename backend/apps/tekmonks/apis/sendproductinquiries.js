@@ -3,21 +3,23 @@
  */
 const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const mailer = require(`${API_CONSTANTS.LIB_DIR}/mailer.js`);
+const utils = require(`${CONSTANTS.LIBDIR}/utils.js`);
 
-exports.doService = async jsonReq => {
-
+exports.doService = async (jsonReq, servObject) => {
     try {
       let contacts_html = "";
       let product_html = "<br/>Product Inquiries for: <br/> <ul>"
       for(const key in jsonReq) {
-        if (key == "name" || key == "company" || key == "email" || key == "phone" || key == "website" || key == "message") {
+        if (key == "name" || key == "company" || key == "email" || key == "phone" || key == "website" || key == "message" || key == "referrer") {
           details = key[0].toUpperCase() + key.slice(1);
           contacts_html += details + ": " + jsonReq[key] + "<br/>";
         }
-        else product_html += "<li>" + jsonReq[key] + "</li>";
+        else product_html += "<li>" + jsonReq[key] + "</li>"; 
         product_html += "</u>"
       }
 
+      contacts_html += "IP: " + utils.getClientIP(servObject.req) + "<br/>"
+      
       const conf = {
         to: "lead@tekmonks.com",
         title: "Contact Request",
