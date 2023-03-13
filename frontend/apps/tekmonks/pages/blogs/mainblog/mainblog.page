@@ -79,7 +79,8 @@ div.class-mobilefooter {
 
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
-      display: unset;
+      display: flex;
+      flex-direction: column;
    }
    
    div.class-footer {
