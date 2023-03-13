@@ -32,6 +32,10 @@ License: GPL2 - see enclosed license.txt file.
 	import {content_post} from "./components/content-post/content-post.mjs"; content_post.register();
 	import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
 	import {page_meta} from "./components/page-meta/page-meta.mjs"; page_meta.register();
+	
+	document.body.innerHTML += window.sessionStorage.getItem("referrer") == "DLT" ? '<page-generator file="./pages/blogs/blogarticle/dltblogarticle.page"></page-generator>' : 
+            '<page-generator file="./pages/blogs/blogarticle/blogarticle.page"></page-generator>'
+			
 	</script>
 	<script>
 		let spinnerInterval = setInterval(() => {
@@ -49,6 +53,5 @@ License: GPL2 - see enclosed license.txt file.
 	<div class="loading" id="loading-container">
 		<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
 	</div>
-	<page-generator file="./pages/blogs/blogarticle/blogarticle.page"></page-generator>
 </body>
 </html>

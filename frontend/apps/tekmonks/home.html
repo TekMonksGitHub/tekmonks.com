@@ -35,6 +35,10 @@
             import { page_meta } from "./components/page-meta/page-meta.mjs";
             page_meta.register();
             import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
+       
+            document.body.innerHTML += window.sessionStorage.getItem("referrer") == "DLT" ? '<page-generator file="./pages/home/dlthome.page"></page-generator>' : 
+                    '<page-generator file="./pages/home/home.page"></page-generator>'
+            
         </script>
         <title>{{i18n.Title}}</title>
     </head>
@@ -45,12 +49,11 @@
 				document.getElementById('loading-container').style.display = 'none'
                 clearInterval(spinnerInterval)
 			}
-		}, 200)
+		}, 200)   
 	</script>
     <body style="margin: 0%;">
         <div class="loading" id="loading-container">
             <img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
         </div>
-        <page-generator file="./pages/home/home.page"></page-generator>
     </body>
 </html>
