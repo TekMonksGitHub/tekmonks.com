@@ -10,7 +10,7 @@
  async function submit(form) {
      if (form.name == "" || form.company == "" || form.designation == "" || form.serviceoffered == "" || form.email == "" || form.tel == "" || form.country == "" || form.message == "" ) alert ("Please fill all required fields"); 
      else {
-     const contactData = {
+     let contactData = {
              name: form.name,
              company: form.company,
              email: form.email,
@@ -21,11 +21,13 @@
          website : form.website,
          country : form.country
          }
- 
+     
+     let contactCompanyInfo = window.sessionStorage.getItem("referrer")
      for (var key in contactData) {
          if (contactData[key] === undefined) contactData[key] = "N/A";
-         }
- 
+     }
+         
+     contactData = {...contactData, contactCompanyInfo: contactCompanyInfo}
          const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_CONTACTS_EMAIL, "POST", contactData, true, false);
          alert ("Message Request succesfully sent!"); 
          router.reload();
@@ -54,14 +56,14 @@
      
      if (formData.name == "" || formData.email == "" || formData.tel == "" || formData.website == "" || formData.message == "" ) alert('Please fill in required details');
      else {
- 
+         let contactCompanyInfo = window.sessionStorage.getItem("referrer")
          for (var key in formData) {
              if (formData[key] === undefined) {
                  formData[key] = "N/A";
              }
          }
          
-         formData = {...formData, referrer: form.referrer}
+         formData = {...formData, referrer: form.referrer, contactCompanyInfo: contactCompanyInfo}
          const apiResponse = await apiman.rest(APP_CONSTANTS.API_SEND_PRODUCT_INQUIRIES, "POST", formData, true, false);
          if(apiResponse) alert ("Message Request succesfully sent!"); 
          else alert ("Server error. Please try again."); 
