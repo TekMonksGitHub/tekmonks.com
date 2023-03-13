@@ -60,6 +60,10 @@ div.class-mobilefooter {
     display: none;
 }
 
+.class-navbar { 
+    z-index: 1; 
+}
+
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
       display: unset;
@@ -71,7 +75,9 @@ div.class-mobilefooter {
     
     div.class-mobilefooter {
       display: block;
-   }
+    }
+   
+    
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 
 =======

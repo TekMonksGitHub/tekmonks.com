@@ -76,6 +76,10 @@ div.class-mobilefooter {
     display: none;
 }
 
+.class-navbar { 
+        z-index: 999; 
+}
+
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
       display: unset;
@@ -90,5 +94,7 @@ div.class-mobilefooter {
     }
     
     .class-sidebar { padding: 10px; }
+    
+    
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 =======
