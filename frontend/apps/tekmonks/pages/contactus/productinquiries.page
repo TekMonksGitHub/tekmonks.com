@@ -106,24 +106,31 @@ div.class-mobilefooter {
    display: none;
 }
 
+.class-navbar{
+    z-index: 1;
+}
+
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+
+    .grid-container {
+      display:flex;
+      flex-direction: column;
+    }
 
     .submitbutton {
         width: 25%
     }
-
+   
     div.class-footer {
-      display: none;
+        display: none;
     }
     
-    #headerimg{
+     #headerimg{
         height: auto !important;    
     }
     
-
-   .grid-container {
-      display:flex;
-      flex-direction: column;
+    div.class-mobilefooter {
+      display: block;
     }
    
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
