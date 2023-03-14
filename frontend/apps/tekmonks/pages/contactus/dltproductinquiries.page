@@ -65,7 +65,6 @@ CSS
 =======
 .grid-container-extension {
     height: 100%;
-    min-width: 60em;
 }
 
 .grid-item-extension {
@@ -107,6 +106,10 @@ div.class-mobilefooter {
    display: none;
 }
 
+.class-navbar { 
+    z-index: 1; 
+}
+
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
 
     .submitbutton {
@@ -117,9 +120,13 @@ div.class-mobilefooter {
       display: none;
     }
     
+    #headerimg{
+        height: auto !important;    
+    }
 
    .grid-container {
-      display:unset;
+      display:flex;
+      flex-direction: column;
    }
    
    div.class-mobilefooter {
