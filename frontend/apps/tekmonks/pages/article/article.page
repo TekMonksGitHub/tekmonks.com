@@ -76,9 +76,19 @@ div.class-mobilefooter {
     display: none;
 }
 
+.class-content{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.class-navbar { 
+        z-index: 1; 
+}
+
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
    .grid-container{
-      display: unset;
+      display: flex;
+      flex-direction: column;
    }
    
     div.class-footer {
@@ -90,5 +100,7 @@ div.class-mobilefooter {
     }
     
     .class-sidebar { padding: 10px; }
+    
+    
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
 =======

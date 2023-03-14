@@ -64,7 +64,7 @@ body {
     height: 450px;
     opacity: 1;
     padding: 0px;
-    z-index: 2;
+    z-index: 300;
     border-bottom: 5px solid rgba(0, 0, 0, 0.7);
     background-clip: padding-box;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0.98)));
@@ -346,7 +346,7 @@ h4 + br {
           </a>
         </div>
         <div class="menudiv">
-          <span>
+          <div>
             <img class="menu-icon" src="./img/menu.png" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
             <div class="nav-mobile-container menu-hidden" >
               <div class="nav-primary-wrapper">
@@ -365,7 +365,7 @@ h4 + br {
                 {{/level1}}
               </div> 
             </div>
-          </span>
+          </div>
           <span class="outerlayer" onclick="monkshu_env.components['navigation-menu'].toggleMenuMobile(this)"></span>
         </div>
         <div class="clear"></div>
