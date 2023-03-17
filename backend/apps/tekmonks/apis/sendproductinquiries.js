@@ -21,12 +21,12 @@ exports.doService = async (jsonReq, servObject) => {
       contacts_html += "IP: " + utils.getClientIP(servObject.req) + "<br/>"
       
       const conf = {
-        to: "lead@tekmonks.com",
+        to: jsonReq.contactCompanyInfo == "DLT" ? "info@deeplogictech.com" : "lead@tekmonks.com",
         title: "Contact Request",
         emailText: contacts_html + product_html,
         emailHTML: contacts_html + product_html
       }
-
+      console.log(JSON.stringify(conf))
       let mailResult = false;
       mailResult = await mailer.email(conf.to, conf.title, conf.emailHTML, conf.emailText)
 

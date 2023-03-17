@@ -1,7 +1,7 @@
 SCHEMA
 ======
 {
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/dlt.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
     "headerimg": {"html":"img", "src":"./articles/{{url.article_path}}/header.{{lang}}.png", "style":"height:500px;width:100%; object-fit:cover"},
     "messageus": {"html":"content-post", "article":"{{url.article_path}}/messageus.md", "id":"messageus", "style":"display:inline-block;background:#efefef;width:100%;padding:0;", "styleContainer":"display:inline-block;", "styleBody":"body{padding:30px;box-sizing:border-box;font-family: Raleway;} h1{font-size: 2em; font-weight:bold; color: #07439c; text-align: center;}"},
     "contactform": {"html":"page-generator", "file":"./forms/productinquiries.form", "id":"contactform"},
@@ -11,13 +11,13 @@ SCHEMA
     "locations": {"html":"content-post", "article":"{{url.article_path}}/locations.md", "id":"locations", "style":"padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;", "styleArticle":"url(./pages/contactus/contactus.styleArticle.css)", "styleBody":"td:not(:last-child) {border-right : solid 1px #efefef;}"},
     "mobilefooter":{
       "html":"content-post",
-      "article":".home/mobilefooter.md",
+      "article":".home/dltmobilefooter.md",
       "id":"mobilefooter",
       "styleContainer":"background:rgba(255, 255, 255);color:white;",
       "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
    },
-    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:white;height:270px;color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
-    "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"},
+    "footer": {"html":"content-post", "article":".home/dltfooter.md", "id":"footer", "styleContainer":"background:white;height:270px;color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "copyrights": {"html":"content-post", "article":".home/dltcopyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"},
     "submit": {"type":"submit", "html":"input", "onClick":"window.monkshu_env.components['contact-us'].submit('contactform','window.webscrolls_env.contactform.submit_product()')","class":"submitbutton"}
 
 }
@@ -106,30 +106,30 @@ div.class-mobilefooter {
    display: none;
 }
 
-.class-navbar{
-    z-index: 1;
+.class-navbar { 
+    z-index: 1; 
 }
 
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
 
-    .grid-container {
-      display:flex;
-      flex-direction: column;
-    }
-
     .submitbutton {
         width: 25%
     }
-   
+
     div.class-footer {
-        display: none;
+      display: none;
     }
     
-     #headerimg{
+    #headerimg{
         height: auto !important;    
     }
-    
-    div.class-mobilefooter {
+
+   .grid-container {
+      display:flex;
+      flex-direction: column;
+   }
+   
+   div.class-mobilefooter {
       display: block;
     }
    

@@ -34,6 +34,10 @@
             import { contactform } from "./js/contactform.mjs";
             window.webscrolls_env.contactform = contactform;
             import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
+            
+            document.body.innerHTML += window.sessionStorage.getItem("referrer") == "DLT" ? '<page-generator file="./pages/contactus/dltproductinquiries.page"></page-generator>' : 
+                    '<page-generator file="./pages/contactus/productinquiries.page"></page-generator>'
+                    
         </script>
         <script>
             var spinnerInterval = setInterval(() => {
@@ -50,6 +54,5 @@
         <div class="loading" id="loading-container">
             <img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
         </div>
-        <page-generator file="./pages/contactus/productinquiries.page"></page-generator>
     </body>
 </html>

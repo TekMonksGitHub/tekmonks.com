@@ -21,7 +21,7 @@ const init = async hostname => {
 }	
 
 const main = async _ => {
-	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData();
+	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData(); await _interceptReferrer();
 	try {
 		await router.loadPage(window.location.href == APP_CONSTANTS.INDEX_HTML || 
 			router.decodeURL(window.location.href) == APP_CONSTANTS.INDEX_HTML ? 
@@ -33,6 +33,11 @@ const interceptPageLoadData = _ => router.addOnLoadPageData("*", async (data, _u
 	data.APP_CONSTANTS = APP_CONSTANTS; 
 });
 
+async function _interceptReferrer(){
+	if(document.referrer.includes("deeplogictech.com")){
+		window.sessionStorage.setItem("referrer", "DLT")
+	}
+}
 
 async function _readStyle() {
 	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/style.json`)).json();

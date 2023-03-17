@@ -1,0 +1,90 @@
+SCHEMA
+======
+{
+    "metadata": {"html":"page-meta", "files":"./articles/{{url.blogs_path}}/metadata.{{lang}}.txt"},
+    "headerimg": {"html":"img", "src":"./articles/{{url.blogs_path}}/header.{{lang}}.png", "style":"height:350px;width:100%;object-fit:cover"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/dlt.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
+    "content": {"html":"content-post", "article":"{{url.blogs_path}}", "id":"content", "style":"padding-bottom:40px;background:rgba(255,255,255);padding-top:20px;padding-left:80px;padding-right:80px;", "styleBody":"url(./pages/blogs/blogarticle/blogArticle.styleBody.css)", "styleContainer":"display:inline-block;"},
+    "footer": {"html":"content-post", "article":".home/dltfooter.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:270px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "mobilefooter":{
+      "html":"content-post",
+      "article":".home/dltmobilefooter.md",
+      "id":"mobilefooter",
+      "styleContainer":"background:rgba(255, 255, 255);color:white;",
+      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
+    },
+    "copyrights": {"html":"content-post", "article":".home/dltcopyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
+
+}
+======
+
+
+LAYOUT
+=================
+-----------------------------
+| metadata                  |
+-----------------------------
+| navbar                    |
+-----------------------------
+| headerimg                 |
+-----------------------------
+| content                   |
+-----------------------------
+| footer                    |
+-----------------------------
+| mobilefooter              |
+-----------------------------
+| copyrights                |
+-----------------------------
+=================
+Row Heights = 0px, 50px, 350px, auto, 280px, 60px
+Col Widths = 100%
+=================
+
+
+CSS CLASSES
+===========
+CONTAINER CLASSES = grid-container-extension
+ITEM CLASSES = grid-item-extension
+PER ITEM CLASS = class
+===========
+
+CSS
+=======
+.grid-container-extension {
+    height: 100%;
+}
+
+.grid-item-extension {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+body {
+    margin: 0%;
+}
+
+div.class-mobilefooter {
+    display: none;
+}
+
+.class-navbar { 
+    z-index: 1; 
+}
+  
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+   .grid-container{
+      display: flex;
+      flex-direction: column;
+   }
+   
+    div.class-footer {
+        display: none;
+    }
+    
+    div.class-mobilefooter {
+      display: block;
+    }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
+
+=======

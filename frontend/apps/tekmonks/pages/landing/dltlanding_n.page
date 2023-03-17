@@ -1,0 +1,189 @@
+SCHEMA
+======
+{
+   "metadata":{
+      "html":"page-meta",
+      "files":"./articles/{{url.product_path}}/metadata.{{lang}}.txt"
+   },
+   "navbar":{
+      "html":"navigation-menu",
+      "level":".menus/{{lang}}",
+      "logo":"./articles/.home/logo.png/dlt.png",
+      "massage_menu":"true",
+      "styleBody":"url(./pages/home/navbar.styleBody.css)",
+      "logo_style":"width:70px;",
+      "menu_arrow":"&nbsp;?"
+   },
+   "header":{
+      "html":"content-post",
+      "article":"{{url.product_path}}/header.md",
+      "id":"header",
+      "style":"display:inline-block;justify-content:center;width:100%;padding:0; text-align: center;",
+      "styleArticle":"url(./pages/landing/header_n.styleArticle.css)",
+      "styleContainer":"display:inline-block;",
+      "styleBody":"body{box-sizing:border-box;font-size:4em;font-family: Chakra Petch;width:100%} table {border-spacing: 10px;} table td {color: #444;}"
+   },
+   "section1":{
+      "html":"content-post",
+      "article":"{{url.product_path}}/section1.md",
+      "id":"section1",
+      "style":"display:inline-block;width:100%;text-align:center;",
+      "styleArticle":"url(./pages/landing/section1.styleArticle.css)",
+      "styleContainer":"display:inline-block;height:450px",
+      "styleBody":"body{font-family: Chakra Petch;} table {border-spacing: 10px; width:100%; color: grey; padding: 0px 60px 20px;}"
+   },
+   "carousel1":{
+      "html":"image-slider",
+      "path":"{{url.product_path}}/carousel1.md",
+      "pause":12000,
+      "transition":800,
+      "styleBody":"url(./pages/landing/carousel1.styleArticle.css)",
+      "dot_style":"background: rgba(255, 255, 255, 0.6); width, height: 10px",
+      "selected_dot_style":"background: rgba(255, 255, 255, 0.95)",
+      "chevron_style":"font-size: 40px;background: rgba(255, 255, 255, 0.6);color: rgba(0, 0, 0, 0.45);border-radius: 25px;",
+      "caption_style":"width:80%; top: -350px;left: 55px; font-family: Chakra Petch",
+      "style":"height:450px;object-fit:cover;"
+   },
+   "carousel2":{
+      "html":"image-slider",
+      "path":"{{url.product_path}}/carousel2.md",
+      "pause":12000,
+      "transition":800,
+      "styleBody":"url(./pages/landing/carousel2.styleArticle.css)",
+      "dot_style":"background: rgba(255, 255, 255, 0.6); width, height: 10px",
+      "selected_dot_style":"background: rgba(255, 255, 255, 0.95)",
+      "chevron_style":"font-size: 40px;background: rgba(255, 255, 255, 0.6);color: rgba(0, 0, 0, 0.45);border-radius: 25px;",
+      "caption_style":"width:80%; top: -300px;left: 55px; font-family: Chakra Petch",
+      "style":"height:450px;object-fit:cover;"
+   },
+   "section2":{
+      "html":"content-post",
+      "article":"{{url.product_path}}/section2.md",
+      "id":"section2",
+      "style":"width:100%;height:100%",
+      "styleArticle":"url(./pages/landing/section2.styleArticle.css)",
+      "styleContainer":"",
+      "styleBody":"body {text-align:left; font-family: Chakra Petch; height: 100%;}"
+   },
+   "reviews":{
+      "html":"content-post",
+      "article":"{{url.product_path}}/reviews.md",
+      "id":"reviews",
+      "style":"display:inline-block;background:#efefef;width:100%;padding:0",
+      "styleArticle":"url(./pages/landing/reviews.styleArticle.css)",
+      "styleContainer":"display:inline-block;",
+      "styleBody":"body {text-align:center;line-height: 1.6;font-family: Raleway; padding: 50px 0}"
+   },
+   "calltoaction":{
+      "html":"content-post",
+      "article":"{{url.product_path}}/calltoaction.md",
+      "id":"calltoaction",
+      "style":"width:100%;height:100%",
+      "styleArticle":"url(./pages/landing/calltoaction_n.styleArticle.css)",
+      "styleContainer":"",
+      "styleBody":"body {text-align:center;font-family: Chakra Petch; height: 100%;}"
+   },
+   "footer":{
+      "html":"content-post",
+      "article":".home/dltfooter.md",
+      "id":"footer",
+      "styleContainer":"background:white;height:350px;color:white;",
+      "styleArticle":"url(./pages/common/footer.styleArticle.css)"
+   },
+   "mobilefooter":{
+      "html":"content-post",
+      "article":".home/dltmobilefooter.md",
+      "id":"mobilefooter",
+      "styleContainer":"background:rgba(255, 255, 255);color:white;",
+      "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"
+   },
+   "copyrights":{
+      "html":"content-post",
+      "article":".home/copyright.md",
+      "id":"copyright",
+      "styleContainer":"background:white;height:60px;color:#787878;",
+      "styleArticle":"url(./pages/common/dltcopyrights.styleArticle.css)"
+   }
+}
+======
+
+
+LAYOUT
+=================
+-----------------------------
+| metadata                  |
+-----------------------------
+| navbar                    |
+-----------------------------
+| header                    |
+-----------------------------
+| section1    | carousel1   |
+-----------------------------
+| carousel2   | section2    |
+-----------------------------
+| calltoaction              |
+-----------------------------
+| footer                    |
+-----------------------------
+| mobilefooter              |
+-----------------------------
+| copyrights                |
+-----------------------------
+=================
+Row Heights = 0px, 50px, auto, auto, auto, auto, auto, auto, auto, 60px
+Col Widths = 50%
+=================
+
+
+CSS CLASSES
+===========
+CONTAINER CLASSES = grid-container-extension
+ITEM CLASSES = grid-item-extension
+PER ITEM CLASS = class
+===========
+
+CSS
+=======
+.grid-container-extension {
+    height: 100%;
+}
+
+.grid-item-extension {
+    text-align:center;
+}
+
+.item5 {
+   overflow: visible !important
+}
+
+body {
+    margin: 0%;
+}
+
+div.class-mobilefooter {
+   display: none;
+}
+
+.class-navbar { 
+    z-index: 1; 
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+  
+    div.class-footer {
+      display: none;
+    }
+    
+   .grid-container {
+      display:unset;
+   }
+   
+   div.class-mobilefooter {
+      display: block;
+   }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
+
+html{
+      width: 100%
+}
+=======
