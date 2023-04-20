@@ -17,6 +17,7 @@ async function elementConnected(element) {
 async function elementRendered(element) {
 	let imagesPath = element.getAttribute("path");
 	let result = await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${imagesPath}`)).json();
+	const filteredFiles = result.files.filter(file => !file.includes("_____________xbin__________ignore_stats")); result = {...result,files: filteredFiles};
 	
 	if (!result.result) return; 
 
