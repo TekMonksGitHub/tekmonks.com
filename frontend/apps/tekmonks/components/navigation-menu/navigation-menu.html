@@ -342,12 +342,12 @@ h4 + br {
     <nav class="mobilenavbar">
         <div class="logodiv" {{{logostyle}}}>
           <a href="./index.html">
-            <img class="logo" src="{{logo}}">
+            <img class="logo" src="{{logo}}"  alt="Tekmonks Logo">
           </a>
         </div>
         <div class="menudiv">
           <div>
-            <img class="menu-icon" src="./img/menu.png" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
+            <img class="menu-icon" src="./img/menu.png"  alt="Tekmonks Menu" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
             <div class="nav-mobile-container menu-hidden" >
               <div class="nav-primary-wrapper">
                 {{#level1}}
@@ -375,7 +375,7 @@ h4 + br {
         {{#logo}}
           <div class="logodiv" {{{logostyle}}}>
             <a href="./index.html">
-              <img class="logo" src="{{logo}}">
+              <img class="logo" src="{{logo}}" alt="Tekmonks Logo">
             </a>
           </div>
         {{/logo}}
@@ -390,7 +390,7 @@ h4 + br {
                   {{#level2}}
                     <div class="description {{#selected}}visible{{/selected}}" id="{{id}}">{{{description}}}</div>
                     <div class="menubgimage {{#selected}}visible{{/selected}}" id="{{id}}">
-                      <img src="./articles/.menus/en/.menubgimage/menu-bg-3.png">
+                      <img src="./articles/.menus/en/.menubgimage/menu-bg-3.png" alt="Tekmonks Menu">
                     </div>
                   {{/level2}}
                 </span>
