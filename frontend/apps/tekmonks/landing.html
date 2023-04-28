@@ -6,6 +6,7 @@
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="expires" content="-1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
         <link href="./pages/common/common.css" rel="stylesheet" />
         <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
@@ -64,11 +65,15 @@
             }, 200)          
         </script>
 
-        <title>{{i18n.Title}}</title>
+        <title>{{url.product_path}}</title>
     </head>
     <body style="margin: 0%;">
         <div class="loading" id="loading-container">
             <img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
         </div>
     </body>
+    <script>
+        const match = document.title.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
+        document.title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"} | Tekmonks`;
+    </script>
 </html>
