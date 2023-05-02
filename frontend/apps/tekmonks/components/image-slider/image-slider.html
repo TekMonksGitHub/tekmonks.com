@@ -87,8 +87,8 @@
         margin: 0px;
         display: block;
         position: absolute;
-          top:50%;
-          transform:translateY(-50%); 
+        top:50%;
+        transform:translateY(-50%); 
         right: 1%;
         font-size: 40px;
         background: rgba(255, 255, 255, 0.6);
@@ -114,7 +114,10 @@
         display: inline;
     }
     
-    
+    .caption:has(.headline-text) .headline-text{
+        font-size: 3vw
+    }
+
     </style>
     
     {{{styleBody}}}  <!-- This inserts the styleBody defined in element attribue, as elementConnected sets this as component data -->
@@ -124,11 +127,20 @@
         top: -360px !important
     }
     
+    .headline-button a{
+        font-size: 12px;
+        padding: 10px 20px !important;
+    }
+    
+    .caption:has(.headline-text){
+        top: -150px !important
+    }
+    
     p.headline-text {
-        font-size: 2rem;
+        font-size: 4vw;
     }
     {{{APP_CONSTANTS.MOBILE_MEDIA_QUERY_END}}}
-    
+       
     <div id="container">
     <div id="slider">
     <figure>
