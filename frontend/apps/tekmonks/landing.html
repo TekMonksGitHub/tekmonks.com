@@ -74,6 +74,17 @@
     </body>
     <script>
         const match = document.title.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
-        document.title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"} | Tekmonks`;
+        const title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"}`;
+        const expectedTitle = ["ASB", "About Us", "Join Our Team", "Reflection Network", "LoginCat", "MonBoss", "TeleScholr", "TeleDoctr", "CitySafe", "AIPA", "AI Analytics", "XBin", "APIBoss", "DBMagic", "Cloud Solutions", "IBM", "Custom Services", "AI", "Blog"];
+        const currentTitle = title.toLowerCase().replace(/\s/g, '');
+        for (let i = 0; i < expectedTitle.length; i++) {
+            const element = expectedTitle[i].toLowerCase().replace(/\s/g, '');
+            if (element == currentTitle) {
+                 document.title = `${expectedTitle[i]} | Tekmonks`
+                 break;  
+            } else{
+                document.title = `${title} | Tekmonks`
+            }
+        }
     </script>
 </html>
