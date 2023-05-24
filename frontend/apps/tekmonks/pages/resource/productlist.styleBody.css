@@ -1,0 +1,117 @@
+.resource-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.resource-materials {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: Raleway;
+}
+
+.resource-material-wrapper{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 23%;
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.15)
+}
+
+.product-box img{
+    height: 200px;
+    width: auto;
+}
+
+.product-box h2{
+    font-family: Raleway;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.product-box p{
+    font-family: Raleway;
+    margin-bottom: 30px;
+}
+
+.product-box a{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.resource-materials h1{
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.resource-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 25%;
+    flex-grow: 1;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.15)
+}
+
+.resource-box img{
+  height: 190px;
+  width: auto;
+}
+
+.resource-box h2{
+  font-family: Raleway;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.resource-box p{
+  font-family: Raleway;
+  margin-bottom: 30px;
+}
+
+.resource-box a{
+  border: 1px solid black;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.disabled{
+  border: 1px solid #c6c6c6;
+  color: #c6c6c6;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}

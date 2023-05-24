@@ -2,7 +2,7 @@
 #Learn More About Kloudust
 
 <br/><br/>
-[Download the brochure!](articles/products/kloudust.md/calltoaction.md/kloudust.en.pdf){:target="_blank"}[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+[Resources]({{#makeLink}}./resource.html?article_path=resources/resourcematerial/kloudust.md&menu_path=/{{/makeLink}})[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
 <br/><br/>
 ## Model number: KD001
 </div>
