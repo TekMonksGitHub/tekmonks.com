@@ -64,6 +64,13 @@ td{
     width: 50%;
 }
 
+h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: darkgrey;
+    margin-top: 10px;
+}
+
 .api400-section5{
     background: url(./articles/products/api400.md/calltoaction.md/api400-black-bg.png);
     background-repeat: no-repeat;
