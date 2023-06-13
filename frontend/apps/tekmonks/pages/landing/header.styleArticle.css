@@ -33,3 +33,7 @@ img {
     width: auto; 
     float: right
 }
+
+.product-header .monkruls-details{
+    width: 80vw;
+}
