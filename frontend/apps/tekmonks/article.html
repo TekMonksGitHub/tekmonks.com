@@ -55,7 +55,7 @@ License: GPL2 - see enclosed license.txt file.
 			}
 		}, 200)
 	</script>	
-	<title>{{url.article_path}}</title>
+	<title>Tekmonks</title>
 </head>
 
 <body style="margin: 0%">
@@ -63,8 +63,13 @@ License: GPL2 - see enclosed license.txt file.
 		<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
 	</div>
 	<script>
-       const match = document.title.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
-	   const title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"}`;
+	 	const currentURL = window.location.search
+        const urlSearchParam = atob(currentURL.slice(3)).replace(/.*\.html\?/, '')
+		const paramPairs = urlSearchParam.split('&');
+        const paramPairsResult = {};
+        paramPairs.forEach(pair => { const [key, value] = pair.split('='); paramPairsResult[key] = value;});
+       	const match = paramPairsResult.article_path.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
+	   	const title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"}`;
         const expectedTitle = ["ASB", "About Us", "Join Our Team", "Reflection Network", "LoginCat", "MonBoss", "TeleScholr", "TeleDoctr", "CitySafe", "AIPA", "AI Analytics", "XBin", "APIBoss", "DBMagic", "Cloud Solutions", "IBM", "Custom Services", "AI", "Blog"];
         const currentTitle = title.toLowerCase().replace(/\s/g, '');
         for (let i = 0; i < expectedTitle.length; i++) {
