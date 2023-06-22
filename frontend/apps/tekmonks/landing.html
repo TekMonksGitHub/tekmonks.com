@@ -78,7 +78,7 @@
         const paramPairs = urlSearchParam.split('&');
         const paramPairsResult = {};
         paramPairs.forEach(pair => { const [key, value] = pair.split('='); paramPairsResult[key] = value;});
-        const match = paramPairsResult.product_path.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
+        const match = paramPairsResult.product_path.match(/(?:\/)([^\/]+)(?=\.\w+$)/).slice(1);
         const title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"}`;
         const expectedTitle = ["ASB", "About Us", "Join Our Team", "Reflection Network", "LoginCat", "MonBoss", "TeleScholr", "TeleDoctr", "CitySafe", "AIPA", "AI Analytics", "XBin", "APIBoss", "DBMagic", "Cloud Solutions", "IBM", "Custom Services", "AI", "Blog"];
         const currentTitle = title.toLowerCase().replace(/\s/g, '');
