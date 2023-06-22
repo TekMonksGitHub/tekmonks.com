@@ -65,7 +65,7 @@
             }, 200)          
         </script>
 
-        <title>{{url.product_path}}</title>
+        <title>Tekmonks</title>
     </head>
     <body style="margin: 0%;">
         <div class="loading" id="loading-container">
@@ -73,7 +73,12 @@
         </div>
     </body>
     <script>
-        const match = document.title.match(/(?<=\/)([^\/]+)(?=\.\w+$)/);
+        const currentURL = window.location.search
+        const urlSearchParam = atob(currentURL.slice(3)).replace(/.*\.html\?/, '')
+        const paramPairs = urlSearchParam.split('&');
+        const paramPairsResult = {};
+        paramPairs.forEach(pair => { const [key, value] = pair.split('='); paramPairsResult[key] = value;});
+        const match = paramPairsResult.product_path.match(/(?:\/)([^\/]+)(?=\.\w+$)/).slice(1);
         const title = `${match ? match[0].charAt(0).toUpperCase() + match[0].slice(1) : "Tekmonks"}`;
         const expectedTitle = ["ASB", "About Us", "Join Our Team", "Reflection Network", "LoginCat", "MonBoss", "TeleScholr", "TeleDoctr", "CitySafe", "AIPA", "AI Analytics", "XBin", "APIBoss", "DBMagic", "Cloud Solutions", "IBM", "Custom Services", "AI", "Blog"];
         const currentTitle = title.toLowerCase().replace(/\s/g, '');
