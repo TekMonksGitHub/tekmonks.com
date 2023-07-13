@@ -1,5 +1,5 @@
 <div class="product-header" markdown="1">
 |   |
 |:------|
-| ![Monboss](articles/products/neuranet.md/header.md/header.en.svg =500x460) <p>AI SYSTEM TO MONITOR AND FIX INFRASTRACTURE</p> |
+| ![Neuranet](articles/products/neuranet.md/header.md/header.en.svg =500x460) <p class="neuranet-details">NEURANET <br/> Enterprise-Ready AI</p> |
 </div>
