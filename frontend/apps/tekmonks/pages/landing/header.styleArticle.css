@@ -34,6 +34,7 @@ img {
     float: right
 }
 
-.product-header .monkruls-details{
+.product-header .monkruls-details,
+.product-header .neuranet-details {
     width: 80vw;
 }

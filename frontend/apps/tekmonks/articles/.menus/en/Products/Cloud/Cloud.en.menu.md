@@ -1,0 +1,3 @@
+|           |          |        | 
+|:----------:|:----------:|:----------:|
+| [<h4>Corby</h4>]({{#makeLink}}./landing.html?product_path=./products/corby.md&menu_path=.menus/en{{/makeLink}}) <p>3 AI Business Platforms for minimal investment yet zero risk.</p> | [<h4>Kloudust</h4>]({{#makeLink}}./landing.html?product_path=./products/kloudust.md&menu_path=.menus/en{{/makeLink}}) <p>Multiple cloud solution providers into one enterprise software. </p> |[<h4>XBin</h4>]({{#makeLink}}./landing.html?product_path=./products/xbin.md&menu_path=.menus/en{{/makeLink}})<p>Sharing and management of enterprise content platform.</p> |

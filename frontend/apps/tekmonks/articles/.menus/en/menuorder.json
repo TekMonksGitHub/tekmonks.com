@@ -6,19 +6,19 @@
                 "hasLevelTwo": true,
                 "level2": [
                     {
-                        "item": "B2B eCommerce"
+                        "item": "Artificial Intelligence"
                     },
                     {
                         "item": "Cybersecurity"
                     },
                     {
-                        "item": "Enterprise Integration and Robotic Process Automation"
+                        "item": "Enterprise Application Integration and API"
                     },
                     {
-                        "item": "Enterprise Monitoring and Response"
+                        "item": "Monitoring and Response"
                     },
                     {
-                        "item": "The API Suite"
+                        "item": "Cloud"
                     }
 
                 ]
