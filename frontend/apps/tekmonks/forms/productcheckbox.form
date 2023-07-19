@@ -27,7 +27,8 @@ SCHEMA
     "xforge": {"id":"xforge","html":"input","type":"checkbox", "class":"input-checkbox", "value":"XForge"},
     "cronlord": {"id":"cronlord","html":"input","type":"checkbox", "class":"input-checkbox", "value":"Cronlord"},
     "monkvision": {"id":"monkvision","html":"input","type":"checkbox", "class":"input-checkbox", "value":"Monkvision"},
-    "xtrack": {"id":"xtrack","html":"input","type":"checkbox", "class":"input-checkbox", "value":"XTrack"}
+    "xtrack": {"id":"xtrack","html":"input","type":"checkbox", "class":"input-checkbox", "value":"XTrack"},
+    "neuranet": {"id":"neuranet","html":"input","type":"checkbox", "class":"input-checkbox", "value":"Neuranet"}
 }
 ======
 
@@ -35,26 +36,28 @@ SCHEMA
 LAYOUT
 =================
 ----------------------------------------------------------
-|aianalytics    |  cyberwarrior    |  reflectionnetwork  |
+|aianalytics    |  dbmagic           |  smartfirewall    |
 ----------------------------------------------------------
-|aipa           |  dbmagic         |  smartfirewall      |
+|aipa           |  kloudust          |  teleworkr        |
 ----------------------------------------------------------
-|api400         |  kloudust        |  teleworkr          |
+|api400         |  logincat          |  telescholr       |
 ----------------------------------------------------------
-|apianalytics   |  logincat        |  telescholr         |
+|apianalytics   |  monitorboss       |  teledoctr        |
 ----------------------------------------------------------
-|apiboss        |  monitorboss     |  teledoctr          |
+|apiboss        |  monkruls          |  telemeet         |
 ----------------------------------------------------------
-|apiservicebus  |  monkruls        |  telemeet           |
+|apiservicebus  |  monksos           |  xbin             |
 ----------------------------------------------------------
-|citysafe       |  monksos         |  xbin               |
+|citysafe       |  monkshuservice    |  xforge           |
 ----------------------------------------------------------
-|corby          |  monkshuservice  |  xforge             |
+|corby          |  monkvision        |  xtrack           |
 ----------------------------------------------------------
-|cronlord       |  monkvision      |  xtrack             |
-----------------------------------------------------------
+|cronlord       |  neuranet          |
+--------------------------------------
+|cyberwarrior   |  reflectionnetwork |
+--------------------------------------
 =================
-Row Heights = 35px, 35px, 35px, 35px, 35px, 35px, 35px, 35px, 35px
+Row Heights = 35px, 35px, 35px, 35px, 35px, 35px, 35px, 35px, 35px, 35px
 Col Widths = 33.3333% 33.3333% 33.3333%
 =================
 
@@ -209,6 +212,10 @@ input#monkvision::after {
 
 input#xtrack::after {
     content: "XTrack";
+}
+
+input#neuranet::after {
+    content: "Neuranet";
 }
 
 body {

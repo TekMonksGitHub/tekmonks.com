@@ -2,5 +2,5 @@
 <p style="font-size: 2vw; margin-bottom: 10px">The Borderless Office</p>
 
 <div class="headline-button" markdown="1">
-[View More]({{#makeLink}}./landing.html?product_path=./products/telefamily.md/teleworkr.md&menu_path=.menus/en{{/makeLink}})
+[Learn More]({{#makeLink}}./landing.html?product_path=./products/telefamily.md/teleworkr.md&menu_path=.menus/en{{/makeLink}})
 </div>
