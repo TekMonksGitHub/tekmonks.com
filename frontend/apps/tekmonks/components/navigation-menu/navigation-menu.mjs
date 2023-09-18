@@ -57,9 +57,11 @@ function enableMenu(searchElement) {
 	   	if (element.id == menuID) 
        	{
 			element.classList.add('mitem-visible');
+			element.parentElement.classList.add('m-active')
 		}
 		else {
 			element.classList.remove('mitem-visible');
+			element.parentElement.classList.remove('m-active')
 		}
 	});
 	elementCloseMenu.forEach(element => {
@@ -106,10 +108,12 @@ function selectMenuMobile(searchElement, id){
 }
 
 function toggleMenu(searchElement) {
+	const elementActiveMenu = searchElement.parentElement.querySelectorAll('.m-active');
 	const elementOuterLayer = searchElement.parentElement.querySelectorAll('.outerlayer-visible');
 	const elementMenu = searchElement.parentElement.querySelectorAll('.mitem');
 	const elementCloseMenu = searchElement.parentElement.querySelectorAll('.close-button');
 	elementOuterLayer.forEach(element => {
+			elementActiveMenu[0].classList.remove('m-active')
 			element.classList.remove('outerlayer-visible');
 			elementMenu.forEach(elementMenu => {
 				elementMenu.classList.remove('mitem-visible');
