@@ -7,10 +7,10 @@ p.submenu {
     padding: 10px 0 10px 5px;
     margin: 0px;
     padding-left: 10px;
-    color: #1B2B69;
+    color: white;
 }
 p.submenu.selected {
-    color: #1B2B69;
+    color: #063e5a;
     background-color: white;
     cursor: default;
     border-radius: 10px 0 0 10px;
@@ -23,7 +23,7 @@ p.submenu.selected {
 }
 .left {
     width: 20%;
-    background-color: #d9d9d9;
+    background-color: #063e5a;
     background-clip: padding-box;
     color: black;
     padding: 20px 0 20px 20px;
