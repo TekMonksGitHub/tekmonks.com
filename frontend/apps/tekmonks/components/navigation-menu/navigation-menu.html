@@ -11,6 +11,10 @@ body {
     font-family: sans-serif; 
 }
 
+nav{
+  background:#063e5a; 
+}
+
 .logo {
     height: auto;
     width: 120px;
@@ -31,7 +35,7 @@ body {
 }
 
 .mitem {
-    width: 90%;
+    width: 80%;
     display: none;
     position: absolute;
     background-color: rgb(48, 48, 48);
@@ -43,20 +47,23 @@ body {
     z-index: -1;
     opacity: 0;
     transition-delay: 0.2s;
-    border-radius: 0 0 0 20px;
+    border-radius: 20px 0 20px 20px;
 }
 
 .m {
     padding-bottom: 25px;
-    padding-left: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
     padding-right: 20px;
-    color: #444;
+    color: white;
     font-weight: 500;
     cursor: pointer;
 }
 
-.m:hover {
-    color: #07439c !important;
+.m:hover, .m-active {
+    color: #063e5a !important;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
 }
 
 .mitem-visible {
@@ -74,8 +81,8 @@ body {
 
 .outerlayer-visible {
     width: 100%;
-    height: 2000px;
-    top: -50px;
+    height: calc(100vh - 60px);
+    bottom: 0px;
     position: absolute;
     padding: 0px;
     margin: 0%;
@@ -93,7 +100,7 @@ body {
   
 .left {
     width: 20%; 
-    background-color: darkkhaki;
+    background-color: white;
     text-align: left;
 }
   
@@ -105,7 +112,7 @@ body {
 .description {
     visibility: hidden;
     position: absolute;
-    margin-right: 23%;
+    margin-right: 10%;
     padding: 10px 30px 0px 30px;
     z-index: 1;
 }
@@ -347,7 +354,7 @@ h4 + br {
         </div>
         <div class="menudiv">
           <div>
-            <img class="menu-icon" src="./img/menu.png"  alt="Tekmonks Menu" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
+            <img class="menu-icon" src="./img/menu.svg"  alt="Tekmonks Menu" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
             <div class="nav-mobile-container menu-hidden" >
               <div class="nav-primary-wrapper">
                 {{#level1}}
@@ -386,17 +393,14 @@ h4 + br {
               {{#hasLevelTwo}}
               <span class="mitem" id="{{id}}">
               {{/hasLevelTwo}}
-                <span class="column right">
-                  {{#level2}}
-                    <div class="description {{#selected}}visible{{/selected}}" id="{{id}}">{{{description}}}</div>
-                    <div class="menubgimage {{#selected}}visible{{/selected}}" id="{{id}}">
-                      <img src="./articles/.menus/en/.menubgimage/menu-bg-3.png" alt="Tekmonks Menu">
-                    </div>
-                  {{/level2}}
-                </span>
                 <span class="column left">
                   {{#level2}}
                     <p class="submenu {{#selected}}selected{{/selected}}" onmouseover="monkshu_env.components['navigation-menu'].enableRightColumnContent(this, '{{id}}')">{{item}}</p>
+                  {{/level2}}
+                </span>
+                <span class="column right">
+                  {{#level2}}
+                    <div class="description {{#selected}}visible{{/selected}}" id="{{id}}">{{{description}}}</div>
                   {{/level2}}
                 </span>
               {{#hasLevelTwo}}
