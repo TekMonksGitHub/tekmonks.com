@@ -1,0 +1,62 @@
+SCHEMA
+======
+{
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
+
+    "bloglist": {"html":"blog-list", "id":"bloglist", "styleBody":"url(./pages/manager/manager.styleBody.css)"}
+}
+======
+
+
+LAYOUT
+=================
+
+----------------------
+| navbar             |
+----------------------
+| bloglist           |
+----------------------
+
+
+=================
+Row Heights = 50px, auto
+Col Widths = 100%
+=================
+
+
+CSS CLASSES
+===========
+CONTAINER CLASSES = grid-container-extension
+ITEM CLASSES = grid-item-extension
+PER ITEM CLASS = class
+===========
+
+CSS
+=======
+.grid-container-extension {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+}
+
+#mobilefooter {
+   display: none; 
+}
+
+.class-navbar { 
+     z-index: 1;
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+  #footer {
+     display: none; 
+  }
+  
+  #mobilefooter {
+    display: block;
+  }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
+
+=======

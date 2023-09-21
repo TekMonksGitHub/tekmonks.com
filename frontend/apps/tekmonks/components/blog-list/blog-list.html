@@ -1,0 +1,36 @@
+{{{styleBody}}}
+
+
+<div class="container">
+    <ul>
+        {{#file}}
+        <li>
+           <div class="blog-list-item">
+                <div class="title">
+                    {{title}}
+                </div>
+                <div class="details-container">
+                    <div>
+                        {{lastModified}}
+                        <div>Last Modified</div>
+                    </div>
+                </div>
+                <div class="action-container">
+                    <button>Push</button>
+                    <button onclick="monkshu_env.components['blog-list'].editBlog(this, '{{id}}')">Edit</button>
+                    <button>Delete</button>
+                </div>
+           </div>
+           <div class="editor editor-{{id}}">
+                <div  contenteditable="true">
+                    {{{content}}}
+                </div>
+                <button class="save-button">
+                    Save
+                </button>
+           </div>
+        </li>
+        {{/file}}
+    </ul>
+</div>
+
