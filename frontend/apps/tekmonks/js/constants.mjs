@@ -33,6 +33,7 @@ export const APP_CONSTANTS = {
     API_SEND_CONTACTS_EMAIL: API_PATH+"/sendcontactsemail",
     API_SEND_PRODUCT_INQUIRIES: API_PATH+"/sendproductinquiries",
     API_GET_BLOG_LIST: API_PATH+"/getBlogList",
+    API_UPDATE_BLOG: API_PATH+"/updateBlog",
 
     SESSION_NOTE_ID: "com_monkshu_app_mnkp",
 
