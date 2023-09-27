@@ -4,7 +4,7 @@ body {
     font-family: Raleway;
 }
 p.submenu {
-    padding: 10px 0 10px 5px;
+    padding: 10px 10px 10px 5px;
     margin: 0px;
     padding-left: 10px;
     color: white;
@@ -14,7 +14,6 @@ p.submenu.selected {
     background-color: white;
     cursor: default;
     border-radius: 10px 0 0 10px;
-    font-weight: 700;
 }
 .mitem {
     top: 50px;
