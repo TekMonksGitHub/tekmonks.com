@@ -2,6 +2,15 @@
 
 
 <div class="container">
+    <div>
+        <button class="" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+          </div>
+    </div>
     <ul>
         {{#file}}
         <li>

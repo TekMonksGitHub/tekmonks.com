@@ -41,6 +41,16 @@ function findContainingListElement(element, targetTagName) {
     if(apiResponse.status) alert(apiResponse.message)
     
   }
+  
+  function openAddEditor(element){
+    let modal = element.parentElement.querySelectorAll('.modal')[0]
+    console.log(modal.style)
+    modal.style.display = 'block'
+  }
+  
+  function closeEditor(element){
+    element.parentElement.parentElement.style.display = 'none'
+  }
 
 function register() {
 	// convert this all into a WebComponent so we can use it
@@ -49,4 +59,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor}
