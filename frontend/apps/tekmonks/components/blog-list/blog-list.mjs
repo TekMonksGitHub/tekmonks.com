@@ -37,8 +37,8 @@ function findContainingListElement(element, targetTagName) {
   
   async function saveEditedBlog(element, title){
     const blogContainer = findContainingListElement(element, 'li').querySelectorAll('div[contenteditable="true"]')[0]
-    const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", {title: title, blog: blogContainer.innerHTML}, false, false);
-    if(apiResponse.status) alert(apiResponse.message)
+    const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", {title: title, blog: blogContainer.innerText}, false, false);
+    apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')
     
   }
   
@@ -46,6 +46,13 @@ function findContainingListElement(element, targetTagName) {
     let modal = element.parentElement.querySelectorAll('.modal')[0]
     console.log(modal.style)
     modal.style.display = 'block'
+  }
+  
+  async function addNewBlog(element){
+    let blogEditor = element.parentElement.parentElement.querySelectorAll('.add-editor')[0]
+    const apiResponse = await apiman.rest(APP_CONSTANTS.API_ADD_BLOG, "POST", {blog: blogEditor.innerText}, false, false);
+    apiResponse.status ? alert(apiResponse.message) : alert('Error in adding blog')
+
   }
   
   function closeEditor(element){
@@ -59,4 +66,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor, addNewBlog}

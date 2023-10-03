@@ -32,11 +32,14 @@ li{
 }
 
 button{
-    background-color: #E3E3E3;
     border-radius: 50px;
     border: none;
     padding: 5px 15px;
     cursor: pointer;
+}
+
+.action-button {
+    background-color: #E3E3E3;
 }
 
 .save-button{
@@ -95,4 +98,35 @@ button{
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  
+  .add-editor{
+    height: 500px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  .add-new-blog-button{
+    background-color: #063e5a;
+    color: white;
+  }
+  
+  .add-button{
+    background-color: #063e5a;
+    color: white;
+    margin-top: 20px;
+    font-size: larger;
+  }
+  
+  .add-button-container{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .add-editor{
+    border: 1px solid #063e5a;
+  }
+  
+  [contenteditable] {
+    outline: 0px solid transparent;
   }

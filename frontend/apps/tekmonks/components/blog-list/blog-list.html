@@ -3,11 +3,14 @@
 
 <div class="container">
     <div>
-        <button class="" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD</button>
+        <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD NEW BLOG</button>
         <div id="modal" class="modal">
             <div class="modal-content">
               <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
-              <p>Some text in the Modal..</p>
+              <div class="add-editor" contenteditable="true">Your blog post here</div>
+              <div class="add-button-container">
+                <button class="add-button" onclick="monkshu_env.components['blog-list'].addNewBlog(this)">ADD</button>
+              </div>
             </div>
           </div>
     </div>
@@ -25,9 +28,9 @@
                     </div>
                 </div>
                 <div class="action-container">
-                    <button>Push</button>
-                    <button onclick="monkshu_env.components['blog-list'].editBlog(this, '{{id}}')">Edit</button>
-                    <button>Delete</button>
+                    <button class="action-button">Push</button>
+                    <button class="action-button" onclick="monkshu_env.components['blog-list'].editBlog(this, '{{id}}')">Edit</button>
+                    <button class="action-button">Delete</button>
                 </div>
            </div>
            <div class="editor editor-{{id}}">

@@ -7,5 +7,6 @@
     "/apps/tekmonks/sendcontactsemail" : "/apis/sendcontactsemail.js",
     "/apps/tekmonks/sendproductinquiries" : "/apis/sendproductinquiries.js",
     "/apps/tekmonks/getBlogList" : "/apis/getBlogList.js?get=true",
-    "/apps/tekmonks/updateBlog" : "/apis/updateBlog.js"
+    "/apps/tekmonks/updateBlog" : "/apis/updateBlog.js",
+    "/apps/tekmonks/addBlog" : "/apis/addBlog.js"
 }
