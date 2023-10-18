@@ -12,7 +12,7 @@
                 <button class="add-button" onclick="monkshu_env.components['blog-list'].addNewBlog(this)">ADD</button>
               </div>
             </div>
-          </div>
+        </div>
     </div>
     <ul>
         {{#file}}
@@ -28,8 +28,17 @@
                     </div>
                 </div>
                 <div class="action-container">
-                    <button class="action-button">Push</button>
+                    <button class="action-button">Publish</button>
                     <button class="action-button" onclick="monkshu_env.components['blog-list'].editBlog(this, '{{id}}')">Edit</button>
+                    <div id="edit-modal" class="edit-modal">
+                        <div class="edit-modal-content editor-{{id}}">
+                          <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+                          <div class="edit-editor" contenteditable="true">{{{content}}}</div>
+                          <div class="edit-button-container">
+                            <button class="edit-button" onclick="monkshu_env.components['blog-list'].saveEditedBlog(this, '{{title}}')">EDIT</button>
+                          </div>
+                        </div>
+                    </div>
                     <button class="action-button">Delete</button>
                 </div>
            </div>

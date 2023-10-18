@@ -7,7 +7,7 @@ import { apimanager as apiman } from "/framework/js/apimanager.mjs"
 
 async function elementConnected(element) {
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
-    console.log(blogList)
+    // console.log(blogList)
     let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
     
     if (element.id) {
@@ -30,21 +30,19 @@ function findContainingListElement(element, targetTagName) {
   }
   
   function editBlog(element, id) {
-    const listElement = findContainingListElement(element, 'li');
-    const blog = listElement.querySelectorAll(`.editor-${id}`)[0];
-    blog.classList.toggle('editor-visible')
+    const modal = element.parentElement.querySelectorAll('.edit-modal')[0]
+    const blog = modal.querySelectorAll(`.editor-${id}`)[0]
+    modal.style.display = 'block'
   }
   
   async function saveEditedBlog(element, title){
-    const blogContainer = findContainingListElement(element, 'li').querySelectorAll('div[contenteditable="true"]')[0]
-    const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", {title: title, blog: blogContainer.innerText}, false, false);
+    let blogEditor = element.parentElement.parentElement.querySelectorAll('.edit-editor')[0]
+    const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", {title: title, blog: blogEditor.innerText}, false, false);
     apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')
-    
   }
   
   function openAddEditor(element){
     let modal = element.parentElement.querySelectorAll('.modal')[0]
-    console.log(modal.style)
     modal.style.display = 'block'
   }
   
