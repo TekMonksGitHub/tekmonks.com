@@ -13,18 +13,21 @@ body {
 
 nav{
   background:#063e5a; 
+  height: 100%;
 }
 
 .logo {
     height: auto;
     width: 120px;
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-top: 0 !important;
+    margin-left: 20px !important;
+    margin-bottom: 0 !important;
 }
 
 .logodiv {
     float: left;
-    padding-top: 4px;
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
 }
 
@@ -353,7 +356,7 @@ h4 + br {
     <nav class="mobilenavbar">
         <div class="logodiv" {{{logostyle}}}>
           <a href="./index.html">
-            <img class="logo" src="./articles/.home/logo.png/logo.svg"  alt="Tekmonks Logo">
+            <img class="logo" src="{{logo}}"  alt="Tekmonks Logo">
           </a>
         </div>
         <div class="menudiv">
@@ -386,7 +389,7 @@ h4 + br {
         {{#logo}}
           <div class="logodiv" {{{logostyle}}}>
             <a href="./index.html">
-              <img class="logo" src="./articles/.home/logo.png/logo.svg" alt="Tekmonks Logo">
+              <img class="logo" src="{{logo}}" alt="Tekmonks Logo">
             </a>
           </div>
         {{/logo}}
