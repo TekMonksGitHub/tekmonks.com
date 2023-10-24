@@ -8,7 +8,7 @@ SCHEMA
    "navbar":{
       "html":"navigation-menu",
       "level":".menus/{{lang}}",
-      "logo":"./articles/.home/logo.png/dlt.png",
+      "logo":"./articles/.home/logo.png/dlt.svg",
       "massage_menu":"true",
       "styleBody":"url(./pages/home/navbar.styleBody.css)",
       "logo_style":"width:70px;",
