@@ -176,3 +176,8 @@ button{
     display: flex;
     justify-content: end;
   }
+  
+  .header-button-container{
+    display: flex;
+    gap: 20px;
+  }

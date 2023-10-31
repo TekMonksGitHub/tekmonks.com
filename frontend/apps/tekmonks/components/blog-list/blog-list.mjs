@@ -4,6 +4,7 @@
  */
 import {monkshu_component} from "/framework/js/monkshu_component.mjs";
 import { apimanager as apiman } from "/framework/js/apimanager.mjs"
+import { loginmanager } from "../../js/loginmanager.mjs";
 
 async function elementConnected(element) {
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
@@ -56,6 +57,10 @@ function findContainingListElement(element, targetTagName) {
   function closeEditor(element){
     element.parentElement.parentElement.style.display = 'none'
   }
+  
+  function logout(){
+    loginmanager.logout()
+  }
 
 function register() {
 	// convert this all into a WebComponent so we can use it
@@ -64,4 +69,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor, addNewBlog}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor, addNewBlog, logout}

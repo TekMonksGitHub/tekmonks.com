@@ -2,7 +2,7 @@
 
 
 <div class="container">
-    <div>
+    <div class="header-button-container">
         <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD NEW BLOG</button>
         <div id="modal" class="modal">
             <div class="modal-content">
@@ -13,6 +13,7 @@
               </div>
             </div>
         </div>
+        <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].logout()">Logout</button>
     </div>
     <ul>
         {{#file}}
