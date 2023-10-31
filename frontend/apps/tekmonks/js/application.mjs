@@ -23,11 +23,15 @@ const init = async hostname => {
 
 const main = async _ => {
 	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData(); await _interceptReferrer(); await _registerComponents();
+	let url = window.location.href.replace(/%2F/g, '/').replace(/%3D+$/g, '')
 	try {
-		await router.loadPage(window.location.href == APP_CONSTANTS.INDEX_HTML || 
-			router.decodeURL(window.location.href) == APP_CONSTANTS.INDEX_HTML ? 
-				APP_CONSTANTS.MAIN_HTML : window.location.href);
-	} catch (error) { router.loadPage(APP_CONSTANTS.ERROR_HTML,{error, stack: error.stack || new Error().stack}); }
+		await router.loadPage(url == APP_CONSTANTS.INDEX_HTML || 
+			router.decodeURL(url) == APP_CONSTANTS.INDEX_HTML ? 
+				APP_CONSTANTS.MAIN_HTML : url);
+	} catch (error) { 
+		console.log(error)
+		//router.loadPage(APP_CONSTANTS.ERROR_HTML,{error, stack: error.stack || new Error().stack}); 
+	}
 }
 
 const _registerComponents = async _ => { for (const component of APP_CONSTANTS.COMPONENTS) 
