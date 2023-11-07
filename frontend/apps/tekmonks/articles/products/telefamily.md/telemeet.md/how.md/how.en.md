@@ -4,5 +4,5 @@
 
 |   |   |   |
 |:------:|:----------:|:----------:|
-| ![Contact] (articles/products/telefamily.md/telemeet.md/how.md/contact.png)<p class="how-title">CONNECT</p><br/><p class="how-description">Contact us to schedule your demo.</p> | ![Configure] (articles/products/telefamily.md/telemeet.md/how.md/configure.png)<p class="how-title">CONFIGURE & INSTALL</p><br/><p class="how-description">We will configure and customize for your organization.</p> | ![Done] (articles/products/telefamily.md/telemeet.md/how.md/done.png)<p class="how-title">YAY! DONE</p><br/><p class="how-description">Well that was simple!  Now focus on what you do best with happy clients!</p > |
+| ![Contact] (articles/products/telefamily.md/telemeet.md/how.md/contact.svg =*x80)<p class="how-title">CONNECT</p><br/><p class="how-description">Contact us to schedule your demo.</p> | ![Configure] (articles/products/telefamily.md/telemeet.md/how.md/configure.svg =*x80)<p class="how-title">CONFIGURE & INSTALL</p><br/><p class="how-description">We will configure and customize for your organization.</p> | ![Done] (articles/products/telefamily.md/telemeet.md/how.md/done.svg =*x80)<p class="how-title">YAY! DONE</p><br/><p class="how-description">Well that was simple!  Now focus on what you do best with happy clients!</p > |
 </div>

@@ -13,18 +13,21 @@ body {
 
 nav{
   background:#063e5a; 
+  height: 100%;
 }
 
 .logo {
     height: auto;
     width: 120px;
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-top: 0 !important;
+    margin-left: 20px !important;
+    margin-bottom: 0 !important;
 }
 
 .logodiv {
     float: left;
-    padding-top: 4px;
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
 }
 
@@ -293,6 +296,10 @@ nav{
 
 .mobilenavbar {
   display: none; 
+}
+
+.logo{
+  margin: 10px 0 20px 10px;
 }
 
 </style>

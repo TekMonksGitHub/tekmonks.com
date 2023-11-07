@@ -1,7 +1,7 @@
 SCHEMA
 ======
 {
-    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/dlt.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/dlt.svg", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;"},
     "blogheader": {"html":"content-post", "article":"{{url.blogs_path}}/blogheader.md", "id":"blogheader", "style":"text-align:center;", "styleContainer":"padding: 60px 0;", "styleBody":"url(./pages/blogs/mainblog/mainBlog.styleBody.css)"},
     "blogcontent": {"html":"content-post", "article":"{{url.blogs_path}}/blogcontent.md", "id":"blogcontent", "style":"display:inline-block; text-align:center;", "styleBody":"url(./pages/blogs/mainblog/mainBlog.styleBody.css)"},
     "footer": {"html":"content-post", "article":".home/dltfooter.md", "id":"footer", "styleContainer":"background:rgba(255, 255, 255);color:white;height:320px", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},

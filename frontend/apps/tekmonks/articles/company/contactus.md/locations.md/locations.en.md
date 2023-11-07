@@ -3,7 +3,7 @@
 <br/>
 |   |   |   |
 |:------:|:----------:|:----------:|
-|![USA](articles/company/contactus.md/locations.md/images/usa.svg =80x80)<br/><h3>USA</h3><br/><p>TekMonks Corp.<br/>1666 Connecticut Avenue, NW<br/>Washington, DC 20009<br/>+1 855 485 5657</p>|![Japan](articles/company/contactus.md/locations.md/images/japan.svg =80x80)<br/><h3>Japan</h3><br/><p>TekMonks株式会社<br/>〒130-0013<br/>東京墨田区錦糸4-6-7<br/>万正オンダビル401号<br/>+81 80 6389 5308</p>|![Canada](articles/company/contactus.md/locations.md/images/canada.svg =80x80)<br/><h3>Canada</h3><br/><p>TekMonks<br/>+1 855 485 5657</p>|
+|![USA](articles/company/contactus.md/locations.md/images/usa.svg =80x80)<br/><h3>USA</h3><br/><p>TekMonks Corp.<br/>1666 Connecticut Avenue, NW<br/>Washington, DC 20009<br/>+1 855 485 5657</p>|![Japan](articles/company/contactus.md/locations.md/images/japan.svg =80x80)<br/><h3>Japan</h3><br/><p>TekMonks株式会社<br/>〒130-0013<br/>東京墨田区錦糸4-6-7<br/>万正オンダビル401号<br/>+81-3-4218-2414</p>|![Canada](articles/company/contactus.md/locations.md/images/canada.svg =80x80)<br/><h3>Canada</h3><br/><p>TekMonks<br/>+1 855 485 5657</p>|
 
 <br/>
 <br/>
