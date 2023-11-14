@@ -10,7 +10,6 @@ exports.doService = async jsonReq => {
   }
 
   const blog = jsonReq.blog;
-  console.log(blog)
 
   if (!blog) {
     return { error: "Blog content is required." };
@@ -37,7 +36,6 @@ async function saveBlogToFile(folderPath, blog) {
 
   // Create the full file path
   const filePath = path.join(folderPath, fileName + ".md");
-    console.log(filePath)
   try {
     await writeFile(filePath, blog, "utf8");
   } catch (error) {

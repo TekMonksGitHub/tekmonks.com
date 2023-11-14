@@ -17,8 +17,7 @@ function handleLoginResult(resp) {
         session.set(APP_CONSTANTS.USERNAME, resp.name);
         session.set(APP_CONSTANTS.USERORG, resp.org);
         securityguard.setCurrentRole(APP_CONSTANTS.USER_ROLE);
-        //startAutoLogoutTimer();
-        console.log('should redirect')
+        //startAutoLogoutTimer(); //currently have issues
         router.loadPage(APP_CONSTANTS.UPDATEBLOG_HTML);
     } else {LOG.error(`Login failed for ${id}`); router.loadPage(`${APP_CONSTANTS.LOGIN_HTML}?_error=true`);}
 }

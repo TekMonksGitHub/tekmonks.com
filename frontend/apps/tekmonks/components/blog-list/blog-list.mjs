@@ -5,10 +5,13 @@
 import {monkshu_component} from "/framework/js/monkshu_component.mjs";
 import { apimanager as apiman } from "/framework/js/apimanager.mjs"
 import { loginmanager } from "../../js/loginmanager.mjs";
+import {session} from "/framework/js/session.mjs";
 
 async function elementConnected(element) {
+    const userID = session.get(APP_CONSTANTS.USERID);
+    const org = session.get(APP_CONSTANTS.USERORG);
+    const getFolderAPIResponse = await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
-    // console.log(blogList)
     let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
     
     if (element.id) {
