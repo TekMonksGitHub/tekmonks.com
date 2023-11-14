@@ -1,7 +1,4 @@
 {
     "CURRENT_YEAR": "",
-    "COMPANY_NAME": "Tekmonks",
-    "COMPONENTS": ["components/dialog-box", "components/span-with-menu" ],
-    "APP_ABOUT_URL": "https://tekmonks.com/",
-    "TKMLOGINAPP_URL": "https://tekmonks.com/apps/loginapp/loginappframework/index.html"
+    "COMPANY_NAME": "Tekmonks"
 }

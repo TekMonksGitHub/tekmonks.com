@@ -7,7 +7,6 @@ const path = require("path");
 
 APP_ROOT = `${path.resolve(`${__dirname}/../../`)}`;
 exports.CMS_ROOT = `${path.resolve(`${__dirname}/../../../../../frontend/apps/tekmonks/articles`)}`;
-exports.BLOG_ROOT = `${path.resolve(`${__dirname}/../../../../../frontend/apps/tekmonks/articles`)}`;
 exports.LIB_DIR = `${APP_ROOT}/apis/lib`;
 exports.CONF_DIR = `${APP_ROOT}/conf`;
 
