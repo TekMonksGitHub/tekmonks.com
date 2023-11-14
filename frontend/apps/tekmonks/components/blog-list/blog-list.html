@@ -1,0 +1,58 @@
+{{{styleBody}}}
+
+
+<div class="container">
+    <div class="header-button-container">
+        <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD NEW BLOG</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+              <div class="add-editor" contenteditable="true">Your blog post here</div>
+              <div class="add-button-container">
+                <button class="add-button" onclick="monkshu_env.components['blog-list'].addNewBlog(this)">ADD</button>
+              </div>
+            </div>
+        </div>
+        <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].logout()">Logout</button>
+    </div>
+    <ul>
+        {{#file}}
+        <li>
+           <div class="blog-list-item">
+                <div class="title">
+                    {{title}}
+                </div>
+                <div class="details-container">
+                    <div>
+                        {{lastModified}}
+                        <div>Last Modified</div>
+                    </div>
+                </div>
+                <div class="action-container">
+                    <button class="action-button">Publish</button>
+                    <button class="action-button" onclick="monkshu_env.components['blog-list'].editBlog(this, '{{id}}')">Edit</button>
+                    <div id="edit-modal" class="edit-modal">
+                        <div class="edit-modal-content editor-{{id}}">
+                          <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+                          <div class="edit-editor" contenteditable="true">{{{content}}}</div>
+                          <div class="edit-button-container">
+                            <button class="edit-button" onclick="monkshu_env.components['blog-list'].saveEditedBlog(this, '{{title}}')">EDIT</button>
+                          </div>
+                        </div>
+                    </div>
+                    <button class="action-button">Delete</button>
+                </div>
+           </div>
+           <div class="editor editor-{{id}}">
+                <div  contenteditable="true">
+                    {{{content}}}
+                </div>
+                <button class="save-button" onclick="monkshu_env.components['blog-list'].saveEditedBlog(this, '{{title}}')">
+                    Save
+                </button>
+           </div>
+        </li>
+        {{/file}}
+    </ul>
+</div>
+

@@ -9,3 +9,8 @@
 |:------:|:----------:|
 |[![Fortify Image] (articles/blogpages/mainblog/blogcontent.md/images/fortify.svg =80x130 "Fortify")<h3>FORTIFY</h3><p class="content">Learn how to prepare and protect against current cybersecurity threats.</p>]({{#makeLink}}./bloglist.html?blogs_path=blogpages/bloglist/fortify.md&menu_path=/{{/makeLink}}) | [![Breakdown Image] (articles/blogpages/mainblog/blogcontent.md/images/breakdown.svg =80x110 "Breakdown")<h3>BREAKDOWN</h3><p class="content">In depth but easy to understand analyses of cyber threats.</p>]({{#makeLink}}./bloglist.html?blogs_path=blogpages/bloglist/breakdown.md&menu_path=/{{/makeLink}}) |
 </div>
+
+|   |   |
+|:------:|:----------:|
+|[<h3>ADD/EDIT BLOG</h3>]({{#makeLink}}./login.html{{/makeLink}}) |   |
+</div>
