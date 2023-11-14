@@ -34,8 +34,7 @@ const main = async _ => {
 					APP_CONSTANTS.MAIN_HTML : url);
 		}
 	} catch (error) { 
-		console.log(error)
-		//router.loadPage(APP_CONSTANTS.ERROR_HTML,{error, stack: error.stack || new Error().stack}); 
+		router.loadPage(APP_CONSTANTS.ERROR_HTML,{error, stack: error.stack || new Error().stack}); 
 	}
 }
 
