@@ -85,6 +85,19 @@ button{
     width: 80%;
   }
   
+  #language{
+    width: 15%;
+    height: 40px;
+    font-size: 1rem;
+    text-indent: 10px;
+    margin-bottom: 40px;
+  }
+
+  .label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
  
   .close {
     color: #aaa;
@@ -102,7 +115,6 @@ button{
   
   .add-editor{
     height: 500px;
-    margin-top: 40px;
     padding: 10px;
   }
   

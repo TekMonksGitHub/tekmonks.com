@@ -13,7 +13,6 @@ exports.doService = async jsonReq => {
     const userid = jsonReq.userid;
     const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md/`;
     const fullPath = path.join(folderPath, btoa(org), btoa(userid));
-   
     
     try{
         if (!fs.existsSync(fullPath)) {

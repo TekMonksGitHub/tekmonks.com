@@ -10,16 +10,20 @@ exports.doService = async jsonReq => {
   }
 
   const blog = jsonReq.blog;
-
+  const language = jsonReq.language;
+  const org = jsonReq.org
+  const userid = jsonReq.userid
+  
   if (!blog) {
     return { error: "Blog content is required." };
   }
 
-  const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md/draft`; // Adjust the folder path as needed
+  const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md/`; // Adjust the folder path as needed
+  const fullPath = path.join(folderPath, btoa(org), btoa(userid))
 
   try {
-    ensureDirectoryExists(folderPath);
-    await saveBlogToFile(folderPath, blog);
+    ensureDirectoryExists(fullPath);
+    await saveBlogToFile(fullPath, blog, language);
     return { message: "Blog added successfully.", status: true};
   } catch (error) {
     return { error: "Failed to add blog. Error is " +  error };
@@ -27,12 +31,12 @@ exports.doService = async jsonReq => {
 };
 
 function validateRequest(jsonReq) {
-  return jsonReq && jsonReq.blog;
+  return jsonReq && jsonReq.blog && jsonReq.org && jsonReq.userid && jsonReq.language;
 }
 
-async function saveBlogToFile(folderPath, blog) {
+async function saveBlogToFile(folderPath, blog, language) {
   // Generate a unique file name or use a timestamp-based name
-  const fileName = generateUniqueFileName();
+  const fileName = generateUniqueFileName(language);
 
   // Create the full file path
   const filePath = path.join(folderPath, fileName + ".md");
@@ -43,14 +47,14 @@ async function saveBlogToFile(folderPath, blog) {
   }
 }
 
-function generateUniqueFileName() {
+function generateUniqueFileName(language) {
   const now = new Date();
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, "0");
   const day = String(now.getDate()).padStart(2, "0");
   const hours = String(now.getHours()).padStart(2, "0");
   const minutes = String(now.getMinutes()).padStart(2, "0");
-  return `${year}-${month}-${day}-${hours}-${minutes}.en`
+  return `${year}-${month}-${day}-${hours}-${minutes}.${language}`
 }
 
 function ensureDirectoryExists(directoryPath) {

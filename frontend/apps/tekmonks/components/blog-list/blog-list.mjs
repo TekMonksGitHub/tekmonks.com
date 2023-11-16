@@ -10,7 +10,7 @@ import {session} from "/framework/js/session.mjs";
 async function elementConnected(element) {
     const userID = session.get(APP_CONSTANTS.USERID);
     const org = session.get(APP_CONSTANTS.USERORG);
-    const getFolderAPIResponse = await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
+    await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
     let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
     
@@ -18,20 +18,6 @@ async function elementConnected(element) {
         if (!blog_list.datas) blog_list.datas = {}; blog_list.datas[element.id] = {...blogList, styleBody};
     } else blog_list.data = {...blogList};
 }
-
-function findContainingListElement(element, targetTagName) {
-    let currentElement = element.parentElement;
-  
-    while (currentElement && currentElement.parentElement) {
-      if (currentElement.parentElement.tagName.toLowerCase() === targetTagName) {
-        return currentElement.parentElement;
-      }
-  
-      currentElement = currentElement.parentElement;
-    }
-  
-    return null;
-  }
   
   function editBlog(element, id) {
     const modal = element.parentElement.querySelectorAll('.edit-modal')[0]
@@ -52,9 +38,12 @@ function findContainingListElement(element, targetTagName) {
   
   async function addNewBlog(element){
     let blogEditor = element.parentElement.parentElement.querySelectorAll('.add-editor')[0]
-    const apiResponse = await apiman.rest(APP_CONSTANTS.API_ADD_BLOG, "POST", {blog: blogEditor.innerText}, false, false);
+    let language = element.parentElement.parentElement.querySelectorAll('#language')[0].value
+    const userID = session.get(APP_CONSTANTS.USERID);
+    const org = session.get(APP_CONSTANTS.USERORG);
+    const params = {blog: blogEditor.innerText, language: language, userid: userID, org: org}
+    const apiResponse = await apiman.rest(APP_CONSTANTS.API_ADD_BLOG, "POST", params, false, false);
     apiResponse.status ? alert(apiResponse.message) : alert('Error in adding blog')
-
   }
   
   function closeEditor(element){

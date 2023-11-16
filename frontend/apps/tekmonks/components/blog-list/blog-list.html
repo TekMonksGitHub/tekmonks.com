@@ -6,9 +6,16 @@
         <button class="add-new-blog-button" onclick="monkshu_env.components['blog-list'].openAddEditor(this)">ADD NEW BLOG</button>
         <div id="modal" class="modal">
             <div class="modal-content">
-              <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
-              <div class="add-editor" contenteditable="true">Your blog post here</div>
-              <div class="add-button-container">
+                <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+                <div class="label">Langauge:</div>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="ja">Japanese</option>
+                    <option value="hi">Hindi</option>
+                </select>
+                <div class="label">Blog Content:</div>
+                <div class="add-editor" contenteditable="true">Your blog post here</div>
+                <div class="add-button-container">
                 <button class="add-button" onclick="monkshu_env.components['blog-list'].addNewBlog(this)">ADD</button>
               </div>
             </div>
