@@ -50,6 +50,7 @@ export const APP_CONSTANTS = {
     MIN_PASS_LENGTH: 8,
     API_LOGIN: `${API_PATH}/login`,
     BCRYPT_SALT: "$2a$10$VFyiln/PpFyZc.ABoi4ppf",
+    TIMEOUT: 3600000,
     USERID: "id",
     USERNAME: "username",
     USERORG: "userorg",
