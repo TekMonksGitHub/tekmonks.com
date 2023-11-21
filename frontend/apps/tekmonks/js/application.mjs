@@ -23,7 +23,7 @@ const init = async hostname => {
 
 const main = async _ => {
 	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData(); await _interceptReferrer(); await _registerComponents();
-	let url = window.location.href.replace(/%2F/g, '/').replace(/%3D+$/g, '')
+	let url = window.location.href.replace(/%2F/g, '/').replace(/%3D/g, '')
 	try {
 		if(securityguard.getCurrentRole() == APP_CONSTANTS.USER_ROLE 
 			&& router.decodeURL(url) == APP_CONSTANTS.LOGIN_HTML) {

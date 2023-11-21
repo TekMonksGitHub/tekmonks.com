@@ -39,8 +39,6 @@ function startAutoLogoutTimer() {
     router.addOnLoadPage(startAutoLogoutTimer);
 
     if (!session.get(APP_CONSTANTS.USERID)) return; // not logged in
-    console.log(APP_CONSTANTS.USERID)
-    console.log(APP_CONSTANTS.TIMEOUT)
     
     const events = ["load", "mousemove", "mousedown", "click", "scroll", "keypress"];
     const resetTimer = _=> {_stoptAutoLogoutTimer(); currTimeout = setTimeout(_=>logout(), APP_CONSTANTS.TIMEOUT);}
