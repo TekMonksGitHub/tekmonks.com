@@ -42,6 +42,7 @@ export const APP_CONSTANTS = {
     API_GET_BLOG_LIST: API_PATH+"/getBlogList",
     API_UPDATE_BLOG: API_PATH+"/updateBlog",
     API_ADD_BLOG: API_PATH+"/addBlog",
+    API_CHECK_FOLDER: API_PATH+"/checkFolder",
 
     SESSION_NOTE_ID: "com_monkshu_app_mnkp",
 
@@ -49,9 +50,13 @@ export const APP_CONSTANTS = {
     MIN_PASS_LENGTH: 8,
     API_LOGIN: `${API_PATH}/login`,
     BCRYPT_SALT: "$2a$10$VFyiln/PpFyZc.ABoi4ppf",
+    TIMEOUT: 3600000,
     USERID: "id",
+    USERNAME: "username",
+    USERORG: "userorg",
     USER_ROLE: "user",
-    GUEST_ROLE: "guest"
+    GUEST_ROLE: "guest",
+    ADMIN_ROLE: "admin"
 }
 
 APP_CONSTANTS.PERMISSIONS_MAP = {

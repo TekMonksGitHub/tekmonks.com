@@ -1,7 +1,4 @@
 /**
- * Login for Kloudust web admin. Needs Tekmonks Unified Login
- * to work.
- * 
  * (C) 2023 TekMonks. All rights reserved.
  */
 
