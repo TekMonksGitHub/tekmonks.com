@@ -20,14 +20,14 @@ a:hover {text-decoration:underline;}   /* mouse over link */
 a:active {text-decoration:underline;}  /* selected link */
 
 div#advtextbox{
-    margin-left: 4em;
-    color: #ffffff;
-    text-align: center;
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	margin-left: 4em;
+	color: #ffffff;
+	text-align: center;
+	width: 40%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	max-width: 25em;
 }
 div#advtextbox img#logo {width: 100%;}
@@ -41,7 +41,7 @@ div#advtextbox span.button {
 	margin-top: 3em;
 	cursor: default;
 	width: 8em;
-    color: #4c4c4c;
+	color: #4c4c4c;
 }
 
 div#lgbox {
@@ -55,8 +55,8 @@ div#lgbox {
 div#lgbox:hover {transform: scale(1.02); cursor: pointer;}
 div#lgbox span {
 	width: 100%;
-    display: block;
-    margin-top: 0.5em;
+	display: block;
+	margin-top: 0.5em;
 	text-align: center;
 }
 div#lgbox span.error {color: #b54646}
@@ -84,10 +84,10 @@ div#lgbox img {height: 4em; width: 100%;}
 	<link href="./img/favicon.png" rel="icon" type="image/x-icon">
 	
 	<title>{{i18n.Title}}</title>
-
+	
 	<script type="module">
 	import {language} from "./js/language.mjs"; monkshu_env.apps[APP_CONSTANTS.APP_NAME].language = language;
-	import {tkmlogin} from "./3p/tkmlogin.mjs"; monkshu_env.apps[APP_CONSTANTS.APP_NAME].tkmlogin = tkmlogin;
+	import {tkmlogin} from "{{{APP_CONSTANTS.TKMLOGIN_LIB}}}"; monkshu_env.apps[APP_CONSTANTS.APP_NAME].tkmlogin = tkmlogin;
 	</script>
 </head>
 
@@ -101,12 +101,12 @@ div#lgbox img {height: 4em; width: 100%;}
 
 <div id="lgbox" onclick='monkshu_env.apps[APP_CONSTANTS.APP_NAME].tkmlogin.login("{{{i18n.Title}}}",
 		"{{#_org_monkshu_makeLink}}{{{APP_CONSTANTS.LOGINRESULT_HTML}}}{{/_org_monkshu_makeLink}}", 
-		"{{{APP_CONSTANTS.API_PATH}}}/login?op=getotk", "#2b2d2f", "{{{APP_CONSTANTS.TKMLOGINAPP_URL}}}",)'>
+		"{{{APP_CONSTANTS.API_PATH}}}/login?op=getotk&x-api-key={{{LOGIN_API_KEY}}}", "#2b2d2f", 
+		"{{{APP_CONSTANTS.TKMLOGINAPP_URL}}}",)'>
 	<img src="./img/tkmlogodark.svg">
 	{{#url._error}}<span class="error">{{i18n.LoginFailed}}</span>{{/url._error}}
 	<span>{{i18n.LoginMsg}}</span>
 </div>
-
 
 <div class="langbox">
 	<span class="langsel" onclick="monkshu_env.apps[APP_CONSTANTS.APP_NAME].language.changeLanguage('en')">English</span>&nbsp;&nbsp;

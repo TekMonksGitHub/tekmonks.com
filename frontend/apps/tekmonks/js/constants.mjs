@@ -56,7 +56,11 @@ export const APP_CONSTANTS = {
     USERORG: "userorg",
     USER_ROLE: "user",
     GUEST_ROLE: "guest",
-    ADMIN_ROLE: "admin"
+    ADMIN_ROLE: "admin",
+    TKMLOGIN_LIB: `${APP_PATH}/3p/tkmlogin.mjs`,
+    
+    API_KEYS: {"*":"fheiwu98237hjief8923ydewjidw834284hwqdnejwr79389"},
+    KEY_HEADER: "X-API-Key"
 }
 
 APP_CONSTANTS.PERMISSIONS_MAP = {

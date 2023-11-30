@@ -5,24 +5,29 @@
 import {router} from "/framework/js/router.mjs";
 import {session} from "/framework/js/session.mjs";
 import {securityguard} from "/framework/js/securityguard.mjs";
+import {apimanager as apiman} from "/framework/js/apimanager.mjs";
 import {APP_CONSTANTS as AUTO_APP_CONSTANTS} from "./constants.mjs";
 
 const init = async hostname => {
-	window.APP_CONSTANTS = (await import ("./constants.mjs")).APP_CONSTANTS;
+	window.APP_CONSTANTS = (await import ("./constants.mjs")).APP_CONSTANTS; 
 	window.monkshu_env.apps[AUTO_APP_CONSTANTS.APP_NAME] = {};
-
-	const mustache = await router.getMustache(); 
+	const mustache = await router.getMustache();
 	window.APP_CONSTANTS = JSON.parse(mustache.render(JSON.stringify(AUTO_APP_CONSTANTS), {hostname}));
+	await _readPageData(); 
 
 	window.LOG = (await import ("/framework/js/log.mjs")).LOG;
 	if (!session.get($$.MONKSHU_CONSTANTS.LANG_ID)) session.set($$.MONKSHU_CONSTANTS.LANG_ID, "en");
+	
+	// setup permissions and roles
 	securityguard.setPermissionsMap(APP_CONSTANTS.PERMISSIONS_MAP);
 	securityguard.setCurrentRole(securityguard.getCurrentRole() || APP_CONSTANTS.GUEST_ROLE);
-	window.webscrolls_env = {};
-}	
+
+	// register backend API keys
+	apiman.registerAPIKeys(APP_CONSTANTS.API_KEYS, APP_CONSTANTS.KEY_HEADER); 	
+}
 
 const main = async _ => {
-	await _addPageLoadInterceptors(); await _readStyle(); await _readPageData(); await _interceptReferrer(); await _registerComponents();
+	await _addPageLoadInterceptors(); await _interceptReferrer(); await _registerComponents();
 	let url = window.location.href.replace(/%2F/g, '/').replace(/%3D/g, '')
 	try {
 		if(securityguard.getCurrentRole() == APP_CONSTANTS.USER_ROLE 
@@ -38,9 +43,6 @@ const main = async _ => {
 	}
 }
 
-const _registerComponents = async _ => { for (const component of APP_CONSTANTS.COMPONENTS) 
-	await import(`${APP_CONSTANTS.APP_PATH}/${component}/${component.substring(component.lastIndexOf("/")+1)}.mjs`); }
-
 const interceptPageLoadData = _ => router.addOnLoadPageData("*", async (data, _url) => {
 	data.APP_CONSTANTS = APP_CONSTANTS; 
 });
@@ -51,21 +53,19 @@ async function _interceptReferrer(){
 	}
 }
 
-async function _readStyle() {
-	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/style.json`)).json();
-	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = conf[key];
-}
-
 async function _readPageData() {
-	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/pageData.json`)).json();
+	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/app.json`)).json();
 	for (const key of Object.keys(conf)) {
 		APP_CONSTANTS[key] = key == "CURRENT_YEAR" ? new Date().getFullYear() : conf[key];
 	}
 }
 
+const _registerComponents = async _ => { for (const component of APP_CONSTANTS.COMPONENTS) 
+	await import(`${APP_CONSTANTS.APP_PATH}/${component}/${component.substring(component.lastIndexOf("/")+1)}.mjs`); }
+
 
 async function _addPageLoadInterceptors() {
-	const interceptors = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/pageLoadInterceptors.json`)).json();
+	const interceptors = await $$.requireJSON(`${APP_CONSTANTS.CONF_PATH}/pageLoadInterceptors.json`);
 	for (const interceptor of interceptors) {
 		const modulePath = interceptor.module, functionName = interceptor.function;
 		let module = await import(`${APP_CONSTANTS.APP_PATH}/${modulePath}`); module = module[Object.keys(module)[0]];
