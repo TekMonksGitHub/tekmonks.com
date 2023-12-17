@@ -1,7 +1,9 @@
-/* 
+/**
+ * Main webapp entry point. 
  * (C) 2015 TekMonks. All rights reserved.
- * License: MIT - see enclosed license.txt file.
+ * License: See enclosed license.txt file.
  */
+ 
 import {router} from "/framework/js/router.mjs";
 import {session} from "/framework/js/session.mjs";
 import {securityguard} from "/framework/js/securityguard.mjs";
@@ -21,6 +23,7 @@ const init = async hostname => {
 	// setup permissions and roles
 	securityguard.setPermissionsMap(APP_CONSTANTS.PERMISSIONS_MAP);
 	securityguard.setCurrentRole(securityguard.getCurrentRole() || APP_CONSTANTS.GUEST_ROLE);
+	window.webscrolls_env = {};
 
 	// register backend API keys
 	apiman.registerAPIKeys(APP_CONSTANTS.API_KEYS, APP_CONSTANTS.KEY_HEADER); 	
@@ -28,7 +31,11 @@ const init = async hostname => {
 
 const main = async _ => {
 	await _addPageLoadInterceptors(); await _interceptReferrer(); await _registerComponents();
-	let url = window.location.href.replace(/%2F/g, '/').replace(/%3D/g, '')
+	let url = window.location.href
+	let baseURL = router.decodeURL(url).replace(/\?.*$/, '')
+	if(baseURL == APP_CONSTANTS.LANDING_HTML || baseURL == APP_CONSTANTS.ARTICLE_HTML){ 
+		url = url.replace(/%2F/g, '/').replace(/%3D/g, '')
+	}
 	try {
 		if(securityguard.getCurrentRole() == APP_CONSTANTS.USER_ROLE 
 			&& router.decodeURL(url) == APP_CONSTANTS.LOGIN_HTML) {

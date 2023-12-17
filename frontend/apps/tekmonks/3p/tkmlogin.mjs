@@ -4,7 +4,7 @@
  * License: See enclosed LICENSE file.
  */
 
-const UNIFIED_LOGIN_BASE_URL = "https://tekmonks.com";
+const UNIFIED_LOGIN_BASE_URL = "https://login.tekmonks.com";
 
 /**
  * Logs a user in

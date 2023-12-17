@@ -14,5 +14,5 @@
     "NAVBAR_MOBILE_MEDIA_QUERY_END": "} </style>",
     "COMPONENTS": ["components/dialog-box", "components/span-with-menu" ],
     "APP_ABOUT_URL": "https://tekmonks.com/",
-    "TKMLOGINAPP_URL": "https://tekmonks.com/apps/loginapp/loginappframework/index.html"
+    "TKMLOGINAPP_URL": "https://login.tekmonks.com"
 }
