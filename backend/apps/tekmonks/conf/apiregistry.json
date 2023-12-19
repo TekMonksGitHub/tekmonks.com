@@ -1,5 +1,5 @@
 {
-    "/apps/tekmonks/login" : "/apis/login.js?get=true&needsToken=false&addsToken=sub:access",
+    "/apps/{{app}}/login" : "/apis/login.js?get=true&keys=fheiwu98237hjief8923ydewjidw834284hwqdnejwr79389&needsToken=false&addsToken=sub:access,id:{{{id}}},flag:{{{result}}}",
     "/apps/tekmonks/cmsdirlisting" : "/apis/cmsdirlisting.js?get=true",
     "/apps/tekmonks/cmsfetchdircontents" : "/apis/cmsfetchdircontents.js?get=true",
     "/apps/tekmonks/cmsfetcharticle" : "/apis/cmsfetcharticle.js?get=true",
