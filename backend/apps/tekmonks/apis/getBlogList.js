@@ -15,41 +15,48 @@ exports.doService = async jsonReq => {
 }
 
 function getAllFilesInFolder(folderPath) {
-    let fileList = [];
-    let id = 0
-    
-    function traverseFolder(currentPath) {
-      const files = fs.readdirSync(currentPath);
-  
-      for (const file of files) {
-        const filePath = path.join(currentPath, file);
-        const stat = fs.statSync(filePath);
-  
-        if (stat.isFile() && path.extname(filePath) === '.md') {
-          const title = getTitleOfBlog(filePath)
-          const lastModified = new Date(stat.mtime)
-          const content = fs.readFileSync(filePath, 'utf8');
-          const formattedDate = lastModified.toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: '2-digit'})
-          fileList.push({
-            id: id, 
-            title: title, 
-            path: filePath, 
-            lastModified: formattedDate,
-            content: content
-          })
-          id += 1
-        } else if (stat.isDirectory()) {
-          let containingFolder = path.basename(filePath)
-          let skipFolder = ['ai', 'coding', 'main.md', 'main1.md', 'main2.md', 'main3.md', 'rpa']
-          if (skipFolder.includes(containingFolder)) continue;
-          traverseFolder(filePath);
-        }
+  let fileList = [];
+  let id = 0;
+
+  function getLanguageFromFileName(fileName) {
+    const parts = fileName.split('.');
+    return parts.length >= 2 ? parts[1] : null;
+  }
+
+  function traverseFolder(currentPath) {
+    const files = fs.readdirSync(currentPath);
+
+    for (const file of files) {
+      const filePath = path.join(currentPath, file);
+      const stat = fs.statSync(filePath);
+
+      if (stat.isFile() && path.extname(filePath) === '.md') {
+        const title = getTitleOfBlog(filePath);
+        const lastModified = new Date(stat.mtime);
+        const content = fs.readFileSync(filePath, 'utf8');
+        const formattedDate = lastModified.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+
+        fileList.push({
+          id: id,
+          title: title,
+          path: filePath,
+          lastModified: formattedDate,
+          content: content,
+          [getLanguageFromFileName(file)]: true
+        });
+        id += 1;
+      } else if (stat.isDirectory()) {
+        let containingFolder = path.basename(filePath);
+        let skipFolder = ['ai', 'coding', 'main.md', 'main1.md', 'main2.md', 'main3.md', 'rpa'];
+        if (skipFolder.includes(containingFolder)) continue;
+        traverseFolder(filePath);
       }
     }
-    
-    traverseFolder(folderPath);
-    return fileList;
   }
+
+  traverseFolder(folderPath);
+  return fileList;
+}
   
   function getTitleOfBlog(filePath) {
     try {

@@ -8,12 +8,8 @@ exports.doService = async jsonReq => {
   if (!validateRequest(jsonReq)) {
     return { error: "Validation failure." };
   }
-
-  const blog = jsonReq.blog;
-  const language = jsonReq.language;
-  const org = jsonReq.org;
-  const userid = jsonReq.userid;
-  const image = jsonReq.image;
+  
+  const {blog, language, org, userid, image} = jsonReq;
 
   if (!blog) {
     return { error: "Blog content is required." };
