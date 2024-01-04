@@ -199,3 +199,8 @@ button{
     display: flex;
     gap: 20px;
   }
+  
+  .image-preview{
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
