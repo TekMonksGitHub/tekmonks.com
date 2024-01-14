@@ -16,8 +16,13 @@ async function elementConnected(element) {
 
 async function elementRendered(element) {
 	let imagesPath = element.getAttribute("path");
-	let result = await(await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${imagesPath}`)).json();
-	const filteredFiles = result.files.filter(file => !file.includes("_____________xbin__________ignore_stats")); result = {...result,files: filteredFiles};
+	let result = await (await fetch(`${APP_CONSTANTS.API_CMS_DIR_CONTENTS}?q=${imagesPath}`)).json();
+	const filteredFiles = result.files.filter(file => !file.includes("_____________xbin__________ignore_stats"));
+	
+	const randomSequence = Array.from({ length: filteredFiles.length }, (_, index) => index).sort(() => Math.random() - 0.5);
+	const randomizedFiles = randomSequence.map(index => filteredFiles[index]);
+
+	result = { ...result, files: randomizedFiles.slice(0, 4) };
 	
 	if (!result.result) return; 
 

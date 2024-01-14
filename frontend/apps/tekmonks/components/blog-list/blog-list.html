@@ -43,6 +43,21 @@
                     <div id="edit-modal" class="edit-modal">
                         <div class="edit-modal-content editor-{{id}}">
                           <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+                          <div class="label">Langauge:</div>
+                           <select id="language">
+                                <option value="en" {{#en}}selected{{/en}}>English</option>
+                                <option value="ja" {{#ja}}selected{{/ja}}>Japanese</option>
+                                <option value="hi" {{#hi}}selected{{/hi}}>Hindi</option>
+                            </select>
+                            <div class="label">Upload Image:</div>
+                            {{#image}}
+                                <img class="image-preview" src="{{image.path}}" alt="Blog Image"/>
+                            {{/image}}
+                            {{^image}}
+                                <div class="noimage-text">Image not available</div>
+                            {{/image}}
+                            <br/>
+                            <input type="file" id="imageUpload" class="upload-button" accept="image/*">
                           <div class="edit-editor" contenteditable="true">{{{content}}}</div>
                           <div class="edit-button-container">
                             <button class="edit-button" onclick="monkshu_env.components['blog-list'].saveEditedBlog(this, '{{title}}')">EDIT</button>

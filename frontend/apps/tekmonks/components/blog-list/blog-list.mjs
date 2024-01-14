@@ -13,7 +13,7 @@ async function elementConnected(element) {
     await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
     let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
-    
+
     if (element.id) {
         if (!blog_list.datas) blog_list.datas = {}; blog_list.datas[element.id] = {...blogList, styleBody};
     } else blog_list.data = {...blogList};
@@ -27,7 +27,13 @@ function editBlog(element, id) {
 
 async function saveEditedBlog(element, title){
   let blogEditor = element.parentElement.parentElement.querySelectorAll('.edit-editor')[0]
-  const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", {title: title, blog: blogEditor.innerText}, false, false);
+  let language = element.parentElement.parentElement.querySelectorAll('#language')[0].value
+  const params = {
+    title: title, 
+    blog: blogEditor.innerText,
+    language: language,
+  }
+  const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", params, false, false);
   apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')
 }
 
