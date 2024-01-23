@@ -1,0 +1,34 @@
+body{
+    font-family: Raleway;
+}
+
+.container{
+    background-color: #E3E3E3;
+    padding: 20px;
+}
+
+li{
+    list-style: none; 
+} 
+ 
+.blog-list-item{ 
+    padding: 10px 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.title{
+    flex-basis: 50% ;
+}
+
+a{
+    text-decoration: none;
+    color: #07439c;
+}
+
+a:hover{
+    color: #A81010
+}
