@@ -12,5 +12,5 @@
 
 |   |   |
 |:------:|:----------:|
-|[<h3>ADD/EDIT BLOG</h3>]({{#makeLink}}./login.html{{/makeLink}}) |   |
+|[<h3>ADD/EDIT BLOG</h3>]({{#makeLink}}./login.html{{/makeLink}}) | [<h3>BLOG LIST</h3>]({{#makeLink}}./allblogs.html{{/makeLink}})  |
 </div>

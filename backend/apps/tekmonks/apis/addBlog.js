@@ -38,7 +38,7 @@ function validateRequest(jsonReq) {
 
 async function saveBlogToFile(folderPath, blog, language) {
   // Generate a unique file name or use a timestamp-based name
-  const fileName = generateUniqueFileName(language);
+  const fileName = generateUniqueFileName(folderPath, language, true);
 
   // Create the full file path for the blog content
   const filePath = path.join(folderPath, fileName + ".md");
@@ -50,7 +50,7 @@ async function saveBlogToFile(folderPath, blog, language) {
 }
 
 async function saveImageToFile(folderPath, image, language) {
-  const fileName = generateUniqueFileName(language);
+  const fileName = generateUniqueFileName(folderPath, language, false);
   const filePath = path.join(folderPath, "img", fileName + '.' + image.fileType);
   try {
     await writeFile(filePath, image.base64String, "base64");
@@ -59,14 +59,17 @@ async function saveImageToFile(folderPath, image, language) {
   }
 }
 
-function generateUniqueFileName(language) {
+function generateUniqueFileName(folderPath, language, isMDFile) {
   const now = new Date();
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, "0");
   const day = String(now.getDate()).padStart(2, "0");
   const hours = String(now.getHours()).padStart(2, "0");
   const minutes = String(now.getMinutes()).padStart(2, "0");
-  return `${year}-${month}-${day}-${hours}-${minutes}.${language}`;
+  const parentFolder = `${year}-${month}-${day}-${hours}-${minutes}`
+  const fullPath = path.join(folderPath, parentFolder);
+  ensureDirectoryExists(fullPath);
+  return isMDFile ? path.join(parentFolder, `${parentFolder}.${language}`) : `${parentFolder}.${language}`
 }
 
 function ensureDirectoryExists(directoryPath) {
