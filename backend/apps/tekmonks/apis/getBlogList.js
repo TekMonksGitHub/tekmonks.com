@@ -1,8 +1,7 @@
 const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
+const { name } = require("mustache");
 const path = require("path");
 const fs = require("fs").promises;
-
-
 
 const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
 
@@ -13,11 +12,44 @@ exports.doService = async (jsonReq) => {
   }
 
   const folderPath = path.join(API_CONSTANTS.CMS_ROOT, "blogs.md");
-  const files = await getAllFilesInFolder(folderPath);
-
-  // LOG.debug({files})
+  let files = await getAllFilesInFolder(folderPath);
+  files = await addImageInfo(files);
   return { file: files };
 };
+
+async function addImageInfo(files) {
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    
+    const directory = path.dirname(file.path);
+    const headerFileName = 'header';
+
+    try {
+      const directoryFiles = await fs.readdir(directory);
+
+      const headerFile = directoryFiles.find((filename) => {
+        return filename.startsWith(headerFileName);
+      });
+      if (headerFile){
+        const headerFilePath = path.join(directory, headerFile);
+        
+        const nameDirHash = path.basename(path.dirname(path.dirname(headerFilePath)));
+        const orgDirHash = path.basename(path.dirname(path.dirname(path.dirname(headerFilePath))));
+        const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
+        const imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}`;
+        files[i].image = {
+          name: nameDirHash,
+          org: orgDirHash,
+          path: `${imageBaseUrl}/${path.basename(path.dirname(headerFilePath))}/${headerFile}`,
+          content: await fs.readFile(path.join(directory, headerFile), 'utf8'),
+        }
+      }
+    } catch (error) {
+      console.error(`Error while searching for header image for ${file.path}: ${error}`);
+    }
+  }
+  return files;
+}
 
 async function getAllFilesInFolder(folderPath) {
   let fileList = [];
@@ -26,37 +58,6 @@ async function getAllFilesInFolder(folderPath) {
   function getLanguageFromFileName(fileName) {
     const parts = fileName.split('.');
     return parts.length >= 2 ? parts[1] : null;
-  }
-
-  async function getImageInfo(blogFilePath) {
-    const blogDirectoryName = path.dirname(blogFilePath);
-    const nameDirHash = path.basename(path.dirname(path.dirname(blogFilePath)))
-    const orgDirHash = path.basename(path.dirname(path.dirname(path.dirname(blogFilePath))));
-    const imgFolderPath = path.join(path.dirname(blogDirectoryName), 'img');
-    const blogFileName = path.basename(blogFilePath, path.extname(blogFilePath));
-    const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
-    const imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}/img`;
-  
-    try {
-      const imgFiles = await fs.readdir(imgFolderPath);
-  
-      for (const imgFile of imgFiles) {
-        console.log(imgFile)
-        const imgFilePath = path.join(imgFolderPath, imgFile);
-        const imgFileName = path.basename(imgFilePath, path.extname(imgFilePath));
-  
-        if (imgFileName === blogFileName) {
-          const imageContent = await fs.readFile(imgFilePath, 'utf8');
-          const imagePath = `${imageBaseUrl}/${imgFile}`;
-          return { path: imagePath, content: imageContent };
-        }
-      }
-  
-      return null;
-    } catch (error) {
-      console.error(`Error reading image files: ${error}`);
-      return null;
-    }
   }
   
 
@@ -73,7 +74,11 @@ async function getAllFilesInFolder(folderPath) {
           const lastModified = new Date(stat.mtime);
           const content = await fs.readFile(filePath, 'utf8');
           const formattedDate = lastModified.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
-          const imageInfo = await getImageInfo(filePath);
+          let subPath = ''
+          subPath = path.basename(path.dirname(filePath));
+          const nameDirHash = path.basename(path.dirname(currentPath))
+          const orgDirHash = path.basename(path.dirname(path.dirname(currentPath)));    
+          subPath = subPath.split('-').length == 3 ? subPath : `${orgDirHash}/${nameDirHash}/${subPath}`;
 
           fileList.push({
             id: id,
@@ -81,9 +86,8 @@ async function getAllFilesInFolder(folderPath) {
             path: filePath,
             lastModified: formattedDate,
             content: content,
-            subPath: path.basename(path.dirname(filePath)),
+            subPath: subPath,
             [getLanguageFromFileName(file.name)]: true,
-            image: imageInfo,
           });
           id += 1;
         } else if (file.isDirectory()) {

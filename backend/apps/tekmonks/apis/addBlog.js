@@ -17,11 +17,9 @@ exports.doService = async jsonReq => {
 
   const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md/`; // Adjust the folder path as needed
   const fullPath = path.join(folderPath, btoa(org), btoa(userid));
-  const imgFolderPath = `${fullPath}/img` 
 
   try {
     ensureDirectoryExists(fullPath);
-    ensureDirectoryExists(imgFolderPath)
     
     await saveBlogToFile(fullPath, blog, language);
     await saveImageToFile(fullPath, image, language);
@@ -50,8 +48,7 @@ async function saveBlogToFile(folderPath, blog, language) {
 }
 
 async function saveImageToFile(folderPath, image, language) {
-  const fileName = generateUniqueFileName(folderPath, language, false);
-  const filePath = path.join(folderPath, "img", fileName + '.' + image.fileType);
+  const filePath = path.join(folderPath, generateUniqueFileName(folderPath, language, false), `header.${language}` + '.' + image.fileType);
   try {
     await writeFile(filePath, image.base64String, "base64");
   } catch (error) {
@@ -67,9 +64,9 @@ function generateUniqueFileName(folderPath, language, isMDFile) {
   const hours = String(now.getHours()).padStart(2, "0");
   const minutes = String(now.getMinutes()).padStart(2, "0");
   const parentFolder = `${year}-${month}-${day}-${hours}-${minutes}`
-  const fullPath = path.join(folderPath, parentFolder);
+  const fullPath = path.join(folderPath, `${parentFolder}.md`);
   ensureDirectoryExists(fullPath);
-  return isMDFile ? path.join(parentFolder, `${parentFolder}.${language}`) : `${parentFolder}.${language}`
+  return isMDFile ? path.join(`${parentFolder}.md`, `${parentFolder}.${language}`) : `${parentFolder}.md`
 }
 
 function ensureDirectoryExists(directoryPath) {
