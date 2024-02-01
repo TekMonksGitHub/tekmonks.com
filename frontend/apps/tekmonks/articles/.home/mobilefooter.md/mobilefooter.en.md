@@ -1,4 +1,7 @@
-[![Logo!] (./articles/.home/mobilefooter.md/tekmonks.en.png =130x130 "Logo")]({{#makeLink}}./index.html{{/makeLink}}){:target="_self"} <br> <br>
+<div markdown="1">
+[![Logo!] (./articles/.home/mobilefooter.md/tekmonks.en.png =130x130 "Logo")]({{#makeLink}}./index.html{{/makeLink}}){:target="_self"} <div class="tagline">Towards Intelligent Business </div>
+</div>
+<br> <br>
 
 |Information |Discover |
 |:----|:---|

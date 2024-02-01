@@ -31,3 +31,13 @@ td {
 p {
     text-align: center;
 }
+
+.tagline{
+    margin-top: -30px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+    text-align: center;
+}
