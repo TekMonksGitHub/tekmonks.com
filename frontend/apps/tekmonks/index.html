@@ -79,23 +79,41 @@
     </head>
 
     <body>
-	<div class="loading" id="loading-container">
-		<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
-		<div id="slow-text">Slow network or error loading</div>
-	</div>	
-	<script type="text/javascript">
-		const SPINNER_WAIT_TIMEOUT = 750;
-		document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
-			const loader = document.querySelector("#loading-container");
-			if (loader) loader.style.visibility="visible"	
-		}, SPINNER_WAIT_TIMEOUT));
+		<div id="temp-index"></div>
+		<div class="loading" id="loading-container">
+			<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
+			<div id="slow-text">Slow network or error loading</div>
+		</div>
 		
-		const ERROR_SPINNER_WAIT_TIMEOUT = 10000;
-		document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
-			const slowText = document.querySelector("#slow-text");
-			if (slowText) slowText.style.visibility="visible"
-		}, ERROR_SPINNER_WAIT_TIMEOUT));
-	</script>
+		<script type="text/javascript">
+			if (sessionStorage.getItem('firstLoad') === null) {
+				sessionStorage.setItem('firstLoad', 'false');
+				document.getElementById('loading-container').style.display = 'none';
+				fetch('temp-index.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('temp-index').innerHTML = data;
+                        })
+                        .catch(error => {
+                            console.error('Error fetching temp-index.html:', error);
+                        });
+			} else {
+				document.getElementById('loading-container').style.display = 'flex';
+			}
+		</script>
+		<script type="text/javascript">
+			const SPINNER_WAIT_TIMEOUT = 750;
+			document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
+				const loader = document.querySelector("#loading-container");
+				if (loader) loader.style.visibility="visible"	
+			}, SPINNER_WAIT_TIMEOUT));
+			
+			const ERROR_SPINNER_WAIT_TIMEOUT = 10000;
+			document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
+				const slowText = document.querySelector("#slow-text");
+				if (slowText) slowText.style.visibility="visible"
+			}, ERROR_SPINNER_WAIT_TIMEOUT));
+		</script>
 	<page-generator file="./pages/home/home.page"></page-generator>
 
     </body>
