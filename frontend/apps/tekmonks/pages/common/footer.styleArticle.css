@@ -32,3 +32,17 @@ td {
     padding-right: 0;
     font-size: 14px;
 }
+
+
+.logodiv{
+    display: inline-block;
+    text-align: center;
+}
+
+.tagline{
+    margin-top: -125px;
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}

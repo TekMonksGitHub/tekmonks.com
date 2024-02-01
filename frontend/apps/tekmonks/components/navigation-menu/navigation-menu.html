@@ -19,7 +19,7 @@ nav{
 .logo {
     height: auto;
     width: 120px;
-    margin-top: 0 !important;
+    margin-top: -10px;
     margin-left: 20px !important;
     margin-bottom: 0 !important;
 }
@@ -291,15 +291,51 @@ nav{
 
 
 .navbar {
-  display: block; 
+  display: block;
+  height: 100%; 
 }
 
 .mobilenavbar {
   display: none; 
 }
 
-.logo{
-  margin: 10px 0 20px 10px;
+.navbar .logodiv{
+  height: 100%;
+}
+
+.mobilenavbar .logodiv{
+  height: 100%;
+}
+
+.tagline{
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: center;
+  width: calc(100% + 40px);
+  margin: auto;
+  font-style: italic;
+  font-family: 'Montserrat';
+}
+
+.mobile-tagline{
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 2px;
+  width: calc(100% + 40px);
+  margin-top: 2px;
+  font-style: italic;
+  font-family: 'Montserrat';
+}
+
+a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: calc(100% + 40px);
 }
 
 </style>
@@ -352,16 +388,18 @@ h4 + br {
 {{{APP_CONSTANTS.NAVBAR_MOBILE_MEDIA_QUERY_END}}}
 
 <body>
-    
+  
     <nav class="mobilenavbar">
-        <div class="logodiv" {{{logostyle}}}>
+        <div class="logodiv"><!-- {{{logostyle}}} -->
           <a href="./index.html">
             <img class="logo" src="{{logo}}"  alt="Tekmonks Logo">
+            <div class="mobile-tagline">Towards Intelligent Business</div>
           </a>
         </div>
         <div class="menudiv">
           <div>
-            <img class="menu-icon" src="./img/menu.svg"  alt="Tekmonks Menu" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
+              <img class="menu-icon" src="./img/menu.svg"  alt="Tekmonks Menu" onclick="monkshu_env.components['navigation-menu'].showMenuMobile(this, id)"/>
+              
             <div class="nav-mobile-container menu-hidden" >
               <div class="nav-primary-wrapper">
                 {{#level1}}
@@ -387,9 +425,10 @@ h4 + br {
       
       <nav class="navbar">
         {{#logo}}
-          <div class="logodiv" {{{logostyle}}}>
+          <div class="logodiv"><!-- {{{logostyle}}} -->
             <a href="./index.html">
               <img class="logo" src="{{logo}}" alt="Tekmonks Logo">
+              <div class="tagline">Towards Intelligent Business</div>
             </a>
           </div>
         {{/logo}}
