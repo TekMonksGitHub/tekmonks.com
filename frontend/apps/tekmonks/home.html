@@ -55,13 +55,31 @@
 			let shadowContainer = document.getElementsByTagName('page-generator')
 			if (shadowContainer[0].shadowRoot) {
 				document.getElementById('loading-container').style.display = 'none'
+                document.getElementById('temp-index').style.display = 'none'
                 clearInterval(spinnerInterval)
 			}
 		}, 200)   
 	</script>
     <body style="margin: 0%;">
+        <div id="temp-index"></div>
         <div class="loading" id="loading-container">
             <img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
         </div>
     </body>
+    <script type="text/javascript">
+        if (sessionStorage.getItem('firstLoadHome') === null) {
+            sessionStorage.setItem('firstLoadHome', 'false');
+            document.getElementById('loading-container').style.display = 'none';
+            fetch('temp-index.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('temp-index').innerHTML = data;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching temp-index.html:', error);
+                    });
+        } else {
+            document.getElementById('loading-container').style.display = 'flex';
+        }
+    </script>
 </html>
