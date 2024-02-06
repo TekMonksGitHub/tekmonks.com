@@ -19,9 +19,15 @@ async function elementConnected(element) {
     } else blog_list.data = {...blogList};
 }
   
-function editBlog(element, id) {
-  const modal = element.parentElement.querySelectorAll('.edit-modal')[0]
-  const blog = modal.querySelectorAll(`.editor-${id}`)[0]
+async function editBlog(element, id) {
+  const modal = element.parentElement.querySelectorAll('.edit-modal')[0];
+  const image = element.parentElement.querySelector('#image');
+  const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
+  //const blog = modal.querySelectorAll(`.editor-${id}`)[0];
+  let result = await apiman.rest(APP_CONSTANTS.API_GET_IMAGE, "POST", {blogs: blogList, id: id}, false, false);
+  if(result.result){
+    image.src = result.image;
+  }
   modal.style.display = 'block'
 }
 
