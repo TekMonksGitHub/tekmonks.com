@@ -31,7 +31,11 @@ exports.doService = async (jsonReq) => {
   const nameDirHash = path.basename(path.dirname(parentDir));
   const orgDirHash = path.basename(path.dirname(path.dirname(parentDir)));
   const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
-  const imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}/${parentDirName}`;
+  let imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}/${parentDirName}`;
+  
+  if(nameDirHash == 'blogs.md') imageBaseUrl = `${blogBaseUrl}/${parentDirName}`;
+  if(nameDirHash == 'cybersecurity.md') imageBaseUrl = `${blogBaseUrl}/cybersecurity.md/${parentDirName}`;
+  
   
   return {result: true, image: `${imageBaseUrl}/${headerFile}`};
 };
