@@ -13,7 +13,7 @@ exports.doService = async (jsonReq) => {
 
   const folderPath = path.join(API_CONSTANTS.CMS_ROOT, "blogs.md");
   let files = await getAllFilesInFolder(folderPath);
-  files = await addImageInfo(files);
+  //files = await addImageInfo(files);
   return { file: files };
 };
 
