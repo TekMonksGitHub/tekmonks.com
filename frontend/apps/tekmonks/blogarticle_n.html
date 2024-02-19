@@ -1,0 +1,65 @@
+<!-- 
+(C) 2015 TekMonks. All rights reserved.
+License: GPL2 - see enclosed license.txt file.
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="-1">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ4YZCF6NT"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-EZ4YZCF6NT');
+	</script>
+	<style>
+		#loading-container {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.loading-spinner {
+			width: auto;
+			height: 6em;
+		}
+	</style>
+	<link href="./pages/common/common.css" rel="stylesheet">
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+	<script type="module">
+	import {navigation_menu} from "./components/navigation-menu/navigation-menu.mjs"; navigation_menu.register();
+	import {crumb_nav} from "./components/crumb-nav/crumb-nav.mjs"; crumb_nav.register();
+	import {content_post} from "./components/content-post/content-post.mjs"; content_post.register();
+	import { page_generator } from "/framework/components/page-generator/page-generator.mjs";
+	import {page_meta} from "./components/page-meta/page-meta.mjs"; page_meta.register();
+	
+	document.body.innerHTML += window.sessionStorage.getItem("referrer") == "DLT" ? '<page-generator file="./pages/blogs/blogarticle/dltblogarticle.page"></page-generator>' : 
+            '<page-generator file="./pages/blogs/blogarticle/blogarticle_n.page"></page-generator>'
+			
+	</script>
+	<script>
+		let spinnerInterval = setInterval(() => {
+			let shadowContainer = document.getElementsByTagName('page-generator')
+			if (shadowContainer[0].shadowRoot) {
+				document.getElementById('loading-container').style.display = 'none'
+				clearInterval(spinnerInterval)
+			}
+		}, 200)
+	</script>	
+	<title>{{i18n.Title}}</title>
+</head>
+
+<body style="margin: 0%">
+	<div class="loading" id="loading-container">
+		<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
+	</div>
+</body>
+</html>
