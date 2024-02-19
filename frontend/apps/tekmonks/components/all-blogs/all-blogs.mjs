@@ -9,16 +9,25 @@ import {session} from "/framework/js/session.mjs";
 import {router} from "/framework/js/router.mjs"
 
 async function elementConnected(element) {
-    const userID = session.get(APP_CONSTANTS.USERID);
-    const org = session.get(APP_CONSTANTS.USERORG);
-    await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
-    let blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
-    blogList.file = blogList.file.map(blog => ({ ...blog, subPath: router.encodeURL(`./blogarticle.html?blogs_path=./blogs.md/${blog.subPath}`) }));
-    let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
+  const userID = session.get(APP_CONSTANTS.USERID);
+  const org = session.get(APP_CONSTANTS.USERORG);
+  await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
+  let blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
+ 
+  blogList.file = await Promise.all(blogList.file.map(async (blog) => {
+    let result = await apiman.rest(APP_CONSTANTS.API_GET_IMAGE, "POST", {blogs: blogList, id: blog.id}, false, false);
+    return { ...blog, image: result.image };
+  }));
+  console.log(blogList.file)
+  blogList.file = blogList.file.map(blog => {
+    const url = `${APP_CONSTANTS.BLOGARTICLE_NEW_HTML}?blogs_path=./blogs.md/${blog.subPath}&image=${blog.image}`
+    return { ...blog, subPath: router.encodeURL(url) };
+  });
+  let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
 
-    if (element.id) {
-        if (!all_blogs.datas) all_blogs.datas = {}; all_blogs.datas[element.id] = {...blogList, styleBody};
-    } else all_blogs.data = {...blogList};
+  if (element.id) {
+      if (!all_blogs.datas) all_blogs.datas = {}; all_blogs.datas[element.id] = {...blogList, styleBody};
+  } else all_blogs.data = {...blogList};
 }
   
 function editBlog(element, id) {
