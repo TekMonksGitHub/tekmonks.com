@@ -34,10 +34,13 @@ async function editBlog(element, id) {
 async function saveEditedBlog(element, title){
   let blogEditor = element.parentElement.parentElement.querySelectorAll('.edit-editor')[0]
   let language = element.parentElement.parentElement.querySelectorAll('#language')[0].value
+  const imageFile = element.parentElement.parentElement.querySelectorAll('#imageUpload')[0].files[0];
+  const imageBase64 = await convertImageToBase64(imageFile);
   const params = {
     title: title, 
     blog: blogEditor.innerText,
     language: language,
+    image: imageBase64,
   }
   const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", params, false, false);
   apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')

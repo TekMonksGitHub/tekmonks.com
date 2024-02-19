@@ -10,7 +10,7 @@ exports.doService = async jsonReq => {
     return { error: "Validation failure." };
   }
   
-  const {title, blog, language} = jsonReq;
+  const {title, blog, language, image} = jsonReq;
   
   if (!title || !blog) {
     return { error: "Title and blog content are required." };
@@ -20,6 +20,22 @@ exports.doService = async jsonReq => {
 
   if (!filePath) {
     return { error: `File with title "${title}" not found.` };
+  }
+  
+  if (image) {
+    const parentFolder = path.dirname(filePath);
+    fs.readdirSync(parentFolder).forEach(file => {
+      if (file.startsWith('header')) {
+        fs.unlinkSync(path.join(parentFolder, file));
+      }
+    });
+    const imageName = `header.${language}.${image.fileType}`
+    const imagePath = path.join(parentFolder, imageName);
+    try {
+      await writeFile(imagePath, image.base64String, "base64");
+    } catch (error) {
+      throw 'Error saving image: ' + error;
+    }
   }
 
   try {
@@ -71,6 +87,7 @@ async function updateFileContent(filePath, newContent) {
     throw error;
   }
 }
+
 
 async function renameFileByLanguage(filePath, newLanguage) {
   try {
