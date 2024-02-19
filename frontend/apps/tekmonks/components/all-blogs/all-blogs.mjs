@@ -18,8 +18,11 @@ async function elementConnected(element) {
     let result = await apiman.rest(APP_CONSTANTS.API_GET_IMAGE, "POST", {blogs: blogList, id: blog.id}, false, false);
     return { ...blog, image: result.image };
   }));
-  
-  blogList.file = blogList.file.map(blog => ({ ...blog, subPath: router.encodeURL(`./blogarticle.html?blogs_path=./blogs.md/${blog.subPath}&image=${blog.image}`) }));
+  console.log(blogList.file)
+  blogList.file = blogList.file.map(blog => {
+    const url = `${APP_CONSTANTS.BLOGARTICLE_NEW_HTML}?blogs_path=./blogs.md/${blog.subPath}&image=${blog.image}`
+    return { ...blog, subPath: router.encodeURL(url) };
+  });
   let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
 
   if (element.id) {
