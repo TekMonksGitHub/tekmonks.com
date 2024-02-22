@@ -66,6 +66,10 @@ async function getAllFilesInFolder(folderPath) {
 
       for (const file of files) {
         const filePath = path.join(currentPath, file.name);
+        
+        if (file.name === 'blogs.en.md') {
+          continue;
+        }
 
         if (file.isFile() && path.extname(filePath) === '.md') {
           const title = await getTitleOfBlog(filePath);
@@ -91,7 +95,7 @@ async function getAllFilesInFolder(folderPath) {
           id += 1;
         } else if (file.isDirectory()) {
           let containingFolder = path.basename(filePath);
-          let skipFolder = ['ai', 'coding', 'main.md', 'main1.md', 'main2.md', 'main3.md', 'rpa'];
+          let skipFolder = ['ai', 'coding', 'main.md', 'main1.md', 'main2.md', 'main3.md', 'rpa', 'blogs.md', 'articleadv.md'];
           if (!skipFolder.includes(containingFolder)) {
             await traverseFolder(filePath);
           }
