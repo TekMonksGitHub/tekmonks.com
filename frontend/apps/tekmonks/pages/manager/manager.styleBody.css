@@ -204,3 +204,62 @@ button{
     max-width: 200px;
     margin-bottom: 20px;
   }
+  
+  
+  /** DELETE MODAL **/
+  .delete-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .delete-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  .confirmation-text-container{
+    margin-top: 40px;
+  }
+  
+  .delete-input{
+    width: 98%;
+    height: 40px;
+    font-size: 1rem;
+    text-indent: 10px;
+  }
+  
+  .confirm-text{
+    margin-bottom: 20px;
+  }
+  
+  .delete-title{
+    margin-bottom: 40px;
+  }
+  
+  #deleteTitle{
+    font-weight: 600;
+  }
+  
+  .delete-button{
+    background-color: #063e5a;
+    color: white;
+    margin: 40px 0 15px 0; 
+    font-size: larger;
+    background-color: #dc3545;
+  }
+  
+  .delete-button-container{
+    display: flex;
+    justify-content: end;
+  }

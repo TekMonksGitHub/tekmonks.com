@@ -11,7 +11,11 @@ async function elementConnected(element) {
     const userID = session.get(APP_CONSTANTS.USERID);
     const org = session.get(APP_CONSTANTS.USERORG);
     await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
-    const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
+    let blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
+    blogList.file = blogList.file.map(blog => {
+      blog.path = blog.path.replace(/\\/g, '\\\\');
+      return blog;
+    })
     let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
 
     if (element.id) {
@@ -29,6 +33,30 @@ async function editBlog(element, id) {
     image.src = result.image;
   }
   modal.style.display = 'block'
+}
+
+async function confirmDelete(element, id){
+  const modal = element.parentElement.querySelectorAll('.delete-modal')[0];
+  const blogToDelete = element.parentElement.querySelector('#deleteTitle')
+  const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
+  for(let i = 0; i < blogList.file.length; i++){
+   if(blogList.file[i].id == id){
+      blogToDelete.innerText += blogList.file[i].title;
+      break;
+    }
+  }
+  modal.style.display = 'block'
+}
+
+async function deleteBlog(element, path){
+  let input = element.parentElement.parentElement.querySelector('#confirmDelete').value
+  if(input != "DELETE"){
+    alert("Please enter DELETE to confirm deletion")
+    return
+  }
+  
+   let result = await apiman.rest(APP_CONSTANTS.API_DELETE_BLOG, "POST", {path: path}, false, false);
+   result.status ? alert(result.message) : alert('Error in deleting blog')
 }
 
 async function saveEditedBlog(element, title){
@@ -105,4 +133,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, openAddEditor, closeEditor, addNewBlog, logout}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, confirmDelete, deleteBlog, openAddEditor, closeEditor, addNewBlog, logout}

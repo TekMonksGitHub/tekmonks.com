@@ -10,5 +10,6 @@
     "/apps/tekmonks/updateBlog" : "/apis/updateBlog.js",
     "/apps/tekmonks/addBlog" : "/apis/addBlog.js",
     "/apps/tekmonks/checkFolder" : "/apis/checkFolder.js",
-    "/apps/tekmonks/getBlogImage" : "/apis/getBlogImage.js"
+    "/apps/tekmonks/getBlogImage" : "/apis/getBlogImage.js",
+    "/apps/tekmonks/deleteBlog" : "/apis/deleteBlog.js"
 }
