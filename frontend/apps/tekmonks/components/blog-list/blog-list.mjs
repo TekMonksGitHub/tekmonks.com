@@ -49,8 +49,14 @@ async function confirmDelete(element, id){
 }
 
 async function deleteBlog(element, path){
-  let result = await apiman.rest(APP_CONSTANTS.API_DELETE_BLOG, "POST", {path: path}, false, false);
-  result.status ? alert(result.message) : alert('Error in deleting blog')
+  let input = element.parentElement.parentElement.querySelector('#confirmDelete').value
+  if(input != "DELETE"){
+    alert("Please enter DELETE to confirm deletion")
+    return
+  }
+  
+   let result = await apiman.rest(APP_CONSTANTS.API_DELETE_BLOG, "POST", {path: path}, false, false);
+   result.status ? alert(result.message) : alert('Error in deleting blog')
 }
 
 async function saveEditedBlog(element, title){
