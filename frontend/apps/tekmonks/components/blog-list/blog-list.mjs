@@ -6,6 +6,8 @@ import {monkshu_component} from "/framework/js/monkshu_component.mjs";
 import { apimanager as apiman } from "/framework/js/apimanager.mjs"
 import { loginmanager } from "../../js/loginmanager.mjs";
 import {session} from "/framework/js/session.mjs";
+import {router} from "/framework/js/router.mjs";
+
 
 async function elementConnected(element) {
     const userID = session.get(APP_CONSTANTS.USERID);
@@ -56,6 +58,8 @@ async function deleteBlog(element, path){
   }
   
    let result = await apiman.rest(APP_CONSTANTS.API_DELETE_BLOG, "POST", {path: path}, false, false);
+   element.parentElement.parentElement.parentElement.parentElement.style.display = 'none'
+   refreshPageView(element)
    result.status ? alert(result.message) : alert('Error in deleting blog')
 }
 
@@ -71,6 +75,8 @@ async function saveEditedBlog(element, title){
     image: imageBase64,
   }
   const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", params, false, false);
+  element.parentElement.parentElement.parentElement.style.display = 'none'
+  refreshPageView(element)
   apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')
 }
 
@@ -94,7 +100,17 @@ async function addNewBlog(element){
       image: imageBase64
   };
   const apiResponse = await apiman.rest(APP_CONSTANTS.API_ADD_BLOG, "POST", params, false, false);
+  element.parentElement.parentElement.parentElement.style.display = 'none'
+  refreshPageView(element)
   apiResponse.status ? alert(apiResponse.message) : alert('Error in adding blog')
+}
+
+async function refreshPageView(element){
+  let body = blog_list.getShadowRootByContainedElement(element).querySelector(`body`)
+  let data = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json()
+  let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_LIST)).text();
+  const rendered = await router.expandPageData(template, router.getLastSessionURL(), data);
+  body.innerHTML = rendered;
 }
 
 function convertImageToBase64(imageFile) {
