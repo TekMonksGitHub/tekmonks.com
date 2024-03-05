@@ -4,7 +4,7 @@
  */
 
 const FRONTEND = "https://{{{hostname}}}";
-const BACKEND = "https://{{{hostname}}}:8443";
+const BACKEND = "https://{{{hostname}}}:9090";
 const APP_NAME = "tekmonks";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
 const API_PATH = `${BACKEND}/apps/tekmonks`;
@@ -32,6 +32,7 @@ export const APP_CONSTANTS = {
     RESOURCE_HTML: APP_PATH+"/resource.html",
     LICENSE_HTML: APP_PATH+"/license.html",
     UPDATEBLOG_HTML: APP_PATH+"/updateblog.html",
+    COMPONENT_BLOG_LIST: APP_PATH+"/components/blog-list/blog-list.html",
     ERROR_HTML: FRONTEND+"/framework/error.html",
     CMS_ROOT_URL: `${APP_PATH}/articles`,
     HOSTNAME: APP_PATH+"/conf/hostname.json",
