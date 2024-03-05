@@ -76,6 +76,7 @@ async function saveEditedBlog(element, title){
   }
   const apiResponse = await apiman.rest(APP_CONSTANTS.API_UPDATE_BLOG, "POST", params, false, false);
   element.parentElement.parentElement.parentElement.style.display = 'none'
+  refreshPageView(element)
   apiResponse.status ? alert(apiResponse.message) : alert('Error in editing blog')
 }
 
