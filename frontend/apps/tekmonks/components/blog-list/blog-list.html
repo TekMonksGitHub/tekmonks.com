@@ -59,6 +59,26 @@
                             {{/image}} -->
                             <br/>
                             <input type="file" id="imageUpload" class="upload-button" accept="image/*">
+                            <div class="editor-buttons-group">
+                                <button class="editor-button bold" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/type-bold.svg">
+                                </button>
+                                <button class="editor-button italic" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/type-italic.svg">
+                                </button>
+                                <button class="editor-button underline" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/type-underline.svg">
+                                </button>
+                                <button class="editor-button list-order" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/list-ol.svg">
+                                </button>
+                                <button class="editor-button list-unorder" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/list-ul.svg">
+                                </button>
+                                <button class="editor-button link" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/link.svg">
+                                </button>
+                            </div>
                           <div class="edit-editor" contenteditable="true">{{{content}}}</div>
                           <div class="edit-button-container">
                             <button class="edit-button" onclick="monkshu_env.components['blog-list'].saveEditedBlog(this, '{{title}}')">EDIT</button>
