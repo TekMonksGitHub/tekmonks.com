@@ -70,7 +70,7 @@ async function saveEditedBlog(element, title){
   const imageBase64 = await convertImageToBase64(imageFile);
   const params = {
     title: title, 
-    blog: blogEditor.innerText,
+    blog: blogEditor.innerHTML,
     language: language,
     image: imageBase64,
   }
@@ -133,6 +133,32 @@ function convertImageToBase64(imageFile) {
   });
 }
 
+function performAction(element){
+  let contentEditable = element.parentElement.parentElement.querySelector('.edit-editor')
+  contentEditable.focus(); // Focus on the contentEditable element
+  let selectedText = window.getSelection().toString();
+  console.log(element)
+  //make the selected text bold, italic, underlined depending on the classList of element; use switch case
+  switch(element.classList[1]){
+    case 'bold':
+      document.execCommand('bold', false, null);
+      break;
+    case 'italic':
+      document.execCommand('italic', false, null);
+      break;
+    case 'underline':
+      document.execCommand('underline', false, null);
+      break;
+    case 'list-order':
+      document.execCommand('insertOrderedList', false, null);
+      break;
+    case 'list-unorder':
+      document.execCommand('insertUnorderedList', false, null);
+      break;
+  }
+  
+}
+
   
 function closeEditor(element){
   element.parentElement.parentElement.style.display = 'none'
@@ -149,4 +175,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, confirmDelete, deleteBlog, openAddEditor, closeEditor, addNewBlog, logout}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, confirmDelete, deleteBlog, openAddEditor, performAction, closeEditor, addNewBlog, logout}

@@ -31,13 +31,6 @@ li{
     flex-grow: 1;
 }
 
-button{
-    border-radius: 50px;
-    border: none;
-    padding: 5px 15px;
-    cursor: pointer;
-}
-
 .action-button {
     background-color: #E3E3E3;
 }
@@ -183,6 +176,10 @@ button{
     margin-top: 40px;
   }
   
+  .edit-editor li{
+    list-style: unset;
+  }
+  
   .edit-button{
     background-color: #063e5a;
     color: white;
@@ -203,6 +200,25 @@ button{
   .image-preview{
     max-width: 200px;
     margin-bottom: 20px;
+  }
+  
+  .editor-buttons-group{
+    display: flex;
+  }
+  
+  .editor-button{
+    background-color: white;
+    border: 1px solid #063e5a;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .editor-button img{
+    height: 50%;
   }
   
   
@@ -263,3 +279,11 @@ button{
     display: flex;
     justify-content: end;
   }
+  
+  
+  button{
+    border-radius: 50px;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
