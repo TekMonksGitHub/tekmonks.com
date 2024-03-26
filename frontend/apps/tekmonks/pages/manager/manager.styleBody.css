@@ -134,7 +134,13 @@ li{
   
   .upload-button{
     color: #063e5a;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .image-instruct-container{
+    font-size: smaller;
+    color: #aaa;
+    margin-bottom: 30px;
   }
   
   [contenteditable] {
@@ -280,10 +286,9 @@ li{
     justify-content: end;
   }
   
-  
   button{
     border-radius: 50px;
     border: none;
     padding: 5px 15px;
     cursor: pointer;
-}
+  }
