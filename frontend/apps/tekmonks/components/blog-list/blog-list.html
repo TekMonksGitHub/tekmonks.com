@@ -15,6 +15,11 @@
                 </select>
                 <div class="label">Upload Image:</div>
                 <input type="file" id="imageUpload" class="upload-button" accept="image/*">
+                <div class="image-instruct-container">
+                    <span class="image-instruct">Recommended Size: 1920x350</span>
+                    <br>
+                    <span class="image-instruct">Recommended Format: SVG or PNG</span>
+                </div>
                 <div class="label">Blog Content:</div>
                 <div class="add-editor" contenteditable="true">Your blog post here</div>
                 <div class="add-button-container">
@@ -59,6 +64,11 @@
                             {{/image}} -->
                             <br/>
                             <input type="file" id="imageUpload" class="upload-button" accept="image/*">
+                            <div class="image-instruct-container">
+                                <span class="image-instruct">Recommended Size: 1920x350</span>
+                                <br>
+                                <span class="image-instruct">Recommended Format: SVG or PNG</span>
+                            </div>
                             <div class="editor-buttons-group">
                                 <button class="editor-button bold" onclick="monkshu_env.components['blog-list'].performAction(this)">
                                     <img src="./img/editor/type-bold.svg">
