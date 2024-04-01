@@ -2,5 +2,5 @@
 #Learn More MonkRuls
 
 <br/><br/>
-[Download the brochure!](articles/products/monkruls.md/calltoaction.md/MonkrulsBrochure.en.pdf){:target="_blank"}[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+[Resources]({{#makeLink}}./resource.html?article_path=resources/resourcematerial/monkruls.md&menu_path=/{{/makeLink}})[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
 </div>

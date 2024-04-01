@@ -82,4 +82,12 @@
 [See Details]({{#makeLink}}./resource.html?article_path=resources/resourcematerial/asb.md&menu_path=/{{/makeLink}})
 </div>
 
+<div class="product-box" style="flex-basis: calc(33% - 40px); flex-grow: 0" markdown="1">
+![Monkruls] (articles/resources/productlist.md/monkruls.svg "Monkruls")
+##Monkruls
+
+
+[See Details]({{#makeLink}}./resource.html?article_path=resources/resourcematerial/monkruls.md&menu_path=/{{/makeLink}})
+</div>
+
 </div>
