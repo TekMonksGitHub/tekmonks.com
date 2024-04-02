@@ -109,6 +109,10 @@ async function refreshPageView(element){
   let body = blog_list.getShadowRootByContainedElement(element).querySelector(`body`)
   let data = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json()
   let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_LIST)).text();
+  data.file = data.file.map(blog => {
+    blog.path = blog.path.replace(/\\/g, '\\\\');
+    return blog;
+  })
   const rendered = await router.expandPageData(template, router.getLastSessionURL(), data);
   body.innerHTML = rendered;
 }
