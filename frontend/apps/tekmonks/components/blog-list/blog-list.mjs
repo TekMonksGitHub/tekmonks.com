@@ -15,6 +15,7 @@ async function elementConnected(element) {
     await apiman.rest(APP_CONSTANTS.API_CHECK_FOLDER, "POST", {userid: userID, org: org}, false, false);
     let blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
     blogList.file = blogList.file.map(blog => {
+      blog.content = removeFirstHashLine(blog.content)
       blog.path = blog.path.replace(/\\/g, '\\\\');
       return blog;
     })
@@ -24,13 +25,24 @@ async function elementConnected(element) {
         if (!blog_list.datas) blog_list.datas = {}; blog_list.datas[element.id] = {...blogList, styleBody};
     } else blog_list.data = {...blogList};
 }
+
+function removeFirstHashLine(content) {
+  let lines = content.split('\n');
+  let index = lines.findIndex(line => line.trim().startsWith('#'));
+  if (index !== -1) {
+    lines.splice(index, 1);
+  }
+  return lines.join('\n');
+}
   
 async function editBlog(element, id) {
   const modal = element.parentElement.querySelectorAll('.edit-modal')[0];
   const image = element.parentElement.querySelector('#image');
+  const title = element.parentElement.querySelector('#blogTitle');
   const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json();
   //const blog = modal.querySelectorAll(`.editor-${id}`)[0];
   let result = await apiman.rest(APP_CONSTANTS.API_GET_IMAGE, "POST", {blogs: blogList, id: id}, false, false);
+  title.value = blogList.file[id].title;
   if(result.result){
     image.src = result.image;
   }
@@ -65,12 +77,14 @@ async function deleteBlog(element, path){
 
 async function saveEditedBlog(element, title){
   let blogEditor = element.parentElement.parentElement.querySelectorAll('.edit-editor')[0]
+  let blogTitle = element.parentElement.parentElement.querySelectorAll('#blogTitle')[0].value
   let language = element.parentElement.parentElement.querySelectorAll('#language')[0].value
   const imageFile = element.parentElement.parentElement.querySelectorAll('#imageUpload')[0].files[0];
   const imageBase64 = await convertImageToBase64(imageFile);
+  let updatedContent = `# ${blogTitle}\n\n${blogEditor.innerHTML}`
   const params = {
     title: title, 
-    blog: blogEditor.innerHTML,
+    blog: updatedContent,
     language: language,
     image: imageBase64,
   }
@@ -88,12 +102,14 @@ function openAddEditor(element){
 async function addNewBlog(element){
   let blogEditor = element.parentElement.parentElement.querySelectorAll('.add-editor')[0]
   let language = element.parentElement.parentElement.querySelectorAll('#language')[0].value
+  let blogTitle = element.parentElement.parentElement.querySelectorAll('#blogTitle')[0].value
+  let updatedContent = `# ${blogTitle}\n\n${blogEditor.innerHTML}`
   const userID = session.get(APP_CONSTANTS.USERID);
   const org = session.get(APP_CONSTANTS.USERORG);
   const imageFile = element.parentElement.parentElement.querySelectorAll('#imageUpload')[0].files[0];
   const imageBase64 = await convertImageToBase64(imageFile);
   const params = {
-      blog: blogEditor.innerText,
+      blog: updatedContent,
       language: language,
       userid: userID,
       org: org,
@@ -110,6 +126,7 @@ async function refreshPageView(element){
   let data = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json()
   let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_LIST)).text();
   data.file = data.file.map(blog => {
+    blog.content = removeFirstHashLine(blog.content)
     blog.path = blog.path.replace(/\\/g, '\\\\');
     return blog;
   })
