@@ -155,7 +155,7 @@ function convertImageToBase64(imageFile) {
 }
 
 function performAction(element){
-  let contentEditable = element.parentElement.parentElement.querySelector('.edit-editor')
+  let contentEditable = element.parentElement.parentElement.querySelector('.edit-editor') || element.parentElement.parentElement.querySelector('.add-editor')
   contentEditable.focus(); // Focus on the contentEditable element
   let selectedText = window.getSelection().toString();
   console.log(element)
