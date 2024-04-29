@@ -1,0 +1,27 @@
+{{{styleBody}}}
+
+
+<div>
+   <div class="container">
+      {{#file}}
+      <div class="blog-card">
+         <img src="{{{image}}}" alt="">
+         <div class="blog-title">
+            <a href="{{subPath}}">{{title}}</a>
+         </div>
+         <div class="blog-content">{{textContent}}</div>
+         <div></div>
+      </div>
+      {{/file}}
+   </div>
+   {{#isMore}}
+   <div class="button-container">
+      <button onclick="monkshu_env.components['blog-cards'].showLess(this)">Show Less</button>
+   </div>
+   {{/isMore}}
+   {{^isMore}}
+   <div class="button-container">
+      <button onclick="monkshu_env.components['blog-cards'].showMore(this)">Show More</button>
+   </div>
+   {{/isMore}}  
+</div>
