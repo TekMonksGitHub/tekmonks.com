@@ -34,8 +34,8 @@ async function elementConnected(element) {
   let styleBody; if (element.getAttribute("styleBody")) styleBody = `<style>${element.getAttribute("styleBody")}</style>`;
   
   if (element.id) {
-      if (!blog_slider.datas) blog_slider.datas = {}; blog_slider.datas[element.id] = {...blogList, styleBody};
-  } else blog_slider.data = {...blogList};
+      if (!blog_cards.datas) blog_cards.datas = {}; blog_cards.datas[element.id] = {...blogList, styleBody};
+  } else blog_cards.data = {...blogList};
 }
 
 function removeFirstHashLine(content) {
@@ -51,9 +51,9 @@ function removeFirstHashLine(content) {
 }
 
 async function showMore(element){
-  let body = blog_slider.getShadowRootByContainedElement(element).querySelector(`body`)
+  let body = blog_cards.getShadowRootByContainedElement(element).querySelector(`body`)
   let data = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json()
-  let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_SLIDER)).text();
+  let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_CARDS)).text();
   data.file = data.file.map(blog => {
     blog.content = removeFirstHashLine(blog.content)
     blog.path = blog.path.replace(/\\/g, '\\\\');
@@ -74,9 +74,9 @@ async function showMore(element){
 }
 
 async function showLess(element){
-  let body = blog_slider.getShadowRootByContainedElement(element).querySelector(`body`)
+  let body = blog_cards.getShadowRootByContainedElement(element).querySelector(`body`)
   let data = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}`)).json()
-  let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_SLIDER)).text();
+  let template = await(await fetch(APP_CONSTANTS.COMPONENT_BLOG_CARDS)).text();
   data.file = data.file.map(blog => {
     blog.content = removeFirstHashLine(blog.content)
     blog.path = blog.path.replace(/\\/g, '\\\\');
@@ -100,9 +100,9 @@ async function showLess(element){
 
 function register() {
 	// convert this all into a WebComponent so we can use it
-	monkshu_component.register("blog-slider", `${APP_CONSTANTS.APP_PATH}/components/blog-slider/blog-slider.html`, blog_slider);
+	monkshu_component.register("blog-cards", `${APP_CONSTANTS.APP_PATH}/components/blog-cards/blog-cards.html`, blog_cards);
 }
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_slider = {trueWebComponentMode, register, elementConnected, showMore, showLess} 
+export const blog_cards = {trueWebComponentMode, register, elementConnected, showMore, showLess} 
