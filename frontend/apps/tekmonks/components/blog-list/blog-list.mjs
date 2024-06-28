@@ -158,17 +158,20 @@ function performAction(element){
   let contentEditable = element.parentElement.parentElement.querySelector('.edit-editor') || element.parentElement.parentElement.querySelector('.add-editor')
   contentEditable.focus(); // Focus on the contentEditable element
   let selectedText = window.getSelection().toString();
-  console.log(element)
+  
   //make the selected text bold, italic, underlined depending on the classList of element; use switch case
   switch(element.classList[1]){
     case 'bold':
       document.execCommand('bold', false, null);
+      element.classList.toggle('active-button');
       break;
     case 'italic':
       document.execCommand('italic', false, null);
+      element.classList.toggle('active-button');
       break;
     case 'underline':
       document.execCommand('underline', false, null);
+      element.classList.toggle('active-button');
       break;
     case 'list-order':
       document.execCommand('insertOrderedList', false, null);
@@ -176,10 +179,23 @@ function performAction(element){
     case 'list-unorder':
       document.execCommand('insertUnorderedList', false, null);
       break;
+    case 'text-left':
+      document.execCommand('justifyLeft', false, null);
+      break;
+    case 'text-center':
+      document.execCommand('justifyCenter', false, null);
+      break;
+    case 'text-right':
+      document.execCommand('justifyRight', false, null);
+      break;
+    case 'link':
+      let link = prompt("Enter the link URL");
+      if (link) {
+        document.execCommand('createLink', false, link);
+      }
+      break;
   }
-  
 }
-
   
 function closeEditor(element){
   element.parentElement.parentElement.style.display = 'none'

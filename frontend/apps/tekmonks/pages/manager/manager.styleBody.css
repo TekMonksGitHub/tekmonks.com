@@ -72,10 +72,12 @@ li{
   
   .modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
+    max-height: 90%;
+    overflow-x: auto;
   }
   
   #language{
@@ -109,6 +111,23 @@ li{
   .add-editor{
     height: 500px;
     padding: 10px;
+  }
+  
+  .add-editor li{
+    list-style: unset;
+  }
+  
+  [contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block;
+    color: #888;
+  }
+  
+  div[contenteditable=true] {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
   }
   
   .add-new-blog-button{
@@ -168,12 +187,12 @@ li{
   
   .edit-modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 10px auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
     overflow-x: auto;
-    max-height: 80vh;
+    max-height: 90%;
   }
   
   .edit-editor{
@@ -213,11 +232,11 @@ li{
   
   .editor-buttons-group{
     display: flex;
+    border: 1px solid #063e5a;
   }
   
   .editor-button{
     background-color: white;
-    border: 1px solid #063e5a;
     height: 50px;
     width: 50px;
     border-radius: 0;
@@ -226,16 +245,26 @@ li{
     align-items: center;
   }
   
+  .editor-button:hover{
+    background-color: rgba(108, 208, 255, 0.68);
+  }
+  
+  .active-button{
+    background-color: rgba(68, 195, 255, 0.68);
+  }
+  
   .editor-button img{
     height: 50%;
   }
   
   #blogTitle{
     margin-bottom: 20px;
-    width: 98%;
+    width: 100%;
     height: 40px;
     font-size: 1rem;
     text-indent: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
   }
   
   
