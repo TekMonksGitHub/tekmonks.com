@@ -15,7 +15,7 @@ p {
     font-size: 14px;
     font-style:normal;
     font-weight:500;
-    font-family:Raleway; 
+    font-family:Arial, Helvetica, sans-serif; 
     line-height: 25px;
 }
 
@@ -55,7 +55,7 @@ h1{
     padding: 20px; 
     font-size: 14px; 
     line-height: 1.5;
-    font-family: Raleway; 
+    font-family: Arial, Helvetica, sans-serif; 
     text-align-last: start; 
     text-align: justify; 
     color: #fff;  
@@ -69,7 +69,7 @@ h2 {
     width: 100%;    
     vertical-align: middle; 
     margin-bottom: 0px;
-    font-family: Raleway; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 h2 strong {    
@@ -94,6 +94,6 @@ h3{
     margin-top: -10px;
     text-align:center;
     color: #0f4b9c;  
-    font-family: Raleway; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 

@@ -1,5 +1,5 @@
 body{
-    font-family: Raleway; 
+    font-family: Arial, Helvetica, sans-serif; 
     box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@ td a img {
 td a {
     color: #444444;
     font-weight: 500;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 6px 15px 5px rgb(111 111 111 / 10%);
     z-index: 999;
     position: relative;
