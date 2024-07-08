@@ -9,4 +9,4 @@ Are you excited to work with an organization you can grow with? Are you interest
 
 * [Solutions Sales Manager](./articles/company/joinourteam.md/solutionsalesmanager.en.pdf){:target="_blank"}
 
-<a href="mailto:careers@tekmonks.com" target="_blank" style="color: #fff !important; background: #07439c !important; font-size: 16px; font-weight: 500; padding: 10px 30px !important; border-radius: 5px; font-family: Raleway; font-weight: 500; text-decoration: none;">Email us to apply</a>
+<a href="mailto:careers@tekmonks.com" target="_blank" style="color: #fff !important; background: #07439c !important; font-size: 16px; font-weight: 500; padding: 10px 30px !important; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-weight: 500; text-decoration: none;">Email us to apply</a>

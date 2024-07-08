@@ -58,13 +58,13 @@ CSS
     min-width: 11em;
     top: 260px;
     border-radius: 15px;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .fullwidth {
     width: 100%;
     border: none;
     border-bottom: 1px solid grey;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     border-bottom: 1px solid #444;
 }
@@ -75,7 +75,7 @@ CSS
     height:35px;
     background: #0f4b9c;
     color: white;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px; 
     color: #ffffff; 
     font-weight: 500; 
@@ -92,7 +92,7 @@ CSS
 }
 .class-header{
     width: 100%;
-    font-family: Raleway;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px; 
     color: #0f4b9c; 
     font-weight: 500; 
