@@ -4,7 +4,7 @@
  */
 
 const FRONTEND = "https://{{{hostname}}}";
-const BACKEND = "https://{{{hostname}}}:9090";
+const BACKEND = "https://{{{hostname}}}:8443";
 const APP_NAME = "tekmonks";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
 const API_PATH = `${BACKEND}/apps/tekmonks`;
