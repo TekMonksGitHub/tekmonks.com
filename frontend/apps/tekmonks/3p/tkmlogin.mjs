@@ -1,6 +1,6 @@
 /**
  * Tekmonks Unified Login support file. 
- * (C) 2023 TekMonks. All rights reserved.
+ * (C) 2023 Tekmonks. All rights reserved.
  * License: See enclosed LICENSE file.
  */
 

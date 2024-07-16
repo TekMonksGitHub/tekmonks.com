@@ -1,5 +1,5 @@
 /**
- * (C) 2023 TekMonks. All rights reserved.
+ * (C) 2023 Tekmonks. All rights reserved.
  */
 
 const serverutils = require(`${CONSTANTS.LIBDIR}/utils.js`);

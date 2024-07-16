@@ -11,7 +11,7 @@
   },  
   "publisher": {
     "@type": "Organization",
-    "name": "TekMonks",
+    "name": "Tekmonks",
     "logo": {
       "@type": "ImageObject",
       "url": ""

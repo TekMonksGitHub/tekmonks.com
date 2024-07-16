@@ -1,5 +1,5 @@
 /* 
- * (C) 2015 TekMonks. All rights reserved.
+ * (C) 2015 Tekmonks. All rights reserved.
  * License: MIT - see enclosed LICENSE file.
  */
 const bcrypt = require("bcryptjs");

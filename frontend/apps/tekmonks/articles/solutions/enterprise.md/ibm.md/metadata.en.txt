@@ -16,13 +16,13 @@
   		"keywords": ["mq solutions", "db2 solutions", "websphere solutions", "datapower managed services", "cast iron services", "integrated bus services"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
   	"keywords": ["mq solutions", "db2 solutions", "websphere solutions", "datapower managed services", "cast iron services", "integrated bus services"]

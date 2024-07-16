@@ -1,8 +1,8 @@
 #PHP Development
 
-PHP solutions are designed to help clients and enterprises conceptualize web applications. Proper PHP consulting and PHP solutions allow businesses who work with TekMonks to successfully advance their visions and concepts into specific steps which can be easily carried out.
+PHP solutions are designed to help clients and enterprises conceptualize web applications. Proper PHP consulting and PHP solutions allow businesses who work with Tekmonks to successfully advance their visions and concepts into specific steps which can be easily carried out.
 
-As a leading PHP solutions provider, TekMonks uses the best PHP development in order to help enterprises and clients with the following services:
+As a leading PHP solutions provider, Tekmonks uses the best PHP development in order to help enterprises and clients with the following services:
 
 ● Site conceptualization
 ● Theme development/creative customization

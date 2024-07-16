@@ -1,5 +1,5 @@
 /* 
- * (C) 2018 TekMonks. All rights reserved.
+ * (C) 2018 Tekmonks. All rights reserved.
  * License: See enclosed license file.
  */
 import {util} from "/framework/js/util.mjs";

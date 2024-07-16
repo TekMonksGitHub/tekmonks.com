@@ -1,5 +1,5 @@
 #Custom Services
-Every business is unique and is constantly changing to meet the evolving needs of the marketplace. So, as your business evolves to meet new challenges, TekMonks have you covered with our following made-to-measure services: 
+Every business is unique and is constantly changing to meet the evolving needs of the marketplace. So, as your business evolves to meet new challenges, Tekmonks have you covered with our following made-to-measure services: 
 <br/>
 * **[Enterprise Mobility]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md/custom.md/enterprisemobility.md&menu_path=.menus/en{{/makeLink}})**
 Enterprise mobility (also known as business mobility) is the growing trend of businesses to offer remote working options, allow the use of personal laptops and mobile devices for business purposes and make use of cloud technology for data access

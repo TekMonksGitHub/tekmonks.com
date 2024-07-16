@@ -16,13 +16,13 @@
 		"keywords": ["aws managed services", "microsoft azure services", "ibm bluemix services", "digital ocean services"],
 		"copyrightHolder": {
 			"@type": "Organization",
-			"name": "TekMonks",
+			"name": "Tekmonks",
 			"url": "https://tekmonks.com"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
-		"name": "TekMonks",
+		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
   	"keywords": ["aws managed services", "microsoft azure services", "ibm bluemix services", "digital ocean services"]

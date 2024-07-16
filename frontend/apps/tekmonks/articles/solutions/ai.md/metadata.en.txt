@@ -7,22 +7,22 @@
     		"@id": "https://tekmonks.com"
   	},
   	"name": "Artificial Intelligence",
-  	"description": "Unlock your business values with TekMonks AI services",
+  	"description": "Unlock your business values with Tekmonks AI services",
   	  	"image": [{
   		"@type": "ImageObject",
   		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/ai.md/header.en.png",
   		"name": "Artificial Intelligence",
-  		"description": "Unlock your business values with TekMonks AI services",
+  		"description": "Unlock your business values with Tekmonks AI services",
   		"keywords": ["ai services", "ai as a service", "Artificial Intelligence services"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
   	"keywords": ["ai services", "ai as a service", "Artificial Intelligence services"]

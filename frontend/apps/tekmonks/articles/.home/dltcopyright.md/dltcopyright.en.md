@@ -1,1 +1,1 @@
-Copyright {{{CURRENT_YEAR}}}, DeepLogicTech. All Rights Reserved <br> Developed using [WebScrolls](https://github.com/TekMonksGitHub/webscrolls){:target="_blank"}
+Copyright {{{CURRENT_YEAR}}}, DeepLogicTech. All Rights Reserved <br> Developed using [WebScrolls](https://github.com/TekmonksGitHub/webscrolls){:target="_blank"}

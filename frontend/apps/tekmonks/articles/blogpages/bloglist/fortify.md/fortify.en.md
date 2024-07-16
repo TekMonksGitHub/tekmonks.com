@@ -3,7 +3,7 @@
 
 |   |
 |:------------:|
-|[<p class="date">21 June 2021</p><div class="bloglist"><h3>LoginCat: TekMonks’ Solution to Emerging Cyber Threats</h3><p>LoginCat is an AI-based encryption software, designed to keep everything an organization, contractor, government, bank, or healthcare provider needs protected and secure. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/cybersecurity.md/2020-03-24.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2021-06-21.md&menu_path=/{{/makeLink}})|
+|[<p class="date">21 June 2021</p><div class="bloglist"><h3>LoginCat: Tekmonks’ Solution to Emerging Cyber Threats</h3><p>LoginCat is an AI-based encryption software, designed to keep everything an organization, contractor, government, bank, or healthcare provider needs protected and secure. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/cybersecurity.md/2020-03-24.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2021-06-21.md&menu_path=/{{/makeLink}})|
 
 |   |
 |:------------:|

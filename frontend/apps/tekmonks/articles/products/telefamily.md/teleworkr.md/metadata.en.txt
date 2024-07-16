@@ -16,13 +16,13 @@
   		"keywords": ["teleworkr"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
 	"keywords": ["teleworkr"]

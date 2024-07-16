@@ -16,13 +16,13 @@
 		"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"],
 		"copyrightHolder": {
 			"@type": "Organization",
-			"name": "TekMonks",
+			"name": "Tekmonks",
 			"url": "https://tekmonks.com"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
-		"name": "TekMonks",
+		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
 	"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"]

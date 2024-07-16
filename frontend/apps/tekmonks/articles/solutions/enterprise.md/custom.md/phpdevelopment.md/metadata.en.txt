@@ -7,7 +7,7 @@
     		"@id": "https://tekmonks.com"
   	},
 	"name": "PHP Web Development",
-	"description": "Proper PHP consulting and PHP solutions allow businesses who work with TekMonks to successfully advance their visions and concepts into specific steps which can be easily carried out. As a leading PHP solutions provider, TekMonks uses the best PHP development in order to help enterprises and clients. PHP web development services can be used for a variety of applications. Some of these applications include, but are not limited to content management systems, e-commerce, corporate sites, social networking platforms, and more.",
+	"description": "Proper PHP consulting and PHP solutions allow businesses who work with Tekmonks to successfully advance their visions and concepts into specific steps which can be easily carried out. As a leading PHP solutions provider, Tekmonks uses the best PHP development in order to help enterprises and clients. PHP web development services can be used for a variety of applications. Some of these applications include, but are not limited to content management systems, e-commerce, corporate sites, social networking platforms, and more.",
 	"offers": {
 		"@type": "Offer",
 		"name": "PHP Web Development",
@@ -37,17 +37,17 @@
   		"@type": "ImageObject",
   		"url": "https://tekmonks.com/apps/tekmonks/articles/solutions/enterprise.md/custom.md/phpdevelopment.md/header.en.png",
   		"name": "PHP Web Development",
-  		"description": "Proper PHP consulting and PHP solutions allow businesses who work with TekMonks to successfully advance their visions and concepts into specific steps which can be easily carried out. As a leading PHP solutions provider, TekMonks uses the best PHP development in order to help enterprises and clients. PHP web development services can be used for a variety of applications. Some of these applications include, but are not limited to content management systems, e-commerce, corporate sites, social networking platforms, and more.",
+  		"description": "Proper PHP consulting and PHP solutions allow businesses who work with Tekmonks to successfully advance their visions and concepts into specific steps which can be easily carried out. As a leading PHP solutions provider, Tekmonks uses the best PHP development in order to help enterprises and clients. PHP web development services can be used for a variety of applications. Some of these applications include, but are not limited to content management systems, e-commerce, corporate sites, social networking platforms, and more.",
   		"keywords": ["PHP web development", "PHP service", "PHP solutions", "PHP consulting"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
 	"keywords": ["PHP web development", "PHP service", "PHP solutions", "PHP consulting"]

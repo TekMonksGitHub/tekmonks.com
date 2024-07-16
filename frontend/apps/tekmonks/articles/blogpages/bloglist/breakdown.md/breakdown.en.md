@@ -7,7 +7,7 @@
 
 |   |
 |:------------:|
-|[<p class="date">19 May 2020</p><div class="bloglist"><h3>Is Remote Work Sustainable?</h3><p>Teleworkr, the newest TekMonks product, is designed as a digital office with the right social functions to set an atmosphere for productivity and connectivity. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/2020-05-19.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-05-19.md&menu_path=/{{/makeLink}})|
+|[<p class="date">19 May 2020</p><div class="bloglist"><h3>Is Remote Work Sustainable?</h3><p>Teleworkr, the newest Tekmonks product, is designed as a digital office with the right social functions to set an atmosphere for productivity and connectivity. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/2020-05-19.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-05-19.md&menu_path=/{{/makeLink}})|
 
 |   |
 |:------------:|
@@ -19,5 +19,5 @@
 
 |   |
 |:------------:|
-|[<p class="date">20 January 2020</p><div class="bloglist"><h3>Top Five 2020 Predictions</h3><p>An interview with Rohit Kapoor, TekMonks VP on 2020 predictions on attacks, targeted industries, and advice to make a decade of technology safe.</p></div> ![Blog Image] (articles/blogs.md/2020-01-07.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-01-07.md&menu_path=/{{/makeLink}})|
+|[<p class="date">20 January 2020</p><div class="bloglist"><h3>Top Five 2020 Predictions</h3><p>An interview with Rohit Kapoor, Tekmonks VP on 2020 predictions on attacks, targeted industries, and advice to make a decade of technology safe.</p></div> ![Blog Image] (articles/blogs.md/2020-01-07.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-01-07.md&menu_path=/{{/makeLink}})|
 </div>

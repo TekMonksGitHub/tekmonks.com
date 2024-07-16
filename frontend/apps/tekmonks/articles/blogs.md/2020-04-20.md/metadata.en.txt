@@ -12,7 +12,7 @@ Cyber threats do not stop for anything or anyone, even in the case of a global p
   },  
   "publisher": {
     "@type": "Organization",
-    "name": "TekMonks",
+    "name": "Tekmonks",
     "logo": {
       "@type": "ImageObject",
       "url": ""

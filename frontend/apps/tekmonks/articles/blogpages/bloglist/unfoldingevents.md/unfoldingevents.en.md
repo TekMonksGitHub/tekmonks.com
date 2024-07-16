@@ -19,7 +19,7 @@
 
 |   |
 |:------------:|
-|[<p class="date">05 May 2021</p><div class="bloglist"><h3>The Stresses of Leading in Cyber</h3><p>The TekMonks team asked some CISOs and IT professionals to share their perspectives on the stress of leading in cyber—and how they cope with it.</p></div> ![Blog Image] (articles/blogs.md/2021-05-05.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2021-05-05.md&menu_path=/{{/makeLink}})|
+|[<p class="date">05 May 2021</p><div class="bloglist"><h3>The Stresses of Leading in Cyber</h3><p>The Tekmonks team asked some CISOs and IT professionals to share their perspectives on the stress of leading in cyber—and how they cope with it.</p></div> ![Blog Image] (articles/blogs.md/2021-05-05.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2021-05-05.md&menu_path=/{{/makeLink}})|
 
 |   |
 |:------------:|
@@ -27,7 +27,7 @@
 
 |   |
 |:------------:|
-|[<p class="date">21 May 2020</p><div class="bloglist"><h3>From Us To You</h3><p>TekMonks congratulates the graduates of 2020. We will get through this crisis, not in the way we all pictured, but it will sure be impressive. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/2020-05-21.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-05-21.md&menu_path=/{{/makeLink}})|
+|[<p class="date">21 May 2020</p><div class="bloglist"><h3>From Us To You</h3><p>Tekmonks congratulates the graduates of 2020. We will get through this crisis, not in the way we all pictured, but it will sure be impressive. *Read more.*</p></div> ![Blog Image] (articles/blogs.md/2020-05-21.md/header.en.png)]({{#makeLink}}./blogarticle.html?blogs_path=./blogs.md/2020-05-21.md&menu_path=/{{/makeLink}})|
 
 |   |
 |:------------:|
