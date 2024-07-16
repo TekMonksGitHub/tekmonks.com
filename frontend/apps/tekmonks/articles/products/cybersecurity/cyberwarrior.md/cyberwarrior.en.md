@@ -1,7 +1,7 @@
 #CyberWarrior
 <p style="font-size:25px; text-align:center">AI for CyberSecurity</p>
 
-The only way to combat Artificial Intelligence is AI itself. Because smart attacks require smart security. Thus, CyberWarrior was conceived – an AI expert system developed by TekMonks for cyber defense.
+The only way to combat Artificial Intelligence is AI itself. Because smart attacks require smart security. Thus, CyberWarrior was conceived – an AI expert system developed by Tekmonks for cyber defense.
 
 CyberWarrior is a networking Expert System as its collective expertise and domain falls under the category of security and system administrators. It uses facts and rules provided by the collective expertise of many human beings to help decide and solve problems in its domain. It monitors network and aggregate information like other Security Information and Event Management (SIEM) solutions then use AI to detect attacks or anomalies. It is the only product that uses its collected knowledge before acting. Just as an expert would do when being presented with the knowledge of the current network health, it defends the network after detection of the attack efficiently. 
 

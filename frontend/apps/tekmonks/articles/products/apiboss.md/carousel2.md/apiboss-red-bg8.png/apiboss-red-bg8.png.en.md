@@ -1,7 +1,7 @@
 ### AI Analytics
 
 <div class="api400-carousel-text">
-Built in TekMonks AI analytics to GUI based dashboards for API Metrics.
+Built in Tekmonks AI analytics to GUI based dashboards for API Metrics.
 </div>
 
 <div markdown="1">

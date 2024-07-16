@@ -4,7 +4,7 @@
 
 [I would like to take advantage of the Teleworkr trial period.](mailto:trials@tekmonks.com)
 
-[I'd like to partner with TekMonks.](mailto:partners@tekmonks.com)
+[I'd like to partner with Tekmonks.](mailto:partners@tekmonks.com)
 
 [I have a general question.](mailto:info@tekmonks.com)
 

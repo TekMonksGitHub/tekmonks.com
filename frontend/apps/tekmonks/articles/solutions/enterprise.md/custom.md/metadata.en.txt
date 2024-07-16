@@ -12,13 +12,13 @@
     		"keywords": ["enterprise mobility", "nodejs development", "php development"],
     		"copyrightHolder": {
     			"@type": "Organization",
-    			"name": "TekMonks",
+    			"name": "Tekmonks",
     			"url": "https://tekmonks.com"
     		}
     	}],
     	"publisher": {
     		"@type": "Organization",
-    		"name": "TekMonks",
+    		"name": "Tekmonks",
     		"url": "https://tekmonks.com"
     	},
     	"keywords": ["enterprise mobility", "nodejs development", "php development"]
