@@ -16,13 +16,13 @@
 		"keywords": ["amazon cloud services", "amazon cloud management", "amazon cloud web services", "amazon web services cloud"],
 		"copyrightHolder": {
 			"@type": "Organization",
-			"name": "TekMonks",
+			"name": "Tekmonks",
 			"url": "https://tekmonks.com"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
-		"name": "TekMonks",
+		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
 	"keywords": ["amazon cloud services", "amazon cloud management", "amazon cloud web services", "amazon web services cloud"]

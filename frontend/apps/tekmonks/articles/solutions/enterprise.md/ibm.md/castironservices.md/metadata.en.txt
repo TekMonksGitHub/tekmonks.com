@@ -16,13 +16,13 @@
 		"keywords": ["cast iron services", "ibm cast iron"],
 		"copyrightHolder": {
 			"@type": "Organization",
-			"name": "TekMonks",
+			"name": "Tekmonks",
 			"url": "https://tekmonks.com"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
-		"name": "TekMonks",
+		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
 	"keywords": ["cast iron services", "ibm cast iron"]

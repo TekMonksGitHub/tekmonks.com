@@ -17,14 +17,14 @@ Design for global scale and local adaption with a multi-site architecture that l
 * **Engage shoppers at every moment.**
 Manage the shopping experience — from a global view of inventory management to multiple fulfillment options — to connect with your customers on every channel and deliver the best experience possible.
 <br/><br/>
-#TekMonks  eCommerce Solutions
-<br/>Choosing an eCommerce consultancy can be stressful. As a Magento and also an advanced IBM Business Partner with IBM certified WebSphere Commerce consultants, we save you time and money, and help you avoid unexpected new requirements. At TekMonks, we've been in eCommerce from the onset. So our expertise helps you overcome your challenges today, and avoid problems tomorrow. Worried about support? Our troubleshooting experts are with you at any hour, backed by our direct access to IBM and Adobe. You'll sleep tight knowing any issue will be resolved professionally and efficiently.
+#Tekmonks  eCommerce Solutions
+<br/>Choosing an eCommerce consultancy can be stressful. As a Magento and also an advanced IBM Business Partner with IBM certified WebSphere Commerce consultants, we save you time and money, and help you avoid unexpected new requirements. At Tekmonks, we've been in eCommerce from the onset. So our expertise helps you overcome your challenges today, and avoid problems tomorrow. Worried about support? Our troubleshooting experts are with you at any hour, backed by our direct access to IBM and Adobe. You'll sleep tight knowing any issue will be resolved professionally and efficiently.
 <br/><br/>
 ##Some of the eCommerce consulting capabilities we offer are listed below.
 <br/>
 * **Commerce Store Implementation** From catalog and data modeling, to store design, to payment processing, we provide full lifecycle eCommerce implementation solutions.
 * **Magento and WebSphere Commerce Managed Services** Let us administer and maintain your WCS environment, including support for administration, storage, disasters, etc.
-* **Testing and Troubleshooting Commerce Store** TekMonks provides testing and troubleshooting services. We can help you diagnose issues like performance and data bottlenecks, or catalog and storefront validation services.
+* **Testing and Troubleshooting Commerce Store** Tekmonks provides testing and troubleshooting services. We can help you diagnose issues like performance and data bottlenecks, or catalog and storefront validation services.
 <br/><br/>
 #Commerce Managed Services
 <br/>Our WCS Managed Support Services are designed for companies requiring continuous support - to add Experienced skills to their mix, while reducing costs, and increasing preventive maintenance, and reducing commerce store "emergencies".

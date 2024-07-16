@@ -1,5 +1,5 @@
 /* 
- * (C) 2019 TekMonks. All rights reserved.
+ * (C) 2019 Tekmonks. All rights reserved.
  * License: MIT - see enclosed license.txt file.
  */
 import {monkshu_component} from "/framework/js/monkshu_component.mjs";

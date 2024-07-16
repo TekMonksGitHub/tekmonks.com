@@ -1,5 +1,5 @@
 #Cloud Solutions
-Enterprises which remain unsure of the best cloud business solutions have come to the right place. TekMonks’ cloud based solutions extend to the improvement of data centers, applications, and the transfer of data/information to and from the cloud. For enterprises who are serious about remaining in business, you can avail of our cloud solutions that covers a wide IT subsection.
+Enterprises which remain unsure of the best cloud business solutions have come to the right place. Tekmonks’ cloud based solutions extend to the improvement of data centers, applications, and the transfer of data/information to and from the cloud. For enterprises who are serious about remaining in business, you can avail of our cloud solutions that covers a wide IT subsection.
 <br/>
 * **[AWS Managed Services]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md/cloudsolutions.md/awsmanagedservices.md&menu_path=.menus/en{{/makeLink}})**
 * **[Microsoft Azure Services]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md/cloudsolutions.md/microsoftazureservices.md&menu_path=.menus/en{{/makeLink}})**

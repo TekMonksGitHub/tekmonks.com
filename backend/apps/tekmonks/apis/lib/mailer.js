@@ -1,7 +1,7 @@
 /**
  * Email module.
  * 
- * (C) 2020 TekMonks. All rights reserved.
+ * (C) 2020 Tekmonks. All rights reserved.
  * See enclosed LICENSE file.
  */
 const API_CONSTANTS = require(`${__dirname}/constants.js`);

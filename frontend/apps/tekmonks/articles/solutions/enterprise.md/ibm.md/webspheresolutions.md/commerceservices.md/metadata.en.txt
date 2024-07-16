@@ -41,13 +41,13 @@
 		"keywords": ["WebSphere Commerce Services", "IBM commerce solution", "WebSphere Commerce Solution"],
 		"copyrightHolder": {
 			"@type": "Organization",
-			"name": "TekMonks",
+			"name": "Tekmonks",
 			"url": "https://tekmonks.com"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
-		"name": "TekMonks",
+		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
 	"keywords": ["WebSphere Commerce Services", "IBM commerce solution", "WebSphere Commerce Solution"]

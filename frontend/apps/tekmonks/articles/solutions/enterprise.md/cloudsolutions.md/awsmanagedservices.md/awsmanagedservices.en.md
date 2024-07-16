@@ -13,4 +13,4 @@ The benefits of this particular Amazon cloud management service are as follows:
 ● IT management
 ● Staff productivity
 
-TekMonks is proud to help our clients with Amazon cloud management.
+Tekmonks is proud to help our clients with Amazon cloud management.

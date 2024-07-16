@@ -3,7 +3,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Securely Working From Home",
-  "description": "As a cybersecurity company, TekMonks started looking for their opportunity to help society as well. This inspired the creation of Teleworkr. They combined their best cybersecurity products to create a secure virtual workspace for companies working from home. ",
+  "description": "As a cybersecurity company, Tekmonks started looking for their opportunity to help society as well. This inspired the creation of Teleworkr. They combined their best cybersecurity products to create a secure virtual workspace for companies working from home. ",
   "image": "",  
   "author": {
     "@type": "Person",
@@ -11,7 +11,7 @@
   },  
   "publisher": {
     "@type": "Organization",
-    "name": "TekMonks",
+    "name": "Tekmonks",
     "logo": {
       "@type": "ImageObject",
       "url": ""

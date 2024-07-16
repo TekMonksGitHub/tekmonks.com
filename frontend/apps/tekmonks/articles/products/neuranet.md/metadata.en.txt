@@ -16,13 +16,13 @@
  		"keywords": ["Infrastructure monitoring", "it infrastructure monitoring", "AiOps", "it monitoring software"],
  		"copyrightHolder": {
  			"@type": "Organization",
- 			"name": "TekMonks",
+ 			"name": "Tekmonks",
  			"url": "https://tekmonks.com"
  		}
  	}],
  	"publisher": {
  		"@type": "Organization",
- 		"name": "TekMonks",
+ 		"name": "Tekmonks",
  		"url": "https://tekmonks.com"
  	},
  	"keywords": ["Infrastructure monitoring", "it infrastructure monitoring", "AiOps", "it monitoring software"]

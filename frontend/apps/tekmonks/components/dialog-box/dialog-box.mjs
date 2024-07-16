@@ -1,7 +1,7 @@
 /**
  * Dialog component, modal.
  * 
- * (C) 2020 TekMonks. All rights reserved.
+ * (C) 2020 Tekmonks. All rights reserved.
  * License: MIT - see enclosed license.txt file.
  */
 import {util} from "/framework/js/util.mjs";

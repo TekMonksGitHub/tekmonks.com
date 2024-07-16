@@ -1,6 +1,6 @@
 #Cybersecurity
 
-TekMonks have been disrupting the IT industry by offering cutting edge solutions in everything from true Artificial Intelligence (AI) Cybersecurity to custom built in-house software solutions. 
+Tekmonks have been disrupting the IT industry by offering cutting edge solutions in everything from true Artificial Intelligence (AI) Cybersecurity to custom built in-house software solutions. 
 
 Artificial Intelligence in Cybersecurity is useful for: 
 ●   detecting threats from ransomware to malicious emails containing malware

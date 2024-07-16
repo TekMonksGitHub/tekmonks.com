@@ -10,4 +10,4 @@ In a nutshell, IBM MQ Software provides the following MQ services:
 ●	Easier general management/control
 ●	Fast-paced, seamless connectivity of information
 
-As an IBM advanced business partner, TekMonks is proud to provide high-quality MQ services and solutions.
+As an IBM advanced business partner, Tekmonks is proud to provide high-quality MQ services and solutions.

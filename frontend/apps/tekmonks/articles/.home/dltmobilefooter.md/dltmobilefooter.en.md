@@ -6,4 +6,4 @@
 
 |Follow us here |
 |:----|
-|  [![Facebook!] (./articles/.home/mobilefooter.md/facebook.svg =25x25 "Facebook")](https://www.facebook.com/TekMonks-1692794817691173){:target="_blank"}     [![Twitter!] (./articles/.home/mobilefooter.md/twitter.svg =25x25 "Twitter")](http://twitter.com/tekmonks){:target="_blank"}     [![LinkedIn!] (./articles/.home/mobilefooter.md/linkedin.svg =25x25 "LinkedIn")](https://www.linkedin.com/company/tekmonks){:target="_blank"} <br> <br><br> <br> |
+|  [![Facebook!] (./articles/.home/mobilefooter.md/facebook.svg =25x25 "Facebook")](https://www.facebook.com/Tekmonks-1692794817691173){:target="_blank"}     [![Twitter!] (./articles/.home/mobilefooter.md/twitter.svg =25x25 "Twitter")](http://twitter.com/tekmonks){:target="_blank"}     [![LinkedIn!] (./articles/.home/mobilefooter.md/linkedin.svg =25x25 "LinkedIn")](https://www.linkedin.com/company/tekmonks){:target="_blank"} <br> <br><br> <br> |

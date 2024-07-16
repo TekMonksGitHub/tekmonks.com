@@ -1,4 +1,4 @@
-TekMonks is trusted by some of the world's largest companies for building and managing their solutions. 
+Tekmonks is trusted by some of the world's largest companies for building and managing their solutions. 
 [**Click here to see what we can do for you.**]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md&menu_path=.menus/en{{/makeLink}})
 |   |   |   |   |   |
 |:----------:|:----------:|:----------:|:----------:|:----------:|

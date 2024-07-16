@@ -16,13 +16,13 @@
   		"keywords": ["MQ services", "mq it support", "websphere mq", "mq server", "mq server"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
   	"keywords": ["MQ services", "mq it support", "websphere mq", "mq server", "mq server"]

@@ -1,7 +1,7 @@
 ### Monastery
 
 <div class="api400-carousel-text">
-TekMonks no-code development environment for creating APIs, policies, SLA, security and API publishing.
+Tekmonks no-code development environment for creating APIs, policies, SLA, security and API publishing.
 </div>
 
 <div markdown="1">

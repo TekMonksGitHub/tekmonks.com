@@ -16,13 +16,13 @@
  		"keywords": ["jboss consulting services", "jboss service", "jboss application server"],
  		"copyrightHolder": {
  			"@type": "Organization",
- 			"name": "TekMonks",
+ 			"name": "Tekmonks",
  			"url": "https://tekmonks.com"
  		}
  	}],
  	"publisher": {
  		"@type": "Organization",
- 		"name": "TekMonks",
+ 		"name": "Tekmonks",
  		"url": "https://tekmonks.com"
  	},
  	"keywords": ["jboss consulting services", "jboss service", "jboss application server"]

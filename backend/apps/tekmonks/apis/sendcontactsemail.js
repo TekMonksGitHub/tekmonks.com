@@ -1,5 +1,5 @@
 /* 
- * (C) 2015 TekMonks. All rights reserved.
+ * (C) 2015 Tekmonks. All rights reserved.
  */
 const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const mailer = require(`${API_CONSTANTS.LIB_DIR}/mailer.js`);

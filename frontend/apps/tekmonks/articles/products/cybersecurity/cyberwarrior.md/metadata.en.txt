@@ -16,13 +16,13 @@
   		"keywords": ["ai cybersecurity", "cyber defense solutions", "cyber defense", "AI for cybersecurity", "Cybersecurity with AI", "AI technology"],
   		"copyrightHolder": {
   			"@type": "Organization",
-  			"name": "TekMonks",
+  			"name": "Tekmonks",
   			"url": "https://tekmonks.com"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
-  		"name": "TekMonks",
+  		"name": "Tekmonks",
   		"url": "https://tekmonks.com"
   	},
   	"keywords": ["ai cybersecurity", "cyber defense solutions", "cyber defense", "AI for cybersecurity", "Cybersecurity with AI", "AI technology"]
