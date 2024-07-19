@@ -205,7 +205,6 @@ function performAction(element){
 }
 
 async function uploadLibraryImage(element){
-  console.log(element.files[0])
   let params = {
     image: await convertImageToBase64(element.files[0]),
     name: element.files[0].name,
@@ -216,10 +215,7 @@ async function uploadLibraryImage(element){
 
 async function fetchLibraryImages(element){
   const apiResponse = await apiman.rest(APP_CONSTANTS.API_GET_LIBRARY_IMAGES, "GET", {}, false, false);
-  console.log(apiResponse)
-  console.log('test')
   let shadowRoot = blog_list.getShadowRootByContainedElement(element)
-  console.log('test1')
   shadowRoot.querySelector('.media-library-images').innerHTML = ''
   apiResponse.data.forEach(image => {
     let div = document.createElement('div')
