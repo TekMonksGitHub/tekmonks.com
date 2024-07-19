@@ -48,6 +48,9 @@
                     <button class="editor-button text-right" onclick="monkshu_env.components['blog-list'].performAction(this)">
                         <img src="./img/editor/text-right.svg">
                     </button>
+                    <button class="editor-button insert-image" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                        <img src="./img/editor/image.svg">
+                    </button>
                     <button class="editor-button link" onclick="monkshu_env.components['blog-list'].performAction(this)">
                         <img src="./img/editor/link.svg">
                     </button>
@@ -127,6 +130,9 @@
                                 <button class="editor-button text-right" onclick="monkshu_env.components['blog-list'].performAction(this)">
                                     <img src="./img/editor/text-right.svg">
                                 </button>
+                                <button class="editor-button insert-image" onclick="monkshu_env.components['blog-list'].performAction(this)">
+                                    <img src="./img/editor/image.svg">
+                                </button>
                                 <button class="editor-button link" onclick="monkshu_env.components['blog-list'].performAction(this)">
                                     <img src="./img/editor/link.svg">
                                 </button>
@@ -170,5 +176,15 @@
         </li>
         {{/file}}
     </ul>
+    <div class="media-library-modal">
+        <div class="media-library-modal-content">
+            <span class="close" onclick="monkshu_env.components['blog-list'].closeEditor(this)">&times;</span>
+            <input type="file" id="libraryImageUpload"  name="libraryImageUpload" class="library-upload-image" accept="image/*" onchange="monkshu_env.components['blog-list'].uploadLibraryImage(this)">
+            <label for="libraryImageUpload">Upload a file</label>
+            <div class="media-library-images">
+                
+            </div>
+        </div>
+    </div>
 </div>
 
