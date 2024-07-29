@@ -48,6 +48,8 @@ export const APP_CONSTANTS = {
     API_ADD_BLOG: API_PATH+"/addBlog",
     API_CHECK_FOLDER: API_PATH+"/checkFolder",
     API_GET_IMAGE: API_PATH+"/getBlogImage",
+    API_UPLOAD_LIBRARY_IMAGE: API_PATH+"/uploadLibraryImage",
+    API_GET_LIBRARY_IMAGES: API_PATH+"/getLibraryImages",
     API_DELETE_BLOG: API_PATH+"/deleteBlog",
 
     SESSION_NOTE_ID: "com_monkshu_app_mnkp",

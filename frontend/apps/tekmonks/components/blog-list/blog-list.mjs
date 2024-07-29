@@ -108,6 +108,7 @@ async function addNewBlog(element){
   const org = session.get(APP_CONSTANTS.USERORG);
   const imageFile = element.parentElement.parentElement.querySelectorAll('#imageUpload')[0].files[0];
   const imageBase64 = await convertImageToBase64(imageFile);
+  console.log(imageFile);
   const params = {
       blog: updatedContent,
       language: language,
@@ -188,6 +189,12 @@ function performAction(element){
     case 'text-right':
       document.execCommand('justifyRight', false, null);
       break;
+    case 'insert-image':
+      const shadowRoot = monkshu_env.components["blog-list"].getShadowRootByContainedElement(element)
+      const mediaLibrary = shadowRoot.querySelectorAll('.media-library-modal')[0]
+      fetchLibraryImages(element);
+      mediaLibrary.style.display = 'block'
+      break;
     case 'link':
       let link = prompt("Enter the link URL");
       if (link) {
@@ -195,6 +202,33 @@ function performAction(element){
       }
       break;
   }
+}
+
+async function uploadLibraryImage(element){
+  let params = {
+    image: await convertImageToBase64(element.files[0]),
+    name: element.files[0].name,
+  }
+  await apiman.rest(APP_CONSTANTS.API_UPLOAD_LIBRARY_IMAGE, "POST", params, false, false);
+  fetchLibraryImages(element);
+}
+
+async function fetchLibraryImages(element){
+  const apiResponse = await apiman.rest(APP_CONSTANTS.API_GET_LIBRARY_IMAGES, "GET", {}, false, false);
+  let shadowRoot = blog_list.getShadowRootByContainedElement(element)
+  shadowRoot.querySelector('.media-library-images').innerHTML = ''
+  apiResponse.data.forEach(image => {
+    let div = document.createElement('div')
+    div.classList.add('image-item')
+    div.innerHTML = `<img src="${image.path}" alt="Library Image">`
+    div.addEventListener('click', function() {
+      let contentEditable = shadowRoot.querySelector('.add-editor') || shadowRoot.querySelector('.edit-editor')
+      contentEditable.focus()
+      document.execCommand('insertImage', false, this.querySelector('img').src)
+      shadowRoot.querySelector('.media-library-modal').style.display = 'none'
+    })
+    shadowRoot.querySelector('.media-library-images').appendChild(div)
+  })
 }
   
 function closeEditor(element){
@@ -212,4 +246,4 @@ function register() {
 
 const trueWebComponentMode = true;	// making this false renders the component without using Shadow DOM
 
-export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, confirmDelete, deleteBlog, openAddEditor, performAction, closeEditor, addNewBlog, logout}
+export const blog_list = {trueWebComponentMode, register, elementConnected, editBlog, saveEditedBlog, confirmDelete, deleteBlog, openAddEditor, performAction, closeEditor, addNewBlog, uploadLibraryImage, logout}

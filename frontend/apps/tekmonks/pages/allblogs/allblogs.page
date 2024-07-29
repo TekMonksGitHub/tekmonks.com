@@ -2,7 +2,10 @@ SCHEMA
 ======
 {
     "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.png", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
-
+    "latestheader": {"html":"content-post", "article":"blogpages/allblogs/latestblog.md", "id":"latestHeader", "style":"width:100%;text-align:center;", "styleArticle":"url(./pages/allblogs/allblogs.styleBody.css)", "styleContainer":"", "styleBody":""},
+    "blogcards": {"html":"blog-cards", "id":"blogcards", "styleBody":"url(./pages/blogs/blogcards/blogcards.styleBody.css)"},
+    "darksection": {"html":"content-post", "article":"blogpages/allblogs/darksection.md", "id":"darkSection", "style":"width:100%;", "styleArticle":"url(./pages/allblogs/allblogs.styleBody.css)"},
+    "greysection": {"html":"content-post", "article":"blogpages/allblogs/greysection.md", "id":"greySection", "style":"width:100%;text-align:center;", "styleArticle":"url(./pages/allblogs/allblogs.styleBody.css)"},
     "allblogs": {"html":"all-blogs", "id":"allblogs", "styleBody":"url(./pages/allblogs/allblogs.styleBody.css)"}
 }
 ======
@@ -19,7 +22,7 @@ LAYOUT
 
 
 =================
-Row Heights = 50px, auto
+Row Heights = 50px, auto, auto, auto
 Col Widths = 100%
 =================
 
@@ -45,8 +48,24 @@ body {
    display: none; 
 }
 
+.class-latestheader{
+  margin-bottom: 40px;
+}
+
 .class-navbar { 
      z-index: 1;
+}
+
+.class-darksection{
+  background: #242323;
+  padding: 100px 50px;
+  color: white;
+}
+
+.class-greysection{
+  background-image: linear-gradient(to right, #D8D8D8 , #F2F5F7);
+  padding: 100px 50px;
+  color: #424B5A
 }
 
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
