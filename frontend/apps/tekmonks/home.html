@@ -52,13 +52,13 @@
     </head>
     <script>
 		let spinnerInterval = setInterval(() => {
-			let shadowContainer = document.getElementsByTagName('page-generator')
-			if (shadowContainer[0].shadowRoot) {
-				document.getElementById('loading-container').style.display = 'none'
-                document.getElementById('temp-index').style.display = 'none'
-                clearInterval(spinnerInterval)
-			}
-		}, 200)   
+            let shadowContainer = document.getElementsByTagName('page-generator');
+            if (shadowContainer.length > 0 && shadowContainer[0].shadowRoot) {
+                document.getElementById('loading-container').style.display = 'none';
+                document.getElementById('temp-index').style.display = 'none';
+                clearInterval(spinnerInterval);
+            }
+        }, 200);   
 	</script>
     <body style="margin: 0%;">
         <div id="temp-index"></div>
