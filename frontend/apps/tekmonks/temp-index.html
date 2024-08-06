@@ -224,7 +224,9 @@
     const randomIndex = Math.floor(Math.random() * images.length);
     const randomImage = images[randomIndex];
     const bannerButton = document.getElementById('bannerButton')
-    bannerButton.setAttribute("link", randomImage.link)
+    if(bannerButton){
+      bannerButton.setAttribute("link", randomImage.link)
+    }
 
     const bannerImg = banner.querySelector('img');
     if (bannerImg) {
