@@ -36,3 +36,11 @@ th{
 th, td {
     padding: 20px 0 20px 0;
 }
+
+a{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white !important;
+    background-color: #063e59;
+    font-weight: 700;
+}
