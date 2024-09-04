@@ -13,6 +13,8 @@ All software produced by Tekmonks or any of its projects or subjects is licensed
 |:-----------|:--------------|
 |Tekmonks Open Source License 2023|Terms and conditions for use, reproduction, and distribution |
 
+<br>
 
+[Download License File](./articles/company/license.md/TKMLicense.pdf){:target="_blank"}
 
 </div>
