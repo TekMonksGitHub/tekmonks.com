@@ -185,6 +185,7 @@
 </body>
 
 <script>
+  if (images) return;
   const images = [
     {
       image: './articles/.home/headlineimages/aipa-banner.svg/aipa-banner.svg',
@@ -227,7 +228,7 @@
     if(bannerButton){
       bannerButton.setAttribute("link", randomImage.link)
     }
-
+    if (!banner) return;
     const bannerImg = banner.querySelector('img');
     if (bannerImg) {
         bannerImg.src = randomImage.image;
