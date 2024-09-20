@@ -88,3 +88,12 @@ h2{
     display: flex;
     min-height:300px;
  }
+ 
+ .twinblue p{
+    font-size: 24px;
+ }
+ 
+ .twinblue h3{
+    color: #07439c;
+    font-size: 2em;
+ }

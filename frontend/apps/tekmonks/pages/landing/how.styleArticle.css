@@ -129,3 +129,59 @@ table{
     height: 100%;
     background-color: #205570;
  }
+ 
+ .twinblue > h3{
+    color: #07439c;
+    font-size: 3rem !important;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+ 
+ .twinblue > p{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 20px;
+ }
+ 
+ .twinblue > h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 20px;
+ }
+ 
+ 
+.twinblue .why-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.twinblue .why-item{
+    max-width: 200px;
+}
+
+.twinblue .why-item h4{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.twinblue .why-item p{
+    text-align: left;
+}
+
+.twinblue .why-capabilities{
+    text-align: left;
+    margin: auto;
+    max-width: 600px;
+}
+
+.blue{
+    color: #07439c;
+}
+
+.red{
+    color: #a81010;
+}
