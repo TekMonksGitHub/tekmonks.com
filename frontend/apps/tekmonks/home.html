@@ -67,8 +67,8 @@
         </div>
     </body>
     <script type="text/javascript">
-        if (sessionStorage.getItem('firstLoadHome') === null) {
-            sessionStorage.setItem('firstLoadHome', 'false');
+        if (sessionStorage.getItem('firstLoad') === null) {
+            sessionStorage.setItem('firstLoad', 'false');
             document.getElementById('loading-container').style.display = 'none';
             fetch('temp-index.html')
                 .then(response => response.text())
