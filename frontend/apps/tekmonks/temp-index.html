@@ -221,23 +221,23 @@
   function setRandomBanner() {
     const banner = document.getElementById('banner');
     const bannerText = document.getElementById('bannerText');
-    const randomIndex = Math.floor(Math.random() * images.length);
-    const randomImage = images[randomIndex];
-    const bannerButton = document.getElementById('bannerButton')
-    if(bannerButton){
-      bannerButton.setAttribute("link", randomImage.link)
-    }
+    const bannerButton = document.getElementById('bannerButton');
+    const randomImage = images[Math.floor(Math.random() * images.length)];
 
-    const bannerImg = banner.querySelector('img');
-    if (bannerImg) {
+    if (bannerButton) bannerButton.setAttribute("link", randomImage.link);
+
+    if (banner) {
+      const bannerImg = banner.querySelector('img');
+      if (bannerImg) {
         bannerImg.src = randomImage.image;
         bannerImg.alt = randomImage.alt;
-    } else {
+      } else {
         console.error('No img element found within the banner div');
+      }
     }
 
-    bannerText.innerText = randomImage.text;
-}
+    if (bannerText) bannerText.innerText = randomImage.text;
+  }
 
 document.addEventListener('click', function(event){
   if (event.target.hasAttribute('link')) {
