@@ -97,3 +97,15 @@ h2{
     color: #07439c;
     font-size: 2em;
  }
+ 
+ .twinblue .cta-buttons > p{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+ 
+ .twinblue .cta-buttons > p > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
