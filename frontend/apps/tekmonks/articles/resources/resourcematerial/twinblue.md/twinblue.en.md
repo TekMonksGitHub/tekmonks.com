@@ -56,7 +56,7 @@
 ##Presentation
 
 
-[Download](articles/resources/resourcematerial/twinblue.md/twinblue-presentation.pdf){:target="_blank"}q
+[Download](articles/resources/resourcematerial/twinblue.md/twinblue-presentation.pdf){:target="_blank"}
 </div>
 </div>
 </div>
