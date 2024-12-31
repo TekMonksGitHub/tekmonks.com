@@ -48,6 +48,15 @@
 
 
 <span class="disabled">Coming Soon</span>
+
+</div>
+
+<div class="resource-box single-product-box" markdown="1">
+![Presentation] (articles/resources/productlist.md/presentation.png "Presentation")
+##Presentation
+
+
+[Download](articles/resources/resourcematerial/twinblue.md/twinblue-presentation.pdf){:target="_blank"}q
 </div>
 </div>
 </div>
