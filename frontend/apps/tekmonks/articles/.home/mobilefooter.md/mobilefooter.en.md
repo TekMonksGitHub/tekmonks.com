@@ -5,7 +5,7 @@
 
 |Information |Discover |
 |:----|:---|
-| [About Us]({{#makeLink}}./article.html?article_path=./company/aboutus.md&menu_path=/{{/makeLink}}){:target="_self"}<br/><br />[Join Our Team]({{#makeLink}}./article.html?article_path=./company/joinourteam.md&menu_path=/{{/makeLink}}){:target="_self"} <br/><br />[Privacy Policy](./articles/.home/copyright.md/PrivacyPolicy.en.pdf){:target="_blank"}  <br/><br />[Cookie Policy](./articles/.home/copyright.md/CookiePolicy.en.pdf){:target="_blank"}|  [Enterprise Software]({{#makeLink}}./article.html?article_path=./software.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Enterprise Solutions]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Blogs]({{#makeLink}}./mainblog.html?blogs_path=blogpages/mainblog&menu_path=/{{/makeLink}}){:target="_self"} |
+| <a href="https://tekmonks.com/company/about-us">About Us</a><br/><br /><a href="https://tekmonks.com/company/join-our-team">Join Our Team</a> <br/><br />[Privacy Policy](./articles/.home/copyright.md/PrivacyPolicy.en.pdf){:target="_blank"}  <br/><br />[Cookie Policy](./articles/.home/copyright.md/CookiePolicy.en.pdf){:target="_blank"}|  [Enterprise Software]({{#makeLink}}./article.html?article_path=./software.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Enterprise Solutions]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Blogs]({{#makeLink}}./mainblog.html?blogs_path=blogpages/mainblog&menu_path=/{{/makeLink}}){:target="_self"} |
 
 |Follow us here |
 |:----|

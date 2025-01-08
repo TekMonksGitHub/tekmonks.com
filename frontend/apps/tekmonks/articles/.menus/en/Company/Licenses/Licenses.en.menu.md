@@ -2,4 +2,4 @@
 
 Check out our licenses
 
-[**View Licenses**]({{#makeLink}}./license.html{{/makeLink}})
+<a href="https://tekmonks.com/company/licenses"><b>View Licenses</b></a>

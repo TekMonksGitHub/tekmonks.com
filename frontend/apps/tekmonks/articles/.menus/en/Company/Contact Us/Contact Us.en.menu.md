@@ -8,4 +8,4 @@
 
 [I have a general question.](mailto:info@tekmonks.com)
 
-[**See where we're located (and our phone numbers.)**]({{#makeLink}}./contactus.html?article_path=./company/contactus.md&menu_path=.menus/en{{/makeLink}})
+<a href="https://tekmonks.com/company/contact-us"><b>See where we're located (and our phone numbers.)</b></a>

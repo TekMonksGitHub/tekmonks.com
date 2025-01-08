@@ -1,3 +1,3 @@
 |   |   |
 |:----------:|:----------:|
-|[<h4>MonBoss</h4>]({{#makeLink}}./landing.html?product_path=./products/monboss.md&menu_path=.menus/en{{/makeLink}})<p>An AIOps or Artificial Intelligence for IT Operations is what MonBoss is all about</p>|[<h4>Cronlord</h4>]({{#makeLink}}./landing.html?product_path=./products/cronlord.md&menu_path=.menus/en{{/makeLink}})<p>The Lord of automating workloads.</p>
+|<a href="https://tekmonks.com/products/monboss"><h4>MonBoss</h4></a><p>An AIOps or Artificial Intelligence for IT Operations is what MonBoss is all about</p>|<a href="https://tekmonks.com/products/cronlord"><h4>Cronlord</h4></a><p>The Lord of automating workloads.</p>
