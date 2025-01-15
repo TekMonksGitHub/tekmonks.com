@@ -2,5 +2,5 @@
 #Learn More About Neuranet
 
 <br/><br/>
-[Schedule a Demo]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+<a href="https://tekmonks.com/company/product-inquiries">Schedule a Demo</a>
 </div>

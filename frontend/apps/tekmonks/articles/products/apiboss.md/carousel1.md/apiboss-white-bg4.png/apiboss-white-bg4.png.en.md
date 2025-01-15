@@ -4,7 +4,8 @@
 Built-in developer portal to ease API access by internal and external developers to enforce security and usage.
 </div>
 
-
 <div markdown="1">
-<div class="apiboss-schedule-button"  markdown="1">[Schedule a demo]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}}) </div>
+<div class="apiboss-schedule-button" markdown="1">
+<a href="https://tekmonks.com/company/product-inquiries">Schedule a demo</a>
+</div>
 </div>

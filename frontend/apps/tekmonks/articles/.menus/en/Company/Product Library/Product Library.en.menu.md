@@ -2,4 +2,4 @@
 
 Learn more about our products by checking out our product library.
 
-[**See Product Library**]({{#makeLink}}./resource.html?article_path=./resources/productlist.md&menu_path=/{{/makeLink}})
+<a href="https://tekmonks.com/company/resources"><b>See Product Library</b></a>
