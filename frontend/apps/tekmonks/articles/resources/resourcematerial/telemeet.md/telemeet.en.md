@@ -15,7 +15,7 @@
 ##Data Sheet
 
 
-[Download](articles/resources/resourcematerial/monkruls.md/Monkruls.pdf){:target="_blank"}
+<span class="disabled">Coming Soon</span>
 </div>
 
 <div class="resource-box" markdown="1">
@@ -23,7 +23,7 @@
 ##White Paper
 
 
-[Download](articles/resources/resourcematerial/monkruls.md/monkruls-whitepaper.pdf){:target="_blank"}
+[Download](articles/resources/resourcematerial/telemeet.md/telemeet-whitepaper.pdf){:target="_blank"}
 </div>
 
 <div class="resource-box" markdown="1">
@@ -39,7 +39,7 @@
 ##Brochure
 
 
-[Download](articles/resources/resourcematerial/monkruls.md/monkruls-brochure.pdf){:target="_blank"}
+<span class="disabled">Coming Soon</span>
 </div>
 
 <div class="resource-box" markdown="1">
@@ -48,14 +48,7 @@
 
 
 <span class="disabled">Coming Soon</span>
-</div>
 
-<div class="resource-box single-product-box" markdown="1">
-![TekBook] (articles/resources/productlist.md/whitepaper.png "TekBook")
-##TekBook
-
-
-[Download](https://docs.google.com/file/d/1-vfDD5Bp9Ljt_tktBiAFfiiUgGimsj_K/edit?filetype=msword){:target="_blank"}
 </div>
 
 <div class="resource-box single-product-box" markdown="1">
@@ -63,7 +56,7 @@
 ##Presentation
 
 
-[Download](articles/resources/resourcematerial/monkruls.md/monkruls-presentation.pdf){:target="_blank"}
+<span class="disabled">Coming Soon</span>
 </div>
 </div>
 </div>
