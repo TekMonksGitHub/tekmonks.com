@@ -22,7 +22,7 @@
 ##White Paper
 
 
-<span class="disabled">Coming Soon</span>
+[Download](articles/resources/resourcematerial/apiboss.md/apiboss-whitepaper.pdf){:target="_blank"}
 </div>
 
 <div class="resource-box" markdown="1">
