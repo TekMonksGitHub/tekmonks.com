@@ -11,4 +11,11 @@
 |   |   |   |
 |:------:|:----------:|:----------:|
 |![UK](articles/company/contactus.md/locations.md/images/uk.svg =80x80)<br/><h3>UK</h3><br/><p>Tekmonks Ltd.<br/>Kemp House, 152 City Road<br/>London EC1V 2NX<br/>+1 844 542 6296</p>|![Singapore](articles/company/contactus.md/locations.md/images/singapore.svg =80x80)<br/><h3>Singapore</h3><br/><p>Tekmonks Pte. Ltd.<br/>#05-01, 7 Straits View, Marina One East Tower<br/>Singapore 018936<br/>+1 844 542 6296</p>|![India](articles/company/contactus.md/locations.md/images/india.svg =80x80)<br/><h3>India - Business Partner</h3><br/><p>Deep LogicTech (I) Pvt. Ltd.<br/>359 Aggarwal Metro Heights<br/>New Delhi 110034<br/>+1 844 542 6296</p>|
+
+<br/>
+<br/>
+
+|   |   |   |
+|:------:|:----------:|:----------:|
+|   |![Philippines](articles/company/contactus.md/locations.md/images/philippines.svg =80x80)<br/><h3>Philippines</h3><br/><p>Level 21 Unit 2116-17,<br/>Park Triangle Corporate Plaza,<br/>North Tower 32nd Street Corner 11th Avenue<br/>Bonifacio Global City,<br/>Fort Bonifacio, Taguig City 1630.</p>|   |
 </div>
