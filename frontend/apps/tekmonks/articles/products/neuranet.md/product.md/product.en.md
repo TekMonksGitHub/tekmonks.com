@@ -1,7 +1,39 @@
-<div class="product-prod" markdown="1">
-#INTELLIGENT, INTEGRATED, INTUITIVE
-
-|||
-|:--:|:--:|
-| ![Neuranet](articles/products/neuranet.md/product.md/product.en.svg =1080x500) | <h2 class="productheader">AI POWERED ENTERPRISE ENGINE</h2><p class="productdescription">Neuranet, powered by Tekmonks AI, provides trained models to support your enterprise use cases while being compliant with confidentiality and security policies.</p><h2 class="productheader">ENTERPRISE READY ARTIFICIAL INTELLIGENCE</h2><p class="productdescription">Neuranet offers essential AI capabilities for enterprises, enabling enhanced decision-making, task automation, and personalized customer experiences.</p><h2 class="productheader">TRAINING AND CUSTOMIZATION</h2><p class="productdescription">Neuranet enables customized AI engine training, connecting to internal knowledge bases and quickly adapting to emerging challenges while being compliant with confidentiality and security policies.</p> |
+<div class="neuranet">
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Main Product Features</h2>
+        <p>Discover how Neuranet's advanced capabilities can transform your enterprise operations</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Seamless Integration</h3>
+          <ul>
+            <li>AI-driven database and code migration</li>
+            <li>Compatible with existing enterprise systems</li>
+            <li>Automated implementation process</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Advanced Intelligence</h3>
+          <ul>
+            <li>Deep learning capabilities</li>
+            <li>Custom AI models tailored to business needs</li>
+            <li>Continuous improvement algorithms</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Enterprise Security</h3>
+          <ul>
+            <li>Compliance with confidentiality regulations</li>
+            <li>Data security policy enforcement</li>
+            <li>Zero external data sharing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

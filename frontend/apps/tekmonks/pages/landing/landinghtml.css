@@ -1,0 +1,408 @@
+.neuranet .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .neuranet .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2a7d7d;
+    color: #f5f5f5 !important;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .neuranet .btn:hover {
+    background-color: #1a5959;
+  }
+
+  .neuranet .btn-secondary {
+    background-color: transparent;
+    color: #2a7d7d;
+    border: 2px solid #2a7d7d;
+  }
+
+  .neuranet .btn-secondary:hover {
+    background-color: rgba(42, 125, 125, 0.1);
+  }
+
+  /* Hero Section */
+  .neuranet .hero {
+    background: linear-gradient(135deg, #2a7d7d 0%, #1a5959 100%);
+    color: #f5f5f5;
+    padding: 160px 0 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .neuranet .hero-container {
+    flex: 0 1 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  .neuranet .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .neuranet .hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .neuranet .hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+
+  .neuranet .btn p{
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .neuranet .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .neuranet .hero-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 50%;
+    z-index: 1;
+  }
+
+  .neuranet .orbital-graphic {
+    width: 500px;
+    height: 500px;
+  }
+
+  /* Features Section */
+  .neuranet .features {
+    padding: 100px 0;
+    background-color: #f0f5f5;
+  }
+
+  .neuranet .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .neuranet .section-header h2 {
+    font-size: 36px;
+    color: #1a5959;
+    margin-bottom: 20px;
+  }
+
+  .neuranet .section-header p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #727272;
+  }
+
+  .neuranet .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .neuranet .feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    flex-basis: 25%;
+    min-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .neuranet .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .neuranet .feature-icon {
+    font-size: 48px;
+    color: #2a7d7d;
+    margin-bottom: 20px;
+  }
+
+  .neuranet .feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1a5959;
+  }
+
+  .neuranet .feature-card ul {
+    list-style-position: inside;
+    margin-top: 15px;
+  }
+
+  .neuranet .feature-card li {
+    margin-bottom: 10px;
+    color: #727272;
+  }
+
+  /* Demo Section */
+  .neuranet .demo {
+    padding: 100px 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .neuranet .video-container {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .neuranet .video-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .neuranet .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(42, 125, 125, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .neuranet .play-icon {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 25px solid white;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+  }
+
+  .neuranet .video-duration {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .neuranet .demo-cta {
+    margin-top: 30px;
+  }
+
+  /* Documents Section */
+  .neuranet .documents {
+    padding: 100px 0;
+    background-color: #f0f5f5;
+  }
+
+  .neuranet .documents-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .neuranet .document-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    flex: 1 1 25%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .neuranet .document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .neuranet .document-icon {
+    font-size: 48px;
+    color: #2a7d7d;
+    margin-bottom: 20px;
+  }
+
+  .neuranet .document-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1a5959;
+  }
+
+  .neuranet .document-card p {
+    color: #727272;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .neuranet .document-info {
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 20px;
+  }
+
+  /* Pain Points Section */
+  .neuranet .pain-points {
+    padding: 100px 0;
+    background-color: white;
+  }
+
+  .neuranet .pain-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  .neuranet .pain-item {
+    flex: 1 1 40%;
+    min-width: 300px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .neuranet .pain-icon {
+    font-size: 28px;
+    color: #2a7d7d;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .neuranet .pain-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1a5959;
+  }
+
+  .neuranet .pain-content p {
+    color: #727272;
+  }
+
+  /* CTA Section */
+  .neuranet .cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2a7d7d 0%, #1a5959 100%);
+    color: #f5f5f5;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .neuranet .cta-orbital {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .neuranet .cta-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .neuranet .cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .neuranet .cta p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+  }
+  
+  .neuranet .cta .btn p {
+    margin-bottom: 0;
+  }
+
+  .neuranet .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .neuranet .hero {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 100px 20px;
+    }
+    
+    .neuranet .hero .orbital-graphic {
+      max-width: 100%;
+      display: flex;
+    }
+    
+    .neuranet .hero-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .neuranet .hero h1 {
+      font-size: 36px;
+    }
+
+    .neuranet .hero p {
+      font-size: 18px;
+    }
+
+    .neuranet .features-grid, .neuranet .documents-grid {
+      flex-direction: column;
+    }
+
+    .neuranet .feature-card, .neuranet .document-card {
+      flex: 1 1 100%;
+      min-width: unset;
+    }
+
+    .neuranet .pain-item {
+      flex: 1 1 100%;
+    }
+
+    .neuranet .nav-links {
+      display: none;
+    }
+  }

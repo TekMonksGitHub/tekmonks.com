@@ -50,11 +50,18 @@
             let urlParam = window.location.search.replace(new RegExp('/\?.='), "")
             let productName = new RegExp('products(.*?).md').exec(atob(urlParam.substring(1)))
             let newLayout = ['api400', 'apiboss']
+            let htmlLayout = ['neuranet']
             
-            if(window.sessionStorage.getItem("referrer") == "DLT"){
-                document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) ?  '<page-generator file="./pages/landing/dltlanding_n.page"></page-generator>' : '<page-generator file="./pages/landing/dltlanding.page"></page-generator>'
-            }else{
-                document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) ?  '<page-generator file="./pages/landing/landing_n.page"></page-generator>' : '<page-generator file="./pages/landing/landing.page"></page-generator>'
+            if (window.sessionStorage.getItem("referrer") == "DLT") {
+                document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) 
+                    ? '<page-generator file="./pages/landing/dltlanding_n.page"></page-generator>' 
+                    : '<page-generator file="./pages/landing/dltlanding.page"></page-generator>';
+            } else if (htmlLayout.some((e) => productName[1].includes(e))) {
+                document.body.innerHTML += '<page-generator file="./pages/landing/landinghtml.page"></page-generator>';
+            } else {
+                document.body.innerHTML += newLayout.some((e) => productName[1].includes(e)) 
+                    ? '<page-generator file="./pages/landing/landing_n.page"></page-generator>' 
+                    : '<page-generator file="./pages/landing/landing.page"></page-generator>';
             }
            
             let spinnerInterval = setInterval(() => {
