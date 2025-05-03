@@ -1,0 +1,92 @@
+SCHEMA
+======
+{
+    "metadata": {"html":"page-meta", "files":"./articles/{{url.product_path}}/metadata.{{lang}}.txt"},
+    "navbar": {"html":"navigation-menu", "level":".menus/{{lang}}", "logo":"./articles/.home/logo.png/logo.svg", "massage_menu":"true", "styleBody":"url(./pages/home/navbar.styleBody.css)", "logo_style":"width:70px;", "menu_arrow":"&nbsp;?"},
+    "header": {"html":"content-post", "article":"{{url.product_path}}/header.md", "id":"header", "style":"background:rgba(255,255,255);padding:0; text-align: center;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "product": {"html":"content-post", "article":"{{url.product_path}}/product.md", "id":"product", "style":"background:rgba(255,255,255);padding:0;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "video": {"html":"content-post", "article":"{{url.product_path}}/video.md", "id":"video", "style":"background:rgba(255,255,255);padding:0;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "resources": {"html":"content-post", "article":"{{url.product_path}}/resources.md", "id":"resources", "style":"background:rgba(255,255,255);padding:0;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "how": {"html":"content-post", "article":"{{url.product_path}}/how.md", "id":"how", "style":"background:rgba(255,255,255);padding:0;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "calltoaction": {"html":"content-post", "article":"{{url.product_path}}/calltoaction.md", "id":"calltoaction", "style":"background:rgba(255,255,255);padding:0;", "styleArticle":"url(./pages/landing/landinghtml.css)", "styleContainer":"", "styleBody":"body{box-sizing:border-box;font-family: Arial, Helvetica, sans-serif;}"},
+    "footer": {"html":"content-post", "article":".home/footer.md", "id":"footer", "styleContainer":"background:white;height:350px;color:white;", "styleArticle":"url(./pages/common/footer.styleArticle.css)"},
+    "mobilefooter": {"html":"content-post", "article":".home/mobilefooter.md", "id":"mobilefooter", "styleContainer":"background:rgba(255, 255, 255);color:white;", "styleArticle":"url(./pages/common/mobilefooter.styleArticle.css)"},
+    "copyrights": {"html":"content-post", "article":".home/copyright.md", "id":"copyright", "styleContainer":"background:white;height:60px;color:#787878;", "styleArticle":"url(./pages/common/copyrights.styleArticle.css)"}
+}
+======
+
+
+LAYOUT
+=================
+-----------------------------
+| metadata                  |
+-----------------------------
+| navbar                    |
+-----------------------------
+| header                    |
+-----------------------------
+| product                   |
+-----------------------------
+| video                     |
+-----------------------------
+| resources                 |
+-----------------------------
+| how                       |
+-----------------------------
+| calltoaction              |
+-----------------------------
+| footer                    |
+-----------------------------
+| mobilefooter              |
+-----------------------------
+| copyrights                |
+-----------------------------
+=================
+Row Heights = 0px, 50px, auto, auto, auto, auto, auto, auto, auto, auto, 60px
+Col Widths = 100%
+=================
+
+
+CSS CLASSES
+===========
+CONTAINER CLASSES = grid-container-extension
+ITEM CLASSES = grid-item-extension
+PER ITEM CLASS = class
+===========
+
+CSS
+=======
+.grid-container-extension {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item-extension {
+    background-color: rgba(255, 255, 255, 1);
+    text-align:center;
+}
+
+body {
+    margin: 0%;
+}
+
+div.class-mobilefooter {
+      display: none;
+}
+
+.class-navbar { 
+    z-index: 1;
+}
+
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+    div.class-footer {
+        display: none;
+    }
+    
+    div.class-mobilefooter {
+      display: block;
+    }
+{{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_END}}}
+
+
+=======

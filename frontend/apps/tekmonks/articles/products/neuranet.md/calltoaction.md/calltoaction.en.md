@@ -1,6 +1,9 @@
-<div class="product-cta" markdown="1">
-#Learn More About Neuranet
+<div class="neuranet-cta" markdown="1">
 
-<br/><br/>
-<a href="https://tekmonks.com/company/product-inquiries">Schedule a Demo</a>
+## Ready to Optimize Your Enterprise Operations?
+
+Join forward-thinking organizations leveraging the power of AI to transform their business efficiency and unlock new opportunities.
+
+[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+
 </div>
