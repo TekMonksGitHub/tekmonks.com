@@ -1,0 +1,3 @@
+{
+  "WEBUNDLE_FILE_PATTERNS": ["**/*.mjs", "**/*.js", "**/*.html", "**/*.css", "**/*.json"]
+}

@@ -60,5 +60,8 @@ typings/
 # next.js build output
 .next
 
+# MacOS stuff
+**/.DS_Store
+
 #other
 frontend/apps/tekmonks/webbundle
