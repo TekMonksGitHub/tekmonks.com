@@ -2,7 +2,7 @@
 
 |Information |Discover |
 |:----|:---|
-| <a href="https://tekmonks.com/company/about-us">About Us</a><br/><br /><a href="https://tekmonks.com/company/join-our-team">Join Our Team</a> <br/><br />[Privacy Policy](./articles/.home/copyright.md/privacypolicy.en.pdf){:target="_blank"} |  [Enterprise Software]({{#makeLink}}./article.html?article_path=./software.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Enterprise Solutions]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Blogs]({{#makeLink}}./mainblog.html?blogs_path=blogpages/mainblog&menu_path=/{{/makeLink}}){:target="_self"} |
+| <a href="/company/about-us">About Us</a><br/><br /><a href="/company/join-our-team">Join Our Team</a> <br/><br />[Privacy Policy](./articles/.home/copyright.md/privacypolicy.en.pdf){:target="_blank"} |  [Enterprise Software]({{#makeLink}}./article.html?article_path=./software.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Enterprise Solutions]({{#makeLink}}./article.html?article_path=./solutions/enterprise.md&menu_path=/{{/makeLink}}){:target="_self"}  <br/><br/>[Blogs]({{#makeLink}}./mainblog.html?blogs_path=blogpages/mainblog&menu_path=/{{/makeLink}}){:target="_self"} |
 
 |Follow us here |
 |:----|

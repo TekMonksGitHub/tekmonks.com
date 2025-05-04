@@ -2,5 +2,5 @@
 <p style="font-size: 2vw; margin-bottom: 10px">The Borderless Office</p>
 
 <div class="headline-button">
-<a href="https://tekmonks.com/products/teleworkr">Learn More</a>
+<a href="/products/teleworkr">Learn More</a>
 </div>

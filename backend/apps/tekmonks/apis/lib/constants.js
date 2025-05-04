@@ -11,6 +11,7 @@ exports.BLOG_ROOT = `${path.resolve(`${__dirname}/../../../../../frontend/apps/t
 exports.LIB_DIR = `${APP_ROOT}/apis/lib`;
 exports.CONF_DIR = `${APP_ROOT}/conf`;
 exports.API_DIR = `${APP_ROOT}/apis`;
+exports.TEKMONKS_SALES_LEAD_EMAIL = "sales@tekmonks.com";
 
 /* Constants for the FS Login subsystem */
 exports.SALT_PW = "$2a$10$VFyiln/PpFyZc.ABoi4ppf";

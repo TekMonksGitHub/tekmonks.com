@@ -1,8 +1,5 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const path = require("path");
 const fs = require("fs").promises;
-
-const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
 
 exports.doService = async (jsonReq) => {
   if (!validateRequest(jsonReq)) {
@@ -10,45 +7,10 @@ exports.doService = async (jsonReq) => {
     return CONSTANTS.FALSE_RESULT;
   }
 
-  const folderPath = path.join(API_CONSTANTS.CMS_ROOT, "blogs.md");
+  const folderPath = path.join(TEKMONKS_COM_CONSTANTS.CMS_ROOT, "blogs.md");
   let files = await getAllFilesInFolder(folderPath);
-  //files = await addImageInfo(files);
   return { file: files };
 };
-
-async function addImageInfo(files) {
-  for (let i = 0; i < files.length; i++) {
-    const file = files[i];
-    
-    const directory = path.dirname(file.path);
-    const headerFileName = 'header';
-
-    try {
-      const directoryFiles = await fs.readdir(directory);
-
-      const headerFile = directoryFiles.find((filename) => {
-        return filename.startsWith(headerFileName);
-      });
-      if (headerFile){
-        const headerFilePath = path.join(directory, headerFile);
-        
-        const nameDirHash = path.basename(path.dirname(path.dirname(headerFilePath)));
-        const orgDirHash = path.basename(path.dirname(path.dirname(path.dirname(headerFilePath))));
-        const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
-        const imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}`;
-        files[i].image = {
-          name: nameDirHash,
-          org: orgDirHash,
-          path: `${imageBaseUrl}/${path.basename(path.dirname(headerFilePath))}/${headerFile}`,
-          content: await fs.readFile(path.join(directory, headerFile), 'utf8'),
-        }
-      }
-    } catch (error) {
-      console.error(`Error while searching for header image for ${file.path}: ${error}`);
-    }
-  }
-  return files;
-}
 
 async function getAllFilesInFolder(folderPath) {
   let fileList = [];

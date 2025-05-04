@@ -8,4 +8,4 @@
 
 [I have a general question.](mailto:info@tekmonks.com)
 
-<a href="https://tekmonks.com/company/contact-us"><b>See where we're located (and our phone numbers.)</b></a>
+<a href="/company/contact-us"><b>See where we're located (and our phone numbers.)</b></a>

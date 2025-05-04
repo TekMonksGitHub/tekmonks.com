@@ -1,4 +1,3 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const path = require("path");
 const fs = require("fs").promises;
 
@@ -29,7 +28,7 @@ exports.doService = async (jsonReq) => {
   const parentDirName = path.basename(parentDir);
   const nameDirHash = path.basename(path.dirname(parentDir));
   const orgDirHash = path.basename(path.dirname(path.dirname(parentDir)));
-  const blogBaseUrl = 'https://tekmonks.com/apps/tekmonks/articles/blogs.md';
+  const blogBaseUrl = `https://${TEKMONKS_COM_CONSTANTS.hostname}/apps/tekmonks/articles/blogs.md`;
   let imageBaseUrl = `${blogBaseUrl}/${orgDirHash}/${nameDirHash}/${parentDirName}`;
   
   if(nameDirHash == 'blogs.md') imageBaseUrl = `${blogBaseUrl}/${parentDirName}`;

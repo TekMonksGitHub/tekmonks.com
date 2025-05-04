@@ -3,4 +3,4 @@ Tomorrow's Hybrid Cloud Today
 
 ![Kloudust!] (articles/solutions/enterprise.md/ibm.md/articleadv.md/kloudust.png =120x70 "Kloudust")
 
-<a href="https://tekmonks.com/products/kloudust">Read More</a>
+<a href="/products/kloudust">Read More</a>

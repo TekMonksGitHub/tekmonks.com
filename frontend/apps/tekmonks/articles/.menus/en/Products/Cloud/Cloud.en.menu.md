@@ -1,3 +1,3 @@
 |           |          |        | 
 |:----------:|:----------:|:----------:|
-| <a href="https://tekmonks.com/products/corby"><h4>Corby</h4></a> <p>3 AI Business Platforms for minimal investment yet zero risk.</p> | <a href="https://tekmonks.com/products/kloudust"><h4>Kloudust</h4></a> <p>Multiple cloud solution providers into one enterprise software. </p> | <a href="https://tekmonks.com/products/xbin"><h4>XBin</h4></a><p>Sharing and management of enterprise content platform.</p> |
+| <a href="/products/corby"><h4>Corby</h4></a> <p>3 AI Business Platforms for minimal investment yet zero risk.</p> | <a href="/products/kloudust"><h4>Kloudust</h4></a> <p>Multiple cloud solution providers into one enterprise software. </p> | <a href="/products/xbin"><h4>XBin</h4></a><p>Sharing and management of enterprise content platform.</p> |

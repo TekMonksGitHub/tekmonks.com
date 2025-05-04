@@ -3,4 +3,4 @@ The Future of  Cybersecurity is Here!
 
 ![Reflection Network!] (articles/solutions/cybersecurity.md/articleadv.md/reflectionnetwork.png =120x165 "Reflection Network")
 
-<a href="https://tekmonks.com/products/reflection-network">Read More</a>
+<a href="/products/reflection-network">Read More</a>

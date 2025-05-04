@@ -6,6 +6,6 @@ Manage APIs supporting complex policies, and SLA requirements.
 
 <div markdown="1">
 <div class="api400-schedule-button" markdown="1">
-<a href="https://tekmonks.com/company/product-inquiries">Schedule a demo</a>
+<a href="/company/product-inquiries">Schedule a demo</a>
 </div>
 </div>

@@ -3,4 +3,4 @@
 
 ![Corby!] (articles/verticals/tech.md/articleadv.md/corby.png =120x165 "Corby")
 
-<a href="https://tekmonks.com/products/corby">Read More</a>
+<a href="/products/corby">Read More</a>

@@ -1,8 +1,7 @@
 /* 
  * (C) 2015 Tekmonks. All rights reserved.
  */
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
-const mailer = require(`${API_CONSTANTS.LIB_DIR}/mailer.js`);
+const mailer = require(`${TEKMONKS_COM_CONSTANTS.LIB_DIR}/mailer.js`);
 const utils = require(`${CONSTANTS.LIBDIR}/utils.js`);
 
 exports.doService = async (jsonReq, servObject) => {
@@ -21,7 +20,7 @@ exports.doService = async (jsonReq, servObject) => {
       contacts_html += "IP: " + utils.getClientIP(servObject.req) + "<br/>"
       
       const conf = {
-        to: jsonReq.contactCompanyInfo == "DLT" ? "info@deeplogictech.com" : "lead@tekmonks.com",
+        to: jsonReq.contactCompanyInfo == TEKMONKS_COM_CONSTANTS.TEKMONKS_SALES_LEAD_EMAIL,
         title: "Contact Request",
         emailText: contacts_html + product_html,
         emailHTML: contacts_html + product_html

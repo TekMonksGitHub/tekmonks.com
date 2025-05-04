@@ -10,9 +10,10 @@ import {securityguard} from "/framework/js/securityguard.mjs";
 import {apimanager as apiman} from "/framework/js/apimanager.mjs";
 import {APP_CONSTANTS as AUTO_APP_CONSTANTS} from "./constants.mjs";
 
+const mustache = await router.getMustache();
+
 const init = async hostname => {
 	window.monkshu_env.apps[AUTO_APP_CONSTANTS.APP_NAME] = {};
-	const mustache = await router.getMustache();
 	window.APP_CONSTANTS = JSON.parse(mustache.render(JSON.stringify(AUTO_APP_CONSTANTS), {hostname}));
 	await _readPageData(); 
 
@@ -42,6 +43,7 @@ const main = async _ => {
 		if (routeToBlogLogin) await router.loadPage(APP_CONSTANTS.UPDATEBLOG_HTML);
 		else await router.loadPage( isIndexPageBeingRequested ? APP_CONSTANTS.MAIN_HTML : url);
 	} catch (error) { 
+		console.error(error);
 		router.loadPage(APP_CONSTANTS.ERROR_HTML, {error, stack: error.stack || new Error().stack}); 
 	}
 }
@@ -54,7 +56,8 @@ function _interceptReferrer() {
 
 async function _readPageData() {
 	const conf = await (await fetch(`${APP_CONSTANTS.APP_PATH}/conf/app.json`)).json();
-	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = 
+	const confParsed = JSON.parse(mustache.render(JSON.stringify(conf), {hostname: APP_CONSTANTS.hostname}));
+	for (const key of Object.keys(confParsed)) APP_CONSTANTS[key] = 
 		key == "CURRENT_YEAR" ? new Date().getFullYear() : conf[key];
 }
 
