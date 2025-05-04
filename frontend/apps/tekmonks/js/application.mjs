@@ -11,7 +11,6 @@ import {apimanager as apiman} from "/framework/js/apimanager.mjs";
 import {APP_CONSTANTS as AUTO_APP_CONSTANTS} from "./constants.mjs";
 
 const init = async hostname => {
-	window.APP_CONSTANTS = (await import ("./constants.mjs")).APP_CONSTANTS; 
 	window.monkshu_env.apps[AUTO_APP_CONSTANTS.APP_NAME] = {};
 	const mustache = await router.getMustache();
 	window.APP_CONSTANTS = JSON.parse(mustache.render(JSON.stringify(AUTO_APP_CONSTANTS), {hostname}));
@@ -30,46 +29,34 @@ const init = async hostname => {
 }
 
 const main = async _ => {
-	await _addPageLoadInterceptors(); await _interceptReferrer(); await _registerComponents();
+	await _addPageLoadInterceptors(); _interceptReferrer();
 	let url = window.location.href
 	let baseURL = router.decodeURL(url).replace(/\?.*$/, '')
-	if(baseURL == APP_CONSTANTS.LANDING_HTML || baseURL == APP_CONSTANTS.ARTICLE_HTML){ 
-		url = url.replace(/%2F/g, '/').replace(/%3D/g, '')
-	}
+	if (baseURL == APP_CONSTANTS.LANDING_HTML || baseURL == APP_CONSTANTS.ARTICLE_HTML) url = url.replace(/%2F/g, '/').replace(/%3D/g, '');
+
 	try {
-		if(securityguard.getCurrentRole() == APP_CONSTANTS.USER_ROLE 
-			&& router.decodeURL(url) == APP_CONSTANTS.LOGIN_HTML) {
-				await router.loadPage(APP_CONSTANTS.UPDATEBLOG_HTML);
-		}else{
-			await router.loadPage(url == APP_CONSTANTS.INDEX_HTML || 
-				router.decodeURL(url) == APP_CONSTANTS.INDEX_HTML ? 
-					APP_CONSTANTS.MAIN_HTML : url);
-		}
+		const routeToBlogLogin = (securityguard.getCurrentRole() == APP_CONSTANTS.USER_ROLE) 
+			&& (router.decodeURL(url) == APP_CONSTANTS.LOGIN_HTML);
+		const isIndexPageBeingRequested = (url == APP_CONSTANTS.INDEX_HTML) || 
+			(router.decodeURL(url) == APP_CONSTANTS.INDEX_HTML);
+		if (routeToBlogLogin) await router.loadPage(APP_CONSTANTS.UPDATEBLOG_HTML);
+		else await router.loadPage( isIndexPageBeingRequested ? APP_CONSTANTS.MAIN_HTML : url);
 	} catch (error) { 
-		router.loadPage(APP_CONSTANTS.ERROR_HTML,{error, stack: error.stack || new Error().stack}); 
+		router.loadPage(APP_CONSTANTS.ERROR_HTML, {error, stack: error.stack || new Error().stack}); 
 	}
 }
 
-const interceptPageLoadData = _ => router.addOnLoadPageData("*", async (data, _url) => {
-	data.APP_CONSTANTS = APP_CONSTANTS; 
-});
+const interceptPageLoadData = _ => router.addOnLoadPageData("*", async (data, _url) => data.APP_CONSTANTS = APP_CONSTANTS); 
 
-async function _interceptReferrer(){
-	if(document.referrer.includes("deeplogictech.com")){
-		window.sessionStorage.setItem("referrer", "DLT")
-	}
+function _interceptReferrer() {
+	if (document.referrer.includes(APP_CONSTANTS.DLT_DOMAIN)) window.sessionStorage.setItem("referrer", "DLT");
 }
 
 async function _readPageData() {
-	const conf = await(await fetch(`${APP_CONSTANTS.APP_PATH}/conf/app.json`)).json();
-	for (const key of Object.keys(conf)) {
-		APP_CONSTANTS[key] = key == "CURRENT_YEAR" ? new Date().getFullYear() : conf[key];
-	}
+	const conf = await (await fetch(`${APP_CONSTANTS.APP_PATH}/conf/app.json`)).json();
+	for (const key of Object.keys(conf)) APP_CONSTANTS[key] = 
+		key == "CURRENT_YEAR" ? new Date().getFullYear() : conf[key];
 }
-
-const _registerComponents = async _ => { for (const component of APP_CONSTANTS.COMPONENTS) 
-	await import(`${APP_CONSTANTS.APP_PATH}/${component}/${component.substring(component.lastIndexOf("/")+1)}.mjs`); }
-
 
 async function _addPageLoadInterceptors() {
 	const interceptors = await $$.requireJSON(`${APP_CONSTANTS.CONF_PATH}/pageLoadInterceptors.json`);

@@ -129,23 +129,21 @@ function toggleMenu(searchElement) {
  }
  
  function toggleMenuMobile(searchElement) {
-	const elementOuterLayer = searchElement.parentElement.querySelectorAll('.outerlayer-visible');
-	const elementMenuContainer = searchElement.parentElement.childNodes[0].querySelectorAll('.nav-mobile-container')
-	elementOuterLayer.forEach(element => {
-			element.classList.remove('outerlayer-visible');
-	});
+	const shadowRoot = navigation_menu.getShadowRootByContainedElement(searchElement);
+	const elementOuterLayer = shadowRoot.querySelectorAll('.outerlayer-visible');
+	const elementMenuContainer = shadowRoot.querySelectorAll('.nav-mobile-container')
+	elementOuterLayer.forEach(element => element.classList.remove('outerlayer-visible'));
 	elementMenuContainer.forEach(element => {
 		element.classList.remove('menu-visible');
-		const elementMenu = element.firstChild.querySelectorAll('.nav-primary')
-		elementMenu.forEach(childElement => {
-			childElement.classList.remove('menu-active')
-		})
+		const elementMenu = element.querySelectorAll('.nav-primary')
+		elementMenu.forEach(childElement => childElement.classList.remove('menu-active'));
 	});
  }
 
  function closeMenu(searchElement) {
-	const elementMenu = searchElement.parentElement.parentElement.querySelectorAll('.mitem');
-	const elementCloseMenu = searchElement.parentElement.querySelectorAll('.close-button');
+	const shadowRoot = navigation_menu.getShadowRootByContainedElement(searchElement);
+	const elementMenu = shadowRoot.querySelectorAll('.mitem');
+	const elementCloseMenu = shadowRoot.querySelectorAll('.close-button');
 	elementMenu.forEach(elementClose => {
 		elementClose.classList.remove('mitem-visible');
 		elementCloseMenu.forEach(elementClose => {

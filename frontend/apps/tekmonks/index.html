@@ -1,134 +1,60 @@
-<!-- (C) 2015 Tekmonks. All rights reserved.License: MIT - see enclosed license.txt file.-->
+<!-- (C) 2015 Tekmonks. All rights reserved. License: See enclosed LICENSE file.-->
 <!DOCTYPE html>
 <html>
-    <head>
-	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8" />
-        <meta http-equiv="pragma" content="no-cache" />
-        <meta http-equiv="expires" content="-1" />
-		<meta name="msvalidate.01" content="ED60D1BD5E43FAAA8825DF5285518A82" />
-        <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
-        <title>Tekmonks</title>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ4YZCF6NT"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-EZ4YZCF6NT');
-		</script>
-	<style>
-		div {text-align: center;}
-		.tekmonks-logo {
-			width: auto;
-			height: 25em;
-		}
+<head>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="msvalidate.01" content="ED60D1BD5E43FAAA8825DF5285518A82" />
+<link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+<title>Tekmonks</title>
+<style>
+div {text-align: center;}
+.tekmonks-logo {
+	width: auto;
+	height: 25em;
+}
 
-		.loading-spinner {
-			width: auto;
-			height: 6em;
-		}
+.loading-spinner {
+	width: auto;
+	height: 6em;
+}
 
-		#loading-container {
-			visibility: hidden;
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		#slow-text{
-			color: red;
-			visibility: hidden;
-		}
-	</style>
+#loading-container {
+	visibility: hidden;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
-	<link rel="prefetch" as="style" href='./pages/home/navbar.styleBody.css'>
-	<link rel="prefetch" as="style" href='./pages/home/headline.styleBody.css'>	
-	<link rel="prefetch" as="style" href='./pages/home/featuredproducts.styleBody.css'>
-	<link rel="prefetch" as="style" href='./pages/home/verticals.styleArticle.css'>
-	<link rel="prefetch" as="style" href='./pages/home/aboutus.styleArticle.css'>
-	<link rel="prefetch" as="script" href="./components/image-slider/image-slider.mjs">
-	<link rel="prefetch" as="script" href="./components/navigation-menu/navigation-menu.mjs">
-	<link rel="prefetch" as="script" href="./components/content-tile/content-tile.mjs">
-	<link rel="prefetch" as="script" href="./components/content-post/content-post.mjs">
-	<link rel="prefetch" as="script" href="./components/content-post/3p/showdown.min.js">
-	<link rel="prefetch" as="script" href="./components/content-post/3p/showdown.extension.targetlink.min.js">
-	<link rel="prefetch" as="script" href="./components/page-meta/page-meta.mjs">
-	<link rel="prefetch" as="script" href="/framework/components/page-generator/page-generator.mjs">
-	<script type="text/javascript" src="/framework/js/$$.js"></script>
-	<script type="text/javascript">
-		$$.boot(new URL("./", window.location));
-	</script>
-	<script type="text/javascript">
-        const loadpage = async _ => {
-			let referrer = "";
-			if (document.referrer!= "") {
-				referrer = (new URL(document.referrer)).hostname;
-			}	
-			
-			if (referrer != window.location.hostname) {
-				setTimeout(function(){
-				document.getElementsByTagName("div")[0].removeAttribute("class");
-				}, 4);
-			}
-		}
-		loadpage ();
-    </script>
-    </head>
+#slow-text{
+	color: red;
+	visibility: hidden;
+}
+</style>
+<script type="text/javascript" src="./js/index.mjs"></script>
+</head>
 
-    <body>
-		<div id="temp-index"></div>
-		<div class="loading" id="loading-container">
-			<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
-			<div id="slow-text">Slow network or error loading</div>
-		</div>
-		
-		<script type="text/javascript">
-			if (sessionStorage.getItem('firstLoad') === null) {
-				sessionStorage.setItem('firstLoad', 'false');
-				document.getElementById('loading-container').style.display = 'none';
-				fetch('temp-index.html')
-					.then(response => response.text())
-					.then(data => {
-						const parser = new DOMParser();
-						const doc = parser.parseFromString(data, 'text/html');
-						const scripts = Array.from(doc.querySelectorAll('script'));
-
-						scripts.forEach(script => {
-							const newScript = document.createElement('script');
-							newScript.textContent = script.textContent;
-							document.body.appendChild(newScript);
-						});
-
-						document.getElementById('temp-index').innerHTML = doc.body.innerHTML;
-
-						if (typeof setRandomBanner === 'function') {
-							setRandomBanner();
-						}
-					})
-					.catch(error => {
-						console.error('Error fetching temp-index.html:', error);
-					});
-			} else {
-				document.getElementById('loading-container').style.display = 'flex';
-			}
-		</script>
-		<script type="text/javascript">
-			const SPINNER_WAIT_TIMEOUT = 750;
-			document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
-				const loader = document.querySelector("#loading-container");
-				if (loader) loader.style.visibility="visible"	
-			}, SPINNER_WAIT_TIMEOUT));
-			
-			const ERROR_SPINNER_WAIT_TIMEOUT = 10000;
-			document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
-				const slowText = document.querySelector("#slow-text");
-				if (slowText) slowText.style.visibility="visible"
-			}, ERROR_SPINNER_WAIT_TIMEOUT));
-		</script>
-	<page-generator file="./pages/home/home.page"></page-generator>
-
-    </body>
+<body>
+<div class="loading" id="loading-container">
+	<img class="loading-spinner" id="loading-spinner" src="./img/loading_spinner.svg"></img>
+	<div id="slow-text">Slow network or error loading</div>
+</div>
+<script type="text/javascript">
+	const SPINNER_WAIT_TIMEOUT = 750;
+	document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
+		const loader = document.querySelector("#loading-container");
+		if (loader) loader.style.visibility="visible"	
+	}, SPINNER_WAIT_TIMEOUT));
+	
+	const ERROR_SPINNER_WAIT_TIMEOUT = 10000;
+	document.addEventListener("DOMContentLoaded", _=>setTimeout(_=> {
+		const slowText = document.querySelector("#slow-text");
+		if (slowText) slowText.style.visibility="visible"
+	}, ERROR_SPINNER_WAIT_TIMEOUT));
+</script>
+</body>
 </html>

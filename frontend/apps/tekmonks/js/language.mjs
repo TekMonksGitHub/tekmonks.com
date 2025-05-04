@@ -1,7 +1,8 @@
-/* 
+/**
  * (C) 2015 Tekmonks. All rights reserved.
- * License: See enclosed license.txt file.
+ * License: See enclosed LICENSE file.
  */
+
 import {session} from "/framework/js/session.mjs";
 import {router} from "/framework/js/router.mjs";
 

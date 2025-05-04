@@ -1,4 +1,8 @@
-import {router} from "/framework/js/router.mjs";
+/**
+ * Gets the list of blogs
+ * (C) 2023 Tekmonks. All rights reserved.
+ * License: See enclosed LICENSE file.
+ */
 
 async function getBlogList(){
     const blogList = await(await fetch(`${APP_CONSTANTS.API_GET_BLOG_LIST}?q=random`)).json();

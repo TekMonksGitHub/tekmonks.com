@@ -1,6 +1,7 @@
-/*
+/**
+ * App constants
  * (C) 2015 Tekmonks. All rights reserved.
- * License: MIT - see enclosed license.txt file.
+ * License: See enclosed license.txt file.
  */
 
 const FRONTEND = "https://{{{hostname}}}";
@@ -53,6 +54,8 @@ export const APP_CONSTANTS = {
     API_DELETE_BLOG: API_PATH+"/deleteBlog",
 
     SESSION_NOTE_ID: "com_monkshu_app_mnkp",
+
+    DLT_DOMAIN: "deeplogictech.com",
 
     // Login constants
     MIN_PASS_LENGTH: 8,

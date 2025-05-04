@@ -32,7 +32,6 @@ async function elementConnected(element) {
   
 function editBlog(element, id) {
   const modal = element.parentElement.querySelectorAll('.edit-modal')[0]
-  const blog = modal.querySelectorAll(`.editor-${id}`)[0]
   modal.style.display = 'block'
 }
 

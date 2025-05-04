@@ -6,10 +6,10 @@
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="expires" content="-1" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msvalidate.01" content="ED60D1BD5E43FAAA8825DF5285518A82" />
         <link href="./pages/common/common.css" rel="stylesheet" />
         <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ4YZCF6NT"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-EZ4YZCF6NT"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -80,7 +80,7 @@
                     scripts.forEach(script => {
                         const newScript = document.createElement('script');
                         newScript.textContent = script.textContent;
-                        document.body.appendChild(newScript);
+                        try { document.body.appendChild(newScript); } catch (err) {}
                     });
 
                     document.getElementById('temp-index').innerHTML = doc.body.innerHTML;
