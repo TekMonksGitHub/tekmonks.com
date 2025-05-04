@@ -7,8 +7,8 @@
 _init();
 async function _init() {
     const {webbundlesupport} = await import("/framework/js/webbundlesupport.mjs");    // use monkshu web bundles
-    /*if (!await webbundlesupport.addWebbundleSupport()) 
-        console.error("Webbundle loading failed or not available. Website performance will be slow.");*/
+    if (!await webbundlesupport.addWebbundleSupport()) 
+        console.error("Webbundle loading failed or not available. Website performance will be slow.");
 
     await import("/framework/js/$$.js"); $$.boot(); // now boot the app
 }
