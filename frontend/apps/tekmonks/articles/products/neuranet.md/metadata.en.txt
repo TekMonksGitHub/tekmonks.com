@@ -6,14 +6,14 @@
     		"@type": "WebPage",
     		"@id": "https://tekmonks.com"
   	},
- 	"name": "MonBoss",
- 	"description": "AI System to monitor and fix infrastructure.",
+ 	"name": "Neuranet",
+ 	"description": "Transform enterprise operations with Tekmonks Neuranet, an AI-driven framework to convert knowledge lake data (like from TwinBlue) into actionable insights, generate reports, and manage agent workflows.",
  	"image": [{
  		"@type": "ImageObject",
  		"url": "https://tekmonks.com/apps/tekmonks/articles/products/monboss.md/header.md/header.en.png",
- 		"name": "MonBoss",
- 		"description": "AI System to monitor and fix infrastructure.",
- 		"keywords": ["Infrastructure monitoring", "it infrastructure monitoring", "AiOps", "it monitoring software"],
+ 		"name": "Neuranet",
+ 		"description": "AI-driven framework for enterprise operations, insights, reporting, and workflow management.",
+ 		"keywords": ["Neuranet", "AI framework", "knowledge lake integration", "data insights", "AI reporting", "agent workflow management", "enterprise AI", "operational AI", "AI application framework", "TwinBlue integration"],
  		"copyrightHolder": {
  			"@type": "Organization",
  			"name": "Tekmonks",
@@ -25,6 +25,6 @@
  		"name": "Tekmonks",
  		"url": "https://tekmonks.com"
  	},
- 	"keywords": ["Infrastructure monitoring", "it infrastructure monitoring", "AiOps", "it monitoring software"]
+ 	"keywords": ["Neuranet", "AI framework", "knowledge lake integration", "data insights", "AI reporting", "agent workflow management", "enterprise AI", "operational AI", "AI application framework", "TwinBlue integration"]
  }
 </script>

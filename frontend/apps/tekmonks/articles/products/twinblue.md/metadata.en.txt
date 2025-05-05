@@ -6,14 +6,14 @@
     		"@type": "WebPage",
     		"@id": "https://tekmonks.com"
   	},
-	"name": "AIPA",
-	"description": "AI Powered Business Search",
+	"name": "TwinBlue Knowledge Lake",
+	"description": "Tekmonks TwinBlue Knowledge Lake: Store, transform, and query all data formats (structured, unstructured, rich media) with scalability, security, and AI-powered natural language search. Integrates seamlessly with AI frameworks like Neuranet.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/aipa.md/header.md/header.en.png",
-		"name": "AIPA",
-		"description": "AI Powered Business Search",
-		"keywords": ["aipa"],
+		"url": "https://tekmonks.com/apps/tekmonks/articles/products/twinblue.md/header.md/header.en.png",
+		"name": "TwinBlue Knowledge Lake",
+		"description": "Tekmonks TwinBlue Knowledge Lake: Store, transform, and query all data formats (structured, unstructured, rich media) with scalability, security, and AI-powered natural language search. Integrates seamlessly with AI frameworks like Neuranet.",
+		"keywords": ["TwinBlue", "Knowledge Lake", "data lake", "AI data storage", "unstructured data", "semantic vectors", "distributed storage", "AI query", "natural language query", "data transformation", "metadata tagging", "Neuranet integration"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
@@ -25,6 +25,6 @@
 		"name": "Tekmonks",
 		"url": "https://tekmonks.com"
 	},
-	"keywords": ["aipa"]
+	"keywords": ["TwinBlue", "Knowledge Lake", "data lake", "AI data storage", "unstructured data", "semantic vectors", "distributed storage", "AI query", "natural language query", "data transformation", "metadata tagging", "Neuranet integration"]
 }
 </script>
