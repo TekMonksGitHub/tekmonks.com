@@ -1,8 +1,5 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const path = require("path");
 const fs = require("fs");
-const util = require("util");
-const writeFile = util.promisify(fs.writeFile);
 
 exports.doService = async jsonReq => {
     if (!validateRequest(jsonReq)) {
@@ -11,7 +8,7 @@ exports.doService = async jsonReq => {
     
     const org = jsonReq.org;
     const userid = jsonReq.userid;
-    const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md/`;
+    const folderPath = `${TEKMONKS_COM_CONSTANTS.CMS_ROOT}/blogs.md/`;
     const fullPath = path.join(folderPath, btoa(org), btoa(userid));
     
     try{

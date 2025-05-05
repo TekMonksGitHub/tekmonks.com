@@ -1,95 +1,62 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
-const path = require("path");
 const fs = require("fs");
-const util = require("util");
-const readFile = util.promisify(fs.readFile);
-const writeFile = util.promisify(fs.writeFile);
+const path = require("path");
+const fspromises = fs.promises;
 
 exports.doService = async jsonReq => {
-  if (!validateRequest(jsonReq)) {
-    return { error: "Validation failure." };
-  }
+  if (!_validateRequest(jsonReq)) return { error: "Validation failure.", ...CONSTANTS.FALSE_RESULT };
   
   const {title, blog, language, image} = jsonReq;
   
-  if (!title || !blog) {
-    return { error: "Title and blog content are required." };
-  }
-
-  const filePath = findFileByTitle(title);
-
-  if (!filePath) {
-    return { error: `File with title "${title}" not found.` };
-  }
+  const filePath = await _findFileByTitle(title);
+  if (!filePath) return { error: `File with title "${title}" not found.`, ...CONSTANTS.FALSE_RESULT };
   
   if (image) {
     const parentFolder = path.dirname(filePath);
-    fs.readdirSync(parentFolder).forEach(file => {
-      if (file.startsWith('header')) {
-        fs.unlinkSync(path.join(parentFolder, file));
-      }
-    });
+    for (const file of (await fspromises.readdir(parentFolder))) if (file.startsWith('header')) 
+      await fspromises.unlinkSync(path.join(parentFolder, file));
     const imageName = `header.${language}.${image.fileType}`
     const imagePath = path.join(parentFolder, imageName);
-    try {
-      await writeFile(imagePath, image.base64String, "base64");
-    } catch (error) {
-      throw 'Error saving image: ' + error;
+    try {await fspromises.writeFile(imagePath, image.base64String, "base64")} catch (error) {
+      return { error: 'Error saving image: ' + error, ...CONSTANTS.FALSE_RESULT };
     }
   }
 
   try {
-    await updateFileContent(filePath, blog);
-    await renameFileByLanguage(filePath, language);
-    return { message: `File with title "${title}" updated successfully.`, status: true };
-  } catch (error) {
-    return { error: "Failed to update file content." + error};
-  }
+    await fspromises.writeFile(filePath, blog, 'utf8');
+    await _renameFileByLanguage(filePath, language);
+    return { message: `File with title "${title}" updated successfully.`, status: true, ...CONSTANTS.TRUE_RESULT };
+  } catch (error) {return { error: "Failed to update file content." + error, ...CONSTANTS.FALSE_RESULT }}
 };
 
-function validateRequest(jsonReq) {
+function _validateRequest(jsonReq) {
   return jsonReq && jsonReq.title && jsonReq.blog;
 }
 
-function findFileByTitle(title) {
-  const folderPath = `${API_CONSTANTS.CMS_ROOT}/blogs.md`; // Adjust the folder path as needed
+async function _findFileByTitle(title) {
+  const folderPath = `${TEKMONKS_COM_CONSTANTS.CMS_ROOT}/blogs.md`; // Adjust the folder path as needed
 
-  function traverseFolder(currentPath) {
-    const files = fs.readdirSync(currentPath);
+  async function _traverseFolder(currentPath) {
+    const files = await fspromises.readdir(currentPath);
 
     for (const file of files) {
       const filePath = path.join(currentPath, file);
-      const stat = fs.statSync(filePath);
+      const stat = await fspromises.stat(filePath);
 
       if (stat.isFile() && path.extname(filePath) === '.md') {
-        const fileTitle = getTitleOfBlog(filePath);
-        if (fileTitle === title) {
-          return filePath;
-        }
+        const fileTitle = await _getTitleOfBlog(filePath);
+        if (fileTitle === title) return filePath;
       } else if (stat.isDirectory()) {
-        const foundFilePath = traverseFolder(filePath);
-        if (foundFilePath) {
-          return foundFilePath;
-        }
+        const foundFilePath = await _traverseFolder(filePath);
+        if (foundFilePath) return foundFilePath;
       }
     }
-
     return null;
   }
 
-  return traverseFolder(folderPath);
+  return await _traverseFolder(folderPath);
 }
 
-async function updateFileContent(filePath, newContent) {
-  try {
-    await writeFile(filePath, newContent, 'utf8');
-  } catch (error) {
-    throw error;
-  }
-}
-
-
-async function renameFileByLanguage(filePath, newLanguage) {
+async function _renameFileByLanguage(filePath, newLanguage) {
   try {
     const dirname = path.dirname(filePath);
     const extname = path.extname(filePath);
@@ -102,7 +69,7 @@ async function renameFileByLanguage(filePath, newLanguage) {
       const newFilename = parts.join('.') + extname;
       const newPath = path.join(dirname, newFilename);
 
-      await fs.promises.rename(filePath, newPath);
+      await fspromises.rename(filePath, newPath);
       return newPath;
     } else {
       console.error(`Error splitting file name: ${filePath}`);
@@ -114,16 +81,11 @@ async function renameFileByLanguage(filePath, newLanguage) {
   }
 }
 
-function getTitleOfBlog(filePath) {
+async function _getTitleOfBlog(filePath) {
   try {
-    const data = fs.readFileSync(filePath, 'utf-8');
+    const data = await fspromises.readFile(filePath, 'utf-8');
     const lines = data.split('\n');
-
-    for (const line of lines) {
-      if (line.trim().startsWith('#')) {
-        return line.trim().replace(/^#+\s*/, '');
-      }
-    }
+    for (const line of lines) if (line.trim().startsWith('#')) return line.trim().replace(/^#+\s*/, '');
     return null;
   } catch (error) {
     console.error(`Error reading file: ${filePath}`, error);

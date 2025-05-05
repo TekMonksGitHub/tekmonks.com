@@ -1,33 +1,23 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const path = require("path");
-const fs = require("fs");
-const util = require("util");
-const readFile = util.promisify(fs.readFile);
-const writeFile = util.promisify(fs.writeFile);
+const fspromises = require("fs").promises;
 
 exports.doService = async jsonReq => {
-  if (!validateRequest(jsonReq)) {
-    return { error: "Validation failure." };
-  }
-  const folderPath = `${API_CONSTANTS.CMS_ROOT}/media/`;
+  if (!validateRequest(jsonReq)) return {error: "Validation failure.", ...CONSTANTS.FALSE_RESULT};
+  const folderPath = `${TEKMONKS_COM_CONSTANTS.CMS_ROOT}/media/`;
   
-  if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath);
-  }
+  if (!(await fspromises.exists(folderPath))) await fspromises.mkdirSync(folderPath);
   
   //save image under path
   const filePath = path.join(folderPath, jsonReq.name.replace(/\s+/g, '-'));
 
   try {
-    await writeFile(filePath, jsonReq.image.base64String, "base64");
-    return { message: "File uploaded successfully.", success: true};
+    await fspromises.writeFile(filePath, jsonReq.image.base64String, "base64");
+    return { message: "File uploaded successfully.", success: true, ...CONSTANTS.TRUE_RESULT};
   } catch (error) {
     console.error("Error writing file:", error);
-    return { message: "Error adding image" + error, success: false};
+    return { message: "Error adding image" + error, success: false, ...CONSTANTS.FALSE_RESULT};
   }
   
 };
 
-function validateRequest(jsonReq) {
-  return jsonReq
-}
+const validateRequest = jsonReq => jsonReq && jsonReq.image && jsonReq.name;

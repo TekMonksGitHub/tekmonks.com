@@ -1,19 +1,18 @@
 /* 
  * (C) 2015 Tekmonks. All rights reserved.
  */
-const path = require("path");
 const fs = require("fs");
-const { promisify } = require("util");
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
-const readdirAsync = promisify(require("fs").readdir);
-const readFileAsync = promisify(require("fs").readFile);
-const fsAccessAsync = promisify(require("fs").access);
-const statAsync = promisify(require("fs").stat);
+const path = require("path");
+const {promisify} = require("util");
+const statAsync = promisify(fs.stat);
+const fsAccessAsync = promisify(fs.access);
+const readdirAsync = promisify(fs.readdir);
+const readFileAsync = promisify(fs.readFile);
 
 exports.doService = async jsonReq => {
     if (!validateRequest(jsonReq)) { LOG.error("Validation failure."); return CONSTANTS.FALSE_RESULT; }
 
-    let cmsPath = path.resolve(`${API_CONSTANTS.CMS_ROOT}/${jsonReq.q}`);
+    let cmsPath = path.resolve(`${TEKMONKS_COM_CONSTANTS.CMS_ROOT}/${jsonReq.q}`);
     LOG.debug(`Got menu listing request for path: ${cmsPath}`);
 
     let menu = {};

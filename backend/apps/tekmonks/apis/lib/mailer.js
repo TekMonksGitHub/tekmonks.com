@@ -4,9 +4,8 @@
  * (C) 2020 Tekmonks. All rights reserved.
  * See enclosed LICENSE file.
  */
-const API_CONSTANTS = require(`${__dirname}/constants.js`);
 const crypt = require(CONSTANTS.LIBDIR+"/crypt.js");
-const conf = require(`${API_CONSTANTS.CONF_DIR}/smtp.json`);
+const conf = require(`${TEKMONKS_COM_CONSTANTS.CONF_DIR}/smtp.json`);
 const serverMailer = require(CONSTANTS.LIBDIR+"/mailer.js");
 
 module.exports.email = async function(to, title, email_html, email_text) {

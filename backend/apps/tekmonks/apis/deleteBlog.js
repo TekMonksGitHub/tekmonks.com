@@ -1,7 +1,5 @@
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 const path = require("path");
 const fs = require("fs");
-const util = require("util");
 
 exports.doService = async jsonReq => {
     if (!validateRequest(jsonReq)) {

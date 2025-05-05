@@ -4,9 +4,8 @@
 
 const serverutils = require(`${CONSTANTS.LIBDIR}/utils.js`);
 const httpClient = require(`${CONSTANTS.LIBDIR}/httpClient.js`);
-const API_CONSTANTS = require(`${__dirname}/lib/constants.js`);
 
-const conf = require(`${API_CONSTANTS.CONF_DIR}/config.json`);
+const conf = require(`${TEKMONKS_COM_CONSTANTS.CONF_DIR}/config.json`);
 const API_JWT_VALIDATION = `${conf.tekmonkslogin_backend}/apps/loginapp/validatejwt`;
 
 exports.doService = async jsonReq => {
