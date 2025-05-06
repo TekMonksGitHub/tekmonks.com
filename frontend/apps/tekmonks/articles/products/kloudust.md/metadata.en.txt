@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "Kloudust",
 	"description": "Kloudust delivers tomorrow's hybrid cloud today. A secure, easy-to-use platform for managing your cloud infrastructure and applications seamlessly.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/kloudust.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/kloudust.md/header.md/header.en.png",
 		"name": "Kloudust",
 		"description": "Kloudust delivers tomorrow's hybrid cloud today. A secure, easy-to-use platform for managing your cloud infrastructure and applications seamlessly.",
 		"keywords": ["Kloudust", "hybrid cloud management", "cloud infrastructure management", "application management", "secure cloud platform", "easy cloud solution", "multi-cloud management"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["Kloudust", "hybrid cloud management", "cloud infrastructure management", "application management", "secure cloud platform", "easy cloud solution", "multi-cloud management"]
 }

@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "API400",
 	"description": "Modernize your IBM i (AS/400) legacy systems quickly by creating REST APIs in hours, not months. Leverage JavaScript support for efficient integration.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
 		"name": "API400",
 		"description": "Modernize your IBM i (AS/400) legacy systems quickly by creating REST APIs in hours, not months. Leverage JavaScript support for efficient integration.",
 		"keywords": ["API400", "API for AS400", "IBM i API", "AS400 modernization", "REST API for AS400", "Web Services for iSeries", "Legacy system integration", "JavaScript AS400", "iSeries API"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["API400", "API for AS400", "IBM i API", "AS400 modernization", "REST API for AS400", "Web Services for iSeries", "Legacy system integration", "JavaScript AS400", "iSeries API"]
 }

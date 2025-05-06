@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "TeleDoctr",
 	"description": "TeleDoctr is a secure, virtual healthcare platform facilitating collaboration between medical professionals and managing patient information, billing, and clinical procedures.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/telefamily.md/teledoctr.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/telefamily.md/teledoctr.md/header.md/header.en.png",
 		"name": "TeleDoctr",
-		"description": "TeleDoctr is a secure, virtual healthcare platform facilitating collaboration between medical professionals and managing patient information, billing, and clinical procedures.",
+		"description": "Solution by Tekmonks on Health Care Challenges. Collaboration from the medical professionals ranging from doctors, specialists, nurses, laboratory technicians, and pharmacists to admission/hospital records as well as billing, other charges and collection gathered as important information. Well managed virtually and privately secured to make a clinical procedure for patients with illness or injuries.",
 		"keywords": ["TeleDoctr", "telehealth", "virtual healthcare", "digital health platform", "remote patient care", "secure medical communication", "healthcare collaboration", "EHR integration", "telemedicine"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["TeleDoctr", "telehealth", "virtual healthcare", "digital health platform", "remote patient care", "secure medical communication", "healthcare collaboration", "EHR integration", "telemedicine"]
 }

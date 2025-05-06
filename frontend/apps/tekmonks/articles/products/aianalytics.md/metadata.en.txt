@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com/"
+     		"@id": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
   	},
 	"name": "AI Analytics",
 	"description": "Leverage AI for universal data ingestion, advanced reporting, dashboards, and deep search capabilities across all business data.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/aianalytics.md/header.md/header.en.png",
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}/apps/tekmonks/articles/products/aianalytics.md/header.md/header.en.png`,
 		"name": "AI Analytics",
 		"description": "Leverage AI for universal data ingestion, advanced reporting, dashboards, and deep search capabilities across all business data.",
 		"keywords": ["AI analytics", "business intelligence", "universal data ingestion", "machine learning reporting", "enterprise search", "data visualization", "AI dashboards", "deep search", "data integration platform"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 	},
 	"keywords": ["AI analytics", "business intelligence", "universal data ingestion", "machine learning reporting", "enterprise search", "data visualization", "AI dashboards", "deep search", "data integration platform"]
 }

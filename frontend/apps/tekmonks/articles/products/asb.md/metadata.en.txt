@@ -4,26 +4,26 @@
   	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
   	"name": "ASB",
   	"description": "High-performance, secure, and scalable asynchronous API Service Bus for modern, event-driven integrations and microservices communication.",
   	"image": [{
   		"@type": "ImageObject",
-  		"url": "https://tekmonks.com/apps/tekmonks/articles/products/asb.md/header.md/header.en.png",
+  		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/asb.md/header.md/header.en.png",
   		"name": "ASB",
   		"description": "High-performance, secure, and scalable asynchronous API Service Bus for modern, event-driven integrations and microservices communication.",
   		"keywords": ["ASB", "API Service Bus", "ESB", "integration bus", "asynchronous messaging", "event-driven architecture", "microservices integration", "API integration", "enterprise service bus"],
   		"copyrightHolder": {
   			"@type": "Organization",
   			"name": "Tekmonks",
-  			"url": "https://tekmonks.com"
+  			"url": "https://{{{hostname}}}"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
   		"name": "Tekmonks",
-  		"url": "https://tekmonks.com"
+  		"url": "https://{{{hostname}}}"
   	},
   	"keywords": ["ASB", "API Service Bus", "ESB", "integration bus", "asynchronous messaging", "event-driven architecture", "microservices integration", "API integration", "enterprise service bus"]
   }</script>

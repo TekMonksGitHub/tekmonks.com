@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
   	},
 	"name": "Reflection Network",
 	"description": "Experience next-generation cybersecurity with Reflection Network technology, providing a fundamentally secure and resilient foundation for protecting digital assets.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/reflectionnetwork.md/header.md/header.en.png",
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}/apps/tekmonks/articles/products/reflectionnetwork.md/header.md/header.en.png`,
 		"name": "Reflection Network",
 		"description": "Experience next-generation cybersecurity with Reflection Network technology, providing a fundamentally secure and resilient foundation for protecting digital assets.",
 		"keywords": ["Reflection Network", "reflection technology", "cybersecurity", "network security", "data protection", "secure infrastructure", "zero trust architecture component", "unhackable"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 	},
 	"keywords": ["Reflection Network", "reflection technology", "cybersecurity", "network security", "data protection", "secure infrastructure", "zero trust architecture component", "unhackable"]
 }

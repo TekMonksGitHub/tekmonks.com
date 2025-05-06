@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "APIBoss",
 	"description": "Comprehensive API Management solution for the modern digital economy, enabling secure creation, publishing, and analysis of APIs.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
 		"name": "APIBoss",
 		"description": "Comprehensive API Management solution for the modern digital economy.",
 		"keywords": ["APIBoss", "API management", "API gateway", "API lifecycle", "digital transformation", "microservices", "API security", "API analytics", "API governance"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["APIBoss", "API management", "API gateway", "API lifecycle", "digital transformation", "microservices", "API security", "API analytics", "API governance"]
 }

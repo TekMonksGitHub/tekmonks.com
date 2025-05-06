@@ -4,26 +4,26 @@
  	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
  	"name": "MonBoss",
  	"description": "MonBoss is an AI-powered system for comprehensive IT infrastructure monitoring, providing proactive insights and automated remediation capabilities (AIOps).",
  	"image": [{
  		"@type": "ImageObject",
- 		"url": "https://tekmonks.com/apps/tekmonks/articles/products/monboss.md/header.md/header.en.png",
+ 		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/monboss.md/header.md/header.en.png",
  		"name": "MonBoss",
  		"description": "MonBoss is an AI-powered system for comprehensive IT infrastructure monitoring, providing proactive insights and automated remediation capabilities (AIOps).",
  		"keywords": ["MonBoss", "Infrastructure monitoring", "IT infrastructure monitoring", "AIOps", "IT monitoring software", "AI monitoring", "automated remediation", "system monitoring", "network monitoring"],
  		"copyrightHolder": {
  			"@type": "Organization",
  			"name": "Tekmonks",
- 			"url": "https://tekmonks.com"
+ 			"url": "https://{{{hostname}}}"
  		}
  	}],
  	"publisher": {
  		"@type": "Organization",
  		"name": "Tekmonks",
- 		"url": "https://tekmonks.com"
+ 		"url": "https://{{{hostname}}}"
  	},
  	"keywords": ["MonBoss", "Infrastructure monitoring", "IT infrastructure monitoring", "AIOps", "IT monitoring software", "AI monitoring", "automated remediation", "system monitoring", "network monitoring"]
  }

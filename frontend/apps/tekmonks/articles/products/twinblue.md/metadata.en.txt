@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "TwinBlue Knowledge Lake",
 	"description": "Tekmonks TwinBlue Knowledge Lake: Store, transform, and query all data formats (structured, unstructured, rich media) with scalability, security, and AI-powered natural language search. Integrates seamlessly with AI frameworks like Neuranet.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/twinblue.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/twinblue.md/header.md/header.en.png",
 		"name": "TwinBlue Knowledge Lake",
 		"description": "Tekmonks TwinBlue Knowledge Lake: Store, transform, and query all data formats (structured, unstructured, rich media) with scalability, security, and AI-powered natural language search. Integrates seamlessly with AI frameworks like Neuranet.",
 		"keywords": ["TwinBlue", "Knowledge Lake", "data lake", "AI data storage", "unstructured data", "semantic vectors", "distributed storage", "AI query", "natural language query", "data transformation", "metadata tagging", "Neuranet integration"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["TwinBlue", "Knowledge Lake", "data lake", "AI data storage", "unstructured data", "semantic vectors", "distributed storage", "AI query", "natural language query", "data transformation", "metadata tagging", "Neuranet integration"]
 }

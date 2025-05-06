@@ -4,26 +4,26 @@
  	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
  	"name": "Neuranet",
  	"description": "Transform enterprise operations with Tekmonks Neuranet, an AI-driven framework to convert knowledge lake data (like from TwinBlue) into actionable insights, generate reports, and manage agent workflows.",
  	"image": [{
  		"@type": "ImageObject",
- 		"url": "https://tekmonks.com/apps/tekmonks/articles/products/monboss.md/header.md/header.en.png",
+ 		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/neuranet.md/header.md/header.en.png",
  		"name": "Neuranet",
  		"description": "AI-driven framework for enterprise operations, insights, reporting, and workflow management.",
  		"keywords": ["Neuranet", "AI framework", "knowledge lake integration", "data insights", "AI reporting", "agent workflow management", "enterprise AI", "operational AI", "AI application framework", "TwinBlue integration"],
  		"copyrightHolder": {
  			"@type": "Organization",
  			"name": "Tekmonks",
- 			"url": "https://tekmonks.com"
+ 			"url": "https://{{{hostname}}}"
  		}
  	}],
  	"publisher": {
  		"@type": "Organization",
  		"name": "Tekmonks",
- 		"url": "https://tekmonks.com"
+ 		"url": "https://{{{hostname}}}"
  	},
  	"keywords": ["Neuranet", "AI framework", "knowledge lake integration", "data insights", "AI reporting", "agent workflow management", "enterprise AI", "operational AI", "AI application framework", "TwinBlue integration"]
  }

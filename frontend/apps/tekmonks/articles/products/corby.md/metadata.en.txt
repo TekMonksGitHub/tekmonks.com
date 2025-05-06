@@ -4,26 +4,26 @@
     	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
     	"name": "Corby",
     	"description": "The Corby suite offers integrated solutions including an AI chatbot, secure payment gateway, and card scanning capabilities for streamlined customer interactions and transactions.",
     	"image": [{
     		"@type": "ImageObject",
-    		"url": "https://tekmonks.com/apps/tekmonks/articles/products/corby.md/header.md/header.en.png",
+    		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/corby.md/header.md/header.en.png",
     		"name": "Corby",
     		"description": "The Corby suite offers integrated solutions including an AI chatbot, secure payment gateway, and card scanning capabilities for streamlined customer interactions and transactions.",
     		"keywords": ["Corby", "AI chatbot", "conversational AI", "payment gateway", "secure payments", "card scanner", "customer service automation", "integrated business solutions"],
     		"copyrightHolder": {
     			"@type": "Organization",
     			"name": "Tekmonks",
-    			"url": "https://tekmonks.com"
+    			"url": "https://{{{hostname}}}"
     		}
     	}],
     	"publisher": {
     		"@type": "Organization",
     		"name": "Tekmonks",
-    		"url": "https://tekmonks.com"
+    		"url": "https://{{{hostname}}}"
     	},
     	"keywords": ["Corby", "AI chatbot", "conversational AI", "payment gateway", "secure payments", "card scanner", "customer service automation", "integrated business solutions"]
     }

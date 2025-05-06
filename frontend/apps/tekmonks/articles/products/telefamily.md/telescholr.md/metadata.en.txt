@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
   	},
 	"name": "TeleScholr",
 	"description": "TeleScholr is a fully integrated and customizable digital school platform, providing a secure environment for online learning, student tracking, and virtual classroom management.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/telefamily.md/telescholr.md/header.md/header.en.png",
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}/apps/tekmonks/articles/products/telefamily.md/telescholr.md/header.md/header.en.png`,
 		"name": "TeleScholr",
 		"description": "TeleScholr is a fully integrated and customizable digital school platform, providing a secure environment for online learning, student tracking, and virtual classroom management.",
 		"keywords": ["TeleScholr", "digital learning", "e-learning platform", "online education", "virtual classroom", "learning management system", "LMS", "digital school", "student tracking", "online school management"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
 	},
 	"keywords": ["TeleScholr", "digital learning", "e-learning platform", "online education", "virtual classroom", "learning management system", "LMS", "digital school", "student tracking", "online school management"]
 }

@@ -4,26 +4,26 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com/"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "Monkruls",
 	"description": "Monkruls is an intelligent business rules engine (BRE) powered by AI, enabling streamlined decision automation and complex process automation.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/aianalytics.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/monkruls.md/header.md/header.en.png",
 		"name": "Monkruls",
 		"description": "Intelligent business rules engine powered by AI for streamlined decision-making and process automation.",
 		"keywords": ["Monkruls", "business rules engine", "BRE", "BRMS", "AI rules", "decision automation", "process automation", "rules management", "AI decisioning"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
 	"keywords": ["Monkruls", "business rules engine", "BRE", "BRMS", "AI rules", "decision automation", "process automation", "rules management", "AI decisioning"]
 }
