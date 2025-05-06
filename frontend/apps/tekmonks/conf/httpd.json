@@ -14,7 +14,190 @@
             "^http(.*)://([^/]+?)$": "http{{{$1}}}://{{{$2}}}/apps/{{{app}}}/index.html"
         },
         {
-            "^http(.*)://([^/]+?)/((?:(?!index\\.html).).*\\.html(?:[?#].+)*)$": "http{{{$1}}}://{{{$2}}}/apps/{{{app}}}/index.html?.={{#base64}}http{{{$1}}}://{{{$2}}}/{{{$3}}}{{/base64}}"
+            "^http(.*)://([^/]+?)/products/ai-analytics$": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.={{#monkshubase64encode}}{{#replacehost}}{{#monkshubase64decode}}aHR0cHM6Ly90ZWttb25rcy5jb20vYXBwcy90ZWttb25rcy9sYW5kaW5nLmh0bWw/cHJvZHVjdF9wYXRoPS4vcHJvZHVjdHMvYWlhbmFseXRpY3MubWQmbWVudV9wYXRoPS5tZW51cy9lbg{{/monkshubase64decode}}{{/replacehost}}{{/monkshubase64encode}}"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/ai-analytics": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FpYW5hbHl0aWNzLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/aipa": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FpcGEubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/monkruls": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL21vbmtydWxzLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/neuranet": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL25ldXJhbmV0Lm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/twinblue": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3R3aW5ibHVlLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/logincat-360": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2xvZ2luY2F0Lm1kL2xvZ2luY2F0MzYwLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/reflection-network": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3JlZmxlY3Rpb25uZXR3b3JrLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/cyberwarrior": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2N5YmVyc2VjdXJpdHkvY3liZXJ3YXJyaW9yLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/citysafe": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2NpdHlzYWZlLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/asb": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FzYi5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/api-400": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FwaTQwMC5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/api-boss": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2FwaWJvc3MubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/db-magic": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2RibWFnaWMubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/teleworkr": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3RlbGVmYW1pbHkubWQvdGVsZXdvcmtyLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/telescholr": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3RlbGVmYW1pbHkubWQvdGVsZXNjaG9sci5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/teledoctr": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3RlbGVmYW1pbHkubWQvdGVsZWRvY3RyLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/telemeet": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3RlbGVmYW1pbHkubWQvdGVsZW1lZXQubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/monboss": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL21vbmJvc3MubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/cronlord": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2Nyb25sb3JkLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/corby": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2NvcmJ5Lm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/kloudust": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL2tsb3VkdXN0Lm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/products/xbin": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGFuZGluZy5odG1sP3Byb2R1Y3RfcGF0aD0uL3Byb2R1Y3RzL3hiaW4ubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/ibm": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9lbnRlcnByaXNlLm1kL2libS5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/oracle": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9lbnRlcnByaXNlLm1kL29yYWNsZS5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/redhat": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9lbnRlcnByaXNlLm1kL3JlZGhhdC5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/cloud-solutions": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9lbnRlcnByaXNlLm1kL2Nsb3Vkc29sdXRpb25zLm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/custom-services": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9lbnRlcnByaXNlLm1kL2N1c3RvbS5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/artificial-intelligence": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9haS5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/solutions/cybersecurity": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL3NvbHV0aW9ucy9jeWJlcnNlY3VyaXR5Lm1kJm1lbnVfcGF0aD0ubWVudXMvZW4%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/another-round-of-ransomware": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNi0xNC5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/president-bidens-vision-for-more-secure-government-infrastructure": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNi0xMS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/cyber-attacks-against-health-organizations-continue": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNi0wMy5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/how-cyber-criminals-have-affected-the-average-person": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNS0yNC5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/the-stresses-of-leading-in-cyber": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNS0wNS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/cybersecurity-for-the-second-wave": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wNi0xMi5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/from-us-to-you": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wNS0yMS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/healthcare-targeted-in-cyberattacks": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wMy0yNC5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/attackers-agree-to-not-target-healthcare-anymore": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvY3liZXJzZWN1cml0eS5tZC8yMDIwLTAzLTE5Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/the-first-complete-virtual-office": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvY3liZXJzZWN1cml0eS5tZC8yMDIwLTA0LTA5Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/securely-working-from-home": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvY3liZXJzZWN1cml0eS5tZC8yMDIwLTA0LTE2Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/logincat-tekmonks-solution-to-emerging-cyber-threats": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNi0yMS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/who-phishing-emails-about-covid-19": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvY3liZXJzZWN1cml0eS5tZC8yMDIwLTAzLTI0Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/covid-19-live-maps-could-download-malware": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wMy0yMy5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/combat-cybersecurity-vulnerabilities-created-by-coronavirus": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wMi0yNy5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/what-is-legacy-software": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMS0wNS0zMS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/is-remote-work-sustainable": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wNS0xOS5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/infrastructure-cybersecurity-vulnerabilities": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wNC0yMC5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/the-impact-of-the-iranian-crisis-on-cybersecurity": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvY3liZXJzZWN1cml0eS5tZC8yMDIwLTAyLTE4Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/top-five-2020-predictions": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyMC0wMS0wNy5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/how-automation-saves-costs": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGVfbi5odG1sP2Jsb2dzX3BhdGg9Li9ibG9ncy5tZC9WR1ZyYlc5dWEzTT0vYW1WNmNtVnNMbk52Ym1ScFlVQjBaV3R0YjI1cmN5NWpiMjA9LzIwMjUtMDEtMjAtMDEtNTMubWQmaW1hZ2U9aHR0cHM6Ly90ZWttb25rcy5jb20vYXBwcy90ZWttb25rcy9hcnRpY2xlcy9ibG9ncy5tZC9WR1ZyYlc5dWEzTT0vYW1WNmNtVnNMbk52Ym1ScFlVQjBaV3R0YjI1cmN5NWpiMjA9LzIwMjUtMDEtMjAtMDEtNTMubWQvaGVhZGVyLmVuLnBuZw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/main": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbWFpbmJsb2cuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9tYWluYmxvZyZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/unfolding-events": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2xpc3QuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9ibG9nbGlzdC91bmZvbGRpbmdldmVudHMubWQmbWVudV9wYXRoPS8%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/fortify": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2xpc3QuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9ibG9nbGlzdC9mb3J0aWZ5Lm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/breakdown": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2xpc3QuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9ibG9nbGlzdC9icmVha2Rvd24ubWQmbWVudV9wYXRoPS8%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/blogs/innovation": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2xpc3QuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9ibG9nbGlzdC9pbm5vdmF0aW9uLm1kJm1lbnVfcGF0aD0v"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/about-us": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL2NvbXBhbnkvYWJvdXR1cy5tZCZtZW51X3BhdGg9Lm1lbnVzL2Vu"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/join-our-team": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYXJ0aWNsZS5odG1sP2FydGljbGVfcGF0aD0uL2NvbXBhbnkvam9pbm91cnRlYW0ubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/resources": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvcmVzb3VyY2UuaHRtbD9hcnRpY2xlX3BhdGg9Li9yZXNvdXJjZXMvcHJvZHVjdGxpc3QubWQmbWVudV9wYXRoPS8%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/licenses": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbGljZW5zZS5odG1s"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/product-inquiries": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvcHJvZHVjdGlucXVpcmllcy5odG1sP2FydGljbGVfcGF0aD0uL2NvbXBhbnkvcHJvZHVjdGlucXVpcmllcy5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
+            "^http(.*)://([^/]+?)/company/contact-us": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvY29udGFjdHVzLmh0bWw%2FYXJ0aWNsZV9wYXRoPS4vY29tcGFueS9jb250YWN0dXMubWQmbWVudV9wYXRoPS5tZW51cy9lbg%3D%3D"
         }
     ],
     "diskCache": {
