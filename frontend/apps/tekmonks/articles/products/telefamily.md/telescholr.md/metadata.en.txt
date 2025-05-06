@@ -7,12 +7,12 @@
     		"@id": "https://{{{hostname}}}"
   	},
 	"name": "TeleScholr",
-	"description": "TeleScholr is a fully integrated and customizable digital school platform, providing a secure environment for online learning, student tracking, and virtual classroom management.",
+	"description": "Digital learning with digital proximity. TeleScholr is a fully customizable and intuitive software solution for digital learning. The only fully integrated Digital School platform in the market, it is made ground up for running learning institutions digitally. It is the ability to curate the platform to meet school’s requirements, provide a secure learning environment, track students, and deliver reliable online managed schools.",
 	"image": [{
 		"@type": "ImageObject",
 		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/telefamily.md/telescholr.md/header.md/header.en.png",
 		"name": "TeleScholr",
-		"description": "TeleScholr is a fully integrated and customizable digital school platform, providing a secure environment for online learning, student tracking, and virtual classroom management.",
+		"description": "Digital learning with digital proximity. TeleScholr is a fully customizable and intuitive software solution for digital learning. The only fully integrated Digital School platform in the market, it is made ground up for running learning institutions digitally. It is the ability to curate the platform to meet school’s requirements, provide a secure learning environment, track students, and deliver reliable online managed schools.",
 		"keywords": ["TeleScholr", "digital learning", "e-learning platform", "online education", "virtual classroom", "learning management system", "LMS", "digital school", "student tracking", "online school management"],
 		"copyrightHolder": {
 			"@type": "Organization",
