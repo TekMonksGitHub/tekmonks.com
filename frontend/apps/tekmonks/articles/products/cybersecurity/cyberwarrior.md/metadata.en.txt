@@ -4,26 +4,26 @@
   	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
+    		"@id": "https://{{{hostname}}}"
   	},
   	"name": "CyberWarrior",
   	"description": "Leverage the power of Artificial Intelligence with CyberWarrior for proactive cyber defense, threat detection, and automated response.",
   	"image": [{
   		"@type": "ImageObject",
-  		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}/apps/tekmonks/articles/products/cybersecurity/cyberwarrior.md/header.md/header.en.png`,
+  		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/cybersecurity/cyberwarrior.md/header.md/header.en.png",
   		"name": "CyberWarrior",
   		"description": "Leverage the power of Artificial Intelligence with CyberWarrior for proactive cyber defense, threat detection, and automated response.",
   		"keywords": ["CyberWarrior", "AI cybersecurity", "cyber defense solutions", "proactive threat detection", "automated cyber response", "AI for cybersecurity", "Cybersecurity with AI", "AI security platform", "machine learning security"],
   		"copyrightHolder": {
   			"@type": "Organization",
   			"name": "Tekmonks",
-  			"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
+  			"url": "https://{{{hostname}}}"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
   		"name": "Tekmonks",
-  		"url": `https://${TEKMONKS_COM_CONSTANTS.hostname}`
+  		"url": "https://{{{hostname}}}"
   	},
   	"keywords": ["CyberWarrior", "AI cybersecurity", "cyber defense solutions", "proactive threat detection", "automated cyber response", "AI for cybersecurity", "Cybersecurity with AI", "AI security platform", "machine learning security"]
   }

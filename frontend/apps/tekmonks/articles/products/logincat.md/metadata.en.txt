@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+  	// ...existing code...
+	"mainEntityOfPage": {
+    		"@type": "WebPage",
+    		"@id": "https://{{{hostname}}}"
+  	},
+  	// ...existing code...
+  	"image": [{
+  		"@type": "ImageObject",
+  		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/logincat.md/header.md/header.en.png",
+  		// ...existing code...
+  		"copyrightHolder": {
+  			"@type": "Organization",
+  			"name": "Tekmonks",
+  			"url": "https://{{{hostname}}}"
+  		}
+  	}],
+  	"publisher": {
+  		"@type": "Organization",
+  		"name": "Tekmonks",
+  		"url": "https://{{{hostname}}}"
+  	},
+  	// ...existing code...
+  }
+</script>
