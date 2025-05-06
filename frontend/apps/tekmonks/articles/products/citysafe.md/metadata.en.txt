@@ -4,27 +4,27 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "CitySafe",
-	"description": "To serve and protect.",
+	"description": "Cybersecurity designed specifically for local governments, featuring easy plug-and-play deployment and advanced reflection technology for robust protection.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/citysafe.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/citysafe.md/header.md/header.en.png",
 		"name": "CitySafe",
-		"description": "To serve and protect.",
-		"keywords": ["citysafe"],
+		"description": "Cybersecurity designed specifically for local governments, featuring easy plug-and-play deployment and advanced reflection technology for robust protection.",
+		"keywords": ["CitySafe", "government cybersecurity", "municipal security", "reflection technology", "unhackable server", "plug and play security", "local government IT", "public sector security"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
-	"keywords": ["citysafe"]
+	"keywords": ["CitySafe", "government cybersecurity", "municipal security", "reflection technology", "unhackable server", "plug and play security", "local government IT", "public sector security"]
 }
 </script>

@@ -4,27 +4,27 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
-	"name": "API400",
-	"description": "The Fountain of Youth for Legacy Systems.",
+	"name": "APIBoss",
+	"description": "Comprehensive API Management solution for the modern digital economy, enabling secure creation, publishing, and analysis of APIs.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
-		"name": "API400",
-		"description": "API400",
-		"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"],
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/api400.md/header.md/header.en.png",
+		"name": "APIBoss",
+		"description": "Comprehensive API Management solution for the modern digital economy.",
+		"keywords": ["APIBoss", "API management", "API gateway", "API lifecycle", "digital transformation", "microservices", "API security", "API analytics", "API governance"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
-	"keywords": ["API for AS400", "API AS400", "API AS400", "REST API", "REST API for AS/400", "Web Services for iSeries", "Web Services for AS400"]
+	"keywords": ["APIBoss", "API management", "API gateway", "API lifecycle", "digital transformation", "microservices", "API security", "API analytics", "API governance"]
 }
 </script>
