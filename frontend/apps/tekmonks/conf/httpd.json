@@ -1,7 +1,8 @@
 {
     "extensions": [
         "redirect",
-        "httpverbs"
+        "httpverbs",
+        "diskcache"
     ],
     "redirects": [
         {

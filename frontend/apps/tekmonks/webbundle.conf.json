@@ -1,3 +1,4 @@
 {
-  "WEBUNDLE_FILE_PATTERNS": ["**/*.mjs", "**/*.js", "**/*.html", "**/*.css", "**/*.json"]
+  "WEBUNDLE_FILE_PATTERNS": ["**/*.mjs", "**/*.js", "**/*.html", "**/*.css", "**/*.json", "**/*.md"],
+  "ADDITIONAL_MIMES": {".md": "text/markdown"}
 }
