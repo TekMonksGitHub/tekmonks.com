@@ -4,7 +4,7 @@
  * License: See enclosed license.txt file.
  */
 
-const FRONTEND = "https://{{{hostname}}}";
+const FRONTEND = new URL(window.location).protocol + "//" + new URL(window.location).host;
 const BACKEND = "https://{{{hostname}}}:8443";
 const APP_NAME = "tekmonks";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
