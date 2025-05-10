@@ -93,8 +93,8 @@ function enableMenu(searchElement) {
 }
 
 function showSubMenuMobile(searchElement){
-	searchElement.classList.toggle('submenu-active')
-	searchElement.nextSibling.classList.toggle('menu-visible')
+	searchElement.classList.toggle('submenu-active');
+	searchElement.nextElementSibling.classList.toggle('menu-visible');
 	
 	let imgElement = searchElement.querySelector('img');
 	imgElement.src = imgElement.src.endsWith('chevron-up.svg') ? './img/chevron-right.svg' : './img/chevron-up.svg';
