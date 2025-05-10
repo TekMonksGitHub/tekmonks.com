@@ -77,12 +77,6 @@
                     const doc = parser.parseFromString(data, 'text/html');
                     const scripts = Array.from(doc.querySelectorAll('script'));
 
-                    scripts.forEach(script => {
-                        const newScript = document.createElement('script');
-                        newScript.textContent = script.textContent;
-                        try { document.body.appendChild(newScript); } catch (err) {}
-                    });
-
                     document.getElementById('temp-index').innerHTML = doc.body.innerHTML;
 
                     if (typeof setRandomBanner === 'function') {

@@ -5,7 +5,7 @@
  */
 
 const FRONTEND = new URL(window.location).protocol + "//" + new URL(window.location).host;
-const BACKEND = "https://{{{hostname}}}:8443";
+const BACKEND = new URL(window.location).protocol + "//" + new URL(window.location).host + ":8443";
 const APP_NAME = "tekmonks";
 const APP_PATH = `${FRONTEND}/apps/tekmonks`;
 const API_PATH = `${BACKEND}/apps/tekmonks`;
