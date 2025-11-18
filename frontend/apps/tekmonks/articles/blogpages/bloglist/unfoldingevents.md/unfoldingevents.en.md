@@ -3,6 +3,10 @@
 
 |   |
 |:------------:|
+|<a href="/blogs/cloudflare-outage"><p class="date">18 November 2025</p><div class="bloglist"><h3>Cloudflare Outage</h3><p>Today’s major Cloudflare outage has once again shown how heavily the global internet depends on a small number of foreign reverse-proxy/CDN providers.</p></div> ![Blog Image] (articles/blogs.md/2025-11-18.md/header.en.png)</a>|
+
+|   |
+|:------------:|
 |<a href="/blogs/another-round-of-ransomware"><p class="date">14 June 2021</p><div class="bloglist"><h3>Another Round of Ransomware </h3><p>A hacker group called REvil executed a ransomware attack against JBS, forcing it to shut down operations. </p></div> ![Blog Image] (articles/blogs.md/2021-06-14.md/header.en.png)</a>|
 
 |   |

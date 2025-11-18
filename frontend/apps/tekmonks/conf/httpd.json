@@ -168,6 +168,9 @@
             "^http(.*)://([^/]+?)/blogs/how-automation-saves-costs": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGVfbi5odG1sP2Jsb2dzX3BhdGg9Li9ibG9ncy5tZC9WR1ZyYlc5dWEzTT0vYW1WNmNtVnNMbk52Ym1ScFlVQjBaV3R0YjI1cmN5NWpiMjA9LzIwMjUtMDEtMjAtMDEtNTMubWQmaW1hZ2U9aHR0cHM6Ly90ZWttb25rcy5jb20vYXBwcy90ZWttb25rcy9hcnRpY2xlcy9ibG9ncy5tZC9WR1ZyYlc5dWEzTT0vYW1WNmNtVnNMbk52Ym1ScFlVQjBaV3R0YjI1cmN5NWpiMjA9LzIwMjUtMDEtMjAtMDEtNTMubWQvaGVhZGVyLmVuLnBuZw%3D%3D"
         },
         {
+            "^http(.*)://([^/]+?)/blogs/cloudflare-outage": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvYmxvZ2FydGljbGUuaHRtbD9ibG9nc19wYXRoPS4vYmxvZ3MubWQvMjAyNS0xMS0xOC5tZCZtZW51X3BhdGg9Lw%3D%3D"
+        },
+        {
             "^http(.*)://([^/]+?)/blogs/main": "http{{{$1}}}://{{{$2}}}/apps/tekmonks/index.html?.=L2FwcHMvdGVrbW9ua3MvbWFpbmJsb2cuaHRtbD9ibG9nc19wYXRoPWJsb2dwYWdlcy9tYWluYmxvZyZtZW51X3BhdGg9Lw%3D%3D"
         },
         {
