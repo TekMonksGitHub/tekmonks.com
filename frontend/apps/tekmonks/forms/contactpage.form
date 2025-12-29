@@ -117,6 +117,11 @@ body {
 
 
 {{{APP_CONSTANTS.PAGE_CSS_MOBILE_MEDIA_QUERY_START}}}
+
+    textarea {
+        width: 50% !important;
+    }
+
     .grid-container{
       display: flex;
       flex-direction: column;
