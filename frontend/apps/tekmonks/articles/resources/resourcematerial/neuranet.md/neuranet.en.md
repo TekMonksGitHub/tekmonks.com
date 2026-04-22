@@ -46,15 +46,12 @@
 ![Comparison Chart] (articles/resources/productlist.md/comparison-chart.png "Comparison Chart")
 ##Comparison Chart
 
-
-<span class="disabled">Coming Soon</span>
-
+[Download](articles/resources/resourcematerial/neuranet.md/neuranet-comparison.html){:target="_blank"}
 </div>
 
 <div class="resource-box single-product-box" markdown="1">
 ![Presentation] (articles/resources/productlist.md/presentation.png "Presentation")
 ##Presentation
-
 
 [Download](articles/resources/resourcematerial/neuranet.md/neuranet-presentation.pdf){:target="_blank"}
 </div>
