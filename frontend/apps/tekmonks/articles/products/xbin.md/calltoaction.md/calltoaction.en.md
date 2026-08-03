@@ -2,7 +2,8 @@
 #Learn More About XBin
 
 <br/><br/>
-[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+[Resources]({{#makeLink}}./resource.html?article_path=resources/resourcematerial/xbin.md&menu_path=/{{/makeLink}})[Contact Us]({{#makeLink}}./productinquiries.html?article_path=./company/productinquiries.md&menu_path=/{{/makeLink}})
+
 <br/><br/>
 ## Model number: XB001
 </div>
