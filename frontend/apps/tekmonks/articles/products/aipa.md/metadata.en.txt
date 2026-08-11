@@ -4,27 +4,27 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "AIPA",
-	"description": "AI Powered Business Search",
+	"description": "Tekmonks AIPA offers an easy, secure, and reasonably priced remote work solution. Deploy quickly, benefit from reflection technology and zero-trust security, and enjoy a seamless virtual office experience.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/aipa.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/aipa.md/header.md/header.en.png",
 		"name": "AIPA",
-		"description": "AI Powered Business Search",
-		"keywords": ["aipa"],
+		"description": "Tekmonks AIPA offers an easy, secure, and reasonably priced remote work solution. Deploy quickly, benefit from reflection technology and zero-trust security, and enjoy a seamless virtual office experience.",
+		"keywords": ["AIPA", "remote work solution", "secure remote access", "virtual office", "digital workplace", "reflection technology", "zero trust security", "easy deployment", "affordable remote work"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
-	"keywords": ["aipa"]
+	"keywords": ["AIPA", "remote work solution", "secure remote access", "virtual office", "digital workplace", "reflection technology", "zero trust security", "easy deployment", "affordable remote work"]
 }
 </script>

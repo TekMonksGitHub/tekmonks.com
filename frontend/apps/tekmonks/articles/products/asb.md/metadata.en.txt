@@ -4,26 +4,26 @@
   	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
-  	"name": "ASB - API Service Bus",
+  	"name": "ASB",
   	"description": "A full service, fast growing, and highly skilled technology firm. US founded and headquartered in Washington DC. Work with largest Fortune 500 companies worldwide. Zero debt company with a de-risked operating model, maintaining  two years of operating cash reserves. 98% rate of repeat business, history of success and satisfied clients. ISO 9001:2015 QMS certified. Strong partnerships with AWS, Azure, Microsoft, IBM etc.",
   	"image": [{
   		"@type": "ImageObject",
-  		"url": "https://tekmonks.com/apps/tekmonks/articles/products/asb.md/header.md/header.en.png",
-  		"name": "ASB - API Service Bus",
-  		"description": "Integration Bus for Modern API Based",
-  		"keywords": ["asb, Api Service Bus"],
+  		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/asb.md/header.md/header.en.png",
+  		"name": "ASB",
+  		"description": "High-performance, secure, and scalable asynchronous API Service Bus for modern, event-driven integrations and microservices communication.",
+  		"keywords": ["ASB", "API Service Bus", "ESB", "integration bus", "asynchronous messaging", "event-driven architecture", "microservices integration", "API integration", "enterprise service bus"],
   		"copyrightHolder": {
   			"@type": "Organization",
   			"name": "Tekmonks",
-  			"url": "https://tekmonks.com"
+  			"url": "https://{{{hostname}}}"
   		}
   	}],
   	"publisher": {
   		"@type": "Organization",
   		"name": "Tekmonks",
-  		"url": "https://tekmonks.com"
+  		"url": "https://{{{hostname}}}"
   	},
-  	"keywords": ["asb, Api Service Bus"]
+  	"keywords": ["ASB", "API Service Bus", "ESB", "integration bus", "asynchronous messaging", "event-driven architecture", "microservices integration", "API integration", "enterprise service bus"]
   }</script>

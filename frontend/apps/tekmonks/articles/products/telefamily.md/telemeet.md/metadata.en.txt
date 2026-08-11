@@ -4,27 +4,27 @@
 	"@type": "Article",
 	"mainEntityOfPage": {
     		"@type": "WebPage",
-    		"@id": "https://tekmonks.com"
+    		"@id": "https://{{{hostname}}}"
   	},
 	"name": "Telemeet",
-	"description": "Secured communication by Tekmonks",
+	"description": "TeleMeet provides secure and reliable video conferencing and communication solutions for businesses and teams, ensuring private virtual meetings.",
 	"image": [{
 		"@type": "ImageObject",
-		"url": "https://tekmonks.com/apps/tekmonks/articles/products/telefamily.md/telemeet.md/header.md/header.en.png",
+		"url": "https://{{{hostname}}}/apps/tekmonks/articles/products/telefamily.md/telemeet.md/header.md/header.en.png",
 		"name": "Telemeet",
-		"description": "Secured communication by Tekmonks",
-		"keywords": ["telemeet"],
+		"description": "TeleMeet provides secure and reliable video conferencing and communication solutions for businesses and teams, ensuring private virtual meetings.",
+		"keywords": ["TeleMeet", "secure communication", "video conferencing", "virtual meetings", "team collaboration", "secure messaging", "encrypted communication", "web conferencing"],
 		"copyrightHolder": {
 			"@type": "Organization",
 			"name": "Tekmonks",
-			"url": "https://tekmonks.com"
+			"url": "https://{{{hostname}}}"
 		}
 	}],
 	"publisher": {
 		"@type": "Organization",
 		"name": "Tekmonks",
-		"url": "https://tekmonks.com"
+		"url": "https://{{{hostname}}}"
 	},
-	"keywords": ["telemeet"]
+	"keywords": ["TeleMeet", "secure communication", "video conferencing", "virtual meetings", "team collaboration", "secure messaging", "encrypted communication", "web conferencing"]
 }
 </script>
